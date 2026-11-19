@@ -1,0 +1,200 @@
+{
+  "titulo": "Passagem de nível, verão",
+  "duracao": 10,
+  "fps": 30,
+  "semente": 8,
+  "grao": 0.16,
+  "tituloNaTela": { "x": 90, "y": 1010, "tamanho": 48, "de": 0.25, "ate": 2.35, "escreve": [0.3, 1.3] },
+
+  "cores": {
+    "ceu": ["#1d49b0", "#3a7ee0", "#a4d0f4"],
+    "nuvem": ["#ffffff", "#e2eaf7", "#a8b3da"],
+    "sombra": "#7d70bd",
+    "verde": ["#2c7a3a", "#5cab3d", "#a9db5a"],
+    "parede": ["#f1e8d2", "#e8dcc2", "#f3eee4"],
+    "telhados": ["#6e6aa0", "#d9573b", "#3f8f8a", "#8a7fb3", "#5b6aa8"],
+    "janela": "#5a83c6",
+    "muro": "#d3cdc0",
+    "rua": ["#8b93ad", "#b9bdd0"],
+    "poste": "#6b625a",
+    "fio": "#2e2a33",
+    "mar": ["#1c64b8", "#3aa2e0", "#c4ebff"],
+    "amarelo": "#f2c230",
+    "preto": "#2a2522",
+    "luzSinal": "#e5322a",
+    "petala": "#ffd9e4",
+    "ave": "#2a3050"
+  },
+
+  "menina": {
+    "linha": "#4a2e25",
+    "pele": "#fde6d6", "peleSombra": "#efbaa8", "rubor": "#f08a8a",
+    "cabelo": "#22306a", "cabeloSombra": "#151d45", "cabeloLuz": "#5368b0",
+    "olho": ["#1d3f8a", "#47a6dc"],
+    "laco": "#ea4a2a",
+    "blusa": "#fbfaf6", "blusaSombra": "#c8cfe6",
+    "gola": "#72d3b6", "golaSombra": "#46a58e",
+    "saia": "#283672", "saiaSombra": "#1a2452",
+    "meia": "#fbfaf6", "sapato": "#3a2f2c",
+    "ceuNoOlho": "#a6d6f8"
+  },
+  "bicicleta": { "quadro": "#e3ab1e", "pneu": "#2e2a2a", "aro": "#c9c9cf", "cesta": "#c99a5a" },
+
+  "andar": { "x0": 900, "velocidade": 560, "freia": [3.75, 4.35] },
+  "sinal": { "de": 2.45, "ate": 9.0, "batida": 0.42, "nota": "G5", "nota2": "G6" },
+  "cancela": { "desce": [2.75, 3.35], "sobe": [9.0, 9.7] },
+  "trem": { "chega": 4.72, "entra": 2050, "velocidade": 4200, "carros": 3, "comprimento": 1330, "volume": 0.12,
+            "corpo": "#f2f2ec", "faixa": ["#2f9a86", "#e0603a"], "janela": "#3a5f9a" },
+
+  "planos": [
+    { "nome": "descida, de lado", "tipo": "lateral", "de": 0, "ate": 2.45, "mundo": "rua", "segue": true,
+      "camera": [ { "t": 0, "frente": 640, "zoom": 1.08, "giro": -2.5 }, { "t": 2.45, "frente": 700, "zoom": 1.1, "giro": -2.5 } ],
+      "petalas": 25, "ventoX": -520, "vazamento": 0.22 },
+    { "nome": "o sinal visto de baixo", "tipo": "sinal", "de": 2.45, "ate": 3.55, "mundo": "sinal", "centro": [1180, 500],
+      "camera": [ { "t": 2.45, "zoom": 1.0 }, { "t": 3.55, "zoom": 1.07 } ],
+      "petalas": 30, "sol": [1720, 90] },
+    { "nome": "ela freia, pé no chão", "tipo": "lateral", "de": 3.55, "ate": 4.72, "mundo": "rua", "segue": true, "centro": [960, 600],
+      "camera": [ { "t": 3.55, "frente": 560, "zoom": 1.2, "giro": -2 }, { "t": 4.72, "frente": 700, "zoom": 1.22, "giro": -2 } ],
+      "petalas": 25, "ventoX": -300, "vazamento": 0.2 },
+    { "nome": "o trem passa, ela de costas", "tipo": "costas", "de": 4.72, "ate": 6.55, "mundo": "vista", "centro": [960, 600], "clarao": 0.1, "tremor": 7,
+      "camera": [ { "t": 4.72, "zoom": 1.0 }, { "t": 6.55, "zoom": 1.05 } ],
+      "petalas": 80, "ventoX": -1500, "ventoY": 20, "sinoLonge": 0.5, "vazamento": 0.18 },
+    { "nome": "os olhos", "tipo": "olhos", "de": 6.55, "ate": 7.6, "mundo": "desfocado", "centro": [960, 478],
+      "camera": [ { "t": 6.55, "zoom": 4.0 }, { "t": 7.6, "zoom": 4.35 } ],
+      "acoes": { "aperta": [6.75, 6.95], "piscadas": [7.0], "arregala": 7.1, "mar": [7.1, 7.35] },
+      "petalas": 14, "sinoLonge": 0.4, "vazamento": 0.15, "vazamentoDe": [0, 0] },
+    { "nome": "ela olha para cima e sorri", "tipo": "rosto", "de": 7.6, "ate": 8.75, "mundo": "desfocado", "centro": [960, 470],
+      "camera": [ { "t": 7.6, "zoom": 1.0 }, { "t": 8.75, "zoom": 1.06 } ],
+      "acoes": { "olhar": [[0, 0], [4, -14], 7.65, 7.95], "ergue": [7.65, 8.0, 0.05], "sorri": [7.95, 8.2], "piscadas": [8.45] },
+      "bolhas": 1, "petalas": 30, "sinoLonge": 0.35, "vazamento": 0.3 },
+    { "nome": "a cidade, o mar e a nuvem", "tipo": "geral", "de": 8.75, "ate": 10, "mundo": "geral",
+      "camera": [ { "t": 8.75, "x": 0, "y": 420, "zoom": 1.04 }, { "t": 10, "x": 0, "y": 0, "zoom": 1.0 } ],
+      "petalas": 25, "sol": [1690, 100], "solFator": 0.75, "sinoLonge": 0.5, "vazamento": 0.25 }
+  ],
+
+  "mundos": {
+    "rua": {
+      "camadas": [
+        { "nome": "ceu", "fator": 0.03, "largura": 2300, "y": -140, "altura": 780 },
+        { "nome": "morro", "fator": 0.15, "largura": 2700, "y": 150, "altura": 500 },
+        { "nome": "casas", "fator": 0.5, "largura": 3900, "y": 250, "altura": 420 },
+        { "nome": "rua", "fator": 1.0, "largura": 5300, "y": 40, "altura": 900 },
+        { "nome": "frente", "fator": 1.3, "largura": 6300, "y": 840, "altura": 360 }
+      ],
+      "pecas": [
+        { "tipo": "ceu", "camada": "ceu", "x": 0, "y": -140, "largura": 2300, "altura": 780 },
+        { "tipo": "nuvem", "camada": "ceu", "x": 1550, "y": 390, "escala": 1.0, "torre": true },
+        { "tipo": "nuvem", "camada": "ceu", "x": 420, "y": 300, "escala": 0.55 },
+        { "tipo": "nuvem", "camada": "ceu", "x": 2050, "y": 330, "escala": 0.6 },
+        { "tipo": "morro", "camada": "morro", "x": 0, "largura": 2700, "y": 560, "altura": 270 },
+        { "tipo": "casas", "camada": "casas", "x": 0, "largura": 3900, "y": 600, "escala": 1.0, "arbustos": true },
+        { "tipo": "muro", "camada": "rua", "x": 0, "largura": 5300, "y": 560, "altura": 82 },
+        { "tipo": "rua", "camada": "rua", "x": 0, "largura": 5300, "y": 642, "altura": 228 },
+        { "tipo": "postes", "camada": "rua", "x": 300, "largura": 4900, "passo": 760, "y": 650, "altura": 580, "queda": 30 },
+        { "tipo": "sinal", "camada": "rua", "x": 3540, "y": 652, "escala": 0.85 },
+        { "tipo": "sombraBici", "camada": "rua", "y": 858, "escala": 1.1 },
+        { "tipo": "menina", "camada": "rua", "vista": "lado", "y": 777, "escala": 1.1, "piscadas": [1.6, 4.0] },
+        { "tipo": "campo", "camada": "frente", "x": 0, "largura": 6300, "y": 878, "altura": 330 },
+        { "tipo": "capim", "camada": "frente", "x": 0, "largura": 6300, "y": 900, "altura": 300, "vento": 0.7 }
+      ]
+    },
+    "sinal": {
+      "camadas": [
+        { "nome": "ceu", "fator": 0.3, "largura": 2100, "y": -80, "altura": 1240 },
+        { "nome": "meio", "fator": 0.7, "largura": 2100, "y": -80, "altura": 1240 },
+        { "nome": "frente", "fator": 1.0, "largura": 2100, "y": -80, "altura": 1240 }
+      ],
+      "pecas": [
+        { "tipo": "ceu", "camada": "ceu", "x": -80, "y": -80, "largura": 2180, "altura": 1240 },
+        { "tipo": "nuvem", "camada": "ceu", "x": 1560, "y": 1000, "escala": 1.7, "torre": true },
+        { "tipo": "nuvem", "camada": "ceu", "x": 260, "y": 560, "escala": 0.45 },
+        { "tipo": "fiacao", "camada": "meio", "pontos": [[-100, 250], [2100, 40]], "queda": 50 },
+        { "tipo": "fiacao", "camada": "meio", "pontos": [[-100, 330], [2100, 150]], "queda": 60 },
+        { "tipo": "poste", "camada": "meio", "x": 560, "y": 1300, "altura": 1450, "escala": 1.0, "giro": -3, "caixa": true },
+        { "tipo": "casa", "camada": "meio", "x": 1420, "y": 1190, "largura": 620, "altura": 230, "telhadoAlto": 95, "telhado": 0 },
+        { "tipo": "arbusto", "camada": "frente", "x": 120, "y": 1200, "raio": 300, "bolhas": 13 },
+        { "tipo": "sinal", "camada": "frente", "x": 1180, "y": 1240, "escala": 2.3, "giro": 4 },
+        { "tipo": "cancela", "camada": "frente", "x": 1440, "y": 1030, "comprimento": 1150, "escala": 2.0, "dir": -1 }
+      ]
+    },
+    "vista": {
+      "camadas": [
+        { "nome": "longe", "fator": 0.0, "largura": 2000, "y": -60, "altura": 1200 },
+        { "nome": "trem", "fator": 0.0, "largura": 10, "y": 0, "altura": 10 },
+        { "nome": "perto", "fator": 1.0, "largura": 2100, "y": 680, "altura": 480 }
+      ],
+      "pecas": [
+        { "tipo": "ceu", "camada": "longe", "x": -40, "y": -60, "largura": 2040, "altura": 600 },
+        { "tipo": "nuvem", "camada": "longe", "x": 760, "y": 470, "escala": 1.35, "torre": true },
+        { "tipo": "nuvem", "camada": "longe", "x": 1700, "y": 470, "escala": 0.6 },
+        { "tipo": "mar", "camada": "longe", "x": -40, "y": 470, "largura": 2040, "altura": 120, "ilha": { "x": -60, "largura": 700, "altura": 46 } },
+        { "tipo": "brilhoMar", "camada": "longe", "x": 0, "y": 476, "largura": 1920, "altura": 100 },
+        { "tipo": "casas", "camada": "longe", "x": -80, "largura": 2100, "y": 680, "escala": 0.55, "arbustos": true },
+        { "tipo": "campo", "camada": "longe", "x": -40, "largura": 2040, "y": 680, "altura": 40 },
+        { "tipo": "trilhos", "camada": "longe", "x": -40, "largura": 2040, "y": 712, "escala": 1.0 },
+        { "tipo": "trem", "camada": "trem", "y": 290, "altura": 400 },
+        { "tipo": "rua", "camada": "perto", "x": -100, "largura": 2200, "y": 735, "altura": 430 },
+        { "tipo": "cancela", "camada": "perto", "x": 2060, "y": 770, "comprimento": 2200, "escala": 1.2, "dir": -1 },
+        { "tipo": "sinal", "camada": "perto", "x": 1810, "y": 1010, "escala": 1.45 },
+        { "tipo": "menina", "camada": "perto", "vista": "costas", "x": 930, "y": 1020, "escala": 1.15, "ventoBase": 0.12 }
+      ]
+    },
+    "desfocado": {
+      "camadas": [
+        { "nome": "fundo", "fator": 0.2, "largura": 2100, "y": -60, "altura": 1200, "desfoque": 14 },
+        { "nome": "rosto", "fator": 1.0, "largura": 10, "y": 0, "altura": 10 }
+      ],
+      "pecas": [
+        { "tipo": "ceu", "camada": "fundo", "x": -80, "y": -60, "largura": 2180, "altura": 800 },
+        { "tipo": "nuvem", "camada": "fundo", "x": 700, "y": 560, "escala": 1.2, "torre": true },
+        { "tipo": "casas", "camada": "fundo", "x": -100, "largura": 2200, "y": 900, "escala": 1.4, "arbustos": true },
+        { "tipo": "campo", "camada": "fundo", "x": -100, "largura": 2200, "y": 900, "altura": 260 },
+        { "tipo": "menina", "camada": "rosto", "vista": "frente", "x": 960, "y": 470, "escala": 1.2, "vento": 0.45 }
+      ]
+    },
+    "geral": {
+      "camadas": [
+        { "nome": "alto", "fator": 0.75, "largura": 2000, "y": -120, "altura": 1080 },
+        { "nome": "cidade", "fator": 1.0, "largura": 2000, "y": 700, "altura": 900 },
+        { "nome": "capim", "fator": 1.15, "largura": 10, "y": 0, "altura": 10 }
+      ],
+      "pecas": [
+        { "tipo": "ceu", "camada": "alto", "x": -40, "y": -120, "largura": 2040, "altura": 780 },
+        { "tipo": "nuvem", "camada": "alto", "x": 1000, "y": 655, "escala": 2.1, "torre": true },
+        { "tipo": "nuvem", "camada": "alto", "x": 230, "y": 640, "escala": 0.65 },
+        { "tipo": "nuvem", "camada": "alto", "x": 1720, "y": 645, "escala": 0.55 },
+        { "tipo": "mar", "camada": "alto", "x": -40, "y": 640, "largura": 2040, "altura": 320, "ilha": { "x": -80, "largura": 640, "altura": 40 } },
+        { "tipo": "brilhoMar", "camada": "alto", "x": 0, "y": 646, "largura": 1920, "altura": 150 },
+        { "tipo": "aves", "camada": "alto", "x": 760, "y": 400, "anda": 90 },
+        { "tipo": "cidade", "camada": "cidade", "x": -100, "largura": 2120, "yLonge": 800, "yPerto": 1560, "escalaLonge": 0.22, "escalaPerto": 1.3, "linhas": 9, "rua": { "x": 960, "meia": 70 } },
+        { "tipo": "estrada", "camada": "cidade", "longe": [935, 985], "perto": [700, 1220], "yLonge": 790, "yPerto": 1600 },
+        { "tipo": "campo", "camada": "cidade", "x": -100, "largura": 2120, "y": 1072, "altura": 50 },
+        { "tipo": "trilhos", "camada": "cidade", "x": -100, "largura": 2120, "y": 1096, "escala": 0.7 },
+        { "tipo": "poste", "camada": "cidade", "x": 1250, "y": 1600, "altura": 760, "escala": 1.0 },
+        { "tipo": "poste", "camada": "cidade", "x": 1040, "y": 1040, "altura": 600, "escala": 0.35 },
+        { "tipo": "fiacao", "camada": "cidade", "pontos": [[1040, 837], [1250, 862]], "queda": 10 },
+        { "tipo": "sinal", "camada": "cidade", "x": 872, "y": 1090, "escala": 0.2, "brilho": 0.6 },
+        { "tipo": "sinal", "camada": "cidade", "x": 1052, "y": 1090, "escala": 0.2, "brilho": 0.6 },
+        { "tipo": "cancela", "camada": "cidade", "x": 885, "y": 1078, "comprimento": 80, "escala": 0.22, "dir": 1 },
+        { "tipo": "cancela", "camada": "cidade", "x": 1040, "y": 1078, "comprimento": 80, "escala": 0.22, "dir": -1 },
+        { "tipo": "menina", "camada": "cidade", "vista": "costas", "x": 962, "y": 1150, "escala": 0.075 },
+        { "tipo": "capim", "camada": "capim", "x": 1280, "largura": 900, "y": 1180, "altura": 320, "vento": 0.5, "alto": 1.6 }
+      ]
+    }
+  },
+
+  "musica": {
+    "piano": [
+      ["D5", 0.25, 0.8], ["A4", 0.7, 0.6], ["F#5", 1.15, 0.8], ["E5", 1.6, 0.9], ["D5", 2.1, 0.6],
+      ["B4", 2.5, 0.8], ["C#5", 3.0, 0.6], ["E5", 3.5, 1.0],
+      ["A5", 6.65, 0.9, 0.1], ["F#5", 7.15, 0.7, 0.1], ["G5", 7.65, 0.7, 0.12], ["A5", 8.0, 0.9, 0.13],
+      ["B5", 8.75, 0.7, 0.13], ["D6", 9.1, 1.4, 0.13], ["A5", 9.1, 1.4, 0.07]
+    ],
+    "pads": [
+      [["D3", "A3", "F#4"], 0, 2.5], [["B2", "F#3", "D4"], 2.45, 2.2],
+      [["G2", "D3", "B3"], 6.5, 1.5], [["D3", "A3", "F#4", "A4"], 8.0, 2.0]
+    ],
+    "cigarras": [[0.1, 2.3], [3.55, 1.1], [8.75, 1.2]],
+    "volPad": 0.035, "volCigarra": 0.018, "pico": 0.85
+  }
+}

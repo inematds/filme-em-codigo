@@ -1,0 +1,131 @@
+{
+  "titulo": "Virar para a luz",
+  "duracao": 6,
+  "fps": 24,
+  "desenhosPorSegundo": 12,
+  "semente": 19,
+  "grao": 0.09,
+  "maciez": 0.8,
+  "tituloNaTela": { "x": 120, "y": 175, "tamanho": 54, "de": 0.2, "ate": 2.5, "escreve": [0.25, 1.4] },
+
+  "camera": { "centro": [960, 520], "zoom": [1, 1.07] },
+
+  "pecas": [
+    { "tipo": "fundo", "cor": "fundo", "de": 0, "ate": 6 },
+    { "tipo": "personagem", "de": 0, "ate": 6, "nota": "cabeça, pescoço, cabelo, óculos e brinco; lugar e pose em personagem e atuacao" },
+    { "tipo": "gola", "de": 0, "ate": 6, "nota": "gola alta do casaco, na frente de tudo; formas em personagem.gola" },
+    { "tipo": "titulo", "de": 0.2, "ate": 2.5, "nota": "lugar e tempo em tituloNaTela" }
+  ],
+
+  "cores": {
+    "fundo": "#d0d5f3",
+    "peleSombra": "#3b2742",
+    "peleLuz": "#ee8a78",
+    "peleFunda": "#23152a",
+    "cabeloSombra": "#5c60a9",
+    "cabeloLuz": "#f3bd72",
+    "cabeloOrla": "#ec8a4c",
+    "sobrancelha": "#140d18",
+    "boca": "#8c2d3e",
+    "bocaRisco": "#2a1020",
+    "aro": "#ee4a2c",
+    "aroSombra": "#b8261b",
+    "lente": "#5a1624",
+    "reflexo": "#e8402a",
+    "brilho": "#fbe9df",
+    "ouro": "#e7b13a",
+    "ouroSombra": "#9c6a14",
+    "casaco": "#151622",
+    "casacoAzul": "#232a4c",
+    "casacoAzul2": "#1b2140",
+    "letra": "#3b2742"
+  },
+
+  "personagem": {
+    "escala": 1.7,
+    "cabeca": [150, 190, 168],
+    "mandibula": 0.38,
+    "queixo": 50,
+    "pivo": [0, 90, -25],
+    "corpo": [952, 600],
+    "limiarPele": 0.42,
+    "limiarCabelo": 0.05,
+    "malha": { "colunas": 16, "linhas": [-90, -66, -40, -16, 6, 26, 46, 66, 90] },
+    "nariz": { "ponte": [0, 2, 10], "ponta": [0, 19, 34], "asa": [9, 22, 6], "base": [0, 23, 14] },
+    "cabelo": {
+      "colunas": 96, "linhas": 16, "volume": 16,
+      "linha": [[0, -36], [30, -33], [55, -24], [75, -12], [90, -10], [105, -4], [130, 14], [160, 26], [180, 28]],
+      "pontas": 5, "pontasAte": 120,
+      "ruido": [30, 5], "labareda": 0.55, "orla": 0.08
+    },
+    "orelha": {
+      "contorno": [[-18, -8, 0], [-24, -30, 8], [-5, -46, 12], [25, -44, 10], [44, -30, 6], [46, -14, 2], [30, -6, 0]],
+      "dentro": [[-8, -22, 6], [-2, -36, 9], [20, -34, 8], [30, -24, 5], [12, -20, 4]]
+    },
+    "brinco": { "lado": 1, "lobo": [44, -22], "pino": [28, -34], "raio": 20, "grossura": 5, "pinoRaio": 3.5, "virada": [0.55, 0.85] },
+    "pescoco": { "lados": 16, "topo": -60, "fundo": 330, "raio": [70, 60], "z": -30, "limiar": 0.36, "luzDeFrente": 0.25 },
+    "sobrancelhaQueSobe": 1,
+    "sobrancelha": { "de": 5, "ate": 44, "topo": [[5, -14], [25, -17.5], [44, -16.5]], "base": [[5, -11], [25, -13.5], [44, -14.5]], "ergue": 5, "sobe": 3 },
+    "oculos": {
+      "aro": { "de": 2, "ate": 52, "topo": [[2, -11], [14, -13.5], [36, -12.5], [52, -9]], "base": [[2, 1], [12, 6], [30, 7.5], [46, 4], [52, -3]], "ergue": 14 },
+      "aroBaixo": { "de": 3, "ate": 51, "topo": [[3, 0], [12, 4.5], [30, 5.8], [46, 2.8], [51, -3]], "base": [[3, 1], [12, 6], [30, 7.5], [46, 4], [51, -3]], "ergue": 14.2 },
+      "lente": { "de": 5, "ate": 48, "topo": [[5, -9], [15, -11.2], [35, -10.5], [48, -7.5]], "base": [[5, 0], [13, 4], [30, 5.2], [43, 2.5], [48, -2.5]], "ergue": 14.5 },
+      "reflexo": { "de": 5, "ate": 48, "topo": [[5, -1], [48, -9]], "base": [[5, 3], [48, -3]], "ergue": 15 },
+      "haste": { "de": 50, "ate": 92, "topo": [[50, -9], [92, -8]], "base": [[50, -4], [92, -6]], "ergue": 10 },
+      "ponte": { "de": 0, "ate": 3, "topo": [[0, -9], [3, -10]], "base": [[0, -5], [3, -6]], "ergue": 16 },
+      "brilho": [[0, 22], [34, 9]]
+    },
+    "boca": {
+      "labio": { "de": -24, "ate": 24, "topo": [[-24, 34], [-9, 31.5], [0, 32.3], [9, 31.5], [24, 34]], "base": [[-24, 34.5], [-9, 38], [0, 38.8], [9, 38], [24, 34.5]], "ergue": 4 },
+      "risco": { "de": -23, "ate": 23, "topo": [[-23, 34], [0, 34.4], [23, 34]], "base": [[-23, 34.8], [0, 35.4], [23, 34.8]], "ergue": 4.5 },
+      "sorriso": 2.2, "sorrisoDe": 6, "sorrisoAte": 20
+    },
+    "gola": {
+      "giro": [960, 1080],
+      "pecas": [
+        { "cor": "casaco", "pontos": [[0, 1080], [0, 1010], [150, 930], [95, 1012], [340, 925], [560, 885], [700, 860], [820, 905], [960, 965], [1080, 880], [1160, 800], [1240, 730], [1300, 650], [1340, 740], [1470, 760], [1640, 830], [1820, 870], [1920, 850], [1920, 1080]] },
+        { "cor": "casacoAzul", "pontos": [[1160, 800], [1300, 650], [1275, 790], [1200, 900], [1110, 960]] },
+        { "cor": "casacoAzul2", "pontos": [[560, 885], [700, 860], [760, 940], [610, 985]] },
+        { "cor": "casacoAzul2", "pontos": [[1340, 700], [1470, 760], [1420, 820]] }
+      ]
+    }
+  },
+
+  "atuacao": {
+    "cabeca": [
+      [0, 30, -36, 4, 935, 545],
+      [1.6, 30, -36, 4, 935, 545],
+      [1.9, 35, -38, 5, 932, 556],
+      [3.3, -4, -10, -1, 960, 466],
+      [3.7, -1, -12, 0, 958, 472],
+      [6, -1, -12, 0, 958, 472]
+    ],
+    "ergue": 1.9,
+    "luz": [[0, 115, 15], [1.7, 115, 15], [2.7, 60, 80], [3.7, -78, 40], [6, -82, 40]],
+    "brilho": [3.35, 3.95],
+    "sobrancelha": [4.6, 5.0],
+    "sorriso": [4.7, 5.15],
+    "respira": 3.0,
+    "respiraPx": 2,
+    "brinco": { "base": 0.04, "hzBase": 0.6, "chutes": [[1.65, 0.1], [1.95, -0.35], [3.3, 0.2]], "amortece": 1.8, "hz": 1.3 },
+    "gola": { "chutes": [[2.0, 6, 0.25], [3.3, -4, -0.18]], "amortece": 2.4, "hz": 1.1 }
+  },
+
+  "som": {
+    "eventos": [
+      { "f": "nota", "nota": "C3", "t": 0, "dur": 5.8, "vol": 0.07, "forma": "tri", "ataque": 1.2, "solta": 0.8 },
+      { "f": "nota", "nota": "G3", "t": 0.2, "dur": 5.6, "vol": 0.05, "forma": "seno", "ataque": 1.4, "solta": 0.8, "pan": -0.3 },
+      { "f": "nota", "nota": "D#4", "t": 0.4, "dur": 5.4, "vol": 0.035, "forma": "seno", "ataque": 1.6, "solta": 0.8, "pan": 0.3 },
+      { "f": "nota", "nota": "A#4", "t": "ergue", "mais": 0.3, "dur": 3.6, "vol": 0.025, "forma": "seno", "ataque": 1.2, "solta": 0.8, "pan": 0.2 },
+      { "f": "toque", "t": "ergue", "mais": -0.3, "vol": 0.03, "corte": 1800, "dur": 0.12 },
+      { "f": "pano", "t": "ergue", "dur": 0.8, "vol": 0.05 },
+      { "f": "pano", "t": 3.25, "dur": 0.5, "vol": 0.03 },
+      { "f": "ouro", "t": "ergue", "mais": 0.12, "vol": 0.045, "notas": ["E6", "B6", "G#6"] },
+      { "f": "ouro", "t": 3.32, "vol": 0.03, "notas": ["B6", "E6"] },
+      { "f": "sino", "nota": "A6", "t": "brilho", "mais": 0.18, "dur": 1.4, "vol": 0.07, "brilho": 4, "pan": -0.1 },
+      { "f": "sino", "nota": "E5", "t": "sorriso", "mais": 0.1, "dur": 1.8, "vol": 0.05, "brilho": 1.2, "pan": 0.1 }
+    ],
+    "sala": 0.35,
+    "pico": 0.78
+  }
+}

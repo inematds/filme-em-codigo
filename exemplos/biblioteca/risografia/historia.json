@@ -1,0 +1,52 @@
+{
+  "titulo": "O farol",
+  "assinatura": "risografia · 4 tintas · feito em código",
+  "duracao": 10,
+  "semente": 9,
+  "segurar": [2, 3],
+  "tintas": {
+    "rosa": "#ff4fa3",
+    "azul": "#3a5fcd",
+    "amarelo": "#ffe11a",
+    "preto": "#24232b",
+    "papel": "#f3ead6",
+    "mesa": "#121115"
+  },
+  "farol": { "x": 560 },
+  "baleia": { "x0": 1210, "y": 868, "anda": 22, "comprimento": 560 },
+  "lua": { "x": 1490, "y": 170, "raio": 52 },
+  "nuvens": [
+    { "x": 330, "y": 120, "largura": 300, "anda": 7 },
+    { "x": 1040, "y": 250, "largura": 250, "anda": -5 },
+    { "x": 1720, "y": 400, "largura": 200, "anda": 6 },
+    { "x": 820, "y": 520, "largura": 170, "anda": -4 }
+  ],
+  "estrelas": 70,
+  "tempos": {
+    "sobe": [0.4, 3.6],
+    "acende": 4.1,
+    "feixe": [4.9, 8.0],
+    "jato": 8.5,
+    "cauda": 8.1
+  },
+  "camera": [
+    { "t": 0.0, "x": 560, "y": 680, "zoom": 2.3 },
+    { "t": 0.5, "x": 560, "y": 680, "zoom": 2.3 },
+    { "t": 3.7, "x": 560, "y": 300, "zoom": 2.3 },
+    { "t": 4.6, "x": 575, "y": 300, "zoom": 2.15 },
+    { "t": 6.8, "x": 960, "y": 540, "zoom": 0.78 },
+    { "t": 10.0, "x": 960, "y": 540, "zoom": 0.8 }
+  ],
+  "legendas": [
+    { "de": 0.4, "ate": 3.3, "texto": "Toda noite, o faroleiro sobe a escada." },
+    { "de": 3.7, "ate": 5.4, "texto": "Ele acende a lâmpada." },
+    { "de": 5.8, "ate": 7.7, "texto": "A luz varre o mar escuro…" },
+    { "de": 8.0, "ate": 9.8, "texto": "…e mostra quem nada lá embaixo." }
+  ],
+  "musica": {
+    "acordes": [["D3", "F3", "A3", "C4"], ["Bb2", "D3", "F3", "A3"], ["G2", "Bb2", "D3", "F3"], ["A2", "C#3", "E3", "G3"]],
+    "notas": ["A4", "C5", "D5", "F5", "E5", "D5", "C5", "A4", "D5", "F5", "A5", "G5", "F5", "D5"],
+    "passo": 0.6,
+    "batida": 0.6
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "titulo": "O achador de meia que ninguém pediu",
+  "duracao": 15,
+  "fps": 30,
+  "semente": 4417,
+
+  "cores": {
+    "fundoQuarto": "#d9dfe6", "fundoEspaco": "#0a1033",
+    "luzCeu": "#ffffff", "luzChao": "#c9a77f", "luzSol": "#fff3e2",
+    "madeira": "#dcab70", "madeiraEscura": "#a8743f",
+    "parede": "#c7ccd2", "rodape": "#f2f2ee", "janelaVidro": "#9fd0f2",
+    "cama": "#ef6a4c", "camaEscura": "#d9553a", "travesseiro": "#f6f1e6",
+    "quadroMoldura": "#f2f2ee", "quadroFundo": "#2457c5", "quadroBola": "#f6d21e",
+    "livros": ["#f2c81e", "#2457c5", "#ef6a4c", "#3ba55c", "#f2c81e"],
+    "vaso": "#f2c81e", "folha": "#3a9a4a", "folhaEscura": "#2d7a3b",
+    "tapete": "#f3ead6", "tapeteAro": "#2563d0", "furo": "#2b2d33",
+    "manequim": "#e9e9e6", "blusa": "#2a56d6", "calca": "#1d1f24", "gorro": "#f5d915", "pompom": "#f4f4f0",
+    "meia": "#ef3f8f", "meiaListra": "#ffffff",
+    "cano": "#f0b416", "bracadeira": "#8d939b", "cabecaRobo": "#3a3d44", "vermelho": "#e3262a", "fio": "#151515",
+    "correia": "#2c2e33", "ripa": "#4a4d55", "vasoCacto": "#c8673a", "cacto": "#3f9a47",
+    "mar": "#2f6fd6", "marClaro": "#3d86e6", "terra": "#5fae4c", "atmosfera": "#7fb8ff",
+    "painel": "#2a5bd7", "painelLinha": "#d9dee6", "prato": "#e8e8e8", "feixe": "#ff5fc8",
+    "contorno": "#000000"
+  },
+
+  "luz": { "ceu": 1.3, "sol": 2.4, "direcao": [3.5, 6, 5], "ceuEspaco": 0.5, "solEspaco": 2.6 },
+  "filme": { "vinheta": 0.18, "saturacao": 1.08 },
+
+  "quarto": {
+    "paredes": { "x": [-3.5, 3.5], "fundo": -3, "altura": 3.0 },
+    "janela": { "x": 0.2, "y": 1.75, "largura": 1.2, "altura": 1.1 },
+    "cama": { "x": -2.3, "largura": 1.5, "comprimento": 2.1 },
+    "quadro": { "x": 2.3, "y": 1.55 },
+    "prateleira": { "x": 2.3, "y": 2.15 },
+    "planta": { "x": 3.0, "z": -2.5 },
+    "tapete": { "x": 1.4, "z": 2.0, "raio": 0.95 },
+    "furos": [ { "x": 3.5, "y": 0.85, "z": 1.05 }, { "x": -3.5, "y": 0.85, "z": 1.05 } ]
+  },
+
+  "espaco": {
+    "terra": { "centro": [0, -34, -6], "raio": 30 },
+    "satelite": { "pos": [0, 0, 0], "chega": 11.0, "giro": 0.5 },
+    "feixe": { "de": 11.45, "desce": 0.25, "raio": 0.14, "pulso": 0.45 }
+  },
+
+  "planos": [
+    { "nome": "você perdeu uma meia", "de": 0, "ate": 2.1, "cena": "quarto",
+      "camera": [
+        { "t": 0,   "pos": [-0.45, 1.3, 3.0], "olha": [-0.6, 1.15, 0.5], "fov": 42 },
+        { "t": 2.1, "pos": [-0.5, 1.3, 2.6],  "olha": [-0.6, 1.18, 0.5], "fov": 42 }
+      ] },
+    { "nome": "ímã no barbante", "de": 2.1, "ate": 4.4, "cena": "quarto",
+      "camera": [
+        { "t": 2.1, "pos": [1.95, 1.4, 3.15], "olha": [1.4, 0.6, 2.0], "fov": 50 },
+        { "t": 2.7, "pos": [1.9, 1.3, 3.05], "olha": { "peca": "ima", "d": [0, 0.05, 0] }, "fov": 50 },
+        { "t": 4.4, "pos": [1.85, 1.25, 2.95], "olha": { "peca": "ima", "d": [0, 0.05, 0] }, "fov": 50 }
+      ] },
+    { "nome": "cão-robô farejador", "de": 4.4, "ate": 6.1, "cena": "quarto",
+      "camera": [
+        { "t": 4.4,  "pos": [2.5, 1.0, 3.4],  "olha": [1.4, 0.4, 2.1], "fov": 48 },
+        { "t": 5.4,  "pos": [2.45, 1.05, 3.3], "olha": [1.35, 0.4, 2.05], "fov": 48 },
+        { "t": 6.1,  "pos": [2.45, 1.05, 3.3], "olha": [1.3, 0.4, 2.0], "fov": 48 }
+      ] },
+    { "nome": "só te encara", "de": 6.1, "ate": 7.1, "cena": "quarto",
+      "camera": [
+        { "t": 6.1,  "pos": [-0.12, 1.5, 0.42], "olha": { "peca": "caoCabeca", "d": [0, 0, 0] }, "fov": 46 },
+        { "t": 7.1,  "pos": [-0.05, 1.45, 0.5], "olha": { "peca": "caoCabeca", "d": [0, 0.02, 0] }, "fov": 40 }
+      ] },
+    { "nome": "esteira pela casa", "de": 7.1, "ate": 9.4, "cena": "quarto",
+      "camera": [
+        { "t": 7.1,  "pos": [3.1, 1.6, 1.9], "olha": [1.0, 0.8, 0.85], "fov": 55 },
+        { "t": 7.9,  "pos": [3.1, 1.6, 1.85], "olha": [-0.5, 0.8, 0.75], "fov": 55 },
+        { "t": 9.4,  "pos": [2.9, 1.55, 1.8], "olha": [-1.0, 0.9, 0.7], "fov": 52 }
+      ] },
+    { "nome": "tá bom: o botão", "de": 9.4, "ate": 11.0, "cena": "quarto",
+      "camera": [
+        { "t": 9.4,  "pos": [-0.75, 1.5, 2.6], "olha": [-0.7, 1.05, 0.8], "fov": 46 },
+        { "t": 10.3, "pos": [-0.75, 1.45, 2.5], "olha": [-0.7, 1.05, 0.8], "fov": 46 },
+        { "t": 11.0, "pos": [-0.75, 1.2, 2.4], "olha": [-0.65, 2.1, 0.3], "fov": 48 }
+      ] },
+    { "nome": "o satélite", "de": 11.0, "ate": 12.7, "cena": "espaco",
+      "camera": [
+        { "t": 11.0, "pos": [1.4, 0.4, 6.0], "olha": [0, -1.6, 0], "fov": 52 },
+        { "t": 12.7, "pos": [1.2, 0.2, 5.4], "olha": [0, -1.7, 0], "fov": 52 }
+      ] },
+    { "nome": "estava no seu pé", "de": 12.7, "ate": 15, "cena": "quarto",
+      "camera": [
+        { "t": 12.7, "pos": [1.2, 0.35, 0.3],  "olha": [-0.5, 0.05, 0.55], "fov": 50 },
+        { "t": 13.4, "pos": [1.7, 0.75, 0.3], "olha": [-0.55, 0.8, 0.72], "fov": 54 },
+        { "t": 15,   "pos": [1.55, 0.8, 0.35], "olha": [-0.55, 0.75, 0.75], "fov": 53 }
+      ] }
+  ],
+
+  "cortes": [
+    { "t": 2.1,  "dir": [1, 0] },
+    { "t": 4.4,  "dir": [-1, 0] },
+    { "t": 7.1,  "dir": [1, 0] },
+    { "t": 9.4,  "dir": [-1, 0] },
+    { "t": 11.0, "dir": [0, 1] },
+    { "t": 12.7, "dir": [0, -1] }
+  ],
+  "chicote": { "janela": 0.16, "giro": 0.9, "borrao": 320 },
+  "tremores": [ { "t": 10.0, "dur": 0.35, "forca": 0.05 }, { "t": 12.95, "dur": 0.3, "forca": 0.03 } ],
+
+  "pecas": [
+    { "tipo": "boneco", "pos": [-0.6, 0, 0.5], "giro": 0, "meiaNoPe": "esquerdo", "meiaNaMao": "direita",
+      "atuacao": [
+        { "t": 0.15,  "pose": "mostra", "dur": 0.3 },
+        { "t": 1.0,   "pose": "ombros", "dur": 0.25 },
+        { "t": 2.3,   "pose": "cintura", "dur": 0.3 },
+        { "t": 6.15,  "pose": "olhaCao", "dur": 0.3 },
+        { "t": 7.3,   "pose": "cintura", "dur": 0.3 },
+        { "t": 9.5,   "pose": "levanta", "dur": 0.35 },
+        { "t": 9.92,  "pose": "bate", "dur": 0.08, "mola": 0.4 },
+        { "t": 10.35, "pose": "olhaCima", "dur": 0.35 },
+        { "t": 12.7,  "pose": "neutro", "dur": 0.2 },
+        { "t": 13.15, "pose": "olhaPe", "dur": 0.3 },
+        { "t": 13.65, "pose": "desaba", "dur": 0.45, "mola": 0.8 }
+      ] },
+    { "tipo": "ima", "aparece": 2.1, "some": 4.4, "x": 1.4, "z": 2.0, "teto": 3.3, "comprimento": 2.75,
+      "desce": 2.15, "balanca": 2.75, "amplitude": 0.12, "ritmo": 0.8, "semIma": 3.65 },
+    { "tipo": "cao", "aparece": 4.4, "pos": [1.45, 0, 2.15], "giro": -2.2,
+      "monta": { "de": 4.5, "passo": 0.055 },
+      "fareja": { "de": 5.4, "ate": 6.1, "anda": 0.45 },
+      "encara": { "de": 6.15, "inclina": 6.62 } },
+    { "tipo": "esteira", "aparece": 7.1, "x": [-4.0, 6.0], "z": 1.05, "altura": 0.85, "largura": 0.42,
+      "passoPernas": 1.0, "passoRipa": 0.22,
+      "monta": { "de": 7.2, "passo": 0.06 },
+      "corre": { "de": 7.9, "ate": 9.35, "distancia": 6.37 },
+      "carga": [ { "tipo": "cacto", "x": 4.0 }, { "tipo": "botao", "x": 5.6, "aperta": 10.0 } ] },
+    { "tipo": "feixe", "de": 12.75, "desce": 0.2, "topo": 7, "raio": 0.2, "pulso": 0.5 }
+  ],
+
+  "legenda": { "y": 0.74, "tam": 76, "largura": 980, "contorno": 0.42, "miolo": 0.17 },
+  "legendas": [
+    { "de": 0.15,  "ate": 1.0,   "texto": "VOCÊ PERDEU" },
+    { "de": 1.0,   "ate": 2.05,  "texto": "UMA MEIA." },
+    { "de": 2.15,  "ate": 2.95,  "texto": "SOLUÇÃO SENSATA:" },
+    { "de": 2.95,  "ate": 3.65,  "texto": "ÍMÃ NUM BARBANTE." },
+    { "de": 3.65,  "ate": 4.35,  "texto": "MEIA NÃO É MAGNÉTICA." },
+    { "de": 4.45,  "ate": 5.35,  "texto": "ENTÃO: UM CÃO-ROBÔ" },
+    { "de": 5.35,  "ate": 6.1,   "texto": "FAREJADOR." },
+    { "de": 6.1,   "ate": 6.6,   "texto": "SÓ TE ENCARA." },
+    { "de": 6.6,   "ate": 7.05,  "texto": "INÚTIL." },
+    { "de": 7.15,  "ate": 7.95,  "texto": "ENTÃO: UMA ESTEIRA" },
+    { "de": 7.95,  "ate": 8.75,  "texto": "PELA CASA TODA." },
+    { "de": 8.75,  "ate": 9.35,  "texto": "NADA AINDA." },
+    { "de": 9.45,  "ate": 9.95,  "texto": "TÁ BOM." },
+    { "de": 9.95,  "ate": 10.95, "texto": "LANÇA O SATÉLITE!" },
+    { "de": 11.4,  "ate": 12.65, "texto": "MEIA LOCALIZADA." },
+    { "de": 12.8,  "ate": 13.75, "texto": "TAVA NO SEU PÉ" },
+    { "de": 13.75, "ate": 14.75, "texto": "O TEMPO TODO." }
+  ],
+
+  "musica": {
+    "passo": 0.25, "comeca": 0.1, "fim": 12.95,
+    "compassos": [
+      { "baixo": ["C3", "G2"], "acorde": ["E4", "G4", "C5"] },
+      { "baixo": ["A2", "E2"], "acorde": ["E4", "A4", "C5"] },
+      { "baixo": ["F2", "C3"], "acorde": ["F4", "A4", "C5"] },
+      { "baixo": ["G2", "D3"], "acorde": ["D4", "G4", "B4"] }
+    ],
+    "melodia": ["G5", "-", "E5", "-", "C5", "-", "E5", "G5",   "A5", "-", "G5", "-", "E5", "-", "-", "-",
+                "F5", "-", "A5", "-", "C6", "-", "A5", "-",    "G5", "-", "D5", "-", "G5", "-", "-", "-",
+                "G5", "-", "E5", "-", "C5", "-", "E5", "G5",   "A5", "-", "G5", "-", "E5", "-", "-", "-",
+                "F5", "A5", "C6", "A5", "F5", "-", "D5", "-",  "G5", "-", "B5", "-", "C6", "-", "-", "-",
+                "E5", "-", "G5", "-", "C6", "-", "G5", "-",    "A5", "-", "E5", "-", "A5", "-", "-", "-",
+                "F5", "-", "A5", "-", "C6", "-", "D6", "-",    "B5", "-", "G5", "-", "D5", "-", "-", "-",
+                "E5", "-", "C6", "-", "G5", "-", "E5", "-"],
+    "pausas": [[6.55, 7.1]],
+    "triste": ["G3", "F#3", "F3"],
+    "final": ["C5", "E5", "G5"]
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "titulo": "Dois dólares pelo micro-ondas",
+  "duracao": 15.3,
+  "fps": 30,
+  "semente": 63,
+  "visual": { "tinta": "#1a1220", "vinheta": 0.34, "saturacao": 1.08, "frio": 0.1, "quente": 0.06 },
+
+  "modelos": {
+    "sala": [
+      { "forma": "caixa", "tam": [14, 4.4, 0.2], "pos": [0, 2.2, -4.2], "cor": "#9fc2a8" },
+      { "forma": "caixa", "tam": [14, 1.1, 0.24], "pos": [0, 0.55, -4.18], "cor": "#7da48a" },
+      { "forma": "caixa", "tam": [14, 0.09, 0.3], "pos": [0, 1.12, -4.15], "cor": "#efe6cc" },
+      { "forma": "caixa", "tam": [0.2, 4.4, 14], "pos": [-4.2, 2.2, 0], "cor": "#9fc2a8" },
+      { "forma": "caixa", "tam": [0.24, 1.1, 14], "pos": [-4.18, 0.55, 0], "cor": "#7da48a" },
+      { "forma": "caixa", "tam": [0.3, 0.09, 14], "pos": [-4.15, 1.12, 0], "cor": "#efe6cc" },
+      { "forma": "caixa", "tam": [1.3, 1.3, 0.06], "pos": [1.6, 2.5, -4.08], "cor": "#efe6cc" },
+      { "forma": "caixa", "tam": [1.1, 1.1, 0.06], "pos": [1.6, 2.5, -4.05], "cor": "#d8f0ff", "basica": true },
+      { "forma": "caixa", "tam": [1.3, 1.3, 0.06], "pos": [3.6, 2.5, -4.08], "cor": "#efe6cc" },
+      { "forma": "caixa", "tam": [1.1, 1.1, 0.06], "pos": [3.6, 2.5, -4.05], "cor": "#d8f0ff", "basica": true },
+      { "forma": "caixa", "tam": [1.6, 0.06, 0.35], "pos": [-1.0, 2.6, -4.0], "cor": "#8a5a34" },
+      { "forma": "cilindro", "tam": [0.12, 0.12, 0.3], "pos": [-1.5, 2.78, -4.0], "cor": "#c9805a" },
+      { "forma": "cilindro", "tam": [0.1, 0.1, 0.24], "pos": [-1.1, 2.75, -4.0], "cor": "#4cbf6a" },
+      { "forma": "cilindro", "tam": [0.13, 0.13, 0.28], "pos": [-0.6, 2.77, -4.0], "cor": "#f2d43a" },
+      { "forma": "caixa", "tam": [0.8, 1.4, 0.6], "pos": [-3.6, 0.7, 1.6], "cor": "#7d8a86" }
+    ],
+    "radar": [
+      { "forma": "caixa", "tam": [1.3, 2.2, 0.9], "pos": [0, 1.1, 0], "cor": "#6f8a80" },
+      { "forma": "cilindro", "tam": [0.14, 0.14, 0.04], "pos": [-0.36, 1.65, 0.46], "rot": [90, 0, 0], "cor": "#efe6cc" },
+      { "forma": "cilindro", "tam": [0.14, 0.14, 0.04], "pos": [0, 1.65, 0.46], "rot": [90, 0, 0], "cor": "#efe6cc" },
+      { "forma": "cilindro", "tam": [0.14, 0.14, 0.04], "pos": [0.36, 1.65, 0.46], "rot": [90, 0, 0], "cor": "#efe6cc" },
+      { "forma": "caixa", "tam": [0.02, 0.11, 0.02], "pos": [-0.36, 1.69, 0.49], "rot": [0, 0, 30], "cor": "#c0352a" },
+      { "forma": "caixa", "tam": [0.02, 0.11, 0.02], "pos": [0, 1.69, 0.49], "rot": [0, 0, -20], "cor": "#c0352a" },
+      { "forma": "caixa", "tam": [0.02, 0.11, 0.02], "pos": [0.36, 1.69, 0.49], "rot": [0, 0, 45], "cor": "#c0352a" },
+      { "forma": "esfera", "tam": [0.05], "pos": [-0.3, 1.3, 0.46], "cor": "#e8423a", "basica": true },
+      { "forma": "esfera", "tam": [0.05], "pos": [-0.1, 1.3, 0.46], "cor": "#f2d43a", "basica": true },
+      { "forma": "esfera", "tam": [0.05], "pos": [0.1, 1.3, 0.46], "cor": "#4cbf6a", "basica": true },
+      { "forma": "caixa", "tam": [0.8, 0.32, 0.03], "pos": [0, 0.9, 0.46], "cor": "#1f5a32", "basica": true },
+      { "forma": "caixa", "tam": [0.7, 0.02, 0.03], "pos": [0, 0.9, 0.48], "cor": "#7af0a0", "basica": true },
+      { "forma": "cilindro", "tam": [0.36, 0.36, 0.5], "pos": [0, 2.45, 0], "cor": "#c9a24a" },
+      { "forma": "toro", "tam": [0.37, 0.04], "pos": [0, 2.35, 0], "rot": [90, 0, 0], "cor": "#a8802a" },
+      { "forma": "toro", "tam": [0.37, 0.04], "pos": [0, 2.55, 0], "rot": [90, 0, 0], "cor": "#a8802a" },
+      { "forma": "cone", "tam": [0.34, 0.8, 16], "pos": [1.05, 1.6, 0], "rot": [0, 0, 90], "cor": "#7d8a86" }
+    ],
+    "bancada": [
+      { "forma": "caixa", "tam": [2.2, 0.1, 0.9], "pos": [0, 0.95, 0], "cor": "#8a5a34" },
+      { "forma": "caixa", "tam": [0.1, 0.95, 0.1], "pos": [-1.0, 0.47, 0.38], "cor": "#6b4428" },
+      { "forma": "caixa", "tam": [0.1, 0.95, 0.1], "pos": [1.0, 0.47, 0.38], "cor": "#6b4428" },
+      { "forma": "caixa", "tam": [0.1, 0.95, 0.1], "pos": [-1.0, 0.47, -0.38], "cor": "#6b4428" },
+      { "forma": "caixa", "tam": [0.1, 0.95, 0.1], "pos": [1.0, 0.47, -0.38], "cor": "#6b4428" },
+      { "forma": "cilindro", "tam": [0.32, 0.26, 0.13], "pos": [0, 1.07, 0], "cor": "#3a3a40" },
+      { "forma": "esfera", "tam": [0.2, 0.17, 0.2], "pos": [0.7, 1.16, -0.1], "cor": "#b8c0c8" },
+      { "forma": "cone", "tam": [0.04, 0.22, 8], "pos": [0.9, 1.22, -0.1], "rot": [0, 0, -60], "cor": "#b8c0c8" }
+    ],
+    "ovo": [ { "forma": "esfera", "tam": [0.07, 0.09, 0.07], "pos": [0, 0.09, 0], "cor": "#f7f2e6" } ],
+    "luminaria": [
+      { "forma": "cilindro", "tam": [0.015, 0.015, 1.0], "pos": [0, 0.5, 0], "cor": "#241726" },
+      { "forma": "cone", "tam": [0.45, 0.28, 16], "pos": [0, 0, 0], "cor": "#3f8a5a" },
+      { "forma": "esfera", "tam": [0.1], "pos": [0, -0.12, 0], "cor": "#fff4c0", "basica": true }
+    ]
+  },
+
+  "elenco": {
+    "inventor": { "roupaTipo": "camisa", "roupa": "#f7f5ef", "gravata": "#2f5a9a", "calca": "#4a4a5a", "cabelo": "grisalho", "oculos": true, "pele": "#fff0e0" },
+    "colega": { "roupaTipo": "camisa", "roupa": "#f7f5ef", "gravata": "#c0352a", "calca": "#3d3a4a", "cabelo": "curto", "cabeloCor": "#2a2028", "bigode": "#2a2028", "pele": "#fff0e0" }
+  },
+
+  "cenarios": {
+    "lab": [
+      { "tipo": "chao", "forma": "xadrez", "cor": "#e8e0cc", "cor2": "#2f4a5a", "tam": 14, "repete": 2.2 },
+      { "tipo": "modelo", "modelo": "sala", "pos": [0, 0, 0] },
+      { "tipo": "modelo", "modelo": "radar", "pos": [-2.3, 0, -3.2] },
+      { "tipo": "modelo", "modelo": "bancada", "pos": [1.4, 0, -2.6] },
+      { "tipo": "modelo", "modelo": "luminaria", "pos": [0.2, 3.4, -1.8], "solto": true },
+      { "tipo": "luz", "pos": [-1.2, 1.7, -3.0], "cor": "#ffb070", "forca": 0.8, "alcance": 4, "anima": [[0, 0.8], [3, 1.2], [6, 0.8], [9, 1.2], [12, 0.8], [15, 1.2]] }
+    ]
+  },
+
+  "planos": [
+    { "id": "doce", "de": 0, "ate": 3.3, "cenario": ["lab"],
+      "ceu": { "topo": "#bfe0ff", "horiz": "#bfe0ff" },
+      "luz": { "sol": "#fff4dc", "forca": 2.3, "dir": [0.6, 1, 0.9], "ceu": "#e8f2ff", "chao": "#6f7a7a", "ambiente": 1.3 },
+      "luzBoneco": "#fff6ea", "desfoque": { "forca": 13 },
+      "camera": { "de": { "pos": [0.15, 1.5, 2.6], "alvo": [0, 1.45, 0], "rolo": 2 }, "ate": { "pos": [0.1, 1.5, 2.25], "alvo": [0, 1.45, 0], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "boneco", "quem": "inventor", "pos": [0, 0, 0.4], "estados": [[0, "preocupado", "segura", "barra"], [2.75, "choque", "segura", "barra"]], "pulos": [2.75] },
+        { "tipo": "enxame", "n": 6, "forma": "esfera", "tam": [0.035, 0.05, 0.035], "cores": ["#6b3a22"], "formas": [ { "tipo": "caixa", "c": [0.02, 0.62, 0.45], "tam": [0.06, 0.01, 0.01] } ], "movimento": "cai", "altura": 0.6, "vel": 0.7 }
+      ] },
+
+    { "id": "radar", "de": 3.3, "ate": 6.3, "cenario": ["lab"],
+      "ceu": { "topo": "#bfe0ff", "horiz": "#bfe0ff" },
+      "luz": { "sol": "#fff4dc", "forca": 2.3, "dir": [0.6, 1, 0.9], "ceu": "#e8f2ff", "chao": "#6f7a7a", "ambiente": 1.3 },
+      "luzBoneco": "#fff6ea",
+      "camera": { "de": { "pos": [3.4, 2.7, 5.2], "alvo": [-0.6, 1.2, -2.2], "rolo": -2 }, "ate": { "pos": [2.6, 2.4, 4.3], "alvo": [-0.7, 1.2, -2.2], "rolo": -3 } },
+      "pecas": [
+        { "tipo": "boneco", "quem": "inventor", "pos": [1.6, 0, 0.6], "anim": { "pos": [[3.3, 1.6, 0, 0.6], [5.3, -0.4, 0, -2.0]] }, "estados": [[3.3, "feliz", "lado"], [5.6, "pensa", "pensa"]] },
+        { "tipo": "boneco", "quem": "colega", "pos": [2.4, 0, 1.0], "anim": { "pos": [[3.3, 2.5, 0, 1.0], [5.5, 0.6, 0, -1.3]] }, "estados": [[3.3, "neutro", "segura", "prancheta"]] },
+        { "tipo": "aneis", "pos": [-0.85, 1.6, -3.2], "rot": [0, 90, 0], "de": 5.6, "hz": 1.3, "raio": 1.3, "n": 3, "cor": "#ffcf5a" },
+        { "tipo": "brilho", "pos": [-0.9, 1.6, -3.1], "cor": "#ffb050", "tam": 1.2, "pulsa": [[5.5, 0], [5.7, 0.8], [6.3, 0.6]] }
+      ] },
+
+    { "id": "derrete", "de": 6.3, "ate": 7.4, "cenario": ["lab"],
+      "ceu": { "topo": "#bfe0ff", "horiz": "#bfe0ff" },
+      "luz": { "sol": "#fff4dc", "forca": 2.3, "dir": [0.6, 1, 0.9], "ceu": "#e8f2ff", "chao": "#6f7a7a", "ambiente": 1.3 },
+      "luzBoneco": "#fff6ea", "desfoque": { "forca": 8 },
+      "camera": { "chaves": [
+        { "t": 6.3, "pos": [1.1, 1.6, 0.9], "alvo": [-0.6, 1.45, -2.6], "rolo": 1 },
+        { "t": 6.85, "pos": [1.0, 1.6, 0.7], "alvo": [-0.6, 1.45, -2.6], "rolo": 1 },
+        { "t": 7.05, "pos": [0.95, 1.6, 0.6], "alvo": [-0.6, 1.45, -2.6], "rolo": -4 },
+        { "t": 7.4, "pos": [0.9, 1.6, 0.5], "alvo": [-0.6, 1.45, -2.6], "rolo": -4 } ] },
+      "pecas": [
+        { "tipo": "aneis", "pos": [-0.85, 1.6, -3.2], "rot": [0, 90, 0], "de": 5.6, "hz": 1.3, "raio": 1.3, "n": 3, "cor": "#ffcf5a" },
+        { "tipo": "boneco", "quem": "inventor", "pos": [-0.35, 0, -2.2], "estados": [[6.3, "preocupado", "segura", "barra"], [6.85, "choque", "alto", "barra"]], "pulos": [6.85] },
+        { "tipo": "enxame", "n": 8, "forma": "esfera", "tam": [0.035, 0.05, 0.035], "cores": ["#6b3a22"], "formas": [ { "tipo": "caixa", "c": [-0.33, 0.55, -2.15], "tam": [0.08, 0.01, 0.01] } ], "movimento": "cai", "altura": 0.55, "vel": 0.9 }
+      ] },
+
+    { "id": "pipoca", "de": 7.4, "ate": 9.2, "cenario": ["lab"],
+      "ceu": { "topo": "#bfe0ff", "horiz": "#bfe0ff" },
+      "luz": { "sol": "#fff4dc", "forca": 2.3, "dir": [0.6, 1, 0.9], "ceu": "#e8f2ff", "chao": "#6f7a7a", "ambiente": 1.3 },
+      "luzBoneco": "#fff6ea", "desfoque": { "forca": 8 },
+      "camera": { "de": { "pos": [1.5, 1.8, 1.4], "alvo": [1.0, 1.25, -2.3], "rolo": 2 }, "ate": { "pos": [1.45, 1.75, 1.0], "alvo": [1.0, 1.25, -2.3], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "boneco", "quem": "inventor", "pos": [0.9, 0, -1.7], "estados": [[7.4, "pensa", "aponta"], [8.4, "feliz", "alto"]], "pulos": [8.45] },
+        { "tipo": "enxame", "n": 50, "forma": "esfera", "tam": [0.045], "cores": ["#fff6d8", "#f7e8b0", "#ffffff"], "estoura": { "t": 8.4, "de": [1.4, 1.12, -2.6], "vel": 2.6, "lado": 0.6, "gravidade": 4.5, "chao": 1.03, "espalha": 0.5 }, "escala": [0.7, 1.4], "gira": true }
+      ] },
+
+    { "id": "ovo", "de": 9.2, "ate": 12.3, "cenario": ["lab"],
+      "ceu": { "topo": "#bfe0ff", "horiz": "#bfe0ff" },
+      "luz": { "sol": "#fff4dc", "forca": 2.3, "dir": [0.6, 1, 0.9], "ceu": "#e8f2ff", "chao": "#6f7a7a", "ambiente": 1.3 },
+      "luzBoneco": "#fff6ea", "desfoque": { "forca": 8 },
+      "camera": { "de": { "pos": [1.7, 1.6, 2.0], "alvo": [1.6, 1.3, -2.2], "rolo": -2 }, "ate": { "pos": [1.7, 1.6, 1.6], "alvo": [1.6, 1.3, -2.2], "rolo": -3 } },
+      "pecas": [
+        { "tipo": "modelo", "modelo": "ovo", "pos": [1.15, 1.0, -2.45], "solto": true, "some": 10.2 },
+        { "tipo": "boneco", "quem": "colega", "pos": [1.2, 0, -1.85], "estados": [[9.2, "neutro", "apoia"], [10.2, "choque", "alto"]], "efeitos": { "gema": 10.2 }, "pulos": [10.2] },
+        { "tipo": "boneco", "quem": "inventor", "pos": [2.1, 0, -1.6], "estados": [[9.2, "pensa", "pensa"], [10.5, "convencido", "cintura"]] },
+        { "tipo": "enxame", "n": 40, "forma": "esfera", "tam": [0.06], "cores": ["#ffc21a", "#ffffff", "#ffd84a"], "estoura": { "t": 10.2, "de": [1.15, 1.1, -2.4], "vel": 3.0, "lado": 1.4, "gravidade": 5, "chao": 1.0, "espalha": 0.05 }, "escala": [0.6, 1.5] }
+      ] },
+
+    { "id": "dolares", "de": 12.3, "ate": 15.3, "cenario": ["lab"],
+      "ceu": { "topo": "#bfe0ff", "horiz": "#bfe0ff" },
+      "luz": { "sol": "#fff4dc", "forca": 2.3, "dir": [0.6, 1, 0.9], "ceu": "#e8f2ff", "chao": "#6f7a7a", "ambiente": 1.3 },
+      "luzBoneco": "#fff6ea", "desfoque": { "forca": 11 },
+      "camera": { "de": { "pos": [0.5, 1.45, 3.2], "alvo": [0.25, 1.15, 0], "rolo": 2 }, "ate": { "pos": [0.45, 1.45, 2.8], "alvo": [0.25, 1.15, 0], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "boneco", "quem": "inventor", "pos": [0, 0, 0], "estados": [[12.3, "neutro", "segura", "nota"], [13.4, "bravo", "segura", "nota"]] },
+        { "tipo": "boneco", "quem": "colega", "pos": [0.95, 0, -0.9], "estados": [[12.3, "preocupado", "lado"]], "efeitos": { "gema": 0 } },
+        { "tipo": "brilho", "pos": [0, 0.95, 0.2], "cor": "#d8ffb0", "tam": 0.8, "pulsa": [[13.35, 0], [13.45, 0.9], [14.2, 0.2]] }
+      ] }
+  ],
+
+  "rotulos": [
+    { "texto": "1940", "x": 540, "y": 360, "tam": 160, "cor": "#f2d43a", "de": 3.35, "ate": 4.4, "some": 4.2 }
+  ],
+  "claroes": [3.2, 10.2],
+  "chutes": [ { "t": 6.85, "forca": 0.8 }, { "t": 8.4, "forca": 0.9 }, { "t": 10.2, "forca": 1.4 } ],
+  "escurece": [ { "de": 14.9, "ate": 15.3, "forca": 0.8 } ],
+
+  "legenda": { "y": 1590, "tam": 62, "largura": 940, "segura": 0.55, "destaque": "#E3E302" },
+  "legendas": [
+    { "de": 0.15, "ate": 1.10, "texto": "O MICRO-ONDAS" },
+    { "de": 1.10, "ate": 2.10, "texto": "FOI INVENTADO POR" },
+    { "de": 2.10, "ate": 3.30, "texto": "UM CHOCOLATE DERRETIDO." },
+    { "de": 3.30, "ate": 4.30, "texto": "ANOS 1940:" },
+    { "de": 4.30, "ate": 5.30, "texto": "PERCY SPENCER" },
+    { "de": 5.30, "ate": 6.30, "texto": "PERTO DE UM RADAR." },
+    { "de": 6.30, "ate": 7.40, "texto": "O DOCE NO BOLSO DERRETE." },
+    { "de": 7.40, "ate": 8.40, "texto": "ELE TESTA PIPOCA." },
+    { "de": 8.40, "ate": 9.20, "texto": "ESTOURA!" },
+    { "de": 9.20, "ate": 10.20, "texto": "DEPOIS, UM OVO." },
+    { "de": 10.20, "ate": 11.40, "texto": "EXPLODE NA CARA" },
+    { "de": 11.40, "ate": 12.30, "texto": "DO COLEGA." },
+    { "de": 12.30, "ate": 13.40, "texto": "A EMPRESA PAGOU" },
+    { "de": 13.40, "ate": 14.60, "texto": "2 DÓLARES PELA IDEIA." }
+  ],
+
+  "musica": { "bpm": 140, "compasso": 4, "tom": "F3", "escala": [0, 2, 4, 7, 9], "acordes": [0, 0, 3, 3, 0, 0, 4, 3], "baixo": "caminha", "contratempo": true, "perc": ["vassourinha"], "vol": 0.15, "densidade": 0.5,
+    "pausas": [[10.2, 10.9]], "fim": 13.9, "duasNotas": 14.05 },
+  "sons": [
+    { "som": "zumbido", "t": 0, "dur": 15.3, "vol": 0.018 },
+    { "som": "esguicho", "t": 2.75, "vol": 0.08 },
+    { "som": "esguicho", "t": 6.85, "vol": 0.14 },
+    { "som": "pipoca", "t": 8.4, "dur": 0.8, "vol": 0.14 },
+    { "som": "respingo", "t": 9.98, "vol": 0.25 },
+    { "som": "ding", "t": 13.4, "vol": 0.1 }
+  ]
+}

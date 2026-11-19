@@ -1,0 +1,334 @@
+{
+  "titulo": "Luz da tarde",
+  "duracao": 9,
+  "fps": 24,
+  "semente": 45,
+  "grao": 0.12,
+  "tituloNaTela": {
+    "x": 90,
+    "y": 1010,
+    "tamanho": 40,
+    "de": 0.3,
+    "ate": 3.6,
+    "escreve": [
+      0.35,
+      1.4
+    ]
+  },
+  "planos": [
+    {
+      "de": 0,
+      "ate": 4.4,
+      "centro": [
+        960,
+        540
+      ],
+      "zoom": [
+        1,
+        1.03
+      ]
+    },
+    {
+      "de": 4.4,
+      "ate": 9,
+      "foco": [
+        -30,
+        40
+      ],
+      "zoom": [
+        3.4,
+        3.56
+      ]
+    }
+  ],
+  "cores": {
+    "paredeSombra": "#cfc4b6",
+    "paredeLuz": "#f8ecd6",
+    "sombraFolha": "#d9a99a",
+    "solQuente": "#ffd9a0",
+    "porta": "#3d9aae",
+    "portaEscura": "#27748a",
+    "portaClara": "#82c6d0",
+    "batente": "#6a4632",
+    "faixaTitulo": "#2d1f1c",
+    "letra": "#fbf1e0",
+    "vinheta": "#5a3a30"
+  },
+  "moca": {
+    "x": 1090,
+    "y": 236,
+    "escala": 0.9,
+    "penteado": "coque",
+    "linha": "#5a2a1e",
+    "pele": [
+      "#f4c7a6",
+      "#dc9c80",
+      "#fbdcc4",
+      "#b06a55"
+    ],
+    "rubor": "#ec8a78",
+    "sarda": "#b8705a",
+    "sardas": 10,
+    "cabelo": [
+      "#ecd49a",
+      "#c9a766",
+      "#fbedc8",
+      "#957636"
+    ],
+    "olho": [
+      "#7d97ab",
+      "#283139",
+      "#bccbd6"
+    ],
+    "branco": "#fbf5ee",
+    "cilio": "#2a1612",
+    "sobrancelha": "#8a6838",
+    "boca": [
+      "#c4503c",
+      "#a23a2c",
+      "#62221a"
+    ],
+    "ouro": [
+      "#e6b832",
+      "#bf8a1c",
+      "#7a5410",
+      "#fbe38a"
+    ],
+    "vestido": [
+      "#f4ede1",
+      "#d9cbb6",
+      "#a2412e"
+    ]
+  },
+  "atuacao": {
+    "piscadas": [
+      1.3,
+      3.6,
+      5.95
+    ],
+    "olhar": [
+      [
+        0,
+        0
+      ],
+      [
+        2.3,
+        0
+      ],
+      [
+        2.7,
+        0.75
+      ],
+      [
+        3.9,
+        0.75
+      ],
+      [
+        4.2,
+        0.6
+      ],
+      [
+        4.6,
+        0.6
+      ],
+      [
+        5.1,
+        0
+      ]
+    ],
+    "sobrancelha": [
+      6.6,
+      7.0
+    ],
+    "sorriso": [
+      6.7,
+      7.45
+    ],
+    "respira": 3.4,
+    "brisa": {
+      "base": 0.5,
+      "rajadas": [
+        [
+          0.4,
+          3.6,
+          0.6
+        ],
+        [
+          4.8,
+          8.6,
+          0.55
+        ]
+      ]
+    },
+    "brincos": {
+      "angulo": 0.12,
+      "hz": 0.55
+    }
+  },
+  "pecas": [
+    {
+      "tipo": "parede",
+      "x": 0,
+      "y": 0,
+      "largura": 1920,
+      "altura": 1080,
+      "cor": "paredeLuz"
+    },
+    {
+      "tipo": "recorte",
+      "cor": "paredeSombra",
+      "alfa": 0.75,
+      "pontos": [
+        [
+          860,
+          0
+        ],
+        [
+          1700,
+          0
+        ],
+        [
+          860,
+          700
+        ]
+      ]
+    },
+    {
+      "tipo": "manchas",
+      "cor": "sombraFolha",
+      "caixa": [
+        1250,
+        80,
+        670,
+        700
+      ],
+      "n": 26,
+      "anda": 18,
+      "alfa": 0.4
+    },
+    {
+      "tipo": "sol",
+      "x": 1650,
+      "y": 620,
+      "raio": 600,
+      "deriva": [
+        -12,
+        3
+      ],
+      "cor": "solQuente",
+      "forca": 0.35,
+      "caixa": [
+        860,
+        0,
+        1060,
+        1080
+      ]
+    },
+    {
+      "tipo": "porta",
+      "x0": 0,
+      "x1": 860,
+      "cores": [
+        "porta",
+        "portaEscura",
+        "portaClara"
+      ],
+      "tabuas": [],
+      "batente": "batente",
+      "veios": 140
+    },
+    {
+      "tipo": "moca"
+    }
+  ],
+  "som": {
+    "eventos": [
+      {
+        "f": "vento",
+        "t": 0,
+        "dur": 9,
+        "vol": 0.07,
+        "corte": 260,
+        "onda": 0.12,
+        "entra": 1.0,
+        "sai": 1.2
+      },
+      {
+        "f": "vento",
+        "t": "inicio",
+        "mais": 0.4,
+        "dur": 3.4,
+        "vol": 0.035,
+        "corte": 1300,
+        "onda": 0.35,
+        "entra": 1.0,
+        "sai": 1.2
+      },
+      {
+        "f": "vento",
+        "t": "corte",
+        "mais": 0.4,
+        "dur": 4.0,
+        "vol": 0.035,
+        "corte": 1300,
+        "onda": 0.3,
+        "entra": 1.0,
+        "sai": 1.2
+      },
+      {
+        "f": "folhas",
+        "t": 0.3,
+        "dur": 8.4,
+        "vol": 0.02
+      },
+      {
+        "f": "nota",
+        "nota": "F2",
+        "t": 0,
+        "dur": 8.6,
+        "vol": 0.07,
+        "forma": "tri",
+        "ataque": 1.6,
+        "solta": 0.6
+      },
+      {
+        "f": "nota",
+        "nota": "C3",
+        "t": 0.2,
+        "dur": 8.4,
+        "vol": 0.045,
+        "forma": "tri",
+        "ataque": 1.8,
+        "solta": 0.6,
+        "pan": -0.3
+      },
+      {
+        "f": "nota",
+        "nota": "A3",
+        "t": 0.4,
+        "dur": 8.2,
+        "vol": 0.03,
+        "forma": "seno",
+        "ataque": 2.0,
+        "solta": 0.6,
+        "pan": 0.3
+      },
+      {
+        "f": "piano",
+        "nota": "A4",
+        "t": "sorriso",
+        "mais": 0.05,
+        "vol": 0.14
+      },
+      {
+        "f": "piano",
+        "nota": "C5",
+        "t": "sorriso",
+        "mais": 0.45,
+        "vol": 0.12
+      }
+    ],
+    "sala": 0.3,
+    "pico": 0.82
+  }
+}

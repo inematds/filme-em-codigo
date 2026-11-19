@@ -1,0 +1,120 @@
+{
+  "duracao": 15,
+  "fps": 30,
+  "semente": 26,
+  "escuro": [0.3, 0.3],
+  "vidroOpacidade": 0.18,
+  "filme": { "exposicao": 1.0, "quente": "#fff4e6", "brilho": 1.0, "grao": 0.02, "vinheta": 0.35, "desfoque": 5, "tilt": 7 },
+
+  "cenarios": [
+    { "nome": "prado", "lugar": [0, 0, 0],
+      "flutuantes": { "n": 10, "raio": [18, 32], "altura": [2, 16], "cores": ["#ffffff", "#eef4f8", "#dfe9f0"] } },
+    { "nome": "tumba", "lugar": [120, 0, 0],
+      "flutuantes": { "n": 16, "raio": [22, 40], "altura": [-10, 18], "cores": ["#2a2f55", "#3a3f6a", "#4a3a2a"] } },
+    { "nome": "pote", "lugar": [240, 0, 0],
+      "flutuantes": { "n": 16, "raio": [24, 42], "altura": [-8, 20], "cores": ["#2a2f55", "#3a4070", "#6a4a2a"] } }
+  ],
+
+  "planos": [
+    { "de": 0, "ate": 2.5, "cenario": "prado",
+      "camera": { "centro": [0, 3.5, -0.5], "dist": [40, 36], "elev": [30, 27], "giro": [30, 55], "fov": 30 },
+      "luz": { "fundo": "#9ccbe6", "ceu": "#cfe6ff", "chao": "#5a4a30", "ambiente": 0.9, "sol": "#fff1d6", "forca": 2.2, "de": [12, 24, 16] } },
+    { "de": 2.5, "ate": 5.2, "cenario": "tumba", "entrada": "clarao",
+      "camera": { "centro": [0, 4, -0.5], "dist": [30, 26], "elev": [20, 24], "giro": [38, 50], "fov": 30, "desfoque": 6, "tilt": 6 },
+      "luz": { "fundo": "#141428", "ceu": "#6a5a7a", "chao": "#3a2a18", "ambiente": 0.5, "sol": "#ffd9a0", "forca": 1.3, "de": [14, 22, 18] } },
+    { "de": 5.2, "ate": 7.0, "cenario": "tumba",
+      "camera": { "centro": [0, 3, 0], "dist": [26, 72], "elev": [26, 34], "giro": [52, 38], "fov": 30, "anda": "sai", "desfoque": 3, "tilt": 9 },
+      "luz": { "fundo": "#141428", "ceu": "#6a5a7a", "chao": "#3a2a18", "ambiente": 0.5, "sol": "#ffd9a0", "forca": 1.3, "de": [14, 22, 18] } },
+    { "de": 7.0, "ate": 10.0, "cenario": "pote", "entrada": "clarao",
+      "camera": { "centro": [0.5, 3, 0.5], "dist": [50, 44], "elev": [27, 30], "giro": [35, 25], "fov": 30 },
+      "luz": { "fundo": "#1d2342", "ceu": "#8a9ad0", "chao": "#3a2a20", "ambiente": 0.6, "sol": "#fff0d8", "forca": 1.6, "de": [14, 26, 10] } },
+    { "de": 10.0, "ate": 12.8, "cenario": "pote",
+      "camera": { "centro": [0.5, 5.5, 0.5], "dist": [52, 48], "elev": [30, 34], "giro": [22, 14], "fov": 30 },
+      "luz": { "fundo": "#1d2342", "ceu": "#8a9ad0", "chao": "#3a2a20", "ambiente": 0.6, "sol": "#fff0d8", "forca": 1.6, "de": [14, 26, 10] } },
+    { "de": 12.8, "ate": 15, "cenario": "pote",
+      "camera": { "centro": [0.5, 5, 0.5], "dist": [38, 48], "elev": [28, 32], "giro": [40, 60], "fov": 30, "anda": "sai" },
+      "luz": { "fundo": "#9ccbe6", "ceu": "#cfe6ff", "chao": "#6a5a40", "ambiente": 0.9, "sol": "#fff4e0", "forca": 2.0, "de": [14, 26, 10] } }
+  ],
+
+  "abelha": { "amarelo": "#f4c21b", "preto": "#2a2420", "cabeca": "#2a2420", "olho": "#f4f4f4", "asa": "#e8f4ff", "escala": 0.35 },
+  "germes": { "treme": [8.6, 10.0], "recua": [11.75, 12.35], "distancia": 1.0 },
+
+  "pecas": [
+    { "tipo": "ilha", "cenario": "prado", "lado": 13, "altura": 5,
+      "topo": ["#5fae3a", "#6cbb43", "#58a336", "#74c24b"], "topo2": ["#4f8f2e"], "terra": ["#8a5a33", "#7a4e2c", "#946238"] },
+    { "tipo": "arvore", "cenario": "prado", "x": -4, "z": -3, "tronco": 7, "copa": 3.4,
+      "casca": ["#6b4423", "#5c3a1e"], "folhas": ["#3f8f2f", "#4ea33a", "#5cb246", "#357c28"], "galho": { "altura": 7, "comprimento": 6 } },
+    { "tipo": "colmeia", "cenario": "prado", "x": 2, "y": 7, "z": -3, "perfil": [1.2, 2.2, 2.7, 2.7, 2.2, 1.2],
+      "cores": ["#f2b630", "#e9a823", "#f7c443"], "faixa": ["#c9861a", "#b97a14"], "porta": "#2a1a0a",
+      "luz": "#ffb347", "forcaLuz": 40, "pinga": 0.55, "mel": "#ffb21c" },
+    { "tipo": "flores", "cenario": "prado", "caule": "#3f8f2f", "cores": ["#f28cc0", "#ffffff", "#ffd84a", "#c78cf2"],
+      "lugares": [[3, 3], [4, -1], [-2, 4], [5, 4], [-5, 2], [1, 5], [-1, 2], [4, 1], [-4, 5], [2, -5]] },
+    { "tipo": "abelhas", "cenario": "prado", "n": 4, "centro": [2.5, 3.5, -2.5], "raio": 3.8, "altura": 2.5, "velocidade": 1.6 },
+
+    { "tipo": "tumba", "cenario": "tumba", "lado": 14, "altura": 10, "desenhos": 0.18,
+      "chao": ["#d9b77a", "#cfa96b", "#e0c088"], "base": ["#8a6a3e", "#7a5c34"], "parede": ["#c9a066", "#bf955c", "#d2aa70"],
+      "tinta": ["#b33a2a", "#2f5ea8", "#1e1a16", "#e0b040", "#2f8a6a"] },
+    { "tipo": "tocha", "cenario": "tumba", "x": -6, "y": 4, "z": -2, "cabo": "#5a3a1e", "suporte": "#3a2a1a",
+      "chama": ["#ffcf4a", "#ffe9a0", "#ff8a1e"], "luz": "#ff9a40", "forca": 60 },
+    { "tipo": "tocha", "cenario": "tumba", "x": 0, "y": 4, "z": -6, "cabo": "#5a3a1e", "suporte": "#3a2a1a",
+      "chama": ["#ffcf4a", "#ffe9a0", "#ff8a1e"], "luz": "#ff9a40", "forca": 60 },
+    { "tipo": "poteBarro", "cenario": "tumba", "x": 1.5, "z": 0.5, "escala": 0.7, "perfil": [1.6, 2.3, 2.7, 2.7, 2.3, 2.4],
+      "cores": ["#a4532c", "#94482a", "#b05e33"], "borda": "#7a3a1f", "mel": ["#ffb21c", "#ffc43a"], "tampa": "#8a4424",
+      "abre": [3.85, 4.35], "brilhos": 16, "intervalo": 0.07, "brilho": ["#ffd34a", "#ffe680"], "forcaBrilho": 3 },
+    { "tipo": "arqueologo", "cenario": "tumba", "x": -1.5, "z": -1.5, "giro": 0.85, "escala": 0.75, "olha": 0.5,
+      "calca": "#8a7650", "bota": "#4a3322", "camisa": "#c8b48a", "cinto": "#5a4028", "lenco": "#2f9a6a",
+      "pele": "#e0a878", "olho": "#1e1410", "bigode": "#6a4426", "chapeu": "#a8743a", "fita": "#4a2e16" },
+    { "tipo": "tesouro", "cenario": "tumba", "x": 3, "z": -5, "ouro": ["#f2c230", "#e6b020", "#ffd84a"] },
+    { "tipo": "bau", "cenario": "tumba", "x": -5, "z": 3, "giro": 0.5, "madeira": "#7a4a24", "fecho": "#f2c230" },
+
+    { "tipo": "tabua", "cenario": "pote", "lado": 17, "altura": 2,
+      "madeira": ["#a8743e", "#9a6834", "#b37d45", "#8f5f2f"], "lado2": ["#7a5028", "#6e4824"] },
+    { "tipo": "poteVidro", "cenario": "pote", "x": 0, "z": 0, "raio": 2, "altura": 9,
+      "vidro": "#b8d8ea", "borda": "#e8f6ff", "tampa": "#f2d21a", "miolo": "#3a2a1a",
+      "enche": { "tempo": [7.05, 8.5], "camadas": 7 },
+      "agua": { "n": 9, "camadas": 3, "sai": [7.6, 8.7] },
+      "mel": ["#ffb21c", "#ffc43a", "#f59e0b", "#ffd060"], "brilhoMel": 1.15, "corAgua": "#9fd4f5",
+      "luz": "#ffb030", "forcaLuz": 50,
+      "enzima": { "entra": [10.05, 10.75], "de": [-16, 15, 6], "para": [0.5, 13.5, 0.5], "solta": 10.95, "bate": 11.3,
+        "sai": [11.5, 12.4], "vai": [16, 17, -8], "lascas": 14, "cor": "#ffffff", "forca": 4, "luz": "#fff4d0", "forcaLuz": 60 },
+      "tampaCai": { "de": 12.85, "em": 13.2, "altura": 14 } },
+    { "tipo": "germe", "cenario": "pote", "x": 5.5, "z": -2, "cor": "#9b4fd1", "sombra": "#7a38ad", "olho": "#ffffff", "pupila": "#1a1020", "escala": 0.75 },
+    { "tipo": "germe", "cenario": "pote", "x": -2, "z": 5.5, "cor": "#4fbf5a", "sombra": "#3a9a45", "olho": "#ffffff", "pupila": "#1a1020", "escala": 0.75 },
+    { "tipo": "germe", "cenario": "pote", "x": 5.5, "z": 4.5, "cor": "#d14f8f", "sombra": "#ad3a72", "olho": "#ffffff", "pupila": "#1a1020", "escala": 0.75 },
+    { "tipo": "abelhas", "cenario": "pote", "de": 12.8, "n": 3, "centro": [0.5, 9, 0.5], "raio": 8, "raioEntra": 30, "altura": 4, "velocidade": 1.2 }
+  ],
+
+  "legenda": { "tam": 78, "largura": 940, "y": 1330, "cor": "#ffffff", "corFalada": "#e3e302", "contorno": "#0a0a0a" },
+  "legendas": [
+    { "de": 0.3, "ate": 1.35, "texto": "O mel quase" },
+    { "de": 1.35, "ate": 2.45, "texto": "nunca estraga." },
+    { "de": 2.55, "ate": 3.85, "texto": "Numa tumba egípcia," },
+    { "de": 3.85, "ate": 5.15, "texto": "doce após 3 mil anos." },
+    { "de": 5.25, "ate": 6.1, "texto": "Lenda duvidosa." },
+    { "de": 6.1, "ate": 6.95, "texto": "A química, não." },
+    { "de": 7.05, "ate": 8.55, "texto": "Mel tem pouca água" },
+    { "de": 8.55, "ate": 9.95, "texto": "e é ácido." },
+    { "de": 10.05, "ate": 11.5, "texto": "A abelha põe enzima" },
+    { "de": 11.5, "ate": 12.75, "texto": "e os germes não crescem." },
+    { "de": 12.85, "ate": 13.8, "texto": "Bem fechado," },
+    { "de": 13.8, "ate": 14.65, "texto": "o mel dura." }
+  ],
+
+  "musica": {
+    "passo": 0.3,
+    "acordes": [
+      { "de": 0, "notas": ["F3", "A3", "C4"], "baixo": "F2" },
+      { "de": 2.5, "notas": ["D3", "F3", "A3"], "baixo": "D2" },
+      { "de": 5.2, "notas": ["Bb2", "D3", "F3"], "baixo": "Bb1" },
+      { "de": 7.0, "notas": ["C3", "E3", "G3"], "baixo": "C2" },
+      { "de": 8.6, "notas": ["F3", "A3", "C4"], "baixo": "F2" },
+      { "de": 10.0, "notas": ["D3", "F3", "A3"], "baixo": "D2" },
+      { "de": 11.5, "notas": ["Bb2", "D3", "F3"], "baixo": "Bb1" },
+      { "de": 12.8, "notas": ["C3", "E3", "G3"], "baixo": "C2" },
+      { "de": 13.2, "notas": ["F3", "A3", "C4"], "baixo": "F2" }
+    ],
+    "brilho": ["C6", "E6", "G6", "A6", "C7"],
+    "magia": ["F5", "A5", "C6", "F6", "A6"],
+    "final": ["F5", "A5", "C6", "F6"]
+  }
+}

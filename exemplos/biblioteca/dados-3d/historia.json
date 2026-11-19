@@ -1,0 +1,189 @@
+{
+  "titulo": "A árvore de família mais famosa do mundo",
+  "duracao": 20,
+  "fps": 30,
+  "semente": 31,
+  "paleta": {
+    "fundo": "#060a16",
+    "chao": "#0a1124",
+    "grade": "#13204a",
+    "ouro": "#ffc23d",
+    "ciano": "#4cc9f0",
+    "vermelho": "#ff5470",
+    "branco": "#ffffff",
+    "boneco": "#c9d3f5",
+    "ardosia": "#55648f",
+    "terra": "#1c2c64",
+    "cinzaClaro": "#9aa6c8",
+    "destaque": "#facc15"
+  },
+  "luz": { "ceu": "#8fa8ff", "chao": "#1a2550", "forca": 1.25, "sol": "#ffffff", "solForca": 1.5, "brilho": 0.45 },
+  "tremores": [ { "t": 14.4, "quadros": 8, "forca": 1.2 } ],
+  "claroes": [ { "t": 14.4, "dur": 0.3, "forca": 0.85 } ],
+  "escuro": [19.65, 20.0],
+
+  "mapa": {
+    "passo": 2.5, "escala": 0.2, "achata": 1.2, "lonC": 85, "latC": 40,
+    "contorno": { "de": 8.8, "ate": 9.4 },
+    "regiao": { "de": 9.0, "ate": 9.8, "altura": 1.1 },
+    "aneis": { "t": 9.7, "centro": [88, 44], "n": 3, "raio": 6 },
+    "pulso": { "ponto": [103, 47], "t": 10.1, "some": 11.6 },
+    "imperio": { "de": 10.3, "ate": 11.4, "altura": 0.7 },
+    "desaba": { "t": 14.4, "dur": 0.4 },
+    "base": 0.22
+  },
+
+  "cenas": [
+    { "id": "gancho", "de": 0, "ate": 5.0, "fov": 50, "neblina": [18, 75],
+      "camera": [
+        [0.0, [0, 1.0, 6.0], [0, 1.4, -20]],
+        [2.3, [0, 7.0, 14.0], [0, 1.5, -14]],
+        [3.4, [0, 5.6, 6.0], [0, 2.7, -12]],
+        [5.0, [0, 5.0, 3.6], [0, 2.9, -12]]
+      ],
+      "pecas": [
+        { "tipo": "multidao", "colunas": 60, "linhas": 60, "esp": 1.0, "z0": 2, "de": 0.4, "ate": 2.2,
+          "liga": { "de": 2.3, "ate": 3.1, "n": 520, "para": [0, 3.6, -12] }, "apaga": 2.6, "livre": [0, -12, 1.8] },
+        { "tipo": "heroi", "x": 0, "z": -12, "tam": 4.0, "t": 3.25, "coluna": 2.3 },
+        { "tipo": "contador", "x": 540, "y": 330, "tam": 118, "de": 0.2, "ate": 2.3, "valor": 20000000, "cor": "branco", "some": 2.9 },
+        { "tipo": "texto", "texto": "HOMENS VIVOS HOJE", "x": 540, "y": 420, "tam": 44, "cor": "ouro", "t": 0.35, "some": 2.9 },
+        { "tipo": "texto", "texto": "GÊNGIS KHAN", "x": 540, "y": 330, "tam": 92, "cor": "ouro", "t": 4.0, "brilho": 26 }
+      ]},
+
+    { "id": "evidencia", "de": 5.0, "ate": 7.0, "fov": 45, "neblina": [14, 40],
+      "camera": [
+        [5.0, [0, 3.4, 10.5], [0, 1.8, 0]],
+        [7.0, [2.6, 3.6, 9.2], [0, 1.9, 0]]
+      ],
+      "pecas": [
+        { "tipo": "palco", "raio": 2.6 },
+        { "tipo": "helice", "x": 0, "z": 0, "y0": 0.45, "passos": 26, "subida": 0.13, "raio": 0.55, "cor": "ciano", "de": 5.0, "ate": 5.6, "giro": 1.4, "varre": true },
+        { "tipo": "tubos", "n": 12, "raio": 1.55, "desvio": -1.5708, "de": 5.3, "ate": 5.9, "enche": { "i": 7, "t": 6.1, "cor": "ouro" } },
+        { "tipo": "texto", "texto": "2003", "x": 540, "y": 360, "tam": 220, "cor": "branco", "t": 5.1, "tabular": true },
+        { "tipo": "texto", "texto": "ESTUDO DO CROMOSSOMO Y", "x": 540, "y": 450, "tam": 42, "cor": "ciano", "t": 5.2 }
+      ]},
+
+    { "id": "estatistica", "de": 7.0, "ate": 8.8, "fov": 50, "neblina": [14, 40],
+      "camera": [
+        [7.0, [0, 3.3, 7.4], [0, 0.9, 0]],
+        [8.8, [-1.3, 3.0, 6.7], [0, 1.0, 0]]
+      ],
+      "pecas": [
+        { "tipo": "palco", "raio": 2.3 },
+        { "tipo": "roda", "n": 12, "raio": 1.45, "tam": 1.25, "de": 7.05, "ate": 7.5, "acende": { "i": 7, "t": 7.6 } },
+        { "tipo": "texto", "texto": "1 EM 12", "x": 540, "y": 400, "tam": 150, "cores": ["ouro", "branco", "branco"], "t": 7.05, "tabular": true }
+      ]},
+
+    { "id": "mapa", "de": 8.8, "ate": 13.2, "fov": 40, "neblina": [200, 400],
+      "camera": [
+        [8.8, [0, 96, 60], [0, 0, -1]],
+        [11.8, [0, 93, 58], [0, 0, -1]],
+        [12.6, [0, 24, 66], [0, 8.5, -4]],
+        [13.2, [0, 23.5, 64], [0, 8.5, -4]]
+      ],
+      "pecas": [
+        { "tipo": "mapa", "sobe": { "t": 11.8, "dur": 0.6, "z": -24, "y": 20, "giro": 50, "escala": 0.55 } },
+        { "tipo": "barras", "x": 0, "z": 7, "passo": 4.6, "larg": 3.2, "alto": 12, "maximo": 24.0, "t": 12.05, "dur": 0.55,
+          "itens": [
+            { "nome": "MONGOL", "valor": "24,0", "v": 24.0, "cor": "vermelho" },
+            { "nome": "RUSSO", "valor": "22,8", "v": 22.8, "cor": "ardosia" },
+            { "nome": "QING", "valor": "14,7", "v": 14.7, "cor": "ardosia" },
+            { "nome": "ROMANO", "valor": "5,0", "v": 5.0, "cor": "ardosia" }
+          ] },
+        { "tipo": "texto", "texto": "IMPÉRIO MONGOL", "x": 540, "y": 330, "tam": 70, "cor": "vermelho", "t": 10.6, "some": 11.75, "brilho": 18 },
+        { "tipo": "texto", "texto": "MAIOR IMPÉRIO EM TERRA", "x": 540, "y": 300, "tam": 54, "cores": ["ouro", "branco", "branco", "branco"], "t": 11.95 },
+        { "tipo": "texto", "texto": "MILHÕES DE KM²", "x": 540, "y": 370, "tam": 36, "cor": "cinzaClaro", "t": 12.1 }
+      ]},
+
+    { "id": "virada", "de": 13.2, "ate": 15.2, "fov": 40, "neblina": [200, 400],
+      "camera": [
+        [13.2, [-6, 66, 62], [1, 0, -1]],
+        [15.2, [-2, 60, 56], [1, 0, -1]]
+      ],
+      "pecas": [
+        { "tipo": "mapa" },
+        { "tipo": "texto", "texto": "ARQUIVO DO CASO", "x": 540, "y": 250, "tam": 34, "cor": "cinzaClaro", "t": 13.2 },
+        { "tipo": "carimbo", "texto": "CASO ENCERRADO?", "x": 540, "y": 400, "tam": 68, "giro": -8, "t": 13.35, "apaga": 14.4, "risco": { "de": 14.45, "ate": 14.75 } },
+        { "tipo": "texto", "texto": "AINDA NÃO.", "x": 540, "y": 1330, "tam": 110, "cor": "vermelho", "t": 14.42, "brilho": 20 }
+      ]},
+
+    { "id": "tumulos", "de": 15.2, "ate": 17.0, "fov": 45, "neblina": [16, 60],
+      "camera": [
+        [15.2, [3.6, 5.4, 8.6], [3.6, 2.2, -1.7]],
+        [17.0, [5.0, 5.6, 7.6], [3.6, 2.3, -1.7]]
+      ],
+      "pecas": [
+        { "tipo": "mapa", "escurece": 0.65 },
+        { "tipo": "tumulos", "ponto": [103, 47], "t": 15.2, "borda": 15.3 },
+        { "tipo": "helice", "ponto": [103, 47], "y0": 0.5, "passos": 20, "subida": 0.13, "raio": 0.38, "cor": "ciano", "de": 15.4, "ate": 16.1, "giro": 1.6,
+          "divide": { "t": 16.2, "dur": 0.6, "esq": { "dx": -1.3, "dy": 1.0, "rotulo": "ESPERADA", "cor": "ardosia" }, "dir": { "dx": 1.3, "dy": 1.0, "rotulo": "OUTRA LINHAGEM", "cor": "ciano" } } },
+        { "tipo": "texto", "texto": "TÚMULOS MONGÓIS", "x": 540, "y": 260, "tam": 62, "cor": "branco", "t": 15.35 },
+        { "tipo": "texto", "texto": "1130 A 1250", "x": 540, "y": 335, "tam": 42, "cor": "ciano", "t": 15.5, "tabular": true }
+      ]},
+
+    { "id": "pergunta", "de": 17.0, "ate": 20.0, "fov": 45, "neblina": [20, 60],
+      "camera": [
+        [17.0, [0, 4.8, 15.5], [0, 4.6, 0]],
+        [20.0, [1.3, 5.0, 14.2], [0, 4.7, 0]]
+      ],
+      "pecas": [
+        { "tipo": "arvore", "raiz": [0, 7.0, 0], "niveis": [ { "n": 2, "y": 5.8 }, { "n": 4, "y": 4.6 }, { "n": 8, "y": 3.4 }, { "n": 16, "y": 2.2 } ],
+          "larg": 7.0, "de": 17.0, "ate": 17.9, "apaga": 18.1, "vira": 18.85 },
+        { "tipo": "texto", "texto": "GÊNGIS KHAN", "x": 540, "y": 250, "tam": 88, "cor": "ouro", "t": 17.0, "brilho": 22, "apaga": 18.1, "risco": { "de": 18.1, "ate": 18.4, "cor": "vermelho" } },
+        { "tipo": "texto", "texto": "OUTRA PESSOA?", "x": 540, "y": 400, "tam": 72, "cor": "ciano", "t": 18.85, "brilho": 22 }
+      ]}
+  ],
+
+  "terra": {
+    "eurasia": [[-9,43],[-2,43.5],[-1.5,46],[-4.5,48.5],[2,51],[5,53.5],[8.5,57],[5,58.5],[5,62],[14,68],[20,70],[28,71],[33,69],[41,67],[44,68],[53,68.5],[60,69],[68,72.5],[73,72],[80,73],[87,75],[100,77],[113,73.5],[130,71],[141,72.5],[155,71],[170,70],[180,69],[180,65],[172,61],[163,59],[160,53],[156,51],[155,57],[150,59.5],[141,59],[137,54],[141,52],[140,48],[135,43],[130,42.5],[129,35],[126,34.5],[126,38],[121,40],[117,39],[122,37],[119,35],[121,32],[122,30],[119,25],[113,22],[108,21.5],[106,18],[109,12],[105,9],[100,13],[100,7],[103.5,1.5],[98,8],[98,16],[94,19],[91,22],[87,21.5],[80,15],[77,8],[73,17],[72,21],[67,24.5],[61,25],[57,26],[56.5,24],[59.5,22.5],[55,17],[52,16],[45,13],[43,13],[39,21],[35,28],[34,31],[35,33],[36,36],[30,36.5],[27,37],[26,40],[23,40.5],[22,37],[20,40],[19,42],[16,43.5],[13,45.5],[12.5,44],[18,40],[16,38],[12,41],[10,44],[7,43.5],[3,43],[3,41.5],[0,39],[-2,36.7],[-6,36.5],[-9,37],[-9,43]],
+    "ilhas": [
+      [[-5,50],[1,51],[0,53],[-3,56],[-5,58.5],[-6,56],[-3,54],[-5,52]],
+      [[130,31],[135,34],[140,35],[142,40],[141,45],[143,44],[140,38],[136,35],[132,33]]
+    ],
+    "regiao": [[55,40],[65,46],[80,49],[95,50],[110,50],[122,47],[124,42],[112,40],[98,41],[85,39],[70,37],[58,37]],
+    "imperio": [[25,47],[32,52],[40,55],[55,57],[75,55],[95,53],[115,53],[130,51],[133,43],[124,35],[120,30],[105,25],[95,29],[80,34],[66,30],[56,28],[47,32],[40,38],[33,42]]
+  },
+
+  "legenda": { "y": 1590, "tam": 64, "largura": 1000, "segura": 0.55 },
+  "legendas": [
+    { "de": 0.15, "ate": 1.25, "texto": "CERCA DE 20 MILHÕES" },
+    { "de": 1.25, "ate": 2.30, "texto": "DE HOMENS VIVOS HOJE" },
+    { "de": 2.30, "ate": 3.20, "texto": "PODEM DESCENDER" },
+    { "de": 3.20, "ate": 4.00, "texto": "DE UM SÓ HOMEM:" },
+    { "de": 4.00, "ate": 5.00, "texto": "GÊNGIS KHAN." },
+    { "de": 5.00, "ate": 5.90, "texto": "EM 2003," },
+    { "de": 5.90, "ate": 7.00, "texto": "GENETICISTAS ACHARAM" },
+    { "de": 7.00, "ate": 7.95, "texto": "1 EM CADA 12 HOMENS" },
+    { "de": 7.95, "ate": 8.80, "texto": "COM QUASE O MESMO Y" },
+    { "de": 8.80, "ate": 9.60, "texto": "NUMA VASTA REGIÃO" },
+    { "de": 9.60, "ate": 10.20, "texto": "DA ÁSIA." },
+    { "de": 10.20, "ate": 11.00, "texto": "ESPALHOU-SE COM" },
+    { "de": 11.00, "ate": 11.80, "texto": "O IMPÉRIO MONGOL," },
+    { "de": 11.80, "ate": 13.20, "texto": "O MAIOR DA HISTÓRIA." },
+    { "de": 13.20, "ate": 14.40, "texto": "CASO ENCERRADO?" },
+    { "de": 14.40, "ate": 15.20, "texto": "AINDA NÃO." },
+    { "de": 15.20, "ate": 16.10, "texto": "TÚMULOS DA ÉPOCA" },
+    { "de": 16.10, "ate": 17.00, "texto": "MOSTRAM OUTRA LINHAGEM." },
+    { "de": 17.00, "ate": 18.00, "texto": "A ÁRVORE MAIS FAMOSA" },
+    { "de": 18.00, "ate": 18.80, "texto": "DO MUNDO TALVEZ SEJA" },
+    { "de": 18.80, "ate": 19.65, "texto": "DE OUTRA PESSOA." }
+  ],
+
+  "musica": {
+    "bpm": 116,
+    "acordes": [["A2", "A3", "C4", "E4"], ["F2", "F3", "A3", "C4"], ["D2", "D3", "F3", "A3"], ["E2", "E3", "G#3", "B3"]],
+    "padrao": [1, 2, 3, 2, 1, 3, 2, 3],
+    "vol": 0.05,
+    "baixo": 0.11,
+    "corta": [[14.4, 15.2]]
+  },
+  "sons": {
+    "tiques": [0.2, 2.3],
+    "golpes": [3.25, 13.35],
+    "brilhos": [4.0, 5.1, 6.1, 7.6],
+    "subidas": [[6.8, 0.8], [9.4, 0.8]],
+    "arranhao": 14.4,
+    "grave": 16.2,
+    "brilhoLongo": 18.85
+  }
+}

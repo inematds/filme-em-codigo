@@ -60,6 +60,33 @@ try {
       ok(d.medida.hash_quadros !== a.medida.hash_quadros && fs.existsSync(d.mp4), 'historia-2.json: mesmo motor, outro filme');
     }
   }
+
+  // 6) biblioteca: os motores de exemplos/biblioteca/ (um por estilo da biblioteca de prompts)
+  //    cada um: 1 segundo com som, mesmos quadros com 2 e 1 navegador, e cada história extra dá outro filme
+  const BIB = path.join(RAIZ, 'exemplos', 'biblioteca');
+  const motores = fs.existsSync(BIB) ? fs.readdirSync(BIB).filter((n) => fs.existsSync(path.join(BIB, n, 'motor.js'))).sort() : [];
+  if (process.env.SEM_BIBLIOTECA) console.log('\nbiblioteca: pulada (SEM_BIBLIOTECA)');
+  else for (const m of motores) {
+    console.log(`\nbiblioteca/${m}`);
+    const pasta = path.join(BIB, m);
+    const med = JSON.parse(fs.readFileSync(path.join(pasta, 'medida.json'), 'utf8'));
+    const [L, A] = String(med.resolucao).split('x').map(Number);
+    const tam = L >= A ? { largura: 640, altura: 360 } : { largura: 360, altura: 640 };
+    const ini = Math.max(0, Math.min(4, (med.duracao_s || 8) - 1.5));
+    const hist = fs.readdirSync(pasta).filter((n) => /^historia.*\.json$/.test(n)).sort();
+    for (const h of hist) { let bom = true; try { JSON.parse(fs.readFileSync(path.join(pasta, h), 'utf8')); } catch { bom = false; } ok(bom, `${h} é um JSON válido`); }
+    const a = await renderizar({ ...tam, pasta, saida: path.join(TMP, 'b-' + m + '-a'), inicio: ini, fim: ini + 1, trabalhadores: 2 });
+    const fl = sonda(a.mp4), v = fl.find((f) => f.codec_type === 'video'), s = fl.find((f) => f.codec_type === 'audio');
+    ok(v && v.width === tam.largura && v.height === tam.altura && Number(v.nb_read_frames) === 30 && s && s.codec_name === 'aac', `1 segundo ${tam.largura}x${tam.altura} com som`);
+    const b = await renderizar({ ...tam, pasta, saida: path.join(TMP, 'b-' + m + '-b'), inicio: ini, fim: ini + 1, trabalhadores: 1 });
+    ok(a.medida.hash_quadros === b.medida.hash_quadros && a.medida.hash_som === b.medida.hash_som, 'mesmo código = mesmos quadros e mesmo som (2 e 1 navegador)');
+    ok(new Set(linhas(a.saida)).size > 1, 'os quadros mudam com o tempo');
+    for (const h of hist.filter((n) => n !== 'historia.json')) {
+      const d = await renderizar({ ...tam, pasta, historia: h, saida: path.join(TMP, 'b-' + m + '-' + h), inicio: ini, fim: ini + 1, trabalhadores: 2 });
+      ok(d.medida.hash_quadros !== a.medida.hash_quadros, `${h}: mesmo motor, outro filme`);
+    }
+    fs.rmSync(path.join(TMP), { recursive: true, force: true }); fs.mkdirSync(TMP, { recursive: true });
+  }
 } catch (e) { falhou++; console.log('  FALHA erro inesperado — ' + (e.stack || e.message)); }
 finally { fs.rmSync(TMP, { recursive: true, force: true }); }
 

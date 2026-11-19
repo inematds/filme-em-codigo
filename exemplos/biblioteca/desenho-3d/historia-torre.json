@@ -1,0 +1,249 @@
+{
+  "titulo": "A torre que foi salva porque ninguém fez nada",
+  "duracao": 19.5,
+  "fps": 30,
+  "semente": 41,
+  "visual": { "tinta": "#1a1220", "vinheta": 0.36, "saturacao": 1.08, "frio": 0.1, "quente": 0.06 },
+
+  "modelos": {
+    "base": [
+      { "forma": "cilindro", "tam": [1.0, 1.0, 1.4], "pos": [0, 0.7, 0], "cor": "#efe8d8" },
+      { "forma": "arcos", "tam": [1.02, 1.3, 16], "pos": [0, 0.68, 0], "cor": "#ddd2b8" },
+      { "forma": "cilindro", "tam": [1.08, 1.08, 0.1], "pos": [0, 1.4, 0], "cor": "#f6f0e2" }
+    ],
+    "andar": [
+      { "forma": "cilindro", "tam": [0.82, 0.82, 0.9], "pos": [0, 0.45, 0], "cor": "#e6dcc6" },
+      { "forma": "arcos", "tam": [0.98, 0.9, 18], "pos": [0, 0.45, 0], "cor": "#fbf6ea" },
+      { "forma": "cilindro", "tam": [1.06, 1.06, 0.09], "pos": [0, 0.93, 0], "cor": "#f6f0e2" }
+    ],
+    "sinos": [
+      { "forma": "cilindro", "tam": [0.62, 0.62, 0.7], "pos": [0, 0.35, 0], "cor": "#e6dcc6" },
+      { "forma": "arcos", "tam": [0.66, 0.7, 12], "pos": [0, 0.35, 0], "cor": "#fbf6ea" },
+      { "forma": "cilindro", "tam": [0.7, 0.7, 0.08], "pos": [0, 0.72, 0], "cor": "#f6f0e2" }
+    ],
+    "casa": [
+      { "forma": "caixa", "tam": [2.4, 1.8, 1.6], "pos": [0, 0.9, 0], "cor": "$parede" },
+      { "forma": "telhado", "tam": [1.0, 0.7, 2.6], "pos": [0, 2.05, 0], "rot": [0, 90, 0], "cor": "#c0603a" },
+      { "forma": "caixa", "tam": [0.35, 0.5, 0.05], "pos": [-0.6, 1.1, 0.81], "cor": "#4a6a8a" },
+      { "forma": "caixa", "tam": [0.35, 0.5, 0.05], "pos": [0.6, 1.1, 0.81], "cor": "#4a6a8a" }
+    ],
+    "cipreste": [
+      { "forma": "cilindro", "tam": [0.08, 0.1, 0.5], "pos": [0, 0.25, 0], "cor": "#6b4428" },
+      { "forma": "esfera", "tam": [0.45, 1.6, 0.45], "pos": [0, 1.9, 0], "cor": "#2f6a3a" }
+    ],
+    "muro": [
+      { "forma": "caixa", "tam": [30, 1.6, 0.6], "pos": [0, 0.8, 0], "cor": "#d9c9a8" }
+    ],
+    "andaime": [
+      { "forma": "caixa", "tam": [0.08, 2.4, 0.08], "pos": [-1.2, 1.2, 1.0], "cor": "#8a5a34" },
+      { "forma": "caixa", "tam": [0.08, 2.4, 0.08], "pos": [1.2, 1.2, 1.0], "cor": "#8a5a34" },
+      { "forma": "caixa", "tam": [2.5, 0.08, 0.08], "pos": [0, 1.6, 1.0], "cor": "#8a5a34" },
+      { "forma": "caixa", "tam": [2.5, 0.08, 0.5], "pos": [0, 0.9, 1.0], "cor": "#a8794a" }
+    ],
+    "mato": [ { "forma": "cone", "tam": [0.12, 0.5, 6], "pos": [0, 0.25, 0], "cor": "#4f9a46" }, { "forma": "cone", "tam": [0.1, 0.4, 6], "pos": [0.15, 0.2, 0.05], "rot": [0, 0, -20], "cor": "#6fb85a" } ],
+    "camadas": [
+      { "forma": "caixa", "tam": [4.2, 0.25, 2.4], "pos": [0, -0.125, 0], "cor": "#6cb444" },
+      { "forma": "caixa", "tam": [4.2, 0.9, 2.4], "pos": [0, -0.7, 0], "cor": "#b0865a" },
+      { "forma": "caixa", "tam": [4.2, 1.0, 2.4], "pos": [0, -1.65, 0], "cor": "#8a6a44" },
+      { "forma": "caixa", "tam": [4.2, 0.6, 2.4], "pos": [0, -2.45, 0], "cor": "#6b4f36" }
+    ],
+    "argila": [ { "forma": "caixa", "tam": [4.2, 2.2, 2.4], "pos": [0, -1.1, 0], "cor": "#a07a50" } ],
+    "rede": [ { "forma": "caixa", "tam": [4.4, 0.08, 2.6], "pos": [0, 0.04, 0], "cor": "#6cb444" } ]
+  },
+
+  "elenco": {
+    "turistaA": { "roupaTipo": "listras", "roupa": "#2f5a9a", "listraCor": "#f4f1ea", "calca": "#3a4a6a", "chapeu": "bone", "chapeuCor": "#c0352a", "pele": "#f2c9a0", "cabelo": "curto" },
+    "turistaB": { "roupaTipo": "camisa", "roupa": "#e8a03a", "calca": "#4a6a8a", "chapeu": "aba", "chapeuCor": "#f2ead8", "pele": "#d9a070" },
+    "turistaC": { "roupaTipo": "camisa", "roupa": "#4cbf6a", "calca": "#3d3a4a", "cabelo": "comprido", "cabeloCor": "#6b3a22", "pele": "#f0c8a0", "alt": 0.8 },
+    "bispo": { "roupa": "#c0352a", "roupaTipo": "tunica", "chapeu": "quepe", "chapeuCor": "#c0352a", "pele": "#f0c8a0", "barba": "#e8e8ec", "bigode": "#e8e8ec", "faixa": "#f2c232" },
+    "pedreiroA": { "roupa": "#8a6a44", "roupaTipo": "tunica", "chapeu": "lenco", "chapeuCor": "#d9c9a8", "pele": "#d9a070", "gola": false },
+    "pedreiroB": { "roupa": "#6b7a8a", "roupaTipo": "tunica", "chapeu": "lenco", "chapeuCor": "#c0603a", "pele": "#f0c8a0", "barba": "#5a3a2a", "bigode": false, "gola": false },
+    "engenheiro": { "roupaTipo": "camisa", "roupa": "#f7f5ef", "gravata": "#2f5a9a", "calca": "#3d3a4a", "cabelo": "curto", "cabeloCor": "#5a3a2a", "oculos": true, "pele": "#f2c9a0" }
+  },
+
+  "cenarios": {
+    "praca": [
+      { "tipo": "chao", "cor": "#7cc04a", "cor2": "#6cb444", "tam": 300 },
+      { "tipo": "modelo", "modelo": "muro", "pos": [0, 0, -16] },
+      { "tipo": "modelo", "modelo": "casa", "pos": [-8, 0, -19], "cores": { "parede": "#e8b88a" } },
+      { "tipo": "modelo", "modelo": "casa", "pos": [-4.5, 0, -20], "cores": { "parede": "#e8d0a0" } },
+      { "tipo": "modelo", "modelo": "casa", "pos": [5, 0, -19.5], "cores": { "parede": "#d9a07a" } },
+      { "tipo": "modelo", "modelo": "casa", "pos": [8.5, 0, -20], "cores": { "parede": "#e8c07a" } },
+      { "tipo": "modelo", "modelo": "cipreste", "pos": [-6, 0, -14] },
+      { "tipo": "modelo", "modelo": "cipreste", "pos": [6.5, 0, -14.5] },
+      { "tipo": "modelo", "modelo": "cipreste", "pos": [3.5, 0, -15] }
+    ],
+    "torreInteira": [
+      { "tipo": "junto", "pos": [0, 0, -3], "esc": 0.75, "rot": [0, 0, -4], "pecas": [
+        { "tipo": "modelo", "modelo": "base", "pos": [0, 0, 0] },
+        { "tipo": "modelo", "modelo": "andar", "pos": [0, 1.45, 0] },
+        { "tipo": "modelo", "modelo": "andar", "pos": [0, 2.43, 0] },
+        { "tipo": "modelo", "modelo": "andar", "pos": [0, 3.41, 0] },
+        { "tipo": "modelo", "modelo": "andar", "pos": [0, 4.39, 0] },
+        { "tipo": "modelo", "modelo": "andar", "pos": [0, 5.37, 0] },
+        { "tipo": "modelo", "modelo": "andar", "pos": [0, 6.35, 0] },
+        { "tipo": "modelo", "modelo": "sinos", "pos": [0, 7.33, 0] } ] }
+    ]
+  },
+
+  "planos": [
+    { "id": "gancho", "de": 0, "ate": 4.3, "cenario": ["praca", "torreInteira"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#c4daf0" },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.7, 1, 0.8], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.2 },
+      "neblina": { "cor": "#c4daf0", "perto": 25, "longe": 160 },
+      "camera": { "de": { "pos": [1.6, 0.8, 6.2], "alvo": [0, 3.0, -3], "rolo": -2 }, "ate": { "pos": [1.4, 0.85, 5.4], "alvo": [0, 3.0, -3], "rolo": -3 } },
+      "pecas": [
+        { "tipo": "boneco", "quem": "turistaA", "pos": [0.55, 0, 1.4], "estados": [[0, "convencido", "empurra"]] },
+        { "tipo": "boneco", "quem": "turistaB", "pos": [-0.5, 0, 0.6], "estados": [[0, "feliz", "empurra"], [2.2, "feliz", "joinha"]] },
+        { "tipo": "boneco", "quem": "turistaC", "pos": [1.25, 0, 0.3], "estados": [[0, "feliz", "acena"]] }
+      ] },
+
+    { "id": "1173", "de": 4.3, "ate": 6.4, "cenario": ["praca"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#c4daf0" },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.7, 1, 0.8], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.2 },
+      "neblina": { "cor": "#c4daf0", "perto": 25, "longe": 160 },
+      "camera": { "de": { "pos": [0.5, 7.0, 10.0], "alvo": [0, 0.8, -1.5], "rolo": 2 }, "ate": { "pos": [0.4, 2.0, 5.6], "alvo": [0, 1.3, -1.2], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "junto", "pos": [0, 0, -3], "esc": 0.75, "pecas": [ { "tipo": "modelo", "modelo": "base" } ] },
+        { "tipo": "modelo", "modelo": "andaime", "pos": [0, 0, -3], "esc": 0.75 },
+        { "tipo": "boneco", "quem": "bispo", "pos": [0, 0, 0], "estados": [[4.3, "convencido", "cintura"], [5.4, "feliz", "aponta"]] },
+        { "tipo": "boneco", "quem": "pedreiroA", "pos": [-1.2, 0, -1.6], "estados": [[4.3, "neutro", "martela", "martelo"]] },
+        { "tipo": "boneco", "quem": "pedreiroB", "pos": [1.25, 0, -1.8], "estados": [[4.3, "feliz", "martela", "martelo"]] }
+      ] },
+
+    { "id": "inclina", "de": 6.4, "ate": 8.4, "cenario": ["praca"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#c4daf0" },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.7, 1, 0.8], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.2 },
+      "neblina": { "cor": "#c4daf0", "perto": 25, "longe": 160 },
+      "camera": { "de": { "pos": [0.8, 1.6, 7.6], "alvo": [0, 2.0, -3], "rolo": -1 }, "ate": { "pos": [0.7, 1.6, 6.9], "alvo": [0, 2.0, -3], "rolo": -2 } },
+      "pecas": [
+        { "tipo": "junto", "pos": [0, 0, -3], "esc": 0.75, "anim": { "rot": [[7.85, 0, 0, 0], [8.0, 0, 0, -5], [8.15, 0, 0, -4]] }, "pecas": [
+          { "tipo": "modelo", "modelo": "base" },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 1.45, 0], "aparece": 6.5, "durPop": 0.2 },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 2.43, 0], "aparece": 6.85, "durPop": 0.2 },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 3.41, 0], "aparece": 7.2, "durPop": 0.2 } ] },
+        { "tipo": "boneco", "quem": "pedreiroA", "pos": [-1.0, 0, -0.6], "estados": [[6.4, "feliz", "martela", "martelo"], [7.85, "choque", "alto"]] },
+        { "tipo": "boneco", "quem": "pedreiroB", "pos": [1.05, 0, -0.4], "estados": [[6.4, "feliz", "joinha"], [7.85, "choque", "alto"]] }
+      ] },
+
+    { "id": "argila", "de": 8.4, "ate": 10.3,
+      "ceu": { "topo": "#4f8fdc", "horiz": "#c4daf0" },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.6, 1, 0.9], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.25 },
+      "camera": { "de": { "pos": [0.9, 1.0, 7.4], "alvo": [0, -0.2, 0], "rolo": 2 }, "ate": { "pos": [0.8, 0.9, 6.6], "alvo": [0, -0.2, 0], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "modelo", "modelo": "camadas", "pos": [0, 0, 0], "solto": true },
+        { "tipo": "junto", "pos": [0, 0, 0], "solto": true, "esc": 0.32, "anim": { "pos": [[9.4, 0, 0, 0], [10.0, 0, -0.18, 0]], "rot": [[9.4, 0, 0, -1], [10.0, 0, 0, -7]] }, "pecas": [
+          { "tipo": "modelo", "modelo": "base" },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 1.45, 0] },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 2.43, 0] },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 3.41, 0] } ] },
+        { "tipo": "enxame", "n": 40, "forma": "esfera", "tam": [0.07], "cores": ["#5aa0e0", "#7ab8f0"], "basica": true, "formas": [ { "tipo": "caixa", "c": [0, -1.2, 1.21], "tam": [4.0, 1.6, 0.01] } ], "boia": 0.03 }
+      ] },
+
+    { "id": "para", "de": 10.3, "ate": 12.4, "cenario": ["praca"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#c4daf0", "pisca": { "de": 11.3, "ate": 12.4, "hz": 3, "topo": "#0f1d4a", "horiz": "#3a4f8f" } },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.7, 1, 0.8], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.2 },
+      "neblina": { "cor": "#c4daf0", "perto": 25, "longe": 160 },
+      "camera": { "de": { "pos": [0.6, 1.5, 7.6], "alvo": [0, 1.8, -3], "rolo": 2 }, "ate": { "pos": [0.5, 1.5, 6.8], "alvo": [0, 1.8, -3], "rolo": 2 } },
+      "pecas": [
+        { "tipo": "junto", "pos": [0, 0, -3], "esc": 0.75, "rot": [0, 0, -4], "pecas": [
+          { "tipo": "modelo", "modelo": "base" },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 1.45, 0] },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 2.43, 0] },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 3.41, 0] } ] },
+        { "tipo": "modelo", "modelo": "andaime", "pos": [0, 0, -3], "esc": 0.75, "some": 11.4 },
+        { "tipo": "grupo", "n": 7, "arranjo": { "tipo": "linha", "de": [-1.6, 0, -1.4], "ate": [1.6, 0, -1.1] }, "molde": { "tipo": "modelo", "modelo": "mato", "anim": { "esc": [[11.4, 0.01], [12.3, 1.6]] } } },
+        { "tipo": "boneco", "quem": "pedreiroA", "pos": [-0.4, 0, 0], "anim": { "pos": [[10.3, -0.4, 0, 0], [11.2, -3.2, 0, 0.6]] }, "estados": [[10.3, "pensa", "lado"]] },
+        { "tipo": "boneco", "quem": "pedreiroB", "pos": [0.5, 0, 0.3], "anim": { "pos": [[10.3, 0.5, 0, 0.3], [11.2, 3.3, 0, 0.9]] }, "estados": [[10.3, "pensa", "lado"]] },
+        { "tipo": "simbolo", "texto": "?", "pos": [0, 2.1, 0.2], "tam": 0.6, "aparece": 10.5, "some": 11.3 }
+      ] },
+
+    { "id": "firma", "de": 12.4, "ate": 14.4,
+      "ceu": { "topo": "#0f1d4a", "horiz": "#3a4f8f" },
+      "luz": { "sol": "#b8c8ff", "forca": 2.0, "dir": [0.5, 1, 0.9], "ceu": "#8a9ad8", "chao": "#2a2a4a", "ambiente": 1.3 },
+      "luzBoneco": "#c8d4ff",
+      "camera": { "de": { "pos": [0.8, 0.6, 6.4], "alvo": [0, -0.9, 0], "rolo": -2 }, "ate": { "pos": [0.7, 0.5, 5.7], "alvo": [0, -0.9, 0], "rolo": -3 } },
+      "pecas": [
+        { "tipo": "modelo", "modelo": "argila", "pos": [0, 0, 0], "solto": true, "tinge": [[13.85, "#6b4f36", 0.75, 0.4]] },
+        { "tipo": "modelo", "modelo": "rede", "pos": [0, 0, 0], "solto": true },
+        { "tipo": "enxame", "n": 60, "forma": "esfera", "tam": [0.08], "cores": ["#5aa0e0", "#8ac8ff"], "basica": true, "formas": [ { "tipo": "caixa", "c": [0, -2.0, 1.22], "tam": [3.9, 0.01, 0.01] } ], "movimento": "sobe", "altura": 2.0, "vel": 1.1, "encolhe": true },
+        { "tipo": "junto", "pos": [0, 0.08, -0.2], "solto": true, "esc": 0.3, "rot": [0, 0, -5], "pecas": [ { "tipo": "modelo", "modelo": "base" }, { "tipo": "modelo", "modelo": "andar", "pos": [0, 1.45, 0] }, { "tipo": "modelo", "modelo": "andar", "pos": [0, 2.43, 0] }, { "tipo": "modelo", "modelo": "andar", "pos": [0, 3.41, 0] } ] },
+        { "tipo": "brilho", "pos": [0, -1.0, 1.3], "cor": "#fff2b0", "tam": 4.5, "pulsa": [[13.8, 0], [13.9, 0.6], [14.4, 0.2]] }
+      ] },
+
+    { "id": "caido", "de": 14.4, "ate": 16.5, "cenario": ["praca"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#c4daf0" },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.7, 1, 0.8], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.2 },
+      "neblina": { "cor": "#c4daf0", "perto": 25, "longe": 160 },
+      "camera": { "de": { "pos": [0.3, 1.6, 6.8], "alvo": [0.8, 2.8, -4], "rolo": 1 }, "ate": { "pos": [0.3, 1.6, 6.1], "alvo": [0.8, 2.8, -4], "rolo": 2 } },
+      "pecas": [
+        { "tipo": "junto", "pos": [0.3, 0, -5], "esc": 0.75, "anim": { "rot": [[14.4, 0, 0, -4], [15.95, 0, 0, -9], [16.35, 0, 0, -84]] }, "tinge": [[14.4, "#ffffff", 0.45, 0.01]], "pecas": [
+          { "tipo": "modelo", "modelo": "base" },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 1.45, 0] },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 2.43, 0] },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 3.41, 0] },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 4.39, 0] },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 5.37, 0] },
+          { "tipo": "modelo", "modelo": "andar", "pos": [0, 6.35, 0] },
+          { "tipo": "modelo", "modelo": "sinos", "pos": [0, 7.33, 0] } ] },
+        { "tipo": "enxame", "n": 70, "forma": "esfera", "tam": [0.35], "cores": ["#d9c9a8", "#c9b898", "#e8dcc4"], "estoura": { "t": 16.35, "de": [2.4, 0.3, -5], "vel": 2.5, "lado": 2.6, "gravidade": 1.5, "chao": 0.2, "espalha": 0.15 }, "escala": [0.5, 1.4] },
+        { "tipo": "boneco", "quem": "engenheiro", "pos": [-0.2, 0, 1.1], "estados": [[14.4, "pensa", "segura", "prancheta"], [16.35, "choque", "alto"]], "pulos": [16.35] }
+      ] },
+
+    { "id": "nada", "de": 16.5, "ate": 19.5, "cenario": ["praca", "torreInteira"],
+      "ceu": { "topo": "#ffb46a", "horiz": "#f2c69a" },
+      "luz": { "sol": "#ffd9a0", "forca": 2.3, "dir": [-0.6, 0.8, 0.7], "ceu": "#ffd6a8", "chao": "#7a6a4a", "ambiente": 1.25 },
+      "luzBoneco": "#ffe9cf", "neblina": { "cor": "#f2c69a", "perto": 25, "longe": 160 },
+      "camera": { "de": { "pos": [1.0, 1.6, 6.4], "alvo": [0, 2.4, -3], "rolo": 2 }, "ate": { "pos": [1.2, 4.2, 10.5], "alvo": [0, 3.0, -3], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "boneco", "quem": "turistaA", "pos": [0.9, 0, 0.6], "estados": [[16.5, "feliz", "empurra"]] },
+        { "tipo": "boneco", "quem": "turistaB", "pos": [-1.1, 0, 0.2], "estados": [[16.5, "convencido", "empurra"]] },
+        { "tipo": "boneco", "quem": "pedreiroA", "pos": [-0.15, 0, 1.4], "estados": [[16.5, "dorme", "cintura"]] },
+        { "tipo": "simbolo", "texto": "ZZZ", "pos": [0.25, 2.0, 1.4], "tam": 0.32, "cor": "#ffffff", "aparece": 17.3, "anim": { "pos": [[17.3, 0.25, 1.95, 1.4], [19.5, 0.4, 2.3, 1.4]] } }
+      ] }
+  ],
+
+  "rotulos": [
+    { "texto": "1173", "x": 540, "y": 420, "tam": 190, "cor": "#f2d43a", "de": 4.4, "ate": 6.4 },
+    { "texto": "QUASE 100 ANOS", "estilo": "placa", "x": 540, "y": 300, "tam": 52, "de": 11.3, "ate": 12.4 }
+  ],
+  "claroes": [4.2, 16.35],
+  "chutes": [ { "t": 7.85, "forca": 1.0 }, { "t": 9.4, "forca": 0.5 }, { "t": 16.35, "forca": 1.4 } ],
+  "escurece": [ { "de": 19.1, "ate": 19.5, "forca": 0.8 } ],
+
+  "legenda": { "y": 1590, "tam": 62, "largura": 940, "segura": 0.55, "destaque": "#E3E302" },
+  "legendas": [
+    { "de": 0.15, "ate": 1.15, "texto": "A TORRE DE PISA" },
+    { "de": 1.15, "ate": 2.15, "texto": "SÓ ESTÁ DE PÉ" },
+    { "de": 2.15, "ate": 3.15, "texto": "PORQUE PARARAM" },
+    { "de": 3.15, "ate": 4.30, "texto": "A OBRA POR 100 ANOS." },
+    { "de": 4.30, "ate": 5.30, "texto": "EM 1173," },
+    { "de": 5.30, "ate": 6.40, "texto": "PISA ERGUE A TORRE." },
+    { "de": 6.40, "ate": 7.40, "texto": "NO QUARTO ANDAR," },
+    { "de": 7.40, "ate": 8.40, "texto": "ELA JÁ INCLINA." },
+    { "de": 8.40, "ate": 9.40, "texto": "O CHÃO É ARGILA" },
+    { "de": 9.40, "ate": 10.30, "texto": "MOLE E ÚMIDA." },
+    { "de": 10.30, "ate": 11.30, "texto": "AÍ A OBRA PARA." },
+    { "de": 11.30, "ate": 12.40, "texto": "POR QUASE 100 ANOS." },
+    { "de": 12.40, "ate": 13.40, "texto": "A ÁGUA SAI," },
+    { "de": 13.40, "ate": 14.40, "texto": "E A ARGILA FIRMA." },
+    { "de": 14.40, "ate": 15.50, "texto": "SE TIVESSEM SEGUIDO," },
+    { "de": 15.50, "ate": 16.50, "texto": "ELA TERIA CAÍDO." },
+    { "de": 16.50, "ate": 17.60, "texto": "SALVA POR" },
+    { "de": 17.60, "ate": 18.90, "texto": "NÃO FAZER NADA." }
+  ],
+
+  "musica": { "bpm": 112, "compasso": 6, "tom": "A3", "escala": [0, 2, 3, 5, 7, 8, 10], "acordes": [0, 0, 4, 4, 3, 3, 4, 0], "perc": ["pandeiro"], "vol": 0.21, "densidade": 0.75,
+    "tremolo": [[0.2, 0.9], [16.6, 17.4]], "pausas": [[16.0, 16.5]], "fim": 18.3, "acordeFinal": 18.3 },
+  "sons": [
+    { "som": "baque", "t": 6.5, "vol": 0.3 }, { "som": "baque", "t": 6.85, "vol": 0.3 }, { "som": "baque", "t": 7.2, "vol": 0.3 },
+    { "som": "rangido", "t": 7.85, "vol": 0.08 }, { "som": "golpe", "t": 7.9, "vol": 0.3 },
+    { "som": "esguicho", "t": 9.4, "vol": 0.14 },
+    { "som": "clank", "t": 10.55, "vol": 0.08 }, { "som": "clank", "t": 10.75, "vol": 0.07 },
+    { "som": "tique", "t": 11.3, "dur": 1.1, "hz": 14, "vol": 0.06 },
+    { "som": "plim", "t": 13.85, "vol": 0.08 },
+    { "som": "rangido", "t": 15.95, "vol": 0.07 }, { "som": "whoosh", "t": 15.95, "dur": 0.4, "vol": 0.16 }, { "som": "estouro", "t": 16.35, "vol": 0.22 },
+    { "som": "ronco", "t": 17.3, "vol": 0.07, "vezes": 2 },
+    { "som": "plim", "t": 18.35, "nota": "E6", "vol": 0.07 }
+  ]
+}

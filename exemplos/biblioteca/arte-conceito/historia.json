@@ -1,0 +1,112 @@
+{
+  "titulo": "Manhã, olhando para cima",
+  "duracao": 10,
+  "fps": 30,
+  "semente": 13,
+  "grao": 0.2,
+  "tituloNaTela": { "x": 1100, "y": 1020, "tamanho": 42, "de": 0.3, "ate": 2.7, "escreve": [0.35, 1.5] },
+
+  "camera": [
+    { "t": 0, "x": 0, "y": 0, "zoom": 1.0 },
+    { "t": 10, "x": -90, "y": -60, "zoom": 1.13 }
+  ],
+  "perspectiva": { "fx": 1180, "fy": 470 },
+
+  "cores": {
+    "ceu": ["#eee5cf", "#f6eedb", "#d9d3c2"],
+    "longe": ["#b3c2d3", "#cbd6e1", "#98a9be"],
+    "predio": ["#e6d6b7", "#c4b394", "#f5ead2"],
+    "predioSombra": ["#a9adb8", "#8e95a6", "#c3c4c6"],
+    "janela": ["#8296b5", "#adbcd2", "#677a9b"],
+    "toldo": ["#b5493a", "#8c3328"],
+    "rua": ["#a6b0c7", "#c0c7d6"],
+    "calcada": ["#e8dabd", "#f4e8cf"],
+    "sombra": ["#a3b1d3", "#5a6889"],
+    "muro": ["#b45c3e", "#93452f", "#d68a62"],
+    "muroBase": "#4e5670",
+    "folha": ["#3c5530", "#5f7d36", "#9fb257"],
+    "fio": "#5d6273",
+    "poste": ["#59606f", "#3e4453"],
+    "pombo": ["#7d8494", "#5b6170", "#c9ccd4"],
+    "ave": "#6c7385",
+    "faixaTitulo": "#2a2f3e",
+    "letra": "#fbf3e2"
+  },
+
+  "mulher": {
+    "x0": 470, "x1": 760, "y": 405, "escala": 1.28,
+    "pele": ["#f0b993", "#cf8b6c", "#ffd6b4"],
+    "rubor": "#e47c66", "sarda": "#a8613f",
+    "cabelo": ["#6b4428", "#40271a", "#a9713f"], "cabeloBrilho": "#ffc77e",
+    "olho": ["#8a6a2c", "#5a4320", "#c9a35a"], "cilio": "#24181a", "branco": "#fbf3ea",
+    "sobrancelha": "#4a2e1f",
+    "boca": ["#d9665a", "#b54a44", "#6a2a2a"],
+    "casaco": ["#2f6670", "#1d4450", "#5e9a9a"],
+    "camisa": ["#f4ecdf", "#c9c4c4"],
+    "cachecol": ["#d9a33a", "#a8762a", "#f2c96a"],
+    "copo": ["#efe5d2", "#c7baa5", "#9a6a3e", "#7a4f2c"],
+    "vapor": "#ffffff"
+  },
+
+  "atuacao": {
+    "anda": [0, 2.3],
+    "passo": 58,
+    "piscadas": [1.25, 5.25, 8.35],
+    "olhar": [[7, 2], [5, -14], 3.55, 3.63],
+    "arregala": [3.58, 3.72, 1.16],
+    "sobrancelha": [3.6, 3.8],
+    "cabeca": { "abaixa": [3.66, 3.8, -0.2], "sobe": [3.8, 4.2, 1.12], "assenta": [4.2, 4.65] },
+    "respira": [3.8, 4.05],
+    "boca": [3.85, 4.05],
+    "sorri": [5.95, 6.6],
+    "brisa": [5.6, 8.8, 0.15]
+  },
+
+  "pecas": [
+    { "tipo": "ceu", "camada": "ceu", "x": -200, "y": -200, "largura": 2400, "altura": 900 },
+    { "tipo": "fios", "camada": "ceu", "linhas": [[[700, 250], [1900, 120], 50], [[760, 300], [1950, 215], 40]] },
+    { "tipo": "aves", "camada": "ceu", "de": 5.4, "ate": 10, "x": 600, "y": 210, "vx": 110, "vy": -12, "n": 9 },
+
+    { "tipo": "longe", "camada": "longe", "blocos": [[1060, 300, 120, 175], [1170, 270, 95, 200], [1255, 315, 110, 160], [990, 340, 90, 135]] },
+
+    { "tipo": "rua", "camada": "predios", "esquerda": -1400, "direita": 1300, "meioFio": 640, "perto": 0.55, "longe": 9 },
+    { "tipo": "faixa", "camada": "predios", "z": 3.1, "fundo": 0.35, "de": -620, "ate": 600, "listra": 110 },
+    { "tipo": "sombraChao", "camada": "predios", "pontos": [[-1400, 0.4], [-1400, 9], [-120, 9], [230, 2.6], [290, 1.5], [110, 0.4]] },
+    { "tipo": "sombraChao", "camada": "predios", "pontos": [[640, 4.6], [1300, 4.6], [1300, 5.2], [640, 5.4]] },
+    { "tipo": "fachada", "camada": "predios", "lado": 1, "x": 900, "topo": -1050, "chao": 380, "perto": 0.7, "longe": 9, "andar": 170, "coluna": 0.85, "toldos": true },
+    { "tipo": "fachada", "camada": "predios", "lado": -1, "x": -700, "topo": -900, "chao": 380, "perto": 1.9, "longe": 9, "andar": 160, "coluna": 0.8, "toldos": false },
+    { "tipo": "carro", "camada": "predios", "x": 650, "z": 4.6, "comprimento": 1.0, "cor": "#b5473a" },
+    { "tipo": "carro", "camada": "predios", "x": 650, "z": 3.3, "comprimento": 1.1, "cor": "#e7e2d8" },
+    { "tipo": "carro", "camada": "predios", "x": 650, "z": 1.75, "comprimento": 1.1, "cor": "#5f7c6c" },
+    { "tipo": "poste", "camada": "predios", "x": 760, "z": 2.05, "topo": -620, "braco": 150 },
+    { "tipo": "pessoa", "camada": "predios", "de": 0, "ate": 10, "x": [-560, 560], "z": 3.25, "cor": "#3f4f6e", "calca": "#2f3445", "fase": 0.2 },
+    { "tipo": "pessoa", "camada": "predios", "de": 0, "ate": 10, "x": [820, 820], "zDe": [2.1, 3.6], "cor": "#d9a03a", "calca": "#3a3a48", "fase": 0.7 },
+    { "tipo": "ciclista", "camada": "predios", "de": 0, "ate": 5.6, "x": [60, 560], "zDe": [9, 0.6], "cor": "#4f6f9a", "bike": "#2a2c36", "sino": [3.0, 3.22] },
+    { "tipo": "pombo", "camada": "predios", "x": 668, "y": -640, "z": 2.05, "voa": 3.45, "vx": -380, "vy": -620 },
+
+    { "tipo": "muro", "camada": "muro", "x": -300, "y": -300, "largura": 1160, "altura": 940, "base": 70 },
+    { "tipo": "chao", "camada": "muro", "x": -300, "y": 640, "largura": 1180, "altura": 600, "bandas": [[640, 0], [700, 1], [800, 0], [880, 2]] },
+    { "tipo": "manchas", "camada": "muro", "caixa": [-300, -300, 1160, 900], "n": 26 },
+
+    { "tipo": "mulher", "camada": "perto" },
+
+    { "tipo": "folhas", "camada": "folhas", "x": 30, "y": 10, "n": 42, "raio": 270 }
+  ],
+
+  "camadas": [
+    { "nome": "ceu", "fator": 0.15, "x": -300, "y": -300, "largura": 2600, "altura": 1000 },
+    { "nome": "longe", "fator": 0.3, "x": -300, "y": -100, "largura": 2600, "altura": 800 },
+    { "nome": "predios", "fator": 0.55, "x": -300, "y": -400, "largura": 2600, "altura": 1700 },
+    { "nome": "muro", "fator": 0.8, "x": -300, "y": -300, "largura": 2600, "altura": 1600 },
+    { "nome": "perto", "fator": 1.0 },
+    { "nome": "folhas", "fator": 1.25 }
+  ],
+
+  "musica": {
+    "acorde": { "t": 6.05, "notas": ["C3", "G3", "E4", "B4", "D5"], "dur": 3.6, "vol": 0.05 },
+    "piano": [["E5", 6.1, 1.6, 0.1], ["G5", 6.35, 1.6, 0.08], ["B5", 6.6, 1.8, 0.07], ["D6", 6.95, 2.2, 0.05]],
+    "sino": ["A6", "E6"],
+    "pios": [0.8, 2.6, 4.9, 7.4, 8.9],
+    "pico": 0.85
+  }
+}

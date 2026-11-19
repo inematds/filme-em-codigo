@@ -1,0 +1,149 @@
+{
+  "titulo": "Em Vênus, um dia dura mais que um ano",
+  "duracao": 15,
+  "fps": 30,
+  "semente": 24,
+  "_medidas": "Mundo 3D: 1 unidade = raio do planeta; y para cima. Tela (chips, contadores, legenda, título): pixels de um quadro de 1080x1920, x da esquerda, y de cima. Tempos em segundos do filme.",
+
+  "cores": {
+    "fundo": "#020205",
+    "amarelo": "#e3e302",
+    "azul": "#5aa8ff",
+    "branco": "#f4f4ee",
+    "cinza": "#8a8a80",
+    "laranja": "#ff9a2a",
+    "escuro": "#101008"
+  },
+
+  "barra": { "esquerda": "VÊNUS", "direita": "DIA X ANO · EXPLICADO", "y": 74, "tam": 22 },
+  "legenda": { "y": 1655, "tam": 62, "largura": 940, "cor": "branco", "fala": "amarelo" },
+  "fimEscuro": 0.25,
+
+  "planeta": {
+    "centro": [0, 0, 4.2], "raio": 1, "inclina": 8, "pontos": 2600,
+    "cores": { "escuro": "#5c5826", "claro": "#f8f4bc", "borda": "#4f8cff", "ponto": "#e3e302" }
+  },
+  "sol": { "centro": [0, 0, 0], "raio": 1.15, "cor": "#ffe23a", "brilho": "#ffb21a" },
+  "orbita": { "raio": 4.2, "normal": [0, 1, 0] },
+  "anel": { "raio": 1.32 },
+
+  "planos": [
+    {
+      "nome": "venus", "de": 0.0, "ate": 2.6, "entrada": "abre",
+      "camera": { "de": { "pos": [0.5, 0.2, 11.8], "alvo": [0, -0.55, 4.2] }, "ate": { "pos": [0, 0.5, 11.1], "alvo": [0, -0.5, 4.2] }, "fov": 40 },
+      "pecas": [
+        { "tipo": "estrelas" },
+        { "tipo": "planeta", "giro": -0.03, "luz": [-0.55, 0.45, 0.7], "aparece": [0.1, 0.9] }
+      ],
+      "chips": [ { "texto": "VÊNUS", "x": 540, "y": 270, "de": 0.5, "ate": 2.6, "estilo": "cheio" } ],
+      "legendas": [ { "de": 0.25, "ate": 2.6, "passo": 0.18, "texto": "EM VÊNUS, UM DIA DURA MAIS QUE UM ANO." } ]
+    },
+    {
+      "nome": "giro", "de": 2.6, "ate": 5.0, "entrada": "continua",
+      "camera": { "de": { "pos": [0, 0.5, 11.1], "alvo": [0, -0.5, 4.2] }, "ate": { "pos": [0, 1.6, 12.2], "alvo": [0, -0.75, 4.2] }, "fov": 40 },
+      "pecas": [
+        { "tipo": "estrelas" },
+        { "tipo": "planeta", "giro": -0.03, "luz": [-0.55, 0.55, 0.65] },
+        { "tipo": "anel", "cor": "azul", "aparece": [2.65, 3.0] },
+        { "tipo": "marcador", "caminho": "anel", "cor": "azul", "sentido": -1, "inicio": 1.4, "chaves": [[2.9, 0], [4.6, 1]] }
+      ],
+      "chips": [ { "texto": "• 1 GIRO = 1 DIA", "x": 540, "y": 250, "de": 2.75, "ate": 5.0, "estilo": "contorno", "cor": "azul" } ],
+      "contadores": [
+        { "rotulo": "DIA · 1 GIRO", "cor": "azul", "x": 540, "y": 1410, "tam": 140, "de": 2.75, "ate": 5.0, "chaves": [[2.9, 0], [4.6, 243]], "maximo": 243, "rodape": "DIAS DA TERRA" }
+      ],
+      "legendas": [ { "de": 2.65, "ate": 5.0, "passo": 0.25, "texto": "UM GIRO: 243 DIAS DA TERRA." } ]
+    },
+    {
+      "nome": "corrida", "de": 5.0, "ate": 8.4, "entrada": "continua",
+      "camera": { "de": { "pos": [0, 1.6, 12.2], "alvo": [0, -0.75, 4.2] }, "ate": { "pos": [0, 14, 20], "alvo": [0, -3, 0.5] }, "fov": 40, "move": [5.0, 5.6] },
+      "pecas": [
+        { "tipo": "estrelas" },
+        { "tipo": "sol", "aparece": [5.1, 5.6] },
+        { "tipo": "orbita", "cor": "amarelo", "desenha": [5.15, 5.6] },
+        { "tipo": "planeta", "giro": -0.03, "luz": [-0.3, 0.75, 0.6] },
+        { "tipo": "anel", "cor": "azul" },
+        { "tipo": "marcador", "caminho": "orbita", "cor": "amarelo", "sentido": 1, "inicio": 1.5708, "chaves": [[5.45, 0], [6.95, 1]] },
+        { "tipo": "marcador", "caminho": "anel", "cor": "azul", "sentido": -1, "inicio": 1.4, "chaves": [[5.45, 0], [7.07, 1]] }
+      ],
+      "chips": [
+        { "texto": "• 1 VOLTA = 1 ANO", "x": 540, "y": 250, "de": 5.3, "ate": 8.4, "estilo": "contorno", "cor": "amarelo" },
+        { "texto": "ANO: FEITO", "x": 290, "y": 1165, "de": 6.95, "ate": 8.4, "estilo": "cheio", "cor": "amarelo" },
+        { "texto": "• DIA: AINDA GIRA", "x": 790, "y": 1165, "de": 6.95, "ate": 8.4, "estilo": "contorno", "cor": "azul" }
+      ],
+      "contadores": [
+        { "rotulo": "ANO · 1 VOLTA", "cor": "amarelo", "x": 290, "y": 1410, "tam": 110, "de": 5.3, "ate": 8.4, "chaves": [[5.45, 0], [6.95, 225]], "maximo": 225, "rodape": "DIAS DA TERRA", "feito": { "em": 6.95, "rotulo": "ANO · FEITO" } },
+        { "rotulo": "DIA · 1 GIRO", "cor": "azul", "x": 790, "y": 1410, "tam": 110, "de": 5.3, "ate": 8.4, "chaves": [[5.45, 0], [7.07, 243]], "maximo": 243, "rodape": "DIAS DA TERRA" }
+      ],
+      "legendas": [
+        { "de": 5.1, "ate": 7.0, "passo": 0.2, "texto": "UMA VOLTA NO SOL? SÓ 225." },
+        { "de": 7.0, "ate": 8.4, "passo": 0.2, "texto": "O ANO GANHA." }
+      ]
+    },
+    {
+      "nome": "quente", "de": 8.4, "ate": 10.8, "entrada": "clarao",
+      "camera": { "de": { "pos": [0.5, 2.0, 9.0], "alvo": [0, 0.5, 0] }, "ate": { "pos": [0.1, 1.9, 8.4], "alvo": [0, 0.5, 0] }, "fov": 40 },
+      "ceu": { "topo": "#060402", "horizonte": "#5a2a08", "altura": 0.52 },
+      "pecas": [
+        { "tipo": "chao", "cor": "laranja", "x": [-9, 9], "z": [-28, 5], "passo": 0.5 },
+        { "tipo": "bloco", "base": [0.55, 0, 0.7], "tam": [0.9, 0.55, 0.7], "giro": -0.35, "derrete": [9.6, 10.6], "cor": "laranja" },
+        { "tipo": "jipe", "base": [-0.6, 0, -0.8], "giro": 0.25, "cor": "amarelo",
+          "movimentos": [
+            { "tipo": "anda", "de": 8.4, "ate": 9.2, "dx": -3.2 },
+            { "tipo": "olha", "de": 9.2, "ate": 9.5, "para": -0.9 },
+            { "tipo": "recua", "de": 10.0, "ate": 10.5, "dx": -0.45 }
+          ] }
+      ],
+      "chips": [
+        { "texto": "MAIS QUENTE", "x": 540, "y": 250, "de": 8.8, "ate": 10.8, "estilo": "cheio", "cor": "amarelo" },
+        { "texto": "• SUPERFÍCIE: 467 GRAUS", "x": 540, "y": 350, "de": 9.0, "ate": 10.8, "estilo": "contorno", "cor": "amarelo" },
+        { "texto": "CHUMBO: DERRETIDO", "x": 680, "y": 880, "de": 10.2, "ate": 10.8, "estilo": "cheio", "cor": "laranja" }
+      ],
+      "legendas": [
+        { "de": 8.45, "ate": 9.5, "passo": 0.1, "texto": "O PLANETA MAIS QUENTE:" },
+        { "de": 9.5, "ate": 10.8, "passo": 0.25, "texto": "DERRETE CHUMBO." }
+      ]
+    },
+    {
+      "nome": "contrario", "de": 10.8, "ate": 12.4, "entrada": "escurece",
+      "camera": { "de": { "pos": [1.6, 2.4, 11.2], "alvo": [0, -0.6, 4.2] }, "ate": { "pos": [1.0, 2.0, 10.8], "alvo": [0, -0.55, 4.2] }, "fov": 40 },
+      "pecas": [
+        { "tipo": "estrelas" },
+        { "tipo": "planeta", "giro": -0.16, "luz": [-0.5, 0.5, 0.7] },
+        { "tipo": "seta", "cor": "azul", "sentido": -1, "raio": 1.25, "velocidade": 0.7, "aparece": [10.9, 11.3] }
+      ],
+      "chips": [ { "texto": "• GIRA AO CONTRÁRIO", "x": 540, "y": 250, "de": 11.45, "ate": 12.4, "estilo": "contorno", "cor": "azul" } ],
+      "legendas": [ { "de": 10.85, "ate": 12.4, "passo": 0.2, "texto": "E GIRA AO CONTRÁRIO:" } ]
+    },
+    {
+      "nome": "oeste", "de": 12.4, "ate": 15.0, "entrada": "escurece",
+      "camera": { "de": { "pos": [0, 1.1, 6.4], "alvo": [0, 0.6, -10] }, "ate": { "pos": [0, 1.2, 5.6], "alvo": [0, 0.65, -10] }, "fov": 40 },
+      "ceu": { "topo": "#030302", "horizonte": "#2a2604", "altura": 0.46 },
+      "pecas": [
+        { "tipo": "solNasce", "centro": [0, 0, -48], "raio": 2.5, "y": [-4, 3.2], "de": 12.5, "ate": 13.7 },
+        { "tipo": "montanhas", "z": -30, "picos": [[-12, 0.5], [-9, 3.4], [-6.8, 1.3], [-4.4, 3.8], [-2.2, 0.9], [0.4, 1.4], [2.4, 0.7], [4.6, 3.6], [7, 1.2], [9.6, 3.4], [12.5, 0.6]] },
+        { "tipo": "chao", "cor": "amarelo", "x": [-10, 10], "z": [-29, 5], "passo": 0.55 },
+        { "tipo": "jipe", "base": [-0.9, 0, -2], "giro": 0.6, "cor": "amarelo",
+          "movimentos": [ { "tipo": "olha", "de": 12.6, "ate": 13.0, "para": -0.5 } ] }
+      ],
+      "chips": [ { "texto": "• OESTE", "x": 540, "y": 590, "de": 12.95, "ate": 15.0, "estilo": "contorno", "cor": "amarelo" } ],
+      "legendas": [ { "de": 12.45, "ate": 13.6, "passo": 0.1, "texto": "O SOL NASCE NO OESTE." } ],
+      "titulo": { "de": 13.6, "passo": 0.1, "y": 250, "tam": 86, "linhas": ["VOCÊ ESPERARIA", "ESSE NASCER", "DO SOL?"], "destaque": ["NASCER", "DO", "SOL?"] }
+    }
+  ],
+
+  "musica": {
+    "acordes": [
+      { "de": 0.0, "notas": ["A2", "E3", "C4", "G4"] },
+      { "de": 2.6, "notas": ["F2", "C3", "A3", "E4"] },
+      { "de": 5.0, "notas": ["C3", "G3", "E4", "B4"] },
+      { "de": 8.4, "notas": ["D2", "A2", "F3", "C4"] },
+      { "de": 10.8, "notas": ["Bb2", "F3", "D4", "A4"] },
+      { "de": 12.4, "notas": ["A2", "E3", "C#4", "E4", "A4"] }
+    ],
+    "pulso": ["A4", "E5", "C5", "E5", "G4", "E5", "C5", "B4"],
+    "passoPulso": 0.25,
+    "conta": "E6",
+    "feito": ["A5", "C#6", "E6"],
+    "final": ["A4", "C#5", "E5", "A5", "C#6"]
+  }
+}

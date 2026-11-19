@@ -1,0 +1,112 @@
+{
+  "titulo": "Decolagem na placa",
+  "duracao": 10,
+  "fps": 30,
+  "semente": 14,
+  "posesPorSegundo": 12,
+  "_medidas": "1 unidade = 1 pino (8 mm). x para a direita, y para cima, z para a câmera. Tijolo = 1,2 de altura; placa = 0,4.",
+
+  "cores": {
+    "mesa": "#9a6438",
+    "mesaVeio": "#6e4224",
+    "placa": "#3f9a3c",
+    "parede": ["#5f9fd8", "#6eaee2", "#7ab8ea", "#5592cc", "#8cc4ee"],
+    "paredeClara": "#c9e2f6",
+    "morro": ["#3d9a3a", "#4fae44", "#2f8432", "#5cba4c"],
+    "nuvem": ["#f4f2ec", "#e6e4de"],
+    "haste": "#efede6",
+    "sol": "#f6c81e",
+    "listraAmarela": "#f2c21a",
+    "listraPreta": "#2a2b2e",
+    "chapa": "#6f7276",
+    "tronco": "#7a4a26",
+    "folha": ["#3a9a36", "#58b443"],
+    "pele": "#f4e6cf",
+    "olho": "#16161a",
+    "fumaca": ["#f2f2ee", "#d9dad8", "#b8bab9", "#9a9c9c"],
+    "fogo": ["#ffd23a", "#ff9a1a", "#ff5a14"]
+  },
+
+  "luz": {
+    "chave": "#ffe2b8",
+    "forca": 2.6,
+    "de": [-26, 46, 34],
+    "ceu": "#cfe2ff",
+    "chao": "#8a6a48",
+    "ambiente": 0.75,
+    "reflexo": 0.9,
+    "tremor": 0.05
+  },
+
+  "filme": {
+    "exposicao": 1.05,
+    "grao": 0.03,
+    "vinheta": 0.55,
+    "quente": "#fff0dc",
+    "tremorPeca": 0.04,
+    "tremorCamera": 0.012
+  },
+
+  "camera": [
+    { "t": 0.0, "pos": [13, 1.1, 14], "olha": [3, 1.4, -3], "fov": 30, "foco": [4, 1, 0], "desfoque": 30, "para": true },
+    { "t": 2.0, "pos": [13, 4.5, 20], "olha": [2, 4.2, -3], "fov": 32, "foco": [3, 4, -1], "desfoque": 26 },
+    { "t": 3.9, "pos": [6, 9.5, 28], "olha": [0, 7.5, -3], "fov": 34, "foco": [2, 7, -1], "desfoque": 20, "para": true },
+    { "t": 4.6, "pos": [-4, 5.0, 17], "olha": [-11, 2.6, 5], "fov": 34, "foco": [-11, 2.4, 5.5], "desfoque": 26 },
+    { "t": 5.9, "pos": [-5.5, 4.6, 15.5], "olha": [-12, 2.4, 4.5], "fov": 34, "foco": [-11, 2.4, 5.5], "desfoque": 26, "para": true },
+    { "t": 6.6, "pos": [3, 8, 33], "olha": [2, 9, -3], "fov": 38, "foco": [3, 8, -3], "desfoque": 16 },
+    { "t": 8.6, "pos": [1, 15, 68], "olha": [2, 20, -12], "fov": 42, "foco": [3, 20, -3], "desfoque": 9 },
+    { "t": 10.0, "pos": [0, 16, 74], "olha": [2, 21, -14], "fov": 42, "foco": [3, 24, -3], "desfoque": 8, "para": true }
+  ],
+
+  "pecas": [
+    { "tipo": "mesa", "y": -0.3 },
+    { "tipo": "placa", "x": [-24, 24], "z": [-22, 14] },
+    { "tipo": "parede", "z": -30, "x": [-80, 80], "altura": 66 },
+    { "tipo": "morro", "x": -34, "largura": 26, "linhas": 8, "z": -28 },
+    { "tipo": "morro", "x": -8, "largura": 22, "linhas": 6, "z": -27 },
+    { "tipo": "morro", "x": 22, "largura": 30, "linhas": 9, "z": -28 },
+    { "tipo": "morro", "x": 50, "largura": 24, "linhas": 7, "z": -28 },
+    { "tipo": "sol", "x": 30, "y": 50, "z": -29.4, "raio": 4.5 },
+    { "tipo": "nuvem", "x": -30, "z": -25, "altura": 40, "largura": 10 },
+    { "tipo": "nuvem", "x": -14, "z": -24, "altura": 31, "largura": 8 },
+    { "tipo": "nuvem", "x": -4, "z": -26, "altura": 44, "largura": 7 },
+    { "tipo": "nuvem", "x": 14, "z": -24, "altura": 35, "largura": 9 },
+    { "tipo": "nuvem", "x": 26, "z": -26, "altura": 28, "largura": 8 },
+    { "tipo": "nuvem", "x": 40, "z": -25, "altura": 38, "largura": 9 },
+
+    { "tipo": "plataforma", "x": 3, "z": -3, "lado": 10 },
+
+    { "tipo": "foguete", "x": 3, "z": -3, "monta": [0.25, 3.7],
+      "camadas": ["#34363b", "#f3f1ea", "#c81f2a", "#f3f1ea", "#f3f1ea", "#c81f2a", "#f3f1ea", "#f3f1ea", "#c81f2a", "#f3f1ea"],
+      "listra": "#f2c21a", "janela": { "camada": 6, "cor": "#5fb8f0" },
+      "aletas": "#c81f2a", "bico": ["#c81f2a", "#f3f1ea", "#c81f2a"] },
+
+    { "tipo": "torre", "x": -3, "z": -3, "monta": [0.7, 3.9],
+      "camadas": ["#f2c21a", "#3a3b40", "#f2c21a", "#3a3b40", "#f2c21a", "#3a3b40", "#f2c21a", "#3a3b40", "#f2c21a", "#3a3b40"],
+      "braco": "#f2c21a" },
+
+    { "tipo": "pilha", "x": [9, 20], "z": [-7, 2], "soltas": 14 },
+
+    { "tipo": "mesaControle", "x": -11, "z": 6.6, "alavanca": 5.25 },
+    { "tipo": "sinal", "x": -14.5, "z": 3, "acende": [5.45, 5.8, 6.15] },
+    { "tipo": "arvore", "x": 13, "z": 4, "cai": 7.05 },
+    { "tipo": "arvore", "x": -19, "z": -12 },
+    { "tipo": "arvore", "x": 19, "z": -16 },
+
+    { "tipo": "boneco", "nome": "observa", "cor": "#2a9d94", "x": -6.5, "z": 9, "olha": [3, -3],
+      "acoes": [ { "tipo": "comemora", "de": 6.9, "ate": 9.6 } ] },
+    { "tipo": "boneco", "nome": "aperta", "cor": "#ef8a22", "x": -4.5, "z": 10.5, "olha": [3, -3],
+      "acoes": [ { "tipo": "corre", "de": 4.35, "ate": 5.0, "para": [-11, 4.9], "pulos": 4 },
+                 { "tipo": "alavanca", "em": 5.25 } ] },
+
+    { "tipo": "decolagem", "t": 6.4, "dur": 3.7, "altura": 26, "fogo": 40, "fumaca": 320, "treme": 0.35 }
+  ],
+
+  "musica": {
+    "marimba": ["C5", "E5", "G5", "C6", "A4", "C5", "E5", "A5", "F4", "A4", "C5", "F5", "G4", "B4", "D5", "G5"],
+    "passo": 0.25,
+    "caixinha": ["E6", "G6", "C7", "G6", "A6", "E6", "F6", "D6"],
+    "baixo": ["C3", "A2", "F2", "G2"],
+    "final": ["C6", "E6", "G6", "C7"]
+  }
+}

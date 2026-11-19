@@ -1,0 +1,55 @@
+{
+  "titulo": "Pétala no lago",
+  "duracao": 9,
+  "fps": 30,
+  "semente": 11,
+  "segurar": 2,
+  "cores": {
+    "campo": [[0, "#86b79a"], [0.3, "#6aac97"], [0.44, "#3f9c93"], [0.62, "#22888a"], [1, "#0f6668"]],
+    "nevoa": "#d9e6c8",
+    "agua": "#23898a",
+    "sombra": "#0a4a4c",
+    "coral": "#e4604a",
+    "coral2": "#d4523f",
+    "vermelho": "#b8322c",
+    "creme": "#f1e6cc",
+    "pele": "#e9cdb0",
+    "escuro": "#1b2224"
+  },
+  "camadas": { "agua": 0.85, "meio": 1.0, "perto": 1.3 },
+  "camera": [
+    { "t": 0, "x": 960, "y": 540, "zoom": 1.0 },
+    { "t": 9, "x": 1025, "y": 572, "zoom": 1.075 }
+  ],
+  "pecas": [
+    { "tipo": "nevoa", "anda": 18, "forca": 0.38 },
+    { "tipo": "ondas", "quantas": 46, "de": 440, "ate": 1080, "anda": [5, 26] },
+
+    { "tipo": "folhas", "camada": "perto", "semente": 5, "quantas": 40,
+      "linha": [[930, 1110], [1960, 745]], "ate": [1990, 1130], "raio": [24, 66] },
+    { "tipo": "folha", "camada": "meio", "x": 1185, "y": 772, "raio": 26, "giro": 2.4,
+      "empurra": { "de": 2.0, "ate": 3.1, "dx": -22, "dy": 6 } },
+    { "tipo": "folha", "camada": "meio", "x": 1395, "y": 803, "raio": 18, "giro": 0.6 },
+    { "tipo": "folha", "camada": "meio", "x": 1310, "y": 930, "raio": 24, "giro": 4.1 },
+    { "tipo": "folha", "camada": "meio", "x": 1120, "y": 985, "raio": 30, "giro": 1.2 },
+    { "tipo": "folha", "camada": "meio", "x": 960, "y": 1050, "raio": 36, "giro": 5.0 },
+
+    { "tipo": "carpa", "camada": "perto", "de": 4.6, "ate": 8.9, "x0": 2060, "y0": 790, "x1": 1130, "y1": 930, "tamanho": 1.0 },
+
+    { "tipo": "mulher", "camada": "meio", "x": 1262, "y": 735, "escala": 1.0,
+      "passos": [[1.0, 2.1, -52], [2.9, 4.0, -50]],
+      "levanta": [6.7, 7.7] },
+
+    { "tipo": "libelula", "camada": "meio", "escala": 1.6,
+      "pulos": [[0, -60, 430], [0.35, 105, 438], [1.5, 420, 405], [2.4, 735, 470], [3.3, 1050, 372], [4.3, 1490, 300], [5.5, 1740, 235], [6.4, 2090, 190]] },
+
+    { "tipo": "petala", "camada": "meio", "cai": [3.9, 7.9], "de": [690, -40], "pousa": [775, 818], "balanco": 46 },
+
+    { "tipo": "titulo", "x": 110, "y": 930, "tamanho": 44, "de": 0.2, "ate": 2.8 }
+  ],
+  "som": {
+    "ar": 0.11,
+    "agua": 0.07,
+    "notas": [["D4", 0.4, 2.2], ["A4", 1.9, 1.8], ["G4", 4.4, 1.8], ["D5", 7.95, 2.0], ["A4", 8.25, 1.6]]
+  }
+}

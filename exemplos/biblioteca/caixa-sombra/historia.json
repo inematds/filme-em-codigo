@@ -1,0 +1,157 @@
+{
+  "titulo": "O polvo tem três corações",
+  "duracao": 15,
+  "fps": 30,
+  "semente": 28,
+  "poses_por_segundo": 15,
+  "paleta": {
+    "agua1": "#2f8c93",
+    "agua2": "#1a4a70",
+    "agua3": "#0f2447",
+    "marinho": "#18305c",
+    "marinhoEsc": "#0b1630",
+    "teal": "#2f8a87",
+    "tealEsc": "#1d5e66",
+    "tealFundo": "#245f78",
+    "tealClaro": "#4fb6a4",
+    "verde": "#3fae8a",
+    "coral": "#ea6f58",
+    "coralEsc": "#c4533f",
+    "coralEsc2": "#e0634d",
+    "coralClaro": "#ff8a73",
+    "creme": "#f4e7cc",
+    "amarelo": "#e3e302",
+    "apagado": "#4a4a2c",
+    "cinza": "#8d95a5",
+    "gota": ["#16357e", "#2550a8", "#3b74cf", "#6fa3ec"]
+  },
+
+  "planos": [
+    { "id": "polvo", "cena": "mar", "de": 0, "ate": 3.0,
+      "camera": [ { "t": 0, "x": 540, "y": 960, "z": 1.0 }, { "t": 2.3, "x": 540, "y": 1020, "z": 1.2 } ],
+      "sai": { "tipo": "janela", "de": 2.3 } },
+    { "id": "coracoes", "cena": "arco", "de": 3.0, "ate": 5.85,
+      "camera": [ { "t": 3.0, "x": 540, "y": 940, "z": 1.14 }, { "t": 4.5, "x": 540, "y": 840, "z": 1.05 }, { "t": 6.3, "x": 540, "y": 980, "z": 1.0 } ] },
+    { "id": "sangue", "cena": "gota", "de": 5.85, "ate": 9.05,
+      "entra": { "tipo": "cortina", "dur": 0.5 },
+      "camera": [ { "t": 5.85, "x": 540, "y": 1000, "z": 1.0 }, { "t": 7.1, "x": 540, "y": 960, "z": 1.06 }, { "t": 9.5, "x": 560, "y": 980, "z": 1.1 } ] },
+    { "id": "nado", "cena": "mar", "de": 9.05, "ate": 15,
+      "entra": { "tipo": "cortina", "dur": 0.5 },
+      "camera": { "segue": "polvo", "base": [540, 960], "ancora": [540, 1300], "f": [0.55, 1.0], "z": 1.08 } }
+  ],
+
+  "cenas": {
+    "mar": {
+      "pecas": [
+        { "tipo": "astro", "x": 640, "y": -240, "r": 230, "aneis": 4, "prof": 0.12 },
+        { "tipo": "raios", "x": 640, "y": -240, "n": 5, "prof": 0.18 },
+        { "tipo": "morro", "y": 1150, "amp": 90, "cor": "tealFundo", "prof": 0.3, "semente": 3 },
+        { "tipo": "alga", "x": 120, "y": 1500, "alt": 1500, "larg": 70, "cor": "tealFundo", "fase": 0.4, "prof": 0.42 },
+        { "tipo": "alga", "x": 330, "y": 1500, "alt": 1150, "larg": 60, "cor": "tealFundo", "fase": 2.1, "prof": 0.42 },
+        { "tipo": "alga", "x": 800, "y": 1500, "alt": 1350, "larg": 66, "cor": "tealFundo", "fase": 1.2, "prof": 0.42 },
+        { "tipo": "alga", "x": 1000, "y": 1500, "alt": 1700, "larg": 74, "cor": "tealFundo", "fase": 3.0, "prof": 0.42 },
+        { "tipo": "morro", "y": 1300, "amp": 70, "cor": "tealEsc", "prof": 0.6, "semente": 5 },
+        { "tipo": "peixe", "de": 0, "ate": 3.2, "x0": -160, "x1": 1240, "y": 520, "tam": 70, "prof": 0.5 },
+        { "tipo": "alga", "x": 40, "y": 1560, "alt": 1900, "larg": 96, "cor": "teal", "fase": 0.9, "prof": 0.72 },
+        { "tipo": "alga", "x": 230, "y": 1560, "alt": 1250, "larg": 80, "cor": "teal", "fase": 2.6, "prof": 0.72 },
+        { "tipo": "alga", "x": 880, "y": 1560, "alt": 1450, "larg": 84, "cor": "teal", "fase": 1.7, "prof": 0.72 },
+        { "tipo": "alga", "x": 1070, "y": 1560, "alt": 2000, "larg": 96, "cor": "teal", "fase": 0.2, "prof": 0.72 },
+        { "tipo": "chao", "y": 1360, "amp": 26, "cor": "marinho", "prof": 0.95, "semente": 7 },
+        { "tipo": "polvo", "prof": 1.0 },
+        { "tipo": "bolhas", "n": 18, "x0": -100, "x1": 1180, "y0": -900, "y1": 2000, "vel": 120, "prof": 1.05 },
+        { "tipo": "chao", "y": 1640, "amp": 40, "cor": "marinhoEsc", "prof": 1.2, "semente": 9 },
+        { "tipo": "alga", "x": -60, "y": 2050, "alt": 2700, "larg": 130, "cor": "tealClaro", "fase": 1.4, "prof": 1.3 },
+        { "tipo": "alga", "x": 1150, "y": 2050, "alt": 2500, "larg": 120, "cor": "tealClaro", "fase": 2.9, "prof": 1.3 }
+      ],
+      "polvo": {
+        "x": [[0, 540], [12.8, 540], [14.8, 330]],
+        "y": [[0, 1300], [9.35, 1300], [10.6, 780], [11.15, 745], [12.65, 1300]],
+        "esc": [[0, 1.0]],
+        "rot": [[0, 0], [11.05, 0], [11.6, -0.12], [12.6, 0], [13.0, 0.04], [14.8, 0.04]],
+        "nado": [[0, 0], [9.3, 0], [9.5, 1], [10.6, 1], [11.05, 0]],
+        "cansa": [[0, 0], [10.9, 0], [11.4, 1], [12.6, 1], [13.2, 0.25], [13.6, 0]],
+        "anda": [[0, 0], [12.65, 0], [12.95, 1], [15, 1]],
+        "luz": [[0, 1], [10.6, 1], [10.82, 0.05], [13.25, 0.05], [13.55, 1]],
+        "batidas": [1.5, 1.82, 2.14, 9.7, 10.15, 13.4, 13.9],
+        "batidasGuelras": [1.82, 2.14]
+      }
+    },
+
+    "arco": {
+      "furo": { "x": 540, "y": 660, "r": 400 },
+      "principal": { "x": 540, "y": 700, "tam": 230 },
+      "guelras": [
+        { "x": 330, "y": 1250, "tam": 150, "pente": [212, 860] },
+        { "x": 750, "y": 1250, "tam": 150, "pente": [868, 860] }
+      ],
+      "tubos": [
+        [[330, 1250], [300, 1500], [330, 1800], [360, 2100]],
+        [[750, 1250], [780, 1500], [750, 1800], [720, 2100]],
+        [[212, 1010], [250, 1130], [320, 1210]],
+        [[868, 1010], [830, 1130], [760, 1210]],
+        [[230, 700], [330, 620], [460, 660]],
+        [[850, 700], [750, 620], [620, 660]]
+      ],
+      "batidasGuelras": [3.06, 3.26, 3.46],
+      "batidasPrincipal": [4.33, 5.0]
+    },
+
+    "gota": {
+      "gota": { "x": 540, "y": 1060, "larg": 640, "alt": 980, "pousa": 6.05 },
+      "o2": { "de": 6.95, "n": 5, "cx": 540, "cy": 1010, "r": 340, "tam": 128, "texto": "O2", "chega": 0.8 },
+      "cobre": { "de": 7.2, "x": 540, "y": 1010, "r": 165, "texto": "COBRE" },
+      "ferro": { "de": 8.0, "risca": 8.36, "sai": 8.75, "x": 860, "y": 1330, "r": 112, "texto": "FERRO" }
+    }
+  },
+
+  "legenda": { "y": 1530, "tam": 82, "largura": 940, "passo": 0.16, "cor": "creme", "fala": "amarelo" },
+  "legendas": [
+    { "de": 0.25, "ate": 1.45, "texto": "UM POLVO TEM" },
+    { "de": 1.45, "ate": 2.75, "texto": "TRÊS CORAÇÕES" },
+    { "de": 3.0, "ate": 4.3, "texto": "DOIS NAS BRÂNQUIAS" },
+    { "de": 4.3, "ate": 5.7, "texto": "UM PARA O CORPO" },
+    { "de": 5.88, "ate": 6.85, "texto": "SANGUE AZUL" },
+    { "de": 6.85, "ate": 8.0, "texto": "OXIGÊNIO COM COBRE" },
+    { "de": 8.0, "ate": 9.15, "texto": "NÃO COM FERRO" },
+    { "de": 9.3, "ate": 10.3, "texto": "MAS NADANDO," },
+    { "de": 10.3, "ate": 11.45, "texto": "O CORAÇÃO PARA" },
+    { "de": 11.45, "ate": 12.6, "texto": "E CANSA RÁPIDO" },
+    { "de": 12.6, "ate": 13.75, "texto": "POR ISSO PREFERE" },
+    { "de": 13.75, "ate": 14.7, "texto": "RASTEJAR" }
+  ],
+  "fimEscuro": 0.3,
+
+  "musica": {
+    "acordes": [
+      [0.0, ["D3", "F3", "A3"]], [1.9, ["A#2", "D3", "F3"]], [3.8, ["F2", "A2", "C3"]], [5.7, ["C3", "E3", "G3"]],
+      [7.6, ["D3", "F3", "A3"]], [9.5, ["A#2", "D3", "F3"]], [11.4, ["G2", "A#2", "D3"]], [13.3, ["F2", "A2", "C3"]]
+    ],
+    "notas": [
+      ["A4", 0.3, 0.5], ["D5", 0.75, 0.5], ["F5", 1.2, 0.8],
+      ["D5", 2.1, 0.5], ["F5", 2.55, 0.5], ["A#4", 3.0, 0.8],
+      ["C5", 3.95, 0.5], ["F5", 4.4, 0.5], ["A5", 4.85, 0.8],
+      ["G5", 5.9, 0.5], ["E5", 6.35, 0.5], ["C5", 6.8, 0.8],
+      ["D5", 7.7, 0.5], ["F5", 8.15, 0.5], ["A5", 8.6, 0.8],
+      ["F5", 11.5, 0.5], ["D5", 11.95, 0.5], ["A#4", 12.4, 0.9],
+      ["C5", 13.4, 0.5], ["F5", 13.85, 0.5], ["A5", 14.3, 0.7]
+    ]
+  },
+  "sons": [
+    { "t": 0.15, "tipo": "bolhas" },
+    { "t": 2.3, "tipo": "entra", "dur": 0.7 },
+    { "t": 5.85, "tipo": "papel", "dur": 0.5 },
+    { "t": 6.05, "tipo": "plop" },
+    { "t": 6.95, "tipo": "discos", "n": 5, "chega": 0.8 },
+    { "t": 7.2, "tipo": "vira" },
+    { "t": 8.0, "tipo": "papel", "dur": 0.35 },
+    { "t": 8.36, "tipo": "x" },
+    { "t": 8.75, "tipo": "papel", "dur": 0.3 },
+    { "t": 9.05, "tipo": "papel", "dur": 0.5 },
+    { "t": 9.35, "tipo": "nado", "dur": 1.3 },
+    { "t": 10.62, "tipo": "para" },
+    { "t": 11.2, "tipo": "suspiro" },
+    { "t": 12.6, "tipo": "pousa" },
+    { "t": 12.95, "tipo": "rasteja", "ate": 14.8, "passo": 0.36 },
+    { "t": 13.4, "tipo": "acende" }
+  ]
+}

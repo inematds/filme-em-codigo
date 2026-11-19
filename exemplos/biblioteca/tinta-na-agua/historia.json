@@ -1,0 +1,63 @@
+{
+  "titulo": "Grou de tinta",
+  "duracao": 9.6,
+  "fps": 30,
+  "semente": 5,
+  "resolucaoTinta": 0.5,
+  "papel": {"claro": "#f8f3e8", "borda": "#d6c3a0", "luz": [0.5, 0.42]},
+  "tintas": {"preta": "#1a1b22", "azul": "#2546a8", "ouro": "#d89a2c"},
+  "camera": [
+    {"t": 0.0, "x": 780, "y": 250, "zoom": 1.6, "tinta": 10, "bando": 0},
+    {"t": 1.1, "x": 790, "y": 290, "zoom": 1.55, "tinta": 0, "bando": 0},
+    {"t": 2.2, "x": 860, "y": 380, "zoom": 1.35, "tinta": 0, "bando": 0},
+    {"t": 3.6, "x": 1000, "y": 500, "zoom": 1.02, "tinta": 0, "bando": 0},
+    {"t": 4.8, "x": 980, "y": 530, "zoom": 0.98, "tinta": 0, "bando": 0},
+    {"t": 5.8, "x": 960, "y": 510, "zoom": 1.02, "tinta": 9, "bando": 0},
+    {"t": 7.8, "x": 970, "y": 490, "zoom": 1.06, "tinta": 9, "bando": 0},
+    {"t": 8.4, "x": 965, "y": 500, "zoom": 1.02, "tinta": 0, "bando": 2},
+    {"t": 9.6, "x": 950, "y": 520, "zoom": 0.97, "tinta": 0, "bando": 4}
+  ],
+  "pecas": [
+    {"tipo": "pluma", "cor": "preta", "x": 690, "y": -200, "de": -1.6, "desce": 720, "tau": 2.8, "raio": 110, "angulo": 0.08, "giro": 1.4, "haste": 200, "semente": 1},
+    {"tipo": "pluma", "cor": "azul", "x": 900, "y": -180, "de": -1.2, "desce": 690, "tau": 2.6, "raio": 104, "angulo": -0.05, "giro": 1.5, "haste": 200, "semente": 2},
+    {"tipo": "pluma", "cor": "preta", "x": 1260, "y": -140, "de": 0.3, "desce": 460, "tau": 2.2, "raio": 80, "angulo": 0.15, "giro": 1.3, "haste": 160, "semente": 3},
+    {"tipo": "pluma", "cor": "ouro", "x": 1540, "y": -140, "de": 0.2, "desce": 560, "tau": 2.4, "raio": 92, "angulo": -0.1, "giro": 1.4, "haste": 160, "semente": 4},
+    {"tipo": "pluma", "cor": "azul", "x": 1800, "y": -120, "de": 1.0, "desce": 420, "tau": 2.0, "raio": 72, "angulo": 0.25, "giro": 1.3, "haste": 140, "semente": 5},
+    {"tipo": "pluma", "cor": "preta", "x": 320, "y": -120, "de": 0.8, "desce": 420, "tau": 2.2, "raio": 74, "angulo": -0.2, "giro": 1.3, "haste": 140, "semente": 6},
+    {"tipo": "pluma", "cor": "azul", "x": 470, "y": -100, "de": 2.0, "desce": 340, "tau": 1.8, "raio": 58, "angulo": 0.1, "giro": 1.2, "haste": 120, "semente": 7},
+    {"tipo": "mancha", "cor": "azul", "x": 420, "y": 760, "raio": 260, "de": 2.6, "ate": 6.0, "forca": 0.38, "semente": 11},
+    {"tipo": "mancha", "cor": "preta", "x": 250, "y": 430, "raio": 230, "de": 2.0, "ate": 5.0, "forca": 0.3, "semente": 12},
+    {"tipo": "mancha", "cor": "ouro", "x": 1180, "y": 320, "raio": 200, "de": 3.2, "ate": 6.4, "forca": 0.4, "semente": 13},
+    {"tipo": "mancha", "cor": "azul", "x": 1660, "y": 620, "raio": 250, "de": 3.0, "ate": 6.0, "forca": 0.42, "semente": 14},
+    {"tipo": "mancha", "cor": "preta", "x": 980, "y": 240, "raio": 260, "de": 4.0, "ate": 7.0, "forca": 0.22, "semente": 15},
+    {"tipo": "mancha", "cor": "ouro", "x": 1440, "y": 780, "raio": 180, "de": 5.0, "ate": 8.0, "forca": 0.28, "semente": 16},
+    {"tipo": "bando", "quantos": 24000, "semente": 21, "nasce": [0, 1], "aparece": [3.0, 3.8], "voa": [3.5, 6.0], "cauda": 0.35, "cores": {"preta": 0.75, "azul": 0.21, "ouro": 0.04}, "soltos": 0.25, "largura": 170, "bokeh": 0.012, "caminho": [[800, 540], [620, 720], [660, 880], [1000, 920], [1400, 880], [1690, 700], [1660, 460], [1420, 360], [1150, 420], [920, 600]]},
+    {"tipo": "figura", "x": 900, "y": 640, "escala": 1.2, "giro": 0, "forma": [5.5, 6.2], "bate": 1.3, "sobe": [-18, -26], "explode": 7.8,
+      "partes": [
+        {"nome": "asa-tras", "cor": "azul", "forma": "poligono", "pivo": [10, -30], "gira": 0.4, "fase": 0.5, "peso": 0.2, "pontos": [[10, -30], [8, -94], [-14, -159], [-51, -218], [-94, -266], [-140, -313], [-157, -308], [-142, -275], [-173, -290], [-182, -279], [-159, -250], [-191, -255], [-195, -243], [-169, -218], [-197, -211], [-196, -198], [-167, -183], [-169, -153], [-150, -147], [-145, -116], [-125, -113], [-115, -82], [-93, -80], [-77, -51], [-51, -43], [-28, -33]], "base": -0.15},
+        {"nome": "corpo", "cor": "preta", "forma": "elipse", "x": 0, "y": 0, "rx": 105, "ry": 46, "giro": -0.35, "peso": 0.2},
+        {"nome": "cauda", "cor": "preta", "forma": "poligono", "peso": 0.03, "pontos": [[-90, 8], [-178, -12], [-160, 22], [-182, 40], [-100, 36]]},
+        {"nome": "pescoco", "cor": "preta", "forma": "linha", "grossura": 26, "peso": 0.08, "pontos": [[70, -30], [140, -100], [196, -184], [258, -228]]},
+        {"nome": "cabeca", "cor": "preta", "forma": "elipse", "x": 272, "y": -236, "rx": 27, "ry": 17, "giro": -0.3, "peso": 0.02},
+        {"nome": "bico", "cor": "preta", "forma": "poligono", "peso": 0.01, "pontos": [[290, -248], [362, -266], [294, -228]]},
+        {"nome": "coroa", "cor": "ouro", "forma": "elipse", "x": 266, "y": -249, "rx": 12, "ry": 8, "giro": -0.3, "peso": 0.01},
+        {"nome": "perna-1", "cor": "preta", "forma": "linha", "grossura": 8, "peso": 0.025, "pontos": [[-70, 22], [-160, 92], [-250, 150], [-272, 146]]},
+        {"nome": "perna-2", "cor": "azul", "forma": "linha", "grossura": 8, "peso": 0.025, "pontos": [[-58, 32], [-140, 118], [-222, 186], [-246, 186]]},
+        {"nome": "asa-frente", "cor": "preta", "forma": "poligono", "pivo": [30, -20], "gira": 0.45, "fase": 0, "peso": 0.4, "pontos": [[30, -20], [55, -90], [60, -170], [45, -250], [20, -320], [-10, -390], [-30, -392], [-28, -350], [-55, -380], [-70, -372], [-58, -330], [-90, -350], [-100, -338], [-82, -300], [-115, -305], [-120, -290], [-95, -262], [-110, -230], [-92, -215], [-100, -180], [-80, -168], [-82, -130], [-60, -118], [-55, -80], [-30, -60], [-10, -40]], "base": -0.2}
+      ],
+      "floradas": [
+        {"dx": 0, "dy": 0, "cor": "preta", "raio": 119, "angulo": 0.6, "desce": 221, "giro": 2.0},
+        {"dx": -10, "dy": -300, "cor": "azul", "raio": 105, "angulo": 3.0, "desce": 208, "giro": 2.0},
+        {"dx": -110, "dy": -250, "cor": "preta", "raio": 95, "angulo": 2.4, "desce": 195, "giro": 1.8},
+        {"dx": 270, "dy": -236, "cor": "ouro", "raio": 88, "angulo": -2.3, "desce": 195, "giro": 2.0},
+        {"dx": -200, "dy": 140, "cor": "azul", "raio": 85, "angulo": 0.9, "desce": 195, "giro": 1.8}
+      ] },
+    {"tipo": "titulo", "x": 110, "y": 990, "tamanho": 46, "cor": "#1f2a55", "escreve": [0.3, 1.3], "de": 0.2, "ate": 2.7}
+  ],
+  "musica": {
+    "zumbido": ["D2", "A2"],
+    "dedilhado": [["D4", 0.5], ["A4", 1.3], ["F4", 2.2], ["E4", 3.0], ["D5", 6.3], ["A4", 6.9], ["C5", 7.4], ["D4", 8.9]],
+    "gotas": [0.25, 0.8, 1.15, 2.05, 2.5],
+    "sino": [["A5", 0], ["E6", 0.05]]
+  }
+}

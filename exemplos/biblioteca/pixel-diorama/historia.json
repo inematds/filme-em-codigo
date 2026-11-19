@@ -1,0 +1,206 @@
+{
+  "titulo": "A vila das lanternas",
+  "titulo_de": 0.4,
+  "titulo_ate": 2.8,
+  "duracao": 10,
+  "fps": 30,
+  "semente": 41,
+  "escala": 7,
+
+  "paleta": {
+    "contorno": "#1e1626", "noiteFunda": "#262046", "roxo": "#3f3466", "lilas": "#6b5a92",
+    "lavanda": "#9d8cc0", "nevoa": "#d4b6c8", "rosaCeu": "#f0a3a0", "laranjaCeu": "#f6c27a",
+    "creme": "#f4e6c4", "branco": "#fff6e0", "capa": "#d23a3a", "capaEscura": "#7e1f32",
+    "pele": "#f2b98c", "calca": "#4a3a5a", "bota": "#5a3524", "palha": "#e8c060",
+    "folhaEscura": "#2f5a3a", "folha": "#4f8a3c", "folhaClara": "#8cc04a", "outono": "#d8682a",
+    "outonoClaro": "#f0a040", "outonoEscuro": "#9a3a26", "pedraEscura": "#3a3348", "pedra": "#5c5470",
+    "pedraClara": "#8a7e98", "madeira": "#6e4630", "madeiraClara": "#a8744a", "telhado": "#b04a3a",
+    "lanterna": "#ffd36a", "luz": "#fff1b0", "agua": "#4a4a8a", "aguaClara": "#7a78b8"
+  },
+
+  "ceu": {
+    "tarde": ["lilas", "rosaCeu", "laranjaCeu", "creme"],
+    "noite": ["noiteFunda", "noiteFunda", "roxo", "lilas"],
+    "estrelas": 140
+  },
+  "tarde": { "tinta": "#fff0e4", "nevoa": "#eaa6ae" },
+  "noite": { "de": 5.6, "ate": 7.0, "tinta": "#6466b0", "nevoa": "#2c2856" },
+  "raios": [
+    { "x": 0.58, "largura": 0.05 },
+    { "x": 0.72, "largura": 0.09 },
+    { "x": 0.86, "largura": 0.04 },
+    { "x": 0.97, "largura": 0.07 }
+  ],
+  "vagalumes": { "n": 26, "x1": -200, "x2": 780, "y1": -6, "y2": -46 },
+
+  "camera": [
+    { "t": 0.0, "segue": true, "dx": 60, "y": -49, "d": 100, "foco": 0, "abertura": 16 },
+    { "t": 5.8, "segue": true, "dx": 60, "y": -50, "d": 104, "foco": 0, "abertura": 16 },
+    { "t": 6.5, "x": 790, "y": -56, "d": 116, "foco": 0, "abertura": 14 },
+    { "t": 9.6, "x": 669, "y": -132, "d": 245, "foco": 60, "abertura": 8 },
+    { "t": 10.0, "x": 667, "y": -134, "d": 249, "foco": 60, "abertura": 8 }
+  ],
+
+  "heroi": {
+    "sprite": "heroi", "pe": -5,
+    "caminho": [
+      { "t": 0.0, "x": 30 }, { "t": 0.4, "x": 30 }, { "t": 5.7, "x": 690 },
+      { "t": 6.15, "x": 735 }, { "t": 10.0, "x": 735 }
+    ]
+  },
+  "atores": [
+    { "sprite": "aldeao", "x": 175, "pe": -9 },
+    { "sprite": "aldea", "x": 400, "pe": -9, "fase": 0.5 },
+    { "sprite": "aldeao", "x": 655, "pe": -9, "fase": 0.25 }
+  ],
+
+  "horizonte": -16,
+  "fogos": [
+    { "t": 6.9, "x": 1100, "y": -420, "cores": ["capa", "outonoClaro"], "n": 160, "raio": 230 },
+    { "t": 7.6, "x": 1350, "y": -470, "cores": ["folhaClara", "aguaClara"], "n": 170, "raio": 230 },
+    { "t": 8.2, "x": 900, "y": -380, "cores": ["luz", "outonoClaro"], "n": 140, "raio": 200 },
+    { "t": 8.8, "x": 1220, "y": -480, "cores": ["rosaCeu", "lavanda"], "n": 180, "raio": 250 },
+    { "t": 9.3, "x": 1390, "y": -400, "cores": ["capa", "luz"], "n": 160, "raio": 240 }
+  ],
+  "subida": 0.7,
+
+  "chaves": {
+    "R": "capa", "r": "capaEscura", "S": "pele", "K": "contorno", "B": "calca", "M": "bota",
+    "Y": "palha", "y": "outonoClaro", "G": "folha", "g": "folhaEscura", "A": "aguaClara", "a": "agua",
+    "W": "creme"
+  },
+  "sprites": {
+    "heroi": {
+      "corre": { "ritmo": 12, "sobe": [0, 1, 0, 1], "quadros": [
+        ["....RRRR....", "...RRRRRR...", "..RRRRRSSR..", "..RrRRSKSS..", ".rRrRRSSSS..", "rrRRrRRRRR..",
+         "rRRrRRRRRRS.", "rrRRRRRRRR..", ".rrRRRRRRR..", "..rrRRRRRr..", "...BBBBBB...", "...BB..BB...",
+         "..BB....BB..", ".BB......BB.", ".MM......MM.", "............"],
+        ["....RRRR....", "...RRRRRR...", "..RRRRRSSR..", "..RrRRSKSS..", "..RrRRSSSS..", ".rrRrRRRRR..",
+         ".rRRrRRRRSS.", ".rRRRRRRRR..", "..rRRRRRRR..", "...rRRRRRr..", "....BBBBB...", "....BB.BB...",
+         "....BB.BB...", "....MM.MM...", "............", "............"],
+        ["....RRRR....", "...RRRRRR...", "..RRRRRSSR..", "..RrRRSKSS..", ".rRrRRSSSS..", "rrRRrRRRRR..",
+         "rRRrRRRRRRS.", "rrRRRRRRRR..", ".rrRRRRRRR..", "..rrRRRRRr..", "...BBBBBB...", "...BB.BB....",
+         "..BB...BB...", ".MB.....BB..", ".M......MM..", "............"],
+        ["....RRRR....", "...RRRRRR...", "..RRRRRSSR..", "..RrRRSKSS..", "..RrRRSSSS..", ".rrRrRRRRR..",
+         ".rRRrRRRRSS.", ".rRRRRRRRR..", "..rRRRRRRR..", "...rRRRRRr..", "....BBBB....", "....BBBB....",
+         "...BB..BB...", "...MM..MM...", "............", "............"]
+      ] },
+      "parado": { "ritmo": 2, "sobe": [0, 0], "quadros": [
+        ["....RRRR....", "...RRRRRR...", "..RRRRSSSR..", "..RrRRSKSS..", "..RrRRSSSS..", "..RrrRRRRR..",
+         ".rRrRRRRRR..", ".rRRRRRRSS..", ".rRRRRRRRR..", ".rrRRRRRRR..", "..rrRRRRRr..", "...rRRRRr...",
+         "....BB.BB...", "....BB.BB...", "....BB.BB...", "...MMM.MMM.."],
+        ["....RRRR....", "...RRRRRR...", "..RRRRSSSR..", "..RrRRSKSS..", "..RrRRSSSS..", "..RrrRRRRR..",
+         ".rRrRRRRRR..", ".rRRRRRRSS..", ".rRRRRRRRR..", ".rrRRRRRRR..", "..rrRRRRRr..", "...rRRRRr...",
+         "....BB.BB...", "....BB.BB...", "....BB.BB...", "...MMM.MMM.."]
+      ] }
+    },
+    "aldeao": {
+      "parado": { "ritmo": 1.5, "sobe": [0, 1], "quadros": [
+        ["....YYYY....", "..YYYYYYYY..", "....SSSS....", "....KSSK....", "....SSSS....", "...GGGGGG...",
+         "..GGGGGGGG..", "..SGGGGGGS..", "...GGGGGG...", "...gggggg...", "...BB..BB...", "...BB..BB...",
+         "...MM..MM..."],
+        ["....YYYY....", "..YYYYYYYY..", "....SSSS....", "....KSSK....", "....SSSS....", "...GGGGGG...",
+         "..GGGGGGGG..", "..GGGGGGGG..", "..SGGGGGGS..", "...gggggg...", "...BB..BB...", "...BB..BB...",
+         "...MM..MM..."]
+      ] }
+    },
+    "aldea": {
+      "parado": { "ritmo": 1.2, "sobe": [0, 1], "quadros": [
+        ["....KKKK....", "...KKKKKK...", "...KSSSSK...", "....KSSK....", "....SSSS....", "...AAAAAA...",
+         "..AAAAAAAA..", "..SAAAAAAS..", "..AAAAAAAA..", ".AAAAAAAAAA.", ".aaaaaaaaaa.", "...SS..SS...",
+         "...MM..MM..."],
+        ["....KKKK....", "...KKKKKK...", "...KSSSSK...", "....KSSK....", "....SSSS....", "...AAAAAA...",
+         "..AAAAAAAA..", "..AAAAAAAA..", "..SAAAAAAS..", ".AAAAAAAAAA.", ".aaaaaaaaaa.", "...SS..SS...",
+         "...MM..MM..."]
+      ] }
+    }
+  },
+
+  "camadas": [
+    { "nome": "nuvens", "z": 1500, "grao": 12, "x": -3000, "y": -1500, "largura": 560, "altura": 80, "nevoa": 0.25,
+      "pecas": [
+        { "tipo": "nuvem", "x": 140, "y": 34, "w": 44, "h": 4, "cor": "nevoa", "sombra": "lavanda" },
+        { "tipo": "nuvem", "x": 215, "y": 22, "w": 30, "h": 3, "cor": "nevoa", "sombra": "lavanda" },
+        { "tipo": "nuvem", "x": 290, "y": 40, "w": 52, "h": 4, "cor": "nevoa", "sombra": "lavanda" },
+        { "tipo": "nuvem", "x": 370, "y": 26, "w": 36, "h": 3, "cor": "nevoa", "sombra": "lavanda" },
+        { "tipo": "nuvem", "x": 250, "y": 56, "w": 64, "h": 4, "cor": "nevoa", "sombra": "lavanda" },
+        { "tipo": "nuvem", "x": 430, "y": 48, "w": 40, "h": 3, "cor": "nevoa", "sombra": "lavanda" },
+        { "tipo": "nuvem", "x": 480, "y": 30, "w": 30, "h": 3, "cor": "nevoa", "sombra": "lavanda" }
+      ] },
+    { "nome": "longe", "z": 420, "grao": 4, "x": -1000, "y": -800, "largura": 800, "altura": 330, "nevoa": 0.35,
+      "pecas": [
+        { "tipo": "montanhas", "base": 196, "cores": ["lavanda", "lilas"], "neve": "nevoa", "pontos": [
+          [0, 150], [80, 118], [150, 140], [230, 104], [300, 134], [380, 122], [450, 148], [520, 108],
+          [600, 92], [680, 128], [760, 116], [800, 140]] },
+        { "tipo": "montanhas", "base": 196, "cores": ["lilas", "roxo"], "pontos": [
+          [0, 176], [100, 164], [200, 178], [300, 166], [420, 180], [520, 168], [640, 177], [800, 166]] },
+        { "tipo": "agua", "y": 196, "cores": ["aguaClara", "agua", "roxo"] },
+        { "tipo": "luzes", "x1": 330, "x2": 790, "y": 193, "n": 44, "cor": "lanterna", "reflexo": "outono" }
+      ] },
+    { "nome": "encosta", "z": 150, "grao": 2.5, "x": -500, "y": -460, "largura": 480, "altura": 210, "nevoa": 0.18,
+      "pecas": [
+        { "tipo": "morro", "base": 210, "cores": ["folhaEscura", "pedraEscura"], "copas": 34, "pontos": [
+          [0, 30], [120, 50], [200, 62], [280, 84], [360, 116], [424, 146], [464, 170], [480, 186]] },
+        { "tipo": "casa", "x": 34, "base": 78, "w": 26, "h": 22, "parede": "creme", "telhado": "telhado" },
+        { "tipo": "arvore", "x": 76, "base": 80, "r": 10, "cores": "outono" },
+        { "tipo": "casa", "x": 124, "base": 92, "w": 28, "h": 24, "parede": "pedraClara", "telhado": "capaEscura", "chamine": true },
+        { "tipo": "arvore", "x": 170, "base": 96, "r": 9, "cores": "verde" },
+        { "tipo": "casa", "x": 206, "base": 110, "w": 26, "h": 22, "parede": "creme", "telhado": "telhado" },
+        { "tipo": "arvore", "x": 250, "base": 116, "r": 11, "cores": "outono" },
+        { "tipo": "casa", "x": 286, "base": 132, "w": 24, "h": 20, "parede": "creme", "telhado": "capaEscura", "chamine": true },
+        { "tipo": "casa", "x": 350, "base": 156, "w": 22, "h": 18, "parede": "pedraClara", "telhado": "telhado" },
+        { "tipo": "arvore", "x": 392, "base": 166, "r": 9, "cores": "verde" }
+      ] },
+    { "nome": "vila", "z": 50, "grao": 1.5, "x": -300, "y": -240, "largura": 735, "altura": 176, "nevoa": 0.08,
+      "pecas": [
+        { "tipo": "chao", "x1": 0, "x2": 700, "y": 152, "fundo": 4, "parede": 24 },
+        { "tipo": "casa", "x": 18, "base": 150, "w": 44, "h": 46, "parede": "creme", "telhado": "telhado", "chamine": true },
+        { "tipo": "arvore", "x": 82, "base": 150, "r": 16, "cores": "outono" },
+        { "tipo": "casa", "x": 100, "base": 150, "w": 52, "h": 58, "parede": "creme", "telhado": "capaEscura" },
+        { "tipo": "arvore", "x": 170, "base": 150, "r": 18, "cores": "verde" },
+        { "tipo": "casa", "x": 190, "base": 150, "w": 40, "h": 44, "parede": "pedraClara", "telhado": "telhado", "chamine": true },
+        { "tipo": "casa", "x": 244, "base": 150, "w": 56, "h": 62, "parede": "creme", "telhado": "telhado" },
+        { "tipo": "arvore", "x": 316, "base": 150, "r": 20, "cores": "outono" },
+        { "tipo": "casa", "x": 340, "base": 150, "w": 46, "h": 50, "parede": "creme", "telhado": "capaEscura", "chamine": true },
+        { "tipo": "arvore", "x": 402, "base": 150, "r": 16, "cores": "verde" },
+        { "tipo": "casa", "x": 420, "base": 150, "w": 54, "h": 60, "parede": "pedraClara", "telhado": "telhado" },
+        { "tipo": "arvore", "x": 492, "base": 150, "r": 22, "cores": "outono" },
+        { "tipo": "casa", "x": 518, "base": 150, "w": 44, "h": 48, "parede": "creme", "telhado": "telhado", "chamine": true },
+        { "tipo": "arvore", "x": 580, "base": 150, "r": 18, "cores": "verde" },
+        { "tipo": "casa", "x": 598, "base": 150, "w": 48, "h": 52, "parede": "creme", "telhado": "capaEscura" },
+        { "tipo": "arvore", "x": 668, "base": 150, "r": 20, "cores": "outono" },
+        { "tipo": "bandeirinhas", "x1": 60, "x2": 240, "y": 112, "cai": 10, "cores": ["capa", "lanterna", "rosaCeu", "folhaClara"] },
+        { "tipo": "bandeirinhas", "x1": 300, "x2": 520, "y": 108, "cai": 12, "cores": ["rosaCeu", "lanterna", "aguaClara", "capa"] }
+      ] },
+    { "nome": "terraco", "z": 0, "grao": 1, "x": -260, "y": -140, "largura": 1052, "altura": 320, "nevoa": 0,
+      "pecas": [
+        { "tipo": "chao", "x1": 0, "x2": 1050, "y": 140, "fundo": 16, "parede": 180, "borda": true },
+        { "tipo": "capim", "x1": 0, "x2": 1040, "y": 124, "n": 70 },
+        { "tipo": "barraca", "x": 268, "base": 127, "w": 50, "toldo": ["capa", "creme"], "mercadoria": ["outonoClaro", "folhaClara", "capa", "palha"] },
+        { "tipo": "barraca", "x": 470, "base": 127, "w": 46, "toldo": ["aguaClara", "creme"], "mercadoria": ["outono", "rosaCeu", "palha"] },
+        { "tipo": "barraca", "x": 700, "base": 127, "w": 50, "toldo": ["folha", "creme"], "mercadoria": ["capa", "lanterna", "folhaClara"] },
+        { "tipo": "poste", "x": 180, "base": 128, "h": 32 },
+        { "tipo": "poste", "x": 380, "base": 128, "h": 32 },
+        { "tipo": "poste", "x": 590, "base": 128, "h": 32 },
+        { "tipo": "poste", "x": 800, "base": 128, "h": 32 },
+        { "tipo": "poste", "x": 1010, "base": 128, "h": 32 },
+        { "tipo": "bandeirinhas", "x1": 180, "x2": 380, "y": 97, "cai": 9, "cores": ["capa", "lanterna", "rosaCeu", "folhaClara"] },
+        { "tipo": "bandeirinhas", "x1": 380, "x2": 590, "y": 97, "cai": 9, "cores": ["lanterna", "aguaClara", "capa", "rosaCeu"] },
+        { "tipo": "bandeirinhas", "x1": 590, "x2": 800, "y": 97, "cai": 9, "cores": ["rosaCeu", "folhaClara", "lanterna", "capa"] },
+        { "tipo": "bandeirinhas", "x1": 800, "x2": 1010, "y": 97, "cai": 9, "cores": ["capa", "lanterna", "aguaClara", "folhaClara"] }
+      ] },
+    { "nome": "frente", "z": -30, "grao": 1, "x": -260, "y": -20, "largura": 1000, "altura": 70, "nevoa": 0,
+      "pecas": [
+        { "tipo": "capim", "x1": 0, "x2": 990, "y": 28, "n": 26, "alto": 16, "flores": ["outonoClaro", "capa", "creme", "palha"] }
+      ] }
+  ],
+
+  "musica": {
+    "passo": 0.2,
+    "melodia": ["E5", null, "G5", "A5", "C6", null, "A5", "G5", "E5", null, "D5", "E5", "G5", null, null, null,
+                "A5", null, "C6", "D6", "E6", null, "D6", "C6", "A5", null, "G5", "A5", "C6", null, null, null,
+                "E6", "D6", "C6", "A5", "G5", null, "E5", "G5", "A5", null, null, null, "G5", "A5", "C6", null],
+    "baixo": ["C3", "C3", "A2", "A2", "F2", "F2", "G2", "G2", "C3", "C3", "A2", "A2"],
+    "arpejos": [["C4", "E4", "G4"], ["A3", "C4", "E4"], ["F3", "A3", "C4"], ["G3", "B3", "D4"]]
+  }
+}

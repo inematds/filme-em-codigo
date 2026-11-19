@@ -16,6 +16,9 @@ programa. Tudo em português do Brasil, simples e direto.
 - Medidas: `bash ferramentas/medir-tudo.sh`. Só número medido entra em README, CUSTO e LIMITES.
 - Nada de rede nos exemplos; biblioteca de terceiro só em `vendor/`, com a licença ao lado.
 - Não commitar MP4, PNG nem WAV (`.gitignore`). Só `quadro*.jpg` pequeno por exemplo.
+- Exceção (Nei, 19/11/2026): a biblioteca de prompts usada em `exemplos/biblioteca/` foi liberada pelo
+  autor ("free to use as a starting point"); o anexo da fonte e a página da fonte no guia dão crédito a
+  ele numa referência. Fora isso, vale a regra abaixo.
 - Sem crédito de fonte: o kit não cita vídeo, canal, autor nem patrocinador. Links de terceiros
   só para repositórios de código aberto, em `REFERENCIAS.md` (conferidos com `gh api`).
 - O kit não chama API de modelo nenhum. O caminho híbrido é só documentado.

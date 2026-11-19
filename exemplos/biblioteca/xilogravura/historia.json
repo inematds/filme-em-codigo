@@ -1,0 +1,63 @@
+{
+  "titulo": "Tempestade no mar",
+  "duracao": 9,
+  "fps": 30,
+  "semente": 11,
+  "segurar": [2],
+  "tintas": {
+    "clara": "#aebdc6",
+    "funda": "#3d6c9c",
+    "anil": "#1b2a52",
+    "chave": "#17161c",
+    "vermelha": "#d8462c",
+    "papel": "#efe5cc",
+    "mesa": "#2a1d15"
+  },
+  "camera": [
+    { "t": 0.0, "x": 960, "y": 540, "zoom": 0.905 },
+    { "t": 4.6, "x": 1000, "y": 540, "zoom": 0.93 },
+    { "t": 9.0, "x": 960, "y": 540, "zoom": 0.905 }
+  ],
+  "horizonte": 640,
+  "tempos": {
+    "tempestade": [0, 6.0],
+    "ceuAbre": [6.0, 7.8],
+    "marAcalma": [6.2, 8.4]
+  },
+  "pecas": [
+    { "tipo": "ceu" },
+    { "tipo": "sol", "x": 830, "y": 360, "raio": 100, "sobe": [6.2, 8.4], "dy": -90 },
+    { "tipo": "nuvens", "anda": 18, "faixas": [
+      { "x": 400, "y": 210, "largura": 520, "altura": 38 },
+      { "x": 1150, "y": 225, "largura": 560, "altura": 38 },
+      { "x": 760, "y": 290, "largura": 820, "altura": 44 },
+      { "x": 960, "y": 355, "largura": 720, "altura": 40 },
+      { "x": 520, "y": 410, "largura": 640, "altura": 40 },
+      { "x": 1180, "y": 430, "largura": 560, "altura": 36 },
+      { "x": 760, "y": 490, "largura": 700, "altura": 40 },
+      { "x": 1500, "y": 120, "largura": 360, "altura": 30 }
+    ] },
+    { "tipo": "montanha", "x": 600, "y": 640, "largura": 1000, "picos": [[-120, 260], [70, 300], [210, 190]] },
+    { "tipo": "passaros", "x": 1560, "y": 170, "quantos": 7, "anda": -55, "de": 1.2 },
+    { "tipo": "mar", "faixas": [
+      { "y": 640, "clara": 0.7, "funda": 0.3, "altura": 16, "comprimento": 240, "anda": 26, "rizos": false },
+      { "y": 705, "clara": 1, "funda": 0.5, "altura": 40, "comprimento": 380, "anda": -40, "rizos": true },
+      { "y": 800, "clara": 1, "funda": 0.72, "altura": 70, "comprimento": 520, "anda": 55, "rizos": true },
+      { "y": 905, "clara": 1, "funda": 0.95, "altura": 90, "comprimento": 640, "anda": -72, "rizos": true },
+      { "y": 1010, "clara": 1, "funda": 0.85, "altura": 70, "comprimento": 720, "anda": 95, "rizos": true }
+    ] },
+    { "tipo": "barco", "faixa": 1, "x": 1000, "anda": 14, "tamanho": 0.55, "remadores": 5 },
+    { "tipo": "barco", "faixa": 2, "x": 560, "anda": 10, "tamanho": 0.8, "remadores": 6 },
+    { "tipo": "barco", "faixa": 3, "x": 230, "anda": 8, "tamanho": 1.0, "remadores": 6 },
+    { "tipo": "onda-gigante", "faixa": 2, "x": 1560, "base": 900, "altura": 820, "raio": 280,
+      "sobe": [0.9, 3.6], "enrola": [2.7, 4.9], "quebra": [5.0, 6.2], "espuma": [5.1, 7.4] },
+    { "tipo": "chuva", "quantas": 150, "ate": [5.8, 6.8], "inclina": -0.22 },
+    { "tipo": "titulo", "x": 70, "y": 60, "tamanho": 46, "de": 0, "ate": 2.6 }
+  ],
+  "roupas": ["vermelha", "funda", "anil"],
+  "musica": {
+    "batida": 0.75,
+    "flauta": [["A4", 0.4, 1.4], ["C5", 2.0, 0.9], ["D5", 3.0, 1.6]],
+    "fim": [["D5", 6.4, 0.7], ["E5", 7.1, 0.5], ["A5", 7.6, 1.2]]
+  }
+}

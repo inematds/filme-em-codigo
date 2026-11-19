@@ -1,0 +1,47 @@
+# Progresso (só acrescentar)
+
+| data/hora | checkpoint | commit | critério atingido? | tokens in/cached/out | compactações |
+|---|---|---|---|---|---|
+- 2026-11-19 ~15:40 prontos: risografia (piloto), quadro-negro (piloto). Rodando: voo-raymarch (piloto), xilogravura, neon-chuva.
+- ~16:00 pronto: voo-raymarch (piloto). Pendente polir: planeta escondido até sair do cânion; mesas parecem discos. Rodando: xilogravura, neon-chuva, pixel-diorama.
+- ~16:20 pronto: xilogravura (36,9 s render). Rodando: neon-chuva, pixel-diorama, tinta-na-agua. Próximo da fila: linha 6 (colagem-papel).
+- ~16:30 pronto: pixel-diorama (35,5 s). Falta polir: cais termina seco no meio do quadro. Rodando: neon-chuva, tinta-na-agua, colagem-papel. Próximo: linha 7 (acetato-classico).
+- ~16:45 pronto: neon-chuva (60,7 s). Falta polir: carros voadores quase invisíveis. Rodando: tinta-na-agua, colagem-papel, acetato-classico. Próximo: linha 8 (anime-2d).
+- ~17:00 pronto: tinta-na-agua (63,4 s). MAIS FRACO até agora: grou tosco + erro de conta (ui no motor.js, partículas param a 0,865). Refazer no polimento. Rodando: colagem-papel, acetato-classico, anime-2d. Próximo: linha 9 já feita (risografia) → linha 10 (pastel-oleoso).
+- ~17:10 pronto: colagem-papel (70,7 s). Bom. Rodando: acetato-classico, anime-2d, pastel-oleoso. Próximo: linha 11 (plano-minimalista).
+- ~17:30 pronto: acetato-classico (53,9 s). Bom. Polir: raposa.js linha 135, estica<0 deve usar scale(1/e, e) (pouso invertido) + re-render. Rodando: anime-2d, pastel-oleoso, plano-minimalista. Próximo: linha 12 (guache-hachurado, 2 histórias).
+- ~17:45 pronto: anime-2d (44,6 s). ATENÇÃO: c.reset() — no fim, testar determinismo do filme INTEIRO 640x360 em todos os motores (os antigos só testaram trecho). Rodando: pastel-oleoso, plano-minimalista, guache-hachurado.
+- ~18:00 pronto: plano-minimalista (28,7 s). Bonito. Rodando: pastel-oleoso, guache-hachurado, arte-conceito. Próximo: linha 14 (tijolinhos).
+- ~18:10 pronto: pastel-oleoso (46,9 s). Polir: lanterna sai do quadro 5,8–7 s (tempo da câmera), cão fraco. Rodando: guache-hachurado, arte-conceito, tijolinhos.
+- ~18:25 pronto: arte-conceito (41,2 s). Bom. Polir: cabelo capacete, ciclista bloco azul. Rodando: guache-hachurado, tijolinhos, retrato-ilustrado. Próximo: linha 16 (pastel-seco).
+- ~18:45 pronto: guache-hachurado (2 histórias, 85 s + 50 s). Muito bom. Rodando: tijolinhos (render final), retrato-ilustrado, pastel-seco. Próximo: linha 17 (marcador-neon).
+- ~19:00 pronto: tijolinhos (187 s, 561 ms/quadro — o mais pesado). Bom. Rodando: retrato-ilustrado, pastel-seco, marcador-neon. Próximo: linha 18 (giz-uma-cor).
+- ~19:15 pronto: marcador-neon (22,8 s, 6 s de filme). Bom, estilo bate. Rodando: retrato-ilustrado, pastel-seco, giz-uma-cor. Próximo: linha 19 (sombra-chapada).
+- ~19:30 pronto: pastel-seco (25,6 s). Bom. Rodando: retrato-ilustrado, giz-uma-cor, sombra-chapada. Próximo: linha 20 (anime-3d-cel, vertical narrado).
+- ~19:45 pronto: retrato-ilustrado (3 histórias, ~24 s cada). MÉDIO: rosto de boneca, rígido. Polir. Rodando: giz-uma-cor, sombra-chapada, anime-3d-cel. Próximo: linha 21 (e-se-3d).
+- ~20:00 pronto: giz-uma-cor (15,5 s). Muito bom. Rodando: sombra-chapada, anime-3d-cel, e-se-3d. Próximo: linha 22 (massinha).
+- ~20:20 pronto: sombra-chapada (9,5 s). Bom. Fim dos 16:9 (19 motores). Rodando: anime-3d-cel, e-se-3d, massinha. Próximo: linha 23 (engenhoca).
+- ~20:45 pronto: anime-3d-cel (86,6 s). Bom. Polir: determinismo não reconferido após última correção. Rodando: e-se-3d, massinha, engenhoca. Próximo: linha 24 (explicativo-luz).
+- ~21:05 pronto: e-se-3d (65 s). Médio: visor afundado (puxar 0,04 p/ frente), capa 1280 px (reduzir p/ 540). Rodando: massinha, engenhoca, explicativo-luz. Próximo: linha 25 (papiro-ouro).
+- ~21:30 pronto: massinha (121,6 s). Bom. Rodando: engenhoca, explicativo-luz, papiro-ouro. Próximo: linha 26 (voxel).
+- ~21:50 pronto: explicativo-luz (19,4 s). Bom. Polir: rótulos duplicados (ANO: FEITO + ANO · FEITO; DIA: AINDA GIRA + DIA · 1 GIRO). Rodando: engenhoca, papiro-ouro, voxel. Próximo: linha 27 já feita (quadro-negro) → linha 28 (caixa-sombra).
+- ~22:10 pronto: engenhoca (47,5 s). OK, 3D simples/plástico. Rodando: papiro-ouro, voxel, caixa-sombra. Próximo: linha 29 (produto-estudio).
+- ~22:30 pronto: papiro-ouro (40,8 s). Bom. Rodando: voxel, caixa-sombra, produto-estudio. Próximo: linha 30 (marca-autoral).
+- ~22:45 pronto: caixa-sombra (94,7 s). Bom. CORREÇÃO: seção 14 estilos (30–43) é VERTICAL; mapa corrigido. Rodando: voxel, produto-estudio, marca-autoral (faz roteiro-14-estilos.md). Próximos 31–43 esperam o roteiro.
+- ~23:05 pronto: voxel (198 s). Rodando: produto-estudio, marca-autoral (faz roteiro-14-estilos.md), anexo-fonte (sem render). 31–43 esperam o roteiro.
+- ~23:15 roteiro-14-estilos.md pronto (20 s, 6 batidas, 21 legendas). prompt-14.md = prompt base dos 13. Rodando: produto-estudio, marca-autoral, dados-3d, anexo-fonte. Próximo: 32 rolo-nanquim.
+- ~23:30 pronto: marca-autoral (46,2 s). Bom (amarelo INEMA no lugar do da fonte). Rodando: produto-estudio, dados-3d, rolo-nanquim, anexo-fonte. Próximo: 33 desenho-3d (6 histórias).
+- ~23:50 pronto: produto-estudio (242 s). Bom. Polir: lente estoura branco. Rodando: dados-3d, rolo-nanquim, desenho-3d (6 hist.), anexo-fonte. Próximo: 34 anime-pintado.
+- 18:50 anexo-fonte pronto (6 partes por idioma, 62 seções, 108 prompts, 55 miniaturas). Release fonte-v1 e commit ficam para o fim.
+- 18:56 pronto: rolo-nanquim (74,5 s). Bom. POLIR: herói com chapéu cônico de arroz = errado/estereótipo p/ mongol; trocar por gorro de pele mongol. Rodando: dados-3d, desenho-3d, anime-pintado. Próximo: 35 papel-cartolina.
+- 19:00 pronto: dados-3d (45,2 s). Bom. Rodando: desenho-3d, anime-pintado, papel-cartolina. prompt-14 ganhou regra do traje mongol e do clarão. Próximo: 36 cartoon-tv.
+- 19:17 pronto: papel-cartolina (35,8 s). Bom, traje mongol certo. Rodando: desenho-3d, anime-pintado, cartoon-tv. Próximo: 37 recorte-jornal.
+- 19:25 pronto: anime-pintado (89,9 s). Bom. Polir: peças da cena velha ficam por cima na troca (5,0 e 17,0 s). Rodando: desenho-3d, cartoon-tv, recorte-jornal. Próximo: 38 mesa-de-mapas.
+- 19:36 pronto: cartoon-tv (17 s render). Bom, genérico. Rodando: desenho-3d, recorte-jornal, mesa-de-mapas. Próximo: 39 holograma.
+- 19:39 pronto: desenho-3d (6 histórias, 31–63 s cada). Muito bom. Rodando: recorte-jornal, mesa-de-mapas, holograma. Próximo: 40 retro-futuro.
+- 19:44 pronto: recorte-jornal (51,5 s). Muito bom. Rodando: mesa-de-mapas, holograma, retro-futuro. Próximo: 41 aquarela.
+- 19:54 pronto: mesa-de-mapas (81,9 s). Bom. Decisão: MP4 grande (grão) não se mexe; recomprimir (crf) só para o Release. Rodando: holograma, retro-futuro, aquarela. Próximo: 42 absurdo.
+- 19:57 pronto: holograma (37,6 s). Bom. Rodando: retro-futuro, aquarela, absurdo. Próximo: 43 vetor-ciencia (último).
+- 20:02 pronto: retro-futuro — MAS medida/capa em 360x640 (ambiguidade minha no prompt). Refazer render final em 1080x1920 no fechamento. Rodando: aquarela, absurdo, vetor-ciencia (último).
+- 20:16 pronto: absurdo (20,9 s, final 1080). Muito bom. tests/testes.mjs ganhou o bloco 6 (biblioteca: 1 s + mesmos quadros 2x1 + histórias extras). Rodando: aquarela, vetor-ciencia.
+- 20:22 pronto: aquarela (81,5 s), vetor-ciencia (36,5 s). 43/43 motores. Checkpoint commit local.

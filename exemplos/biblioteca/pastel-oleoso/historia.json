@@ -1,0 +1,97 @@
+{
+  "titulo": "A lanterna que fugiu",
+  "duracao": 10,
+  "fps": 30,
+  "semente": 41,
+  "segurar": [2, 3],
+  "cores": {
+    "papel": "#1f4a4b",
+    "papelClaro": "#3f7672",
+    "escuro": "#1a2a2e",
+    "creme": "#f2e6c8",
+    "vermelhao": "#e2552f",
+    "amarelo": "#f5b83d",
+    "rosa": "#ef9fb3",
+    "anil": "#2e3a6e",
+    "agua": "#82d2c6",
+    "morro": "#2c2430",
+    "morro2": "#3a2b2a"
+  },
+  "feira": { "toldo": 1460, "balcao": 1720, "chao": 1900 },
+  "camera": [
+    { "t": 0, "x": 1000, "y": 1640, "zoom": 1 },
+    { "t": 0.2, "x": 1000, "y": 1640, "zoom": 1 },
+    { "t": 6.2, "x": 2000, "y": 1640, "zoom": 1, "curva": "passeio" },
+    { "t": 6.7, "x": 2000, "y": 1640, "zoom": 1 },
+    { "t": 9.3, "x": 2000, "y": 1405, "zoom": 0.618 },
+    { "t": 10, "x": 2000, "y": 1400, "zoom": 0.616 }
+  ],
+  "pecas": [
+    { "tipo": "ceu", "f": 0.55,
+      "lua": { "x": 950, "y": 960, "r": 52 },
+      "estrelas": { "quantas": 85, "x0": -150, "x1": 3300, "y0": 640, "y1": 1300 },
+      "arcos": [
+        { "x": 1600, "y": 300, "r": 820, "de": 18, "ate": 162 },
+        { "x": 1600, "y": 300, "r": 1040, "de": 28, "ate": 152 },
+        { "x": 700, "y": 650, "r": 520, "de": -20, "ate": 120 }
+      ] },
+
+    { "tipo": "morro", "x": -420, "larg": 520, "alt": 760, "base": 2100, "forma": "pico", "cor": "morro" },
+    { "tipo": "morro", "x": 20, "larg": 620, "alt": 640, "base": 2100, "forma": "redondo", "cor": "morro2", "janelas": 2 },
+    { "tipo": "morro", "x": 470, "larg": 420, "alt": 830, "base": 2100, "forma": "pico", "cor": "morro" },
+    { "tipo": "morro", "x": 820, "larg": 660, "alt": 610, "base": 2100, "forma": "redondo", "cor": "morro2" },
+    { "tipo": "morro", "x": 1360, "larg": 450, "alt": 790, "base": 2100, "forma": "pico", "cor": "morro" },
+    { "tipo": "morro", "x": 1720, "larg": 600, "alt": 650, "base": 2100, "forma": "redondo", "cor": "morro2", "janelas": 3 },
+    { "tipo": "morro", "x": 2220, "larg": 420, "alt": 850, "base": 2100, "forma": "pico", "cor": "morro" },
+    { "tipo": "morro", "x": 2520, "larg": 650, "alt": 620, "base": 2100, "forma": "redondo", "cor": "morro2" },
+    { "tipo": "morro", "x": 3020, "larg": 450, "alt": 770, "base": 2100, "forma": "pico", "cor": "morro", "janelas": 1 },
+    { "tipo": "morro", "x": 3360, "larg": 660, "alt": 640, "base": 2100, "forma": "redondo", "cor": "morro2" },
+
+    { "tipo": "chao", "x0": -400, "x1": 4000, "y1": 2400 },
+
+    { "tipo": "barraca", "x": -280, "larg": 380, "toldo": ["vermelhao", "creme"], "barrado": "creme", "frente": "amarelo", "desenho": "losangos", "corDesenho": "escuro", "mercadoria": "frutas", "vendedor": "agua" },
+    { "tipo": "barraca", "x": 140, "larg": 400, "toldo": ["rosa", "creme", "amarelo", "creme"], "barrado": "creme", "frente": "creme", "frenteGuache": true, "desenho": "zigue", "corDesenho": "amarelo", "mercadoria": "frutas", "vendedor": "rosa" },
+    { "tipo": "barraca", "x": 580, "larg": 420, "toldo": ["creme", "rosa"], "barrado": "rosa", "frente": "amarelo", "desenho": "losangos", "corDesenho": "escuro", "mercadoria": "panelas", "vendedor": "anil" },
+    { "tipo": "palco", "x": 1040, "larg": 200, "caixote": 1830 },
+    { "tipo": "barraca", "x": 1280, "larg": 420, "toldo": ["agua", "creme"], "barrado": "creme", "frente": "rosa", "desenho": "listras", "corDesenho": "vermelhao", "mercadoria": "chaleiras", "vendedor": "amarelo" },
+    { "tipo": "barraca", "x": 1740, "larg": 400, "toldo": ["amarelo", "vermelhao"], "barrado": "amarelo", "frente": "vermelhao", "desenho": "zigue", "corDesenho": "agua", "umZigue": true },
+    { "tipo": "barraca", "x": 2180, "larg": 420, "toldo": ["vermelhao", "creme"], "barrado": "creme", "frente": "agua", "desenho": "losangos", "corDesenho": "creme", "mercadoria": "frutas", "vendedor": "vermelhao" },
+    { "tipo": "barraca", "x": 2640, "larg": 400, "toldo": ["rosa", "creme"], "barrado": "creme", "frente": "creme", "frenteGuache": true, "desenho": "zigue", "corDesenho": "vermelhao", "mercadoria": "panelas", "vendedor": "agua" },
+    { "tipo": "barraca", "x": 3080, "larg": 420, "toldo": ["amarelo", "creme"], "barrado": "creme", "frente": "amarelo", "desenho": "listras", "corDesenho": "creme", "mercadoria": "balas", "vendedor": "rosa" },
+    { "tipo": "barraca", "x": 3540, "larg": 400, "toldo": ["agua", "creme"], "barrado": "agua", "frente": "vermelhao", "desenho": "losangos", "corDesenho": "escuro", "mercadoria": "chaleiras", "vendedor": "anil" },
+
+    { "tipo": "varal", "estilo": "bandeirinhas", "x0": -400, "x1": 4000, "y": 1150, "vao": 600, "flecha": 50, "passo": 44, "postes": 1900,
+      "cores": ["rosa", "creme", "amarelo", "agua", "vermelhao", "creme"] },
+    { "tipo": "varal", "estilo": "lanternas", "x0": -400, "x1": 4000, "y": 1215, "vao": 550, "flecha": 55, "passo": 130,
+      "cores": ["amarelo", "rosa", "amarelo", "vermelhao"] },
+    { "tipo": "lanternaAlta", "x": 320, "y": 1175, "r": 38, "fio": 950, "cor": "amarelo" },
+    { "tipo": "lanternaAlta", "x": 1520, "y": 1165, "r": 42, "fio": 950, "cor": "amarelo" },
+    { "tipo": "lanternaAlta", "x": 2720, "y": 1180, "r": 38, "fio": 950, "cor": "vermelhao" },
+    { "tipo": "lanternaAlta", "x": 3420, "y": 1165, "r": 40, "fio": 950, "cor": "amarelo" },
+
+    { "tipo": "malabarista", "x": 1140, "pes": 1830, "periodo": 1.6, "aneis": 5, "cores": ["amarelo", "rosa", "agua", "creme", "vermelhao"], "somAte": 6 },
+    { "tipo": "acougueiro", "x": 1960, "bravo": 3.3, "calma": 5.2 },
+    { "tipo": "salsichas", "x0": 1780, "x1": 1900, "y": 1578, "quantas": 6 },
+    { "tipo": "cao", "x": 2060, "chao": 1975, "escala": 1.2, "pula": 3.0, "pega": 3.25, "pousa": 3.5, "pousoX": 1830, "altura": 300, "x1": 200, "ate": 5.6 },
+    { "tipo": "menina", "chao": 1990, "escala": 1.35, "anda": { "de": 0.2, "ate": 6.2, "x0": 650, "x1": 2050 }, "passo": 95, "passoSom": 0.41, "olha": 6.15, "lanterna": 22 },
+    { "tipo": "solta", "x": 2075, "t": 5.6, "chega": 9.6, "x1": 2200, "y1": 900 },
+
+    { "tipo": "cesto", "x": 260, "y": 2140, "cores": ["amarelo", "rosa", "vermelhao", "agua"] },
+    { "tipo": "cesto", "x": 1180, "y": 2140, "cores": ["rosa", "amarelo", "agua", "creme"] },
+    { "tipo": "cesto", "x": 2150, "y": 2140, "cores": ["vermelhao", "amarelo", "rosa", "amarelo"] },
+    { "tipo": "cesto", "x": 3050, "y": 2140, "cores": ["agua", "rosa", "amarelo", "vermelhao"] },
+    { "tipo": "cesto", "x": 3950, "y": 2140, "cores": ["amarelo", "vermelhao", "agua", "rosa"] },
+
+    { "tipo": "titulo", "x": 80, "y": 990, "tamanho": 56, "de": 0.1, "ate": 2.8 }
+  ],
+  "som": {
+    "murmurio": 0.05,
+    "musica": {
+      "batida": 0.45, "inicio": 0.2,
+      "melodia": ["E5", null, "G5", "C6", null, "B5", "A5", "G5", "E5", "D5", null, null, "F5", null, "A5", "G5", null, "E5", "C5", null, null],
+      "baixo": ["C3", "G2", "A2", "G2", "F2", "C3", "C3"],
+      "acordes": [["E4", "G4"], ["D4", "G4"], ["C4", "E4"], ["B3", "F4"], ["A3", "F4"], ["E4", "G4"], ["E4", "G4"]]
+    },
+    "sinos": [ { "nota": "G5", "t": 9.2, "dur": 2.2, "vol": 0.1 }, { "nota": "C6", "t": 9.22, "dur": 2.4, "vol": 0.13 } ]
+  }
+}

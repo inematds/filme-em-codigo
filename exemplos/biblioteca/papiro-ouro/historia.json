@@ -1,0 +1,100 @@
+{
+  "titulo": "Cleópatra estava mais perto da Lua",
+  "duracao": 15,
+  "fps": 30,
+  "semente": 25,
+  "paleta": {
+    "papiro": "#dcbd7c",
+    "papiroEscuro": "#b89a5e",
+    "papiroClaro": "#ead39c",
+    "mesa": "#2b1a10",
+    "tinta": "#1c120b",
+    "ocre": "#d39a45",
+    "ocreEscuro": "#a8722c",
+    "turquesa": "#2a9c94",
+    "lapis": "#1f3a8a",
+    "noite": "#16255e",
+    "creme": "#f3ead2",
+    "pele": "#a8643a",
+    "cinzaLua": "#d8d3c6",
+    "ouro": "#d9a62c",
+    "ouroClaro": "#f6d86a",
+    "ouroEscuro": "#9c6d12",
+    "carimbo": "#a3402a",
+    "amarelo": "#e3e302"
+  },
+  "rolo": { "t": 0, "dur": 0.6 },
+  "linhaDoTempo": { "y": 1180, "x0": -1400, "x1": 6800, "marcas": 100, "desenha": { "de": 2440, "ate": 3640, "t": 0.45, "dur": 0.9 } },
+  "faixaHieroglifos": { "y": 1745, "alt": 64 },
+  "camera": [
+    { "t": 0, "x": 3030, "y": 960 },
+    { "t": 3.9, "x": 620, "y": 960, "corte": true },
+    { "t": 6.35, "x": 620, "y": 960 },
+    { "t": 7.4, "x": 3030, "y": 960 },
+    { "t": 8.75, "x": 3030, "y": 960 },
+    { "t": 9.8, "x": 5100, "y": 960 },
+    { "t": 11.0, "x": 5100, "y": 960 },
+    { "t": 11.75, "x": 2700, "y": 860, "z": 0.3, "giro": -90 },
+    { "t": 12.6, "x": 2700, "y": 860, "z": 0.3, "giro": -90 },
+    { "t": 13.3, "x": 2990, "y": 900, "z": 1.5 },
+    { "t": 13.9, "x": 2990, "y": 900, "z": 1.55 },
+    { "t": 13.9, "x": 5110, "y": 1040, "z": 2.05, "corte": true },
+    { "t": 15, "x": 5105, "y": 1045, "z": 2.12 }
+  ],
+  "elementos": [
+    { "tipo": "painelNoite", "x0": 4760, "y0": 200, "x1": 5440, "y1": 1180, "chao": 900, "t": -1, "estrelas": 9 },
+    { "tipo": "rainha", "x": 2930, "y": 1180, "escala": 1.1, "dir": -1, "t": 0.35, "dur": 0.9,
+      "acoes": [
+        { "tipo": "vira", "em": 1.55 },
+        { "tipo": "aponta", "de": 1.75, "ate": 2.55 },
+        { "tipo": "vira", "em": 2.7 },
+        { "tipo": "vira", "em": 8.1 },
+        { "tipo": "protege", "de": 13.0, "ate": 99 }
+      ] },
+    { "tipo": "lua", "x": 3300, "y": 455, "r": 72, "t": 1.95, "dur": 0.3 },
+    { "tipo": "piramide", "x": 2680, "y": 800, "base": 170, "alt": 120, "fiadas": 4, "t": 2.95, "dur": 0.45 },
+
+    { "tipo": "sol", "x": 760, "y": 470, "r": 64, "t": 3.9, "dur": 0.6 },
+    { "tipo": "piramide", "x": 470, "y": 1180, "base": 560, "alt": 380, "fiadas": 10, "t": 4.0, "dur": 1.4 },
+    { "tipo": "construtores", "x": 770, "y": 1180, "n": 3, "passo": 62, "escala": 0.42, "t": 3.9, "anda": -45, "ate": 6.4 },
+    { "tipo": "carimbo", "texto": "2560 A.C.", "x": 470, "y": 1310, "tam": 54, "t": 5.45 },
+
+    { "tipo": "colchete", "x0": 470, "x1": 3030, "y": 560, "queda": 100, "t": 6.35, "dur": 1.05 },
+    { "tipo": "rotulo", "texto": "30 A.C.", "x": 3030, "y": 1320, "tam": 64, "t": 7.45, "dur": 0.4 },
+    { "tipo": "colchete", "x0": 3030, "x1": 5028, "y": 560, "queda": 100, "t": 8.75, "dur": 1.05 },
+    { "tipo": "modulo", "x": 5300, "yDe": 120, "yAte": 990, "de": 9.55, "ate": 10.3, "escala": 1.0 },
+    { "tipo": "rotulo", "texto": "1969", "x": 5028, "y": 1320, "tam": 64, "t": 9.85, "dur": 0.35 },
+
+    { "tipo": "pegada", "x": 4985, "y": 1045, "tam": 1.0, "giro": -12, "t": 13.95, "dur": 0.4 },
+    { "tipo": "sombra", "x": 5145, "y": 1115, "base": 170, "alt": 150, "t": 14.15, "dur": 0.45 }
+  ],
+  "telas": [
+    { "tipo": "contador", "valor": 2530, "rotulo": "ANOS", "x": 540, "y": 250, "tam": 150, "de": 6.35, "ate": 7.4, "some": 8.7 },
+    { "tipo": "contador", "valor": 1998, "rotulo": "ANOS", "x": 540, "y": 250, "tam": 150, "de": 8.75, "ate": 9.8, "some": 11.0 },
+    { "tipo": "numerao", "texto": "2.530", "mx": 1750, "my": 560, "dx": -190, "dy": 0, "tam": 120, "de": 11.65, "dur": 0.4, "some": 12.65 },
+    { "tipo": "numerao", "texto": "1.998", "mx": 4029, "my": 560, "dx": -190, "dy": 0, "tam": 120, "de": 11.85, "dur": 0.4, "some": 12.65 }
+  ],
+  "legenda": { "y": 1560, "tam": 78, "largura": 900, "segura": 0.55 },
+  "legendas": [
+    { "de": 0.3, "ate": 1.45, "texto": "CLEÓPATRA VIVEU" },
+    { "de": 1.45, "ate": 2.65, "texto": "MAIS PERTO DA LUA" },
+    { "de": 2.65, "ate": 3.85, "texto": "QUE DA PIRÂMIDE." },
+    { "de": 4.0, "ate": 5.05, "texto": "ELA FICOU PRONTA" },
+    { "de": 5.05, "ate": 6.2, "texto": "EM 2560 A.C." },
+    { "de": 6.35, "ate": 7.5, "texto": "CLEÓPATRA MORREU" },
+    { "de": 7.5, "ate": 8.65, "texto": "2.530 ANOS DEPOIS." },
+    { "de": 8.8, "ate": 9.95, "texto": "A LUA, EM 1969:" },
+    { "de": 9.95, "ate": 11.1, "texto": "SÓ 1.998 ANOS DEPOIS." },
+    { "de": 12.65, "ate": 13.7, "texto": "PARA ELA, AS PIRÂMIDES" },
+    { "de": 13.7, "ate": 14.95, "texto": "JÁ ERAM HISTÓRIA ANTIGA." }
+  ],
+  "musica": {
+    "passo": 0.25,
+    "vol": 0.12,
+    "entra": 0.5,
+    "notas": ["D4", null, "D#4", "F#4", "G4", null, "F#4", "D#4", "D4", null, "A3", "D4", "F#4", "G4", "A4", null],
+    "bordao": ["D2", "A2"],
+    "tambor": 0.5,
+    "sinos": [{ "t": 14.2, "notas": ["D6", "A6"] }]
+  }
+}

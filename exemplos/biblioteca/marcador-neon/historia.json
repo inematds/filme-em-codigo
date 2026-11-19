@@ -1,0 +1,44 @@
+{
+  "titulo": "Só mais um gole",
+  "duracao": 6,
+  "fps": 30,
+  "semente": 41,
+  "segurar": 3,
+  "cores": {
+    "papel": "#ece8df",
+    "azul": "#1d3fd6",
+    "laranja": "#ff6414",
+    "rosa": "#ff3fa4",
+    "preto": "#1d1b22"
+  },
+  "traco": { "marcador": 10, "caneta": 3.2, "tremor": 2.6 },
+  "pecas": [
+    { "tipo": "titulo", "x": 110, "y": 175, "tamanho": 62, "de": 0, "escreve": 0.7, "ate": 1.9 },
+
+    { "tipo": "vaso", "x": 1690, "y": 905, "escala": 1.0, "flor": true },
+
+    { "tipo": "cadeira", "x": 1200, "y": 640, "escala": 1.0 },
+
+    { "tipo": "pessoa", "x": 1200, "y": 640, "escala": 1.0,
+      "piscar": [0.6, 4.95],
+      "copo": { "sobe": [0.9, 1.5], "goles": [1.65, 2.15], "desce": [2.6, 3.1] },
+      "cabeca": { "frente": [0.9, 1.5], "tras": [3.1, 3.45], "volta": [3.9, 4.3] },
+      "engole": 3.5,
+      "pe": { "balancos": [4.0, 4.45], "dur": 0.42 },
+      "olha": 5.25 }
+  ],
+  "musica": {
+    "acordes": [
+      [0.0, ["F3", "A3", "C4", "E4"], 1.5],
+      [1.5, ["E3", "G3", "B3", "D4"], 1.5],
+      [3.0, ["D3", "F3", "A3", "C4"], 1.5],
+      [4.5, ["C3", "E3", "G3", "B3"], 1.5]
+    ],
+    "baixo": [
+      ["F2", 0.0, 0.6], ["C2", 0.75, 0.6],
+      ["E2", 1.5, 0.6], ["B1", 2.25, 0.6],
+      ["D2", 3.0, 0.6], ["A1", 3.75, 0.6],
+      ["C2", 4.5, 0.6], ["G1", 5.25, 0.6]
+    ]
+  }
+}

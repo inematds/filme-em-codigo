@@ -1,0 +1,127 @@
+{
+  "titulo": "E se você caísse em Júpiter?",
+  "duracao": 15,
+  "fps": 30,
+  "semente": 21,
+  "_medidas": "Mundo 3D: o robô fica perto da origem, 1 unidade = meio robô. Na tela (fundo, fogo, riscos): x e y vão de -0,5 a 0,5 na ALTURA do quadro (y para cima); a largura vertical vai de -0,28 a 0,28.",
+
+  "robo": {
+    "corpo": "#e8edf2",
+    "visor": "#141a26",
+    "olho": "#c8f7ff",
+    "luva": "#23a99a",
+    "mochila": "#7d8ea3",
+    "remendo": "#ff8a2a",
+    "antena": "#ff8a2a"
+  },
+
+  "contador": { "cor": "#e3e302", "y": 150, "tam": 66, "tamMenor": 30, "rotulo": "PROFUNDIDADE", "unidade": "KM", "rotuloMenor": "PRESSÃO", "unidadeMenor": "BAR", "foraDeEscala": "FORA DE ESCALA", "_disparo": "pressão que vai a -1: sobe até vezes x o valor e, passado o ponto vira (0 a 1 do pulo), mostra foraDeEscala", "disparo": { "vezes": 40, "vira": 0.6 } },
+  "legenda": { "y": 330, "tam": 42, "largura": 960, "letrasPorSegundo": 40, "fundo": "#000000", "cor": "#ffffff" },
+
+  "planos": [
+    {
+      "nome": "flutua", "de": 0.0, "ate": 2.4, "entrada": "abre",
+      "fundo": { "ceuTopo": "#020308", "ceuBase": "#05060c", "estrelas": 1.0,
+                 "planeta": { "de": [0.0, -0.02, 0.26], "ate": [0.0, 0.0, 0.29], "giro": 0.04 } },
+      "luz": { "chave": "#fff4e6", "forca": 2.4, "borda": "#ffb070", "bordaForca": 2.2, "ceu": "#9fb3d8", "chao": "#3a2a20" },
+      "camera": { "dist": [7.6, 7.0], "y": 0.1, "tremor": 0.0 },
+      "robo": { "acao": "acena", "pos": [[0.05, -0.30], [0.0, -0.22]] },
+      "contador": { "valor": [0, 0], "menor": [0, 0] },
+      "legendas": [ { "de": 0.3, "ate": 2.35, "texto": "E SE VOCÊ CAÍSSE EM JÚPITER?" } ]
+    },
+    {
+      "nome": "entrada", "de": 2.4, "ate": 4.6, "entrada": "clarao",
+      "fundo": { "ceuTopo": "#000000", "ceuBase": "#120602", "estrelas": 0.5,
+                 "planeta": { "de": [0.30, -0.95, 0.95], "ate": [0.26, -1.05, 1.15], "giro": 0.25 } },
+      "luz": { "chave": "#ffb15a", "forca": 3.4, "borda": "#ffd27a", "bordaForca": 3.0, "ceu": "#ff9a4a", "chao": "#401808" },
+      "camera": { "dist": [7.4, 7.0], "y": 0.0, "tremor": 0.05 },
+      "robo": { "acao": "entra", "pos": [[0.06, 0.0], [-0.04, -0.28]] },
+      "fogo": { "forca": 1.0, "direcao": [-0.45, -0.89], "frente": 0.17 },
+      "riscos": { "quanto": 1.0, "cor": "#ffb24a", "angulo": 63, "velocidade": 3.2, "largura": 1.6 },
+      "contador": { "valor": [0, 0], "menor": [0, 0.3] },
+      "legendas": [ { "de": 2.5, "ate": 4.55, "texto": "VOCÊ BATE NO CÉU A 170 MIL KM/H" } ]
+    },
+    {
+      "nome": "nuvens", "de": 4.6, "ate": 7.0, "entrada": "varrida",
+      "fundo": { "ceuTopo": "#b9a9ae", "ceuBase": "#e9e2d6", "estrelas": 0.0,
+                 "nuvem": { "cor": "#f6f1ea", "sombra": "#9c8f9a", "quanto": 0.8, "escala": 2.2, "sobe": 0.55 } },
+      "luz": { "chave": "#fff6ea", "forca": 2.2, "borda": "#dfe8ff", "bordaForca": 1.2, "ceu": "#e8e4f0", "chao": "#a89a90" },
+      "camera": { "dist": [8.6, 8.2], "y": 0.0, "tremor": 0.015 },
+      "robo": { "acao": "rodopia", "pos": [[-0.05, -0.10], [0.05, -0.18]] },
+      "riscos": { "quanto": 0.75, "cor": "#ffffff", "angulo": 8, "velocidade": 2.2, "largura": 1.2 },
+      "contador": { "valor": [0, 50], "menor": [0.3, 3.9] },
+      "legendas": [ { "de": 4.7, "ate": 5.85, "texto": "NUVENS DE AMÔNIA." },
+                    { "de": 5.85, "ate": 6.95, "texto": "VENTOS DE 500 KM/H." } ]
+    },
+    {
+      "nome": "aperta", "de": 7.0, "ate": 9.6, "entrada": "escurece",
+      "fundo": { "ceuTopo": "#2a140a", "ceuBase": "#6a3a1e",
+                 "nuvem": { "cor": "#8a5530", "sombra": "#1e0e06", "quanto": 0.7, "escala": 1.6, "sobe": 0.9 } },
+      "luz": { "chave": "#ffb070", "forca": 1.7, "borda": "#ff7a30", "bordaForca": 1.6, "ceu": "#7a4a2a", "chao": "#1a0a04" },
+      "camera": { "dist": [6.6, 5.8], "y": 0.05, "tremor": 0.03 },
+      "robo": { "acao": "aperta", "pos": [[0.0, -0.22], [0.0, -0.22]] },
+      "riscos": { "quanto": 0.9, "cor": "#ffc04a", "angulo": 90, "velocidade": -2.6, "largura": 2.6 },
+      "contador": { "valor": [50, 150], "menor": [3.9, 23.0] },
+      "legendas": [ { "de": 7.05, "ate": 8.55, "texto": "150 KM: 23 VEZES A PRESSÃO DA TERRA" },
+                    { "de": 8.55, "ate": 9.55, "texto": "E CALOR DE FORNO." } ]
+    },
+    {
+      "nome": "neblina", "de": 9.6, "ate": 11.8, "entrada": "escurece",
+      "fundo": { "ceuTopo": "#5c5f63", "ceuBase": "#1c1d20",
+                 "nuvem": { "cor": "#8a8d90", "sombra": "#202124", "quanto": 0.9, "escala": 1.3, "sobe": 0.35 } },
+      "luz": { "chave": "#d8dde4", "forca": 1.5, "borda": "#9aa4b0", "bordaForca": 1.0, "ceu": "#80868e", "chao": "#121316" },
+      "camera": { "dist": [7.4, 8.4], "y": 0.0, "tremor": 0.0 },
+      "robo": { "acao": "procura", "pos": [[0.0, -0.18], [0.0, -0.26]] },
+      "contador": { "valor": [150, 1000], "menor": [23.0, -1] },
+      "legendas": [ { "de": 9.65, "ate": 10.7, "texto": "NÃO EXISTE CHÃO." },
+                    { "de": 10.7, "ate": 11.75, "texto": "O GÁS VIRA LÍQUIDO." } ]
+    },
+    {
+      "nome": "dissolve", "de": 11.8, "ate": 13.4, "entrada": "corte",
+      "fundo": { "ceuTopo": "#0c0a12", "ceuBase": "#2a1a0c",
+                 "nuvem": { "cor": "#3a2a1a", "sombra": "#06050a", "quanto": 0.6, "escala": 1.4, "sobe": 0.2 } },
+      "luz": { "chave": "#ffe6b0", "forca": 2.0, "borda": "#ffd23a", "bordaForca": 2.4, "ceu": "#6a5a40", "chao": "#100a06" },
+      "camera": { "dist": [7.2, 7.0], "y": 0.0, "tremor": 0.0 },
+      "robo": { "acao": "dissolve", "pos": [[0.0, -0.20], [0.0, -0.20]], "some": [0.25, 1.35] },
+      "faiscas": { "n": 420, "cor": "#ffd84a", "de": 0.2, "ate": 1.4 },
+      "contador": { "valor": [1000, 7584], "menor": [-1, -1] },
+      "legendas": [ { "de": 11.85, "ate": 13.35, "texto": "VOCÊ NUNCA POUSA." } ]
+    },
+    {
+      "nome": "planeta", "de": 13.4, "ate": 15.0, "entrada": "clarao",
+      "fundo": { "ceuTopo": "#020308", "ceuBase": "#05060c", "estrelas": 1.0,
+                 "planeta": { "de": [0.0, -0.04, 0.33], "ate": [0.0, -0.04, 0.26], "giro": 0.05 },
+                 "olhos": { "de": 0.35, "piscadas": [0.95] } },
+      "luz": { "chave": "#fff4e6", "forca": 2.0, "borda": "#ffb070", "bordaForca": 1.0, "ceu": "#9fb3d8", "chao": "#3a2a20" },
+      "camera": { "dist": [7.0, 7.0], "y": 0.0, "tremor": 0.0 },
+      "faiscas": { "n": 420, "cor": "#ffd84a", "caem": true },
+      "contador": { "texto": "SEM SUPERFÍCIE", "textoMenor": "PRESSÃO FORA DE ESCALA" },
+      "legendas": [ { "de": 13.45, "ate": 15.0, "texto": "VOCÊ VIRA JÚPITER." } ]
+    }
+  ],
+
+  "planeta": {
+    "faixas": ["#f1e2c6", "#c98a52", "#efd8b0", "#a8643a", "#f4e6cc", "#c27a46", "#e9d2ae", "#8e5634", "#f0dcb8"],
+    "mancha": { "cor": "#c4452a", "lat": -0.36, "lon": 0.32, "tam": [0.25, 0.13] },
+    "olhos": "#d8fbff"
+  },
+
+  "filme": { "grao": 0.035, "vinheta": 0.45, "exposicao": 1.0 },
+
+  "musica": {
+    "acordes": [
+      { "de": 0.0, "notas": ["A3", "E4", "C5"] },
+      { "de": 2.4, "notas": ["F3", "C4", "A4"] },
+      { "de": 4.6, "notas": ["D3", "A3", "F4"] },
+      { "de": 7.0, "notas": ["Bb2", "F3", "D4"] },
+      { "de": 9.6, "notas": ["G2", "D3", "Bb3"] },
+      { "de": 11.8, "notas": ["A2", "E3", "C#4"] },
+      { "de": 13.4, "notas": ["A2", "E3", "A3", "C#4", "E4"] }
+    ],
+    "arpejo": ["A5", "E5", "C6", "E5", "B5", "E5", "C6", "G5"],
+    "passoArpejo": 0.3,
+    "arpejoAte": 7.0,
+    "faiscas": ["A6", "C#7", "E7", "A7", "E7", "C#7"],
+    "final": ["A4", "C#5", "E5", "A5"]
+  }
+}

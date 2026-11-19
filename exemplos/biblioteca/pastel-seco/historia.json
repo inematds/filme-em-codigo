@@ -1,0 +1,76 @@
+{
+  "titulo": "UM GOLE",
+  "duracao": 6,
+  "fps": 30,
+  "semente": 41,
+  "ferve": 3,
+  "posesEmDois": true,
+  "cores": {
+    "fundo": "#6c95dc",
+    "faixa": "#f2ede1",
+    "laranja": "#ec7a2e",
+    "laranjaEscuro": "#c9531d",
+    "laranjaClaro": "#f8a65a",
+    "barra": "#8c4524",
+    "pele": "#f3b7a1",
+    "peleSombra": "#e2917d",
+    "bochecha": "#ec6f78",
+    "sarda": "#b65f48",
+    "marinho": "#1d2340",
+    "marinhoClaro": "#3a4470",
+    "marinhoEscuro": "#11152a",
+    "creme": "#f7f0e0",
+    "lente": "#15151c",
+    "olho": "#1b1b24",
+    "vermelho": "#e2372c",
+    "vermelhoEscuro": "#a9241f",
+    "vermelhoClaro": "#f2705a",
+    "amarelo": "#f6c535",
+    "boca": "#c62e2d",
+    "bebida": "#7d1e1a"
+  },
+  "camera": [
+    { "t": 0, "x": 960, "y": 540, "zoom": 1.0 },
+    { "t": 6, "x": 935, "y": 525, "zoom": 1.06 }
+  ],
+  "acoes": {
+    "gole": { "de": 0, "ate": 1.9, "sobe": 0.45, "goles": [0.95, 1.5] },
+    "solta": { "de": 1.95, "ate": 2.45 },
+    "aceno": { "de": 2.6, "desliza": 3.0, "ate": 3.4, "escorrega": 50 },
+    "pisca": [3.8],
+    "inclina": { "de": 4.25, "ate": 4.75, "graus": 7 },
+    "respira": { "periodo": 2.6, "px": 2.5 }
+  },
+  "pecas": [
+    { "tipo": "fundo", "nota": "azul chapado, tela inteira" },
+    { "tipo": "sueter", "pontos": [[400, 1040], [430, 880], [520, 785], [690, 728], [930, 712], [1150, 730], [1265, 800], [1320, 900], [1335, 1040]],
+      "dobras": [[[600, 820], [660, 900], [690, 1000]], [[800, 800], [820, 900]], [[1180, 820], [1150, 900]]] },
+    { "tipo": "pescoco", "x": 945, "y": 700, "w": 110, "h": 90 },
+    { "tipo": "cabeca", "pivo": [940, 710], "pecas": [
+      { "tipo": "cabelo", "cx": 868, "cy": 440, "rx": 318, "ry": 280, "curva": 2.15, "barraEsq": 715, "barraDir": 655 },
+      { "tipo": "rosto", "cx": 978, "cy": 560, "rx": 172, "ry": 150 },
+      { "tipo": "bochechas", "pontos": [[870, 600, 46], [1098, 592, 34]], "sardas": 4 },
+      { "tipo": "olhos", "pontos": [[903, 462], [1051, 460]], "r": 10 },
+      { "tipo": "boca", "x": 982, "y": 622, "largura": 34 },
+      { "tipo": "franja", "y": 446, "de": 560, "ate": 1186 },
+      { "tipo": "presilha", "x": 712, "y": 412, "giro": -32 },
+      { "tipo": "laco", "x": 838, "y": 150, "r": 30 },
+      { "tipo": "fiapos", "n": 9 },
+      { "tipo": "oculos", "pontos": [[903, 502], [1051, 500]], "r": 58, "aro": 15, "haste": [790, 486] }
+    ] },
+    { "tipo": "gola", "x": 945, "y": 742, "w": 300, "h": 104 },
+    { "tipo": "manga", "ombro": [1240, 900], "mao": [-58, 38] },
+    { "tipo": "lata", "w": 116, "h": 186, "canudo": 215, "anguloCanudo": -128, "boca": [982, 622],
+      "repouso": { "x": 1205, "y": 945, "giro": 18 } },
+    { "tipo": "faixa", "y": 1008 },
+    { "tipo": "titulo", "texto": "UM GOLE", "x": 1440, "y": 330, "tam": 76, "de": 0.15, "ate": 1.75 }
+  ],
+  "som": {
+    "batida": 0.75,
+    "acordes": [["F3", "A3", "C4", "E4"], ["E3", "G3", "B3", "D4"], ["D3", "F3", "A3", "C4"], ["C3", "E3", "G3", "B3"]],
+    "baixo": ["F2", "E2", "D2", "C2"],
+    "melodia": [null, "C5", null, "A4", null, "B4", "G4", null, "A4", null, "F4", null, "E4", "G4", null, null],
+    "sino": "E6",
+    "gas": 2.4
+  }
+}

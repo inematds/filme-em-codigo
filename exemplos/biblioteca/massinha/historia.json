@@ -1,0 +1,199 @@
+{
+  "titulo": "A torre que cresce no verão",
+  "duracao": 15,
+  "fps": 30,
+  "semente": 41,
+  "posesPorSegundo": 12,
+
+  "cores": {
+    "torre": "#a35a2c",
+    "torreEscura": "#7f4320",
+    "praca": "#e4d3ae",
+    "mesa": "#b88d5f",
+    "predio": ["#eadfc4", "#e6d6b2", "#efe6cf"],
+    "telhado": "#6f7f98",
+    "janela": "#3f5073",
+    "janelaAcesa": "#ffcf7a",
+    "chamine": "#c46a3e",
+    "copa": ["#5e9b44", "#6dab4e", "#4f8a3b"],
+    "tronco": "#7a5130",
+    "nuvem": "#f1e3c8",
+    "fio": "#d9cdb8",
+    "sol": "#f4c52c",
+    "raio": "#f08a24",
+    "bochecha": "#f07a5a",
+    "olho": "#1d1712",
+    "branco": "#f7f3ea",
+    "regua": "#efc534",
+    "reguaRisco": "#3b2a12",
+    "seta": "#d8302a",
+    "pombo": "#8e97a9",
+    "pomboClaro": "#c4c9d4",
+    "pomboAsa": "#737d91",
+    "pescoco": "#4fa36a",
+    "bico": "#ef8d2e",
+    "pe": "#e48b7f",
+    "pele": "#f1b48c",
+    "bigode": "#4a2c1a",
+    "pintor": "#3d63ab",
+    "boina": "#c8352a",
+    "padeiro": "#f4efe4",
+    "pao": "#d99a4c",
+    "calca": "#3a3340",
+    "cavalete": "#9a6a3c",
+    "tela": "#f6f1e4"
+  },
+
+  "ceu": [
+    { "t": 0, "topo": "#79aee0", "base": "#efe5c9", "luz": "#fff0d4", "forca": 2.7, "ambiente": 1.05, "janelas": 0 },
+    { "t": 5.25, "topo": "#9db7cf", "base": "#e3e6e6", "luz": "#e8f0ff", "forca": 2.3, "ambiente": 1.1, "janelas": 0, "corte": true },
+    { "t": 6.2, "topo": "#9db7cf", "base": "#e3e6e6", "luz": "#e8f0ff", "forca": 2.3, "ambiente": 1.1, "janelas": 0 },
+    { "t": 7.7, "topo": "#6aa8e4", "base": "#f6e2b4", "luz": "#fff0cc", "forca": 2.9, "ambiente": 1.05, "janelas": 0 },
+    { "t": 8.25, "topo": "#6aa8e4", "base": "#f4e3be", "luz": "#fff0d0", "forca": 2.9, "ambiente": 1.05, "janelas": 0, "corte": true },
+    { "t": 10.75, "topo": "#d9825e", "base": "#f6c48a", "luz": "#ffb57a", "forca": 2.1, "ambiente": 0.95, "janelas": 0.15, "corte": true },
+    { "t": 12.75, "topo": "#13204a", "base": "#2c3d76", "luz": "#9fb2ff", "forca": 0.75, "ambiente": 0.6, "janelas": 1, "corte": true },
+    { "t": 15, "topo": "#13204a", "base": "#2c3d76", "luz": "#9fb2ff", "forca": 0.75, "ambiente": 0.6, "janelas": 1 }
+  ],
+
+  "camera": [
+    { "t": 0, "pos": [0, 2.3, 24], "olha": [0, 4.9, 0], "fov": 30, "foco": [0, 4, 1], "desfoque": 5 },
+    { "t": 2.75, "pos": [0.2, 2.6, 22.5], "olha": [0, 5.0, 0], "fov": 30, "foco": [0, 4, 1], "desfoque": 5 },
+
+    { "t": 2.75, "corte": true, "pos": [1.0, 4.6, 15.5], "olha": [0.9, 7.4, 0], "fov": 30, "foco": [0, 8, 0], "desfoque": 6 },
+    { "t": 5.25, "pos": [0.9, 4.9, 15.0], "olha": [0.8, 7.6, 0], "fov": 30, "foco": [0, 8, 0], "desfoque": 6 },
+
+    { "t": 5.25, "corte": true, "pos": [0.25, 10.4, 3.7], "olha": [0.25, 10.4, 0], "fov": 30, "foco": [0.2, 10.4, 0], "desfoque": 7 },
+    { "t": 6.1, "pos": [0.25, 10.4, 3.7], "olha": [0.25, 10.4, 0], "fov": 30, "foco": [0.2, 10.4, 0], "desfoque": 7, "para": true },
+    { "t": 7.8, "pos": [0.25, 10.75, 3.75], "olha": [0.25, 10.75, 0], "fov": 30, "foco": [0.2, 10.9, 0], "desfoque": 7, "para": true },
+    { "t": 8.25, "pos": [0.25, 10.75, 3.75], "olha": [0.25, 10.75, 0], "fov": 30, "foco": [0.2, 10.9, 0], "desfoque": 7 },
+
+    { "t": 8.25, "corte": true, "pos": [0.7, 3.5, 19.5], "olha": [0.7, 6.7, 0], "fov": 32, "foco": [0, 7, 0], "desfoque": 5 },
+    { "t": 10.75, "pos": [0.5, 3.7, 18.8], "olha": [0.6, 6.8, 0], "fov": 32, "foco": [0, 7, 0], "desfoque": 5 },
+
+    { "t": 10.75, "corte": true, "pos": [-0.3, 2.0, 22], "olha": [0.2, 5.0, 0], "fov": 32, "foco": [0, 4, 2], "desfoque": 5 },
+    { "t": 12.75, "pos": [-0.1, 2.2, 21], "olha": [0.2, 5.1, 0], "fov": 32, "foco": [0, 4, 2], "desfoque": 5 },
+
+    { "t": 12.75, "corte": true, "pos": [0.55, 10.22, 1.45], "olha": [0, 10.19, 0], "fov": 30, "foco": [0, 10.18, 0.05], "desfoque": 9 },
+    { "t": 15, "pos": [0.45, 10.2, 1.2], "olha": [0, 10.19, 0], "fov": 30, "foco": [0, 10.18, 0.05], "desfoque": 9 }
+  ],
+
+  "pecas": [
+    { "tipo": "mesa", "y": -0.3, "lado": 90 },
+    { "tipo": "praca", "x": 0, "z": 2.5, "largura": 13, "fundo": 11 },
+    { "tipo": "ceu", "z": -15, "largura": 70, "altura": 60 },
+
+    { "tipo": "predio", "x": -5.6, "z": -5.5, "largura": 3.0, "altura": 3.6, "fundo": 2.0, "andares": 3, "colunas": 3 },
+    { "tipo": "predio", "x": -2.4, "z": -7.0, "largura": 3.2, "altura": 4.3, "fundo": 2.0, "andares": 4, "colunas": 3 },
+    { "tipo": "predio", "x": 1.2, "z": -7.6, "largura": 3.6, "altura": 3.9, "fundo": 2.0, "andares": 3, "colunas": 4 },
+    { "tipo": "predio", "x": 4.9, "z": -6.0, "largura": 3.2, "altura": 4.6, "fundo": 2.0, "andares": 4, "colunas": 3 },
+    { "tipo": "predio", "x": 8.0, "z": -4.6, "largura": 2.6, "altura": 3.2, "fundo": 2.0, "andares": 3, "colunas": 2 },
+    { "tipo": "predio", "x": -8.4, "z": -4.0, "largura": 2.6, "altura": 3.0, "fundo": 2.0, "andares": 2, "colunas": 2 },
+
+    { "tipo": "arvore", "x": -3.7, "z": 1.5, "raio": 0.85, "altura": 1.5 },
+    { "tipo": "arvore", "x": 3.9, "z": 0.8, "raio": 0.95, "altura": 1.6 },
+    { "tipo": "arvore", "x": -4.4, "z": -2.4, "raio": 0.8, "altura": 1.4 },
+    { "tipo": "arvore", "x": 4.6, "z": -2.8, "raio": 0.75, "altura": 1.3 },
+
+    { "tipo": "nuvem", "x": -3.2, "y": 12.3, "z": -6, "largura": 3.2 },
+    { "tipo": "nuvem", "x": 3.6, "y": 13.4, "z": -8, "largura": 3.6 },
+    { "tipo": "nuvem", "x": 1.6, "y": 9.6, "z": -9, "largura": 2.6 },
+    { "tipo": "nuvem", "x": -1.0, "y": 11.4, "z": -2.5, "largura": 1.5 },
+
+    { "tipo": "torre", "x": 0, "z": 0, "altura": 10,
+      "estica": [
+        { "t": 0, "v": 1.0 },
+        { "t": 4.35, "v": 1.0 }, { "t": 4.75, "v": 1.125 }, { "t": 5.0, "v": 1.1 },
+        { "t": 5.25, "v": 1.0, "corte": true }, { "t": 6.1, "v": 1.0 },
+        { "t": 7.6, "v": 1.1, "degraus": 15 },
+        { "t": 8.25, "v": 1.1, "corte": true },
+        { "t": 11.65, "v": 1.1 }, { "t": 12.2, "v": 0.985 }, { "t": 12.45, "v": 1.0 },
+        { "t": 12.75, "v": 1.0, "corte": true }
+      ],
+      "dobra": [
+        { "t": 0, "v": 0 },
+        { "t": 9.8, "v": 0 }, { "t": 10.25, "v": -0.13 }, { "t": 10.45, "v": -0.12 },
+        { "t": 10.75, "v": -0.12, "corte": true },
+        { "t": 11.65, "v": -0.12 }, { "t": 12.3, "v": 0 }
+      ] },
+
+    { "tipo": "regua", "de": 5.25, "ate": 8.25, "x": 0.42, "z": 0.05, "zero": 10, "cm": 15, "comprimento": 1.0 },
+
+    { "tipo": "sol", "raio": 0.85,
+      "caminho": [
+        { "t": 0, "pos": [1.75, 19, 1.5] },
+        { "t": 2.95, "pos": [1.75, 19, 1.5] }, { "t": 3.6, "pos": [1.75, 9.6, 1.5] },
+        { "t": 8.25, "pos": [2.15, 9.9, 1.5], "corte": true },
+        { "t": 10.75, "pos": [1.8, 9.6, 1.5], "corte": true }, { "t": 12.6, "pos": [1.85, 7.6, 1.5] },
+        { "t": 12.75, "pos": [3.2, 30, 1.5], "corte": true }
+      ],
+      "inclina": [
+        { "t": 0, "v": 0 }, { "t": 3.8, "v": 0 }, { "t": 4.2, "v": 0.32 }, { "t": 5.25, "v": 0.32 },
+        { "t": 8.25, "v": 0.1, "corte": true }, { "t": 9.9, "v": 0.1 }, { "t": 10.1, "v": -0.12 },
+        { "t": 10.75, "v": 0, "corte": true }
+      ],
+      "cara": [
+        { "t": 0, "jeito": "sorri" },
+        { "t": 9.9, "jeito": "espanto" },
+        { "t": 10.75, "jeito": "calmo" },
+        { "t": 11.75, "jeito": "sorri" }
+      ] },
+
+    { "tipo": "pombo", "escala": 1,
+      "acoes": [
+        { "tipo": "olha", "de": 0.0, "ate": 2.75, "para": [0.3, -0.3] },
+        { "tipo": "bate", "de": 6.15, "ate": 7.6 },
+        { "tipo": "olhaBaixo", "de": 6.1, "ate": 8.25 },
+        { "tipo": "olha", "de": 9.9, "ate": 10.75, "para": [0.6] },
+        { "tipo": "olha", "de": 12.95, "ate": 14.6, "para": [0.75, 0.75, -0.75, -0.75, 0], "som": true },
+        { "tipo": "pisca", "em": 13.55 },
+        { "tipo": "pisca", "em": 14.35 },
+        { "tipo": "arrulha", "em": 14.0 }
+      ] },
+
+    { "tipo": "boneco", "papel": "pintor", "x": -0.75, "z": 9.6, "giro": -0.45,
+      "cavalete": { "x": -1.6, "z": 9.75, "giro": 0.6 },
+      "acoes": [
+        { "tipo": "pinta", "de": 0.2, "ate": 2.7 },
+        { "tipo": "olhaCima", "de": 11.7, "ate": 12.75 },
+        { "tipo": "aponta", "de": 11.9, "ate": 12.75 }
+      ] },
+    { "tipo": "boneco", "papel": "padeiro", "x": 1.45, "z": 9.3, "giro": -0.3,
+      "acoes": [
+        { "tipo": "acena", "de": 0.6, "ate": 2.4 },
+        { "tipo": "olhaCima", "de": 10.9, "ate": 12.75 },
+        { "tipo": "pula", "de": 11.75, "ate": 12.45 }
+      ] }
+  ],
+
+  "legenda": { "tam": 92, "largura": 900, "y": 1270, "cor": "#ffffff", "corFalada": "#e3e302", "contorno": "#1e1209" },
+  "legendas": [
+    { "de": 0.25, "ate": 1.2, "texto": "A TORRE EIFFEL" },
+    { "de": 1.2, "ate": 1.9, "texto": "É MAIS ALTA" },
+    { "de": 1.9, "ate": 2.65, "texto": "NO VERÃO." },
+    { "de": 2.85, "ate": 3.75, "texto": "O FERRO DILATA" },
+    { "de": 3.75, "ate": 4.3, "texto": "NO CALOR" },
+    { "de": 4.3, "ate": 5.2, "texto": "E A TORRE ESTICA." },
+    { "de": 5.35, "ate": 6.05, "texto": "DO INVERNO", "y": 1660 },
+    { "de": 6.05, "ate": 6.75, "texto": "AO VERÃO:", "y": 1660 },
+    { "de": 6.75, "ate": 8.2, "texto": "ATÉ 15 CENTÍMETROS.", "y": 1660 },
+    { "de": 8.35, "ate": 9.2, "texto": "O LADO ENSOLARADO" },
+    { "de": 9.2, "ate": 9.75, "texto": "CRESCE MAIS," },
+    { "de": 9.75, "ate": 10.7, "texto": "E O TOPO INCLINA." },
+    { "de": 10.85, "ate": 11.6, "texto": "ESFRIOU," },
+    { "de": 11.6, "ate": 12.7, "texto": "ELA ENCOLHE." },
+    { "de": 12.9, "ate": 13.8, "texto": "SÓ O POMBO" },
+    { "de": 13.8, "ate": 14.7, "texto": "PERCEBE." }
+  ],
+
+  "musica": {
+    "compasso": 0.42,
+    "melodia": ["C5", "E5", "G5", "A5", "G5", "E5", "F5", "A5", "C6", "B5", "A5", "G5", "E5", "G5", "C6", "D6", "C6", "A5", "G5", "F5", "E5", "D5", "E5", "G5", "C5", "E5", "G5", "F5", "E5", "D5", "C5"],
+    "baixo": ["C3", "G2", "F2", "G2", "C3", "A2", "F2", "G2", "C3", "E2", "F2", "G2"],
+    "acordes": [["E4", "G4"], ["D4", "G4"], ["F4", "A4"], ["D4", "G4"], ["E4", "G4"], ["E4", "A4"], ["F4", "A4"], ["D4", "B4"], ["E4", "G4"], ["E4", "G4"], ["F4", "A4"], ["D4", "B4"]],
+    "noite": ["E5", "G5", "C6", "G5", "E5", "C5"]
+  },
+
+  "luz": { "de": [-9, 18, 15], "ceu": "#d9e6ff", "chao": "#b28a5c", "tremor": 0.03 },
+  "massa": { "boil": 0.006, "digital": 14, "repete": 3, "calombo": 2 },
+  "filme": { "exposicao": 1.05, "quente": "#fff2e0", "grao": 0.03, "vinheta": 0.5, "tremorCamera": 0.012 }
+}

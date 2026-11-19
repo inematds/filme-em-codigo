@@ -1,0 +1,316 @@
+{
+  "titulo": "A árvore de família mais famosa do mundo",
+  "duracao": 20,
+  "fps": 30,
+  "semente": 33,
+  "visual": { "tinta": "#1a1220", "vinheta": 0.38, "saturacao": 1.08, "frio": 0.1, "quente": 0.06 },
+
+  "modelos": {
+    "tenda": [
+      { "forma": "cilindro", "tam": [1.6, 1.6, 1.3], "pos": [0, 0.65, 0], "cor": "#f2ead8" },
+      { "forma": "cilindro", "tam": [1.62, 1.62, 0.14], "pos": [0, 1.0, 0], "cor": "#c0352a" },
+      { "forma": "cilindro", "tam": [1.62, 1.62, 0.07], "pos": [0, 0.84, 0], "cor": "#2f5a9a" },
+      { "forma": "cone", "tam": [1.85, 0.85, 20], "pos": [0, 1.72, 0], "cor": "#f2ead8" },
+      { "forma": "caixa", "tam": [0.6, 0.95, 0.12], "pos": [0, 0.48, 1.56], "cor": "#c0352a" }
+    ],
+    "montanha": [ { "forma": "cone", "tam": [26, 16, 7], "pos": [0, 8, 0], "cor": "#a9c3e0" } ],
+    "arvore": [
+      { "forma": "cilindro", "tam": [0.16, 0.26, 2.2], "pos": [0, 1.1, 0], "cor": "#7a5236" },
+      { "forma": "esfera", "tam": [1.1], "pos": [0, 2.6, 0], "cor": "#4f9a46" },
+      { "forma": "esfera", "tam": [0.8], "pos": [0.7, 2.3, 0.2], "cor": "#6fb85a" },
+      { "forma": "esfera", "tam": [0.75], "pos": [-0.65, 2.4, -0.1], "cor": "#6fb85a" }
+    ],
+    "arvoreGrande": [
+      { "forma": "cilindro", "tam": [0.7, 1.3, 6.5], "pos": [0, 3.25, 0], "cor": "#7a5236" },
+      { "forma": "cilindro", "tam": [0.25, 0.45, 3.6], "pos": [-1.5, 6.3, 0], "rot": [0, 0, 40], "cor": "#7a5236" },
+      { "forma": "cilindro", "tam": [0.25, 0.45, 3.6], "pos": [1.5, 6.5, 0], "rot": [0, 0, -42], "cor": "#7a5236" },
+      { "forma": "esfera", "tam": [2.6], "pos": [0, 8.6, -0.3], "cor": "#4f9a46" },
+      { "forma": "esfera", "tam": [2.0], "pos": [-2.8, 7.6, 0.2], "cor": "#6fb85a" },
+      { "forma": "esfera", "tam": [2.1], "pos": [2.9, 7.8, 0.1], "cor": "#6fb85a" },
+      { "forma": "esfera", "tam": [1.7], "pos": [-1.4, 10.0, 0.4], "cor": "#6fb85a" },
+      { "forma": "esfera", "tam": [1.8], "pos": [1.6, 10.2, 0.2], "cor": "#4f9a46" }
+    ],
+    "cavalo": [
+      { "pos": [0, 0, 0], "laco": { "tipo": "pos", "eixo": 1, "amp": 0.08, "hz": 3.2, "abs": true }, "filhos": [
+        { "forma": "capsula", "tam": [0.3, 0.8], "pos": [0, 1.0, 0], "rot": [0, 0, 90], "cor": "$pelo" },
+        { "forma": "cilindro", "tam": [0.13, 0.2, 0.75], "pos": [0.6, 1.38, 0], "rot": [0, 0, -38], "cor": "$pelo" },
+        { "forma": "caixa", "tam": [0.5, 0.26, 0.24], "pos": [0.9, 1.66, 0], "rot": [0, 0, -22], "cor": "$pelo" },
+        { "forma": "cilindro", "tam": [0.05, 0.12, 0.6], "pos": [-0.72, 1.0, 0], "rot": [0, 0, -50], "cor": "$crina" },
+        { "forma": "cilindro", "tam": [0.06, 0.06, 0.9], "pos": [0.42, 0.45, 0.16], "cor": "$pelo", "laco": { "eixo": 2, "amp": 0.6, "hz": 3.2 } },
+        { "forma": "cilindro", "tam": [0.06, 0.06, 0.9], "pos": [0.42, 0.45, -0.16], "cor": "$pelo", "laco": { "eixo": 2, "amp": 0.6, "hz": 3.2, "fase": 1.5 } },
+        { "forma": "cilindro", "tam": [0.06, 0.06, 0.9], "pos": [-0.42, 0.45, 0.16], "cor": "$pelo", "laco": { "eixo": 2, "amp": 0.6, "hz": 3.2, "fase": 3.1 } },
+        { "forma": "cilindro", "tam": [0.06, 0.06, 0.9], "pos": [-0.42, 0.45, -0.16], "cor": "$pelo", "laco": { "eixo": 2, "amp": 0.6, "hz": 3.2, "fase": 4.6 } }
+      ] }
+    ],
+    "bancada": [
+      { "forma": "caixa", "tam": [1.9, 0.1, 0.9], "pos": [0, 0.9, 0], "cor": "#8a5a34" },
+      { "forma": "caixa", "tam": [0.08, 0.9, 0.08], "pos": [-0.85, 0.45, 0.38], "cor": "#6b4428" },
+      { "forma": "caixa", "tam": [0.08, 0.9, 0.08], "pos": [0.85, 0.45, 0.38], "cor": "#6b4428" },
+      { "forma": "caixa", "tam": [0.08, 0.9, 0.08], "pos": [-0.85, 0.45, -0.38], "cor": "#6b4428" },
+      { "forma": "caixa", "tam": [0.08, 0.9, 0.08], "pos": [0.85, 0.45, -0.38], "cor": "#6b4428" },
+      { "forma": "caixa", "tam": [1.7, 0.06, 0.62], "pos": [0, 0.98, 0.0], "cor": "#c9a07a" }
+    ],
+    "tubo": [
+      { "forma": "cilindro", "tam": [0.075, 0.075, 0.5], "pos": [0, 0.25, 0], "cor": "#d8eef5" },
+      { "forma": "cilindro", "tam": [0.09, 0.09, 0.04], "pos": [0, 0.5, 0], "cor": "#b5d5e0" }
+    ],
+    "liquido": [ { "forma": "cilindro", "tam": [0.08, 0.08, 0.38], "pos": [0, 0.2, 0], "cor": "$cor" } ],
+    "tumulo": [
+      { "forma": "cupula", "tam": [0.6], "esc": [1.3, 0.5, 0.8], "pos": [0, 0, 0], "cor": "#6b4a32" },
+      { "forma": "caixa", "tam": [0.35, 0.55, 0.12], "pos": [0, 0.27, -0.42], "cor": "#9a9aa2" }
+    ],
+    "cova": [
+      { "forma": "disco", "tam": [2.4], "pos": [0, 0.03, 0], "rot": [-90, 0, 0], "cor": "#4a3424" },
+      { "forma": "toro", "tam": [2.4, 0.28], "pos": [0, 0.04, 0], "rot": [90, 0, 0], "cor": "#8a6a44" }
+    ],
+    "aro": [ { "forma": "toro", "tam": [0.85, 0.07], "pos": [0, 0.12, 0], "rot": [90, 0, 0], "cor": "#ffd84a", "basica": true } ],
+    "barra": [ { "forma": "caixa", "tam": [0.8, 1, 0.8], "pos": [0, 0.5, 0], "cor": "$cor" } ]
+  },
+
+  "elenco": {
+    "lider": { "roupa": "#c0352a", "roupaTipo": "tunica", "chapeu": "pele", "chapeuCor": "#e2b84a", "chapeuTopo": "#c0352a", "faixa": "#2f5a9a", "barba": "#1e1a1e", "bigode": "#1e1a1e", "pele": "#e8b88a", "alt": 1.15 },
+    "nomadeA": { "roupa": "#3f6fb5", "chapeu": "pele", "chapeuCor": "#a87a4a", "chapeuTopo": "#3f6fb5", "pele": "#e8b88a" },
+    "nomadeB": { "roupa": "#7a4fa0", "chapeu": "pele", "chapeuCor": "#c9a24a", "chapeuTopo": "#5a3a7a", "pele": "#d9a070" },
+    "nomadeC": { "roupa": "#7d8a3a", "chapeu": "pele", "chapeuCor": "#8a6a44", "chapeuTopo": "#5a6a2a", "pele": "#f0c8a0", "barba": "#3a2a22", "bigode": false },
+    "nomadeD": { "roupa": "#b0603a", "chapeu": "pele", "chapeuCor": "#c9a24a", "chapeuTopo": "#8a3a2a", "pele": "#d9a070" },
+    "cientistaA": { "roupaTipo": "jaleco", "cabelo": "curto", "cabeloCor": "#2a2028", "oculos": true, "gravata": "#2f5a9a", "pele": "#f2c9a0", "calca": "#3d3a4a" },
+    "cientistaB": { "roupaTipo": "jaleco", "cabelo": "grisalho", "oculos": true, "gravata": "#c0352a", "pele": "#e8b88a", "calca": "#3d3a4a" },
+    "escavador": { "roupaTipo": "camisa", "roupa": "#d9a85a", "calca": "#7a5a3a", "chapeu": "aba", "chapeuCor": "#f2ead8", "fitaCor": "#8a6a44", "pele": "#d9a070" }
+  },
+
+  "cenarios": {
+    "fundo": [
+      { "tipo": "modelo", "modelo": "montanha", "pos": [-60, -2, -170], "esc": [1.4, 1, 1] },
+      { "tipo": "modelo", "modelo": "montanha", "pos": [10, -2, -190], "esc": [1.8, 1.3, 1] },
+      { "tipo": "modelo", "modelo": "montanha", "pos": [75, -2, -160], "esc": [1.3, 0.9, 1] },
+      { "tipo": "modelo", "modelo": "tenda", "pos": [-6.5, 0, -11], "rot": [0, 20, 0] },
+      { "tipo": "modelo", "modelo": "tenda", "pos": [5.5, 0, -15], "rot": [0, -15, 0] },
+      { "tipo": "modelo", "modelo": "tenda", "pos": [-12, 0, -24], "rot": [0, 30, 0] },
+      { "tipo": "modelo", "modelo": "tenda", "pos": [11, 0, -27], "rot": [0, -30, 0] },
+      { "tipo": "modelo", "modelo": "tenda", "pos": [1.5, 0, -33], "rot": [0, 5, 0] },
+      { "tipo": "modelo", "modelo": "arvore", "pos": [9, 0, -9] },
+      { "tipo": "modelo", "modelo": "arvore", "pos": [-10, 0, -16], "esc": 1.2 }
+    ],
+    "estepe": [
+      { "tipo": "chao", "cor": "#6cb444", "cor2": "#5c9f3a", "tam": 420, "ondas": [ { "amp": 0.6, "fx": 0.08, "fz": 0.06 }, { "amp": 0.25, "fx": 0.21, "fz": 0.17, "fase": 1 } ] }
+    ]
+  },
+
+  "planos": [
+    { "id": "gancho", "de": 0, "ate": 5.0, "cenario": ["estepe", "fundo"],
+      "ceu": { "topo": "#ffb46a", "horiz": "#f2c69a" },
+      "luz": { "sol": "#ffd9a0", "forca": 2.3, "dir": [-0.6, 0.8, 0.7], "ceu": "#ffd6a8", "chao": "#7a6a4a", "ambiente": 1.25 },
+      "luzBoneco": "#ffe9cf", "neblina": { "cor": "#f2c69a", "perto": 30, "longe": 230 },
+      "camera": { "de": { "pos": [0.35, 0.75, 6.2], "alvo": [0, 1.6, 0], "rolo": 2 }, "ate": { "pos": [0.25, 0.8, 5.2], "alvo": [0, 1.6, 0], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "grupo", "n": 60, "arranjo": { "tipo": "fileiras", "centro": [0, 0, -2.6], "colunas": 10, "dx": 0.8, "dz": 1.1, "solta": 0.3 },
+          "molde": { "tipo": "boneco", "estados": [[0, "feliz", "acena"]] },
+          "jeitos": ["nomadeA", "nomadeB", "nomadeC", "nomadeD"], "jeitosOrdem": "sorteio",
+          "estadosLista": [[[0, "feliz", "acena"]], [[0, "feliz", "alto"]], [[0, "feliz", "lado"]]],
+          "aparece": { "de": 0.4, "ate": 2.2 }, "some": { "de": 2.75, "ate": 3.1 },
+          "liga": { "de": 2.3, "ate": 2.9, "para": [0, 1.75, 0], "apaga": 3.1 } },
+        { "tipo": "brilho", "pos": [0, 1.2, -0.3], "cor": "#ffe27a", "tam": 3.6, "pulsa": [[3.2, 0], [3.3, 1], [4.0, 0.55], [5, 0.5]] },
+        { "tipo": "boneco", "quem": "lider", "pos": [0, 0, 0], "estados": [[0, "convencido", "cintura"], [3.25, "feliz", "cintura"]] }
+      ] },
+
+    { "id": "evidencia", "de": 5.0, "ate": 7.0, "cenario": ["estepe", "fundo"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#d8e6f2" },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.2 },
+      "neblina": { "cor": "#d8e6f2", "perto": 30, "longe": 230 }, "desfoque": { "forca": 9 },
+      "camera": { "de": { "pos": [0, 1.75, 5.6], "alvo": [0, 1.15, -0.2] }, "ate": { "pos": [0, 1.7, 4.9], "alvo": [0, 1.15, -0.2], "rolo": -2 } },
+      "pecas": [
+        { "tipo": "boneco", "quem": "cientistaA", "pos": [-0.62, 0, 0.75], "estados": [[5.0, "neutro", "segura", "prancheta"], [6.1, "choque", "segura", "prancheta"]] },
+        { "tipo": "boneco", "quem": "cientistaB", "pos": [0.62, 0, 0.75], "estados": [[5.0, "pensa", "pensa"], [6.1, "choque", "alto"]] },
+        { "tipo": "modelo", "modelo": "bancada", "pos": [0, 0, -0.4] },
+        { "tipo": "grupo", "n": 12, "arranjo": { "tipo": "fileiras", "centro": [0, 1.01, -0.53], "colunas": 6, "dx": 0.24, "dz": -0.26, "desloca": false },
+          "molde": { "tipo": "modelo", "modelo": "tubo", "solto": true, "esc": [0.75, 1, 0.75] }, "aparece": { "de": 5.3, "ate": 5.9 } },
+        { "tipo": "modelo", "modelo": "liquido", "pos": [-0.36, 1.02, -0.27], "solto": true, "esc": [0.75, 1, 0.75], "cores": { "cor": "#ffc21a" }, "anim": { "esc": [[6.1, 0.75, 0.02, 0.75], [6.45, 0.75, 1, 0.75]] }, "aparece": 6.08, "durPop": 0.05 },
+        { "tipo": "brilho", "pos": [-0.36, 1.25, -0.2], "cor": "#ffe27a", "tam": 1.1, "pulsa": [[6.05, 0], [6.15, 1], [7, 0.6]] }
+      ] },
+
+    { "id": "estatistica", "de": 7.0, "ate": 8.8, "cenario": ["estepe", "fundo"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#d8e6f2" },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.2 },
+      "neblina": { "cor": "#d8e6f2", "perto": 30, "longe": 230 },
+      "camera": { "de": { "pos": [0, 1.35, 6.4], "alvo": [0, 1.15, -0.5], "rolo": 1.5 }, "ate": { "pos": [0, 1.3, 5.7], "alvo": [0, 1.1, -0.5], "rolo": 2.5 } },
+      "pecas": [
+        { "tipo": "grupo", "n": 12, "arranjo": { "tipo": "fileiras", "centro": [0, 0, -0.95], "colunas": 6, "dx": 0.5, "dz": -0.95, "desloca": false },
+          "molde": { "tipo": "boneco", "estados": [[7.0, "neutro", "lado"], [7.6, "choque", "lado"]] },
+          "jeitos": ["nomadeA", "nomadeB", "nomadeC", "nomadeD", "nomadeB", "nomadeA"],
+          "aparece": { "de": 7.05, "ate": 7.5 },
+          "trocas": { "7": { "efeitos": { "dourado": 7.6 }, "estados": [[7.0, "neutro", "lado"], [7.6, "feliz", "alto"]] } } },
+        { "tipo": "brilho", "pos": [-0.75, 1.1, -0.2], "cor": "#ffe27a", "tam": 2.4, "pulsa": [[7.55, 0], [7.65, 1], [8.8, 0.6]] }
+      ] },
+
+    { "id": "mapa", "de": 8.8, "ate": 13.2, "cenario": ["fundo"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#d8e6f2" },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.25 },
+      "neblina": { "cor": "#d8e6f2", "perto": 40, "longe": 240 },
+      "camera": { "chaves": [
+        { "t": 8.8, "pos": [0.8, 15.5, 6.2], "alvo": [0, 0, 0.2], "rolo": -2 },
+        { "t": 11.8, "pos": [0.3, 14.2, 5.6], "alvo": [0, 0, 0.2], "rolo": -1 },
+        { "t": 12.6, "pos": [0, 4.8, 8.2], "alvo": [0, 2.2, -5], "rolo": 0 },
+        { "t": 13.2, "pos": [0, 4.7, 7.6], "alvo": [0, 2.2, -5], "rolo": 1 } ] },
+      "pecas": [
+        { "tipo": "chao", "cor": "#6cb444", "cor2": "#5c9f3a", "tam": 420, "y": -0.3 },
+        { "tipo": "mapa", "pos": [0, 0.02, 0], "rot": [-90, 0, 0], "tam": [7.2, 4.8], "centro": [85, 42], "escala": 5.2, "fundo": "#f1e2b8",
+          "camadas": [
+            { "tipo": "contorno", "pontos": "eurasia", "de": 8.8, "ate": 9.4, "cor": "#241726", "larg": 7 },
+            { "tipo": "recheio", "pontos": "eurasia", "de": 9.1, "ate": 9.6, "cor": "#cfe0a0" },
+            { "tipo": "contorno", "pontos": "eurasia", "de": 9.4, "ate": 9.41, "cor": "#241726", "larg": 7 },
+            { "tipo": "varre", "pontos": "regiao", "de": 9.0, "ate": 9.8, "cor": "#f2c232", "alfa": 0.6, "direcao": "oeste" },
+            { "tipo": "aneis", "ponto": [92, 46], "de": 9.7, "cor": "#c0352a", "raio": 170 },
+            { "tipo": "ponto", "ponto": [103, 47], "de": 10.1, "cor": "#c0352a", "raio": 13 },
+            { "tipo": "cresce", "pontos": "imperio", "centro": [103, 47], "de": 10.3, "ate": 11.4, "cor": "#c0352a", "alfa": 0.7 },
+            { "tipo": "ponto", "ponto": [103, 47], "de": 10.1, "cor": "#ffd23a", "raio": 13 }
+          ] },
+        { "tipo": "grupo", "n": 9, "arranjo": { "tipo": "area", "centro": [0, 0, 0], "tam": [2.6, 3.2], "semente": 4 }, "atrasoAnda": 0.9,
+          "molde": { "tipo": "junto", "solto": true, "esc": 0.32, "rot": [0, 180, 0], "anim": { "reta": true, "pos": [[8.8, 4.6, 0.05, 0], [13.2, -4.6, 0.05, 0]] },
+            "pecas": [
+              { "tipo": "modelo", "modelo": "cavalo", "cores": { "pelo": "#8a5a34", "crina": "#3a2a22" } },
+              { "tipo": "boneco", "quem": "nomadeA", "pos": [0, 0.82, 0], "solto": true, "estados": [[0, "feliz", "lado"]], "efeitos": { "montado": true } } ] },
+          "trocas": { "1": { "pecas": [ { "tipo": "modelo", "modelo": "cavalo", "cores": { "pelo": "#5a3a2a", "crina": "#1e1a1e" } }, { "tipo": "boneco", "quem": "nomadeB", "pos": [0, 0.82, 0], "solto": true, "estados": [[0, "feliz", "acena"]], "efeitos": { "montado": true } } ] },
+                      "4": { "pecas": [ { "tipo": "modelo", "modelo": "cavalo", "cores": { "pelo": "#b08a5a", "crina": "#5a3a2a" } }, { "tipo": "boneco", "quem": "nomadeD", "pos": [0, 0.82, 0], "solto": true, "estados": [[0, "feliz", "lado"]], "efeitos": { "montado": true } } ] },
+                      "6": { "pecas": [ { "tipo": "modelo", "modelo": "cavalo", "cores": { "pelo": "#f2ead8", "crina": "#9a9aa2" } }, { "tipo": "boneco", "quem": "nomadeC", "pos": [0, 0.82, 0], "solto": true, "estados": [[0, "feliz", "lado"]], "efeitos": { "montado": true } } ] } } },
+        { "tipo": "modelo", "modelo": "barra", "pos": [-1.8, -0.3, -5], "solto": true, "cores": { "cor": "#f2c232" }, "anim": { "esc": [[12.05, 1, 0.01, 1], [12.6, 1, 4.0, 1]] }, "aparece": 12.0, "durPop": 0.05 },
+        { "tipo": "modelo", "modelo": "barra", "pos": [-0.6, -0.3, -5], "solto": true, "cores": { "cor": "#9aa3ad" }, "anim": { "esc": [[12.15, 1, 0.01, 1], [12.7, 1, 3.8, 1]] }, "aparece": 12.1, "durPop": 0.05 },
+        { "tipo": "modelo", "modelo": "barra", "pos": [0.6, -0.3, -5], "solto": true, "cores": { "cor": "#9aa3ad" }, "anim": { "esc": [[12.25, 1, 0.01, 1], [12.8, 1, 2.45, 1]] }, "aparece": 12.2, "durPop": 0.05 },
+        { "tipo": "modelo", "modelo": "barra", "pos": [1.8, -0.3, -5], "solto": true, "cores": { "cor": "#9aa3ad" }, "anim": { "esc": [[12.35, 1, 0.01, 1], [12.9, 1, 0.83, 1]] }, "aparece": 12.3, "durPop": 0.05 },
+        { "tipo": "simbolo", "texto": "24,0", "pos": [-1.8, 4.15, -4.6], "tam": 0.42, "cor": "#f2c232", "aparece": 12.6, "balanca": 0 },
+        { "tipo": "simbolo", "texto": "22,8", "pos": [-0.6, 3.95, -4.6], "tam": 0.36, "cor": "#ffffff", "aparece": 12.7, "balanca": 0 },
+        { "tipo": "simbolo", "texto": "14,7", "pos": [0.6, 2.6, -4.6], "tam": 0.36, "cor": "#ffffff", "aparece": 12.8, "balanca": 0 },
+        { "tipo": "simbolo", "texto": "5,0", "pos": [1.8, 1.0, -4.6], "tam": 0.36, "cor": "#ffffff", "aparece": 12.9, "balanca": 0 },
+        { "tipo": "simbolo", "texto": "MONGOL", "pos": [-1.8, 0.02, -4.4], "tam": 0.24, "cor": "#ffffff", "aparece": 12.05, "balanca": 0 },
+        { "tipo": "simbolo", "texto": "RUSSO", "pos": [-0.6, 0.02, -4.4], "tam": 0.24, "cor": "#ffffff", "aparece": 12.15, "balanca": 0 },
+        { "tipo": "simbolo", "texto": "QING", "pos": [0.6, 0.02, -4.4], "tam": 0.24, "cor": "#ffffff", "aparece": 12.25, "balanca": 0 },
+        { "tipo": "simbolo", "texto": "ROMANO", "pos": [1.8, 0.02, -4.4], "tam": 0.24, "cor": "#ffffff", "aparece": 12.35, "balanca": 0 }
+      ] },
+
+    { "id": "virada", "de": 13.2, "ate": 15.2, "cenario": ["estepe", "fundo"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#d8e6f2" },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.2 },
+      "neblina": { "cor": "#d8e6f2", "perto": 30, "longe": 230 }, "desfoque": { "forca": 12 },
+      "camera": { "chaves": [
+        { "t": 13.2, "pos": [0, 1.5, 3.3], "alvo": [0, 1.5, 0], "rolo": 2 },
+        { "t": 14.4, "pos": [0, 1.5, 2.95], "alvo": [0, 1.5, 0], "rolo": 2.5 },
+        { "t": 14.6, "pos": [0, 1.5, 2.9], "alvo": [0, 1.5, 0], "rolo": -5 },
+        { "t": 15.2, "pos": [0, 1.5, 2.8], "alvo": [0, 1.5, 0], "rolo": -6 } ] },
+      "pecas": [
+        { "tipo": "boneco", "quem": "cientistaA", "pos": [-0.45, 0, 0], "estados": [[13.2, "convencido", "joinha"], [14.4, "choque", "alto"]] },
+        { "tipo": "boneco", "quem": "cientistaB", "pos": [0.45, 0, 0.05], "estados": [[13.2, "convencido", "joinha"], [14.4, "preocupado", "lado"]] },
+        { "tipo": "simbolo", "texto": "?", "pos": [-0.95, 2.05, 0.1], "tam": 0.6, "aparece": 14.4 }
+      ] },
+
+    { "id": "tumulos", "de": 15.2, "ate": 17.0, "cenario": ["estepe", "fundo"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#d8e6f2" },
+      "luz": { "sol": "#e8f0ff", "forca": 2.1, "dir": [0.6, 1, 0.5], "ceu": "#bcd0f0", "chao": "#5a6070", "ambiente": 1.25 },
+      "luzBoneco": "#f0f4ff", "neblina": { "cor": "#d8e6f2", "perto": 30, "longe": 230 },
+      "camera": { "de": { "pos": [0.4, 4.2, 10.6], "alvo": [0, 2.0, 0], "rolo": -2 }, "ate": { "pos": [0.3, 4.0, 9.8], "alvo": [0, 2.0, 0], "rolo": -3 } },
+      "pecas": [
+        { "tipo": "modelo", "modelo": "cova", "pos": [0, 0, 0] },
+        { "tipo": "modelo", "modelo": "tumulo", "pos": [-1.25, 0.05, -0.5] },
+        { "tipo": "modelo", "modelo": "tumulo", "pos": [-0.4, 0.05, 0.75] },
+        { "tipo": "modelo", "modelo": "tumulo", "pos": [0.55, 0.05, -0.85] },
+        { "tipo": "modelo", "modelo": "tumulo", "pos": [1.35, 0.05, 0.45] },
+        { "tipo": "modelo", "modelo": "aro", "pos": [-1.25, 0.05, -0.5], "aparece": 15.3 },
+        { "tipo": "modelo", "modelo": "aro", "pos": [-0.4, 0.05, 0.75], "aparece": 15.36 },
+        { "tipo": "modelo", "modelo": "aro", "pos": [0.55, 0.05, -0.85], "aparece": 15.42 },
+        { "tipo": "modelo", "modelo": "aro", "pos": [1.35, 0.05, 0.45], "aparece": 15.48 },
+        { "tipo": "helice", "pos": [0, 0.4, -0.3], "altura": 2.2, "raio": 0.34, "n": 14, "voltas": 1.6, "aparece": 15.4,
+          "anim": { "pos": [[15.4, 0, 0.4, -0.3], [16.1, 0, 2.55, -0.3], [16.2, 0, 2.55, -0.3], [16.8, -0.85, 2.55, -0.3]] },
+          "tinge": [[16.2, "#8f97a0", 0.8, 0.4]] },
+        { "tipo": "helice", "pos": [0, 0.4, -0.3], "altura": 2.2, "raio": 0.34, "n": 14, "voltas": 1.6, "aparece": 15.4,
+          "anim": { "pos": [[15.4, 0, 0.4, -0.3], [16.1, 0, 2.55, -0.3], [16.2, 0, 2.55, -0.3], [16.8, 0.85, 2.55, -0.3]] } },
+        { "tipo": "simbolo", "texto": "ESPERADA", "pos": [-0.85, 4.0, -0.3], "tam": 0.26, "cor": "#d8dde2", "aparece": 16.35, "balanca": 0 },
+        { "tipo": "simbolo", "texto": "OUTRA LINHAGEM", "pos": [0.85, 4.0, -0.3], "tam": 0.26, "cor": "#f2c232", "aparece": 16.35, "balanca": 0 },
+        { "tipo": "boneco", "quem": "escavador", "pos": [1.25, 0, 1.9], "estados": [[15.2, "neutro", "aponta"], [16.2, "choque", "alto"]], "pulos": [16.2] }
+      ] },
+
+    { "id": "pergunta", "de": 17.0, "ate": 20.0, "cenario": ["estepe", "fundo"],
+      "ceu": { "topo": "#ffb46a", "horiz": "#f2c69a" },
+      "luz": { "sol": "#ffd9a0", "forca": 2.3, "dir": [-0.6, 0.8, 0.7], "ceu": "#ffd6a8", "chao": "#7a6a4a", "ambiente": 1.25 },
+      "luzBoneco": "#ffe9cf", "neblina": { "cor": "#f2c69a", "perto": 30, "longe": 230 },
+      "camera": { "de": { "pos": [0, 3.0, 11.5], "alvo": [0, 4.2, -3.5], "rolo": 2 }, "ate": { "pos": [0, 5.0, 14.5], "alvo": [0, 4.6, -3.5], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "modelo", "modelo": "arvoreGrande", "pos": [0, 0, -4.5], "anim": { "esc": [[17.0, 0.05], [17.9, 1]] }, "aparece": 17.0, "durPop": 0.1 },
+        { "tipo": "brilho", "pos": [0, 1.0, -1.5], "cor": "#ffe27a", "tam": 3.2, "pulsa": [[17.0, 0.2], [17.3, 1], [18.8, 0.85], [19.1, 0.25]] },
+        { "tipo": "boneco", "quem": "lider", "pos": [0, 0, -1.4], "estados": [[17.0, "feliz", "cintura"]], "some": 18.85 },
+        { "tipo": "simbolo", "texto": "?", "pos": [0, 1.15, -1.4], "tam": 1.7, "aparece": 18.85 },
+        { "tipo": "grupo", "n": 26, "arranjo": { "tipo": "anel", "centro": [0, 0, -2.2], "raio": 3.0, "de": 115, "arco": 310 },
+          "molde": { "tipo": "boneco" }, "jeitos": ["nomadeA", "nomadeB", "nomadeC", "nomadeD"], "jeitosOrdem": "sorteio",
+          "estadosLista": [[[17.0, "feliz", "acena"], [18.85, "choque", "alto"]], [[17.0, "feliz", "lado"], [18.85, "choque", "lado"]], [[17.0, "feliz", "alto"], [18.85, "preocupado", "alto"]]] }
+      ] }
+  ],
+
+  "rotulos": [
+    { "texto": "20.000.000", "conta": { "de": 0.2, "ate": 2.3, "valor": 20000000 }, "x": 540, "y": 330, "tam": 112, "cor": "#f2d43a", "de": 0.2, "some": 2.9 },
+    { "texto": "HOMENS VIVOS HOJE", "x": 540, "y": 430, "tam": 48, "de": 0.35, "some": 2.9 },
+    { "texto": "GÊNGIS KHAN", "x": 540, "y": 380, "tam": 92, "cor": "#f2d43a", "de": 4.0, "sobe": true, "ate": 5.0 },
+    { "texto": "ESTUDO DO CROMOSSOMO Y", "estilo": "placa", "x": 540, "y": 250, "tam": 44, "de": 5.0, "ate": 7.0 },
+    { "texto": "2003", "x": 540, "y": 560, "tam": 210, "cor": "#f2d43a", "de": 5.1, "ate": 7.0 },
+    { "texto": "1 EM 12", "x": 540, "y": 430, "tam": 150, "cores": ["#f2d43a", "#ffffff", "#ffffff"], "de": 7.05, "ate": 8.8 },
+    { "texto": "IMPÉRIO MONGOL", "x": 540, "y": 1330, "tam": 70, "cor": "#f2d43a", "de": 10.6, "sobe": true, "some": 11.75, "ate": 13.2 },
+    { "texto": "MAIOR IMPÉRIO EM TERRA", "x": 540, "y": 300, "tam": 54, "cores": ["#f2d43a", "#ffffff", "#ffffff", "#ffffff"], "de": 11.95, "sobe": true, "ate": 13.2 },
+    { "texto": "MILHÕES DE KM²", "x": 540, "y": 380, "tam": 38, "de": 12.1, "sobe": true, "ate": 13.2 },
+    { "texto": "ARQUIVO DO CASO", "estilo": "placa", "x": 540, "y": 240, "tam": 44, "de": 13.2, "ate": 15.2 },
+    { "texto": "CASO ENCERRADO?", "estilo": "carimbo", "x": 540, "y": 480, "tam": 74, "giro": -8, "de": 13.35, "apaga": 14.4, "risco": { "de": 14.45, "ate": 14.75 }, "ate": 15.2 },
+    { "texto": "AINDA NÃO", "x": 540, "y": 660, "tam": 112, "cores": ["#ffffff", "#f2d43a"], "de": 14.42, "ate": 15.2 },
+    { "texto": "TÚMULOS MONGÓIS", "x": 540, "y": 1290, "tam": 56, "de": 15.35, "sobe": true, "ate": 17.0 },
+    { "texto": "1130 A 1250", "x": 540, "y": 1370, "tam": 44, "cor": "#f2d43a", "de": 15.5, "sobe": true, "ate": 17.0 },
+    { "texto": "GÊNGIS KHAN", "x": 540, "y": 300, "tam": 86, "cor": "#f2d43a", "de": 17.0, "risco": { "de": 18.1, "ate": 18.4 }, "ate": 20.0 },
+    { "texto": "OUTRA PESSOA?", "x": 540, "y": 430, "tam": 70, "cor": "#ffffff", "de": 18.85, "sobe": true, "ate": 20.0 }
+  ],
+
+  "claroes": [4.85, 14.4],
+  "chutes": [ { "t": 3.25, "forca": 0.6 }, { "t": 7.6, "forca": 0.4 }, { "t": 14.4, "forca": 1.3 }, { "t": 16.2, "forca": 1.0 }, { "t": 18.85, "forca": 0.7 } ],
+  "tremores": [ { "t": 14.4, "quadros": 8, "forca": 22 } ],
+  "escurece": [ { "de": 19.65, "ate": 20.0 } ],
+
+  "terras": {
+    "eurasia": [[-9,43],[-2,43.5],[-1.5,46],[-4.5,48.5],[2,51],[5,53.5],[8.5,57],[5,58.5],[5,62],[14,68],[20,70],[28,71],[33,69],[41,67],[44,68],[53,68.5],[60,69],[68,72.5],[73,72],[80,73],[87,75],[100,77],[113,73.5],[130,71],[141,72.5],[155,71],[170,70],[180,69],[180,65],[172,61],[163,59],[160,53],[156,51],[155,57],[150,59.5],[141,59],[137,54],[141,52],[140,48],[135,43],[130,42.5],[129,35],[126,34.5],[126,38],[121,40],[117,39],[122,37],[119,35],[121,32],[122,30],[119,25],[113,22],[108,21.5],[106,18],[109,12],[105,9],[100,13],[100,7],[103.5,1.5],[98,8],[98,16],[94,19],[91,22],[87,21.5],[80,15],[77,8],[73,17],[72,21],[67,24.5],[61,25],[57,26],[56.5,24],[59.5,22.5],[55,17],[52,16],[45,13],[43,13],[39,21],[35,28],[34,31],[35,33],[36,36],[30,36.5],[27,37],[26,40],[23,40.5],[22,37],[20,40],[19,42],[16,43.5],[13,45.5],[12.5,44],[18,40],[16,38],[12,41],[10,44],[7,43.5],[3,43],[3,41.5],[0,39],[-2,36.7],[-6,36.5],[-9,37],[-9,43]],
+    "regiao": [[55,40],[65,46],[80,49],[95,50],[110,50],[122,47],[124,42],[112,40],[98,41],[85,39],[70,37],[58,37]],
+    "imperio": [[25,47],[32,52],[40,55],[55,57],[75,55],[95,53],[115,53],[130,51],[133,43],[124,35],[120,30],[105,25],[95,29],[80,34],[66,30],[56,28],[47,32],[40,38],[33,42]]
+  },
+
+  "legenda": { "y": 1590, "tam": 62, "largura": 940, "segura": 0.55, "destaque": "#E3E302" },
+  "legendas": [
+    { "de": 0.15, "ate": 1.25, "texto": "CERCA DE 20 MILHÕES" },
+    { "de": 1.25, "ate": 2.30, "texto": "DE HOMENS VIVOS HOJE" },
+    { "de": 2.30, "ate": 3.20, "texto": "PODEM DESCENDER" },
+    { "de": 3.20, "ate": 4.00, "texto": "DE UM SÓ HOMEM:" },
+    { "de": 4.00, "ate": 5.00, "texto": "GÊNGIS KHAN." },
+    { "de": 5.00, "ate": 5.90, "texto": "EM 2003," },
+    { "de": 5.90, "ate": 7.00, "texto": "GENETICISTAS ACHARAM" },
+    { "de": 7.00, "ate": 7.95, "texto": "1 EM CADA 12 HOMENS" },
+    { "de": 7.95, "ate": 8.80, "texto": "COM QUASE O MESMO Y" },
+    { "de": 8.80, "ate": 9.60, "texto": "NUMA VASTA REGIÃO" },
+    { "de": 9.60, "ate": 10.20, "texto": "DA ÁSIA." },
+    { "de": 10.20, "ate": 11.00, "texto": "ESPALHOU-SE COM" },
+    { "de": 11.00, "ate": 11.80, "texto": "O IMPÉRIO MONGOL," },
+    { "de": 11.80, "ate": 13.20, "texto": "O MAIOR DA HISTÓRIA." },
+    { "de": 13.20, "ate": 14.40, "texto": "CASO ENCERRADO?" },
+    { "de": 14.40, "ate": 15.20, "texto": "AINDA NÃO." },
+    { "de": 15.20, "ate": 16.10, "texto": "TÚMULOS DA ÉPOCA" },
+    { "de": 16.10, "ate": 17.00, "texto": "MOSTRAM OUTRA LINHAGEM." },
+    { "de": 17.00, "ate": 18.00, "texto": "A ÁRVORE MAIS FAMOSA" },
+    { "de": 18.00, "ate": 18.80, "texto": "DO MUNDO TALVEZ SEJA" },
+    { "de": 18.80, "ate": 19.65, "texto": "DE OUTRA PESSOA." }
+  ],
+
+  "musica": { "bpm": 120, "compasso": 4, "tom": "A3", "escala": [0, 3, 5, 7, 10], "acordes": [0, 0, 3, 4, 0, 2, 3, 4], "perc": ["taiko"], "vol": 0.17, "densidade": 0.55, "dobra": true,
+    "pausas": [[14.4, 15.2]], "fim": 19.6, "duasNotas": 19.0 },
+  "sons": [
+    { "som": "galope", "t": 0.1, "dur": 1.2, "vol": 0.05 },
+    { "som": "tique", "t": 0.2, "dur": 2.1, "hz": 12, "vol": 0.05 },
+    { "som": "golpe", "t": 3.25, "vol": 0.45 },
+    { "som": "brilho", "t": 3.25, "vol": 0.06 },
+    { "som": "subida", "t": 7.25, "dur": 0.35, "vol": 0.05 },
+    { "som": "brilho", "t": 7.6, "vol": 0.07 },
+    { "som": "galope", "t": 8.8, "dur": 4.3, "vol": 0.07 },
+    { "som": "subida", "t": 10.2, "dur": 0.7, "vol": 0.05 },
+    { "som": "arranhao", "t": 14.4, "vol": 0.14 },
+    { "som": "golpe", "t": 14.4, "vol": 0.35 },
+    { "som": "tambor", "t": 16.2, "vol": 0.32 },
+    { "som": "brilhoLongo", "t": 18.85, "vol": 0.07 }
+  ]
+}

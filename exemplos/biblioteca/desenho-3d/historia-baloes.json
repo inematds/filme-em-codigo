@@ -1,0 +1,220 @@
+{
+  "titulo": "A soltura de balões que deu errado",
+  "duracao": 16.5,
+  "fps": 30,
+  "semente": 74,
+  "visual": { "tinta": "#1a1220", "vinheta": 0.34, "saturacao": 1.08, "frio": 0.1, "quente": 0.06 },
+
+  "modelos": {
+    "predio": [
+      { "forma": "caixa", "tam": [1, 1, 1], "pos": [0, 0.5, 0], "cor": "$cor" },
+      { "forma": "caixa", "tam": [1.04, 0.04, 1.04], "pos": [0, 1.0, 0], "cor": "#7d8696" }
+    ],
+    "torreDegraus": [
+      { "forma": "caixa", "tam": [5, 10, 5], "pos": [0, 5, 0], "cor": "#e8e0cc" },
+      { "forma": "caixa", "tam": [3.8, 6, 3.8], "pos": [0, 13, 0], "cor": "#e8e0cc" },
+      { "forma": "caixa", "tam": [2.6, 5, 2.6], "pos": [0, 18.5, 0], "cor": "#efe6d4" },
+      { "forma": "cone", "tam": [1.3, 6, 4], "pos": [0, 24, 0], "rot": [0, 45, 0], "cor": "#d9cdb4" }
+    ],
+    "rede": [
+      { "forma": "cupula", "tam": [2.3], "pos": [0, 0, 0], "cor": "#ffffff", "basica": true, "arame": true },
+      { "forma": "toro", "tam": [2.3, 0.09], "pos": [0, 0.05, 0], "rot": [90, 0, 0], "cor": "#c0352a" }
+    ],
+    "carro": [
+      { "forma": "caixa", "tam": [1.8, 0.5, 0.9], "pos": [0, 0.45, 0], "cor": "$cor" },
+      { "forma": "caixa", "tam": [1.0, 0.42, 0.82], "pos": [-0.1, 0.9, 0], "cor": "$cor" },
+      { "forma": "caixa", "tam": [1.02, 0.28, 0.84], "pos": [-0.1, 0.92, 0], "cor": "#bfe0ff", "basica": true },
+      { "forma": "cilindro", "tam": [0.2, 0.2, 0.12], "pos": [0.55, 0.2, 0.45], "rot": [90, 0, 0], "cor": "#241726" },
+      { "forma": "cilindro", "tam": [0.2, 0.2, 0.12], "pos": [-0.55, 0.2, 0.45], "rot": [90, 0, 0], "cor": "#241726" },
+      { "forma": "cilindro", "tam": [0.2, 0.2, 0.12], "pos": [0.55, 0.2, -0.45], "rot": [90, 0, 0], "cor": "#241726" },
+      { "forma": "cilindro", "tam": [0.2, 0.2, 0.12], "pos": [-0.55, 0.2, -0.45], "rot": [90, 0, 0], "cor": "#241726" }
+    ],
+    "aviao": [
+      { "forma": "capsula", "tam": [0.45, 3.2], "pos": [0, 0.9, 0], "rot": [0, 0, 90], "cor": "#f4f1ea" },
+      { "forma": "caixa", "tam": [0.9, 0.08, 4.6], "pos": [0.2, 0.85, 0], "cor": "#e8e0cc" },
+      { "forma": "caixa", "tam": [0.6, 0.9, 0.08], "pos": [-1.85, 1.45, 0], "rot": [0, 0, -20], "cor": "#c0352a" },
+      { "forma": "caixa", "tam": [0.5, 0.06, 1.6], "pos": [-1.8, 1.0, 0], "cor": "#e8e0cc" },
+      { "forma": "caixa", "tam": [0.3, 0.2, 0.7], "pos": [1.55, 1.05, 0], "cor": "#4a6a8a" },
+      { "forma": "cilindro", "tam": [0.05, 0.05, 0.5], "pos": [0.4, 0.3, 0.4], "cor": "#241726" },
+      { "forma": "cilindro", "tam": [0.05, 0.05, 0.5], "pos": [0.4, 0.3, -0.4], "cor": "#241726" }
+    ],
+    "lago": [ { "forma": "disco", "tam": [40], "pos": [0, 0.03, 0], "rot": [-90, 0, 0], "cor": "#3f8fd0" } ],
+    "faixa": [ { "forma": "caixa", "tam": [60, 0.04, 3.2], "pos": [0, 0.02, 0], "cor": "#5a5a64" }, { "forma": "caixa", "tam": [60, 0.05, 0.12], "pos": [0, 0.03, 0], "cor": "#f2d43a" } ],
+    "grama": [ { "forma": "disco", "tam": [6], "pos": [0, 0.015, 0], "rot": [-90, 0, 0], "cor": "#6cb444" } ],
+    "arvore": [
+      { "forma": "cilindro", "tam": [0.14, 0.2, 1.4], "pos": [0, 0.7, 0], "cor": "#7a5236" },
+      { "forma": "esfera", "tam": [0.8], "pos": [0, 1.8, 0], "cor": "#4f9a46" }
+    ]
+  },
+
+  "elenco": {
+    "turistaA": { "roupaTipo": "listras", "roupa": "#2f5a9a", "calca": "#3a4a6a", "chapeu": "bone", "chapeuCor": "#c0352a", "pele": "#f2c9a0" },
+    "turistaB": { "roupaTipo": "camisa", "roupa": "#e8a03a", "calca": "#4a6a8a", "chapeu": "aba", "chapeuCor": "#f2ead8", "pele": "#d9a070" },
+    "turistaC": { "roupaTipo": "camisa", "roupa": "#4cbf6a", "calca": "#3d3a4a", "cabelo": "comprido", "cabeloCor": "#6b3a22", "pele": "#f0c8a0" },
+    "turistaD": { "roupaTipo": "camisa", "roupa": "#b05ad0", "calca": "#3d3a4a", "cabelo": "curto", "cabeloCor": "#2a2028", "pele": "#8a5a3a" },
+    "crianca": { "roupaTipo": "listras", "roupa": "#e8423a", "calca": "#3a4a6a", "cabelo": "curto", "cabeloCor": "#5a3a2a", "pele": "#f2c9a0", "alt": 0.72 },
+    "motorista": { "roupaTipo": "camisa", "roupa": "#f2b632", "calca": "#3d3a4a", "cabelo": "curto", "cabeloCor": "#2a2028", "bigode": "#2a2028", "pele": "#e8b88a" },
+    "piloto": { "roupaTipo": "terno", "roupa": "#2f4a7a", "gravata": "#1e1a22", "calca": "#2f4a7a", "chapeu": "oficial", "chapeuCor": "#2f4a7a", "pele": "#f2c9a0" },
+    "advogadoA": { "roupaTipo": "terno", "roupa": "#2a2a36", "gravata": "#c0352a", "calca": "#2a2a36", "cabelo": "curto", "cabeloCor": "#2a2028", "pele": "#f2c9a0" },
+    "advogadoB": { "roupaTipo": "terno", "roupa": "#3a3440", "gravata": "#2f5a9a", "calca": "#3a3440", "cabelo": "grisalho", "oculos": true, "pele": "#e8b88a" }
+  },
+
+  "cenarios": {
+    "cidade": [
+      { "tipo": "chao", "cor": "#d8d2c4", "cor2": "#ccc6b8", "tam": 400 },
+      { "tipo": "modelo", "modelo": "grama", "pos": [0, 0, 0] },
+      { "tipo": "modelo", "modelo": "torreDegraus", "pos": [-14, 0, -40] },
+      { "tipo": "modelo", "modelo": "predio", "pos": [12, 0, -26], "esc": [6, 9, 6], "cores": { "cor": "#e8c07a" } },
+      { "tipo": "modelo", "modelo": "predio", "pos": [20, 0, -34], "esc": [7, 14, 7], "cores": { "cor": "#c9805a" } },
+      { "tipo": "modelo", "modelo": "predio", "pos": [4, 0, -38], "esc": [6, 11, 6], "cores": { "cor": "#9fb4c8" } },
+      { "tipo": "modelo", "modelo": "predio", "pos": [-4, 0, -30], "esc": [5, 7, 5], "cores": { "cor": "#e8e0cc" } },
+      { "tipo": "modelo", "modelo": "predio", "pos": [-24, 0, -30], "esc": [7, 10, 6], "cores": { "cor": "#b0705a" } },
+      { "tipo": "modelo", "modelo": "predio", "pos": [28, 0, -18], "esc": [6, 8, 6], "cores": { "cor": "#9fb4c8" } },
+      { "tipo": "modelo", "modelo": "predio", "pos": [-30, 0, -14], "esc": [6, 12, 6], "cores": { "cor": "#e8c07a" } },
+      { "tipo": "modelo", "modelo": "lago", "pos": [-62, 0, 10] },
+      { "tipo": "modelo", "modelo": "arvore", "pos": [4.5, 0, -3] },
+      { "tipo": "modelo", "modelo": "arvore", "pos": [-4.8, 0, -2.5] }
+    ]
+  },
+
+  "planos": [
+    { "id": "soltou", "de": 0, "ate": 4.4, "cenario": ["cidade"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#d8e6f2" },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.2 },
+      "neblina": { "cor": "#d8e6f2", "perto": 40, "longe": 260 },
+      "camera": { "chaves": [
+        { "t": 0, "pos": [0.3, 1.1, 8.6], "alvo": [0, 1.6, 0], "rolo": 2 },
+        { "t": 1.3, "pos": [0.3, 1.1, 8.2], "alvo": [0, 1.8, 0], "rolo": 2 },
+        { "t": 4.4, "pos": [0.3, 1.0, 7.6], "alvo": [0, 10, -2], "rolo": 3 } ] },
+      "pecas": [
+        { "tipo": "modelo", "modelo": "rede", "pos": [0, 0, 0], "some": 1.25 },
+        { "tipo": "enxame", "n": 900, "forma": "esfera", "tam": [0.2, 0.24, 0.2], "cores": ["#e8423a", "#f2b632", "#3f8fe0", "#4cbf6a", "#b05ad0", "#f07ab0", "#ffffff", "#ff8a2a"],
+          "formas": [ { "tipo": "cupula", "c": [0, 0.15, 0], "r": 2.15 }, { "tipo": "esfera", "c": [0, 14, -2], "r": 8, "ry": 5 } ],
+          "trocas": [[1.3, 1, 2.6]], "solto": 0.5, "boia": 0.05 },
+        { "tipo": "grupo", "n": 14, "arranjo": { "tipo": "anel", "centro": [0, 0, 0], "raio": 3.0, "de": 20, "arco": 140 },
+          "molde": { "tipo": "boneco" }, "jeitos": ["turistaA", "turistaB", "turistaC", "turistaD", "crianca"], "jeitosOrdem": "sorteio",
+          "estadosLista": [[[0, "feliz", "aponta"], [1.3, "feliz", "alto"]], [[0, "feliz", "lado"], [1.3, "feliz", "acena"]], [[0, "feliz", "cintura"], [1.3, "feliz", "alto"]]] }
+      ] },
+
+    { "id": "recorde", "de": 4.4, "ate": 5.8, "cenario": ["cidade"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#d8e6f2" },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.2 },
+      "neblina": { "cor": "#d8e6f2", "perto": 40, "longe": 260 },
+      "camera": { "de": { "pos": [18, 12, 34], "alvo": [0, 13, -4], "rolo": -2 }, "ate": { "pos": [16, 12.5, 30], "alvo": [0, 13, -4], "rolo": -3 } },
+      "pecas": [
+        { "tipo": "enxame", "n": 900, "forma": "esfera", "tam": [0.2, 0.24, 0.2], "cores": ["#e8423a", "#f2b632", "#3f8fe0", "#4cbf6a", "#b05ad0", "#f07ab0", "#ffffff", "#ff8a2a"],
+          "formas": [ { "tipo": "esfera", "c": [0, 14, -2], "r": 8, "ry": 5 }, { "tipo": "esfera", "c": [0, 17, -3], "r": 10, "ry": 6 } ], "trocas": [[4.4, 1, 1.4]], "boia": 0.15 },
+        { "tipo": "brilho", "pos": [0, 15, -2], "cor": "#fff2b0", "tam": 22, "pulsa": [[4.9, 0], [5.05, 0.6], [5.8, 0.25]] }
+      ] },
+
+    { "id": "tempestade", "de": 5.8, "ate": 8.2, "cenario": ["cidade"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#d8e6f2", "muda": { "de": 5.95, "ate": 6.4, "topo": "#3a4152", "horiz": "#7d8696" } },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#9aa4b8", "chao": "#4a4a50", "ambiente": 1.1, "muda": { "de": 5.95, "ate": 6.4, "forca": 1.0 } },
+      "luzBoneco": "#c8ccd8", "neblina": { "cor": "#7d8696", "perto": 30, "longe": 200 },
+      "visual": {},
+      "camera": { "de": { "pos": [14, 9, 30], "alvo": [0, 9, -4], "rolo": 2 }, "ate": { "pos": [13, 8, 27], "alvo": [0, 6, -4], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "enxame", "n": 900, "forma": "esfera", "tam": [0.2, 0.24, 0.2], "cores": ["#e8423a", "#f2b632", "#3f8fe0", "#4cbf6a", "#b05ad0", "#f07ab0", "#ffffff", "#ff8a2a"],
+          "formas": [ { "tipo": "esfera", "c": [0, 17, -3], "r": 10, "ry": 6 }, { "tipo": "caixa", "c": [0, 0.25, -4], "tam": [36, 0, 30] } ], "trocas": [[6.3, 1, 1.6]], "solto": 0.4, "boia": 0.05 },
+        { "tipo": "enxame", "n": 260, "forma": "caixa", "tam": [0.015, 0.7, 0.015], "cores": ["#c8d4e8"], "basica": true, "formas": [ { "tipo": "caixa", "c": [8, -2, 16], "tam": [26, 0, 20] } ], "movimento": "cai", "altura": 22, "vel": 18, "giraY": false, "aparece": 6.0, "durPop": 0.05 }
+      ] },
+
+    { "id": "lago", "de": 8.2, "ate": 9.4,
+      "ceu": { "topo": "#3a4152", "horiz": "#7d8696" },
+      "luz": { "sol": "#dfe4f0", "forca": 1.2, "dir": [0.6, 1, 0.8], "ceu": "#9aa4b8", "chao": "#4a4a50", "ambiente": 1.25 },
+      "neblina": { "cor": "#7d8696", "perto": 15, "longe": 90 },
+      "camera": { "de": { "pos": [0, 2.6, 7], "alvo": [0, 0.2, -4], "rolo": -2 }, "ate": { "pos": [0, 2.4, 6.2], "alvo": [0, 0.2, -4], "rolo": -3 } },
+      "pecas": [
+        { "tipo": "chao", "cor": "#3f8fd0", "cor2": "#4a9ae0", "tam": 300 },
+        { "tipo": "enxame", "n": 700, "forma": "esfera", "tam": [0.2, 0.24, 0.2], "cores": ["#e8423a", "#f2b632", "#3f8fe0", "#4cbf6a", "#b05ad0", "#f07ab0", "#ffffff", "#ff8a2a"],
+          "formas": [ { "tipo": "caixa", "c": [0, 0.12, -8], "tam": [16, 0, 22] } ], "boia": 0.05 },
+        { "tipo": "enxame", "n": 200, "forma": "caixa", "tam": [0.01, 0.45, 0.01], "cores": ["#c8d4e8"], "basica": true, "formas": [ { "tipo": "caixa", "c": [0, -1, 0], "tam": [12, 0, 14] } ], "movimento": "cai", "altura": 10, "vel": 12, "giraY": false }
+      ] },
+
+    { "id": "transito", "de": 9.4, "ate": 10.5, "cenario": ["cidade"],
+      "ceu": { "topo": "#3a4152", "horiz": "#7d8696" },
+      "luz": { "sol": "#dfe4f0", "forca": 1.2, "dir": [0.6, 1, 0.8], "ceu": "#9aa4b8", "chao": "#4a4a50", "ambiente": 1.25 },
+      "luzBoneco": "#c8ccd8", "neblina": { "cor": "#7d8696", "perto": 15, "longe": 120 },
+      "camera": { "de": { "pos": [1.5, 2.4, 18.6], "alvo": [0, 0.9, 12], "rolo": 2 }, "ate": { "pos": [1.4, 2.3, 17.8], "alvo": [0, 0.9, 12], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "modelo", "modelo": "faixa", "pos": [0, 0, 12] },
+        { "tipo": "modelo", "modelo": "carro", "pos": [-3.2, 0, 11.2], "cores": { "cor": "#e8423a" } },
+        { "tipo": "modelo", "modelo": "carro", "pos": [-0.8, 0, 11.2], "cores": { "cor": "#3f8fe0" } },
+        { "tipo": "modelo", "modelo": "carro", "pos": [1.6, 0, 11.2], "cores": { "cor": "#f2b632" } },
+        { "tipo": "modelo", "modelo": "carro", "pos": [4.0, 0, 11.2], "cores": { "cor": "#4cbf6a" } },
+        { "tipo": "modelo", "modelo": "carro", "pos": [-2.0, 0, 12.8], "rot": [0, 180, 0], "cores": { "cor": "#f2b632" } },
+        { "tipo": "modelo", "modelo": "carro", "pos": [0.6, 0, 12.8], "rot": [0, 180, 0], "cores": { "cor": "#e8423a" } },
+        { "tipo": "modelo", "modelo": "carro", "pos": [3.0, 0, 12.8], "rot": [0, 180, 0], "cores": { "cor": "#3f8fe0" } },
+        { "tipo": "enxame", "n": 260, "forma": "esfera", "tam": [0.2, 0.24, 0.2], "cores": ["#e8423a", "#f2b632", "#3f8fe0", "#4cbf6a", "#b05ad0", "#f07ab0", "#ffffff", "#ff8a2a"],
+          "formas": [ { "tipo": "caixa", "c": [0, 0.25, 12], "tam": [14, 0, 5] } ], "boia": 0.04 },
+        { "tipo": "boneco", "quem": "motorista", "pos": [-0.2, 0, 14.2], "estados": [[9.4, "choque", "alto"]] },
+        { "tipo": "boneco", "quem": "turistaB", "pos": [1.4, 0, 14.0], "estados": [[9.4, "preocupado", "lado"]] }
+      ] },
+
+    { "id": "pista", "de": 10.5, "ate": 11.8,
+      "ceu": { "topo": "#3a4152", "horiz": "#7d8696" },
+      "luz": { "sol": "#dfe4f0", "forca": 1.2, "dir": [0.6, 1, 0.8], "ceu": "#9aa4b8", "chao": "#4a4a50", "ambiente": 1.25 },
+      "luzBoneco": "#c8ccd8", "neblina": { "cor": "#7d8696", "perto": 15, "longe": 120 },
+      "camera": { "de": { "pos": [1.0, 1.8, 7.4], "alvo": [-0.6, 1.3, 0], "rolo": -2 }, "ate": { "pos": [0.9, 1.8, 6.7], "alvo": [-0.6, 1.3, 0], "rolo": -3 } },
+      "pecas": [
+        { "tipo": "chao", "cor": "#6cb444", "cor2": "#5c9f3a", "tam": 300 },
+        { "tipo": "modelo", "modelo": "faixa", "pos": [0, 0, -1.4], "esc": [1, 1, 2.2] },
+        { "tipo": "modelo", "modelo": "aviao", "pos": [-1.4, 0, -1.8], "rot": [0, 30, 0] },
+        { "tipo": "enxame", "n": 320, "forma": "esfera", "tam": [0.2, 0.24, 0.2], "cores": ["#e8423a", "#f2b632", "#3f8fe0", "#4cbf6a", "#b05ad0", "#f07ab0", "#ffffff", "#ff8a2a"],
+          "formas": [ { "tipo": "caixa", "c": [0, 0.25, -2], "tam": [16, 0, 8] } ], "boia": 0.03 },
+        { "tipo": "boneco", "quem": "piloto", "pos": [0.6, 0, 0.6], "estados": [[10.5, "bravo", "cintura"]] },
+        { "tipo": "simbolo", "texto": "?", "pos": [0.6, 2.35, 0.6], "tam": 0.55, "aparece": 10.75 }
+      ] },
+
+    { "id": "processos", "de": 11.8, "ate": 16.5, "cenario": ["cidade"],
+      "ceu": { "topo": "#4f8fdc", "horiz": "#d8e6f2" },
+      "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.2 },
+      "neblina": { "cor": "#d8e6f2", "perto": 40, "longe": 260 }, "desfoque": { "forca": 11 },
+      "camera": { "de": { "pos": [0, 1.5, 3.6], "alvo": [0, 1.4, 0], "rolo": 2 }, "ate": { "pos": [0, 1.5, 3.1], "alvo": [0, 1.4, 0], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "enxame", "n": 200, "forma": "esfera", "tam": [0.2, 0.24, 0.2], "cores": ["#e8423a", "#f2b632", "#3f8fe0", "#4cbf6a", "#b05ad0", "#f07ab0", "#ffffff", "#ff8a2a"],
+          "formas": [ { "tipo": "caixa", "c": [0, 0.22, -4], "tam": [12, 0, 6] } ] },
+        { "tipo": "boneco", "quem": "advogadoA", "pos": [-0.5, 0, 0], "estados": [[11.8, "neutro", "segura", "pergaminho"], [14.4, "bravo", "segura", "pergaminho"]] },
+        { "tipo": "boneco", "quem": "advogadoB", "pos": [0.5, 0, 0.05], "estados": [[11.8, "neutro", "segura", "pergaminho"], [14.4, "convencido", "segura", "pergaminho"]] },
+        { "tipo": "boneco", "quem": "crianca", "pos": [0.95, 0, 0.7], "estados": [[11.8, "preocupado", "lado"]] }
+      ] }
+  ],
+
+  "rotulos": [
+    { "texto": "1986", "x": 540, "y": 360, "tam": 170, "cor": "#f2d43a", "de": 0.2, "some": 1.2, "ate": 1.6 },
+    { "texto": "RECORDE MUNDIAL", "estilo": "placa", "x": 540, "y": 330, "tam": 56, "de": 4.95, "ate": 5.8 }
+  ],
+  "claroes": [4.3, 6.0],
+  "chutes": [ { "t": 1.3, "forca": 0.5 }, { "t": 6.0, "forca": 1.3 }, { "t": 14.4, "forca": 1.0 } ],
+  "escurece": [ { "de": 16.1, "ate": 16.5, "forca": 0.8 } ],
+
+  "legenda": { "y": 1590, "tam": 62, "largura": 940, "segura": 0.55, "destaque": "#E3E302" },
+  "legendas": [
+    { "de": 0.15, "ate": 1.10, "texto": "EM 1986," },
+    { "de": 1.10, "ate": 2.20, "texto": "CLEVELAND SOLTOU" },
+    { "de": 2.20, "ate": 3.40, "texto": "1,5 MILHÃO DE BALÕES" },
+    { "de": 3.40, "ate": 4.40, "texto": "PARA CARIDADE." },
+    { "de": 4.40, "ate": 5.80, "texto": "FOI RECORDE MUNDIAL." },
+    { "de": 5.80, "ate": 6.90, "texto": "AÍ UMA TEMPESTADE" },
+    { "de": 6.90, "ate": 8.20, "texto": "EMPURROU TODOS DE VOLTA." },
+    { "de": 8.20, "ate": 9.40, "texto": "BALÕES COBRIRAM O LAGO," },
+    { "de": 9.40, "ate": 10.50, "texto": "TRAVARAM O TRÂNSITO" },
+    { "de": 10.50, "ate": 11.80, "texto": "E FECHARAM UMA PISTA." },
+    { "de": 11.80, "ate": 13.00, "texto": "A CAMPANHA MAIS BONITA" },
+    { "de": 13.00, "ate": 14.40, "texto": "TERMINOU EM" },
+    { "de": 14.40, "ate": 15.80, "texto": "2 PROCESSOS." }
+  ],
+
+  "musica": { "bpm": 120, "compasso": 4, "tom": "C4", "escala": [0, 2, 4, 7, 9], "escalaMenor": [0, 2, 3, 7, 8], "acordes": [0, 0, 3, 4, 0, 2, 3, 4], "perc": ["bumbo"], "vol": 0.2, "densidade": 0.6,
+    "menor": [[5.9, 11.8]], "fim": 15.9 },
+  "sons": [
+    { "som": "whoosh", "t": 1.3, "dur": 0.5, "vol": 0.14 }, { "som": "whoosh", "t": 1.55, "dur": 0.5, "vol": 0.12 }, { "som": "whoosh", "t": 1.8, "dur": 0.6, "vol": 0.1 },
+    { "som": "chiado", "t": 1.3, "dur": 1.0, "vol": 0.035 },
+    { "som": "sinos", "t": 5.0, "vol": 0.08 },
+    { "som": "trovao", "t": 6.0, "vol": 0.24 },
+    { "som": "chuva", "t": 6.0, "dur": 5.8, "vol": 0.05 },
+    { "som": "buzina", "t": 9.55, "vol": 0.045 }, { "som": "buzina", "t": 9.95, "vol": 0.035 },
+    { "som": "aviao", "t": 10.5, "dur": 1.3, "vol": 0.045 },
+    { "som": "boing", "t": 14.4, "vol": 0.1 }, { "som": "golpe", "t": 14.45, "vol": 0.35 }
+  ]
+}

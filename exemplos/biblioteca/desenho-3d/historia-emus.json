@@ -1,0 +1,197 @@
+{
+  "titulo": "A guerra que a Austrália perdeu para os emus",
+  "duracao": 16,
+  "fps": 30,
+  "semente": 85,
+  "visual": { "tinta": "#1a1220", "vinheta": 0.36, "saturacao": 1.12, "frio": 0.08, "quente": 0.12 },
+
+  "modelos": {
+    "emu": [
+      { "forma": "cilindro", "tam": [0.04, 0.035, 0.95], "pos": [0.05, 0.48, 0.14], "cor": "#8a8f98", "laco": { "eixo": 2, "amp": 0.6, "hz": 3.5, "canal": "corre" } },
+      { "forma": "cilindro", "tam": [0.04, 0.035, 0.95], "pos": [0.05, 0.48, -0.14], "cor": "#8a8f98", "laco": { "eixo": 2, "amp": 0.6, "hz": 3.5, "fase": 3.14, "canal": "corre" } },
+      { "forma": "esfera", "tam": [0.55, 0.42, 0.42], "pos": [0, 1.12, 0], "cor": "#4a3a2e" },
+      { "pos": [0.32, 1.25, 0], "rot": [0, 0, -10], "laco": { "eixo": 2, "amp": -1.1, "hz": 0.9, "abs": true, "canal": "bica", "solto": true }, "filhos": [
+        { "forma": "cilindro", "tam": [0.06, 0.085, 0.85], "pos": [0, 0.42, 0], "cor": "#7f93a8" },
+        { "forma": "esfera", "tam": [0.15, 0.13, 0.13], "pos": [0.04, 0.88, 0], "cor": "#7f93a8" },
+        { "forma": "cone", "tam": [0.05, 0.18, 8], "pos": [0.22, 0.86, 0], "rot": [0, 0, -90], "cor": "#2a2224" },
+        { "forma": "esfera", "tam": [0.06], "pos": [0.09, 0.93, 0.09], "cor": "#ffffff" },
+        { "forma": "esfera", "tam": [0.06], "pos": [0.09, 0.93, -0.09], "cor": "#ffffff" },
+        { "forma": "esfera", "tam": [0.028], "pos": [0.13, 0.93, 0.13], "cor": "#16101a" },
+        { "forma": "esfera", "tam": [0.028], "pos": [0.13, 0.93, -0.13], "cor": "#16101a" }
+      ] }
+    ],
+    "casa": [
+      { "forma": "caixa", "tam": [4, 2.2, 3], "pos": [0, 1.1, 0], "cor": "#f2ead8" },
+      { "forma": "telhado", "tam": [1.7, 1.3, 4.6], "pos": [0, 2.75, 0], "rot": [0, 90, 0], "cor": "#c0352a" },
+      { "forma": "caixa", "tam": [0.7, 1.2, 0.05], "pos": [0.8, 0.6, 1.52], "cor": "#8a5a34" },
+      { "forma": "caixa", "tam": [0.6, 0.6, 0.05], "pos": [-0.9, 1.3, 1.52], "cor": "#9fb4c8" }
+    ],
+    "moinho": [
+      { "forma": "cilindro", "tam": [0.08, 0.2, 9], "pos": [0, 4.5, 0], "cor": "#9a9aa2" },
+      { "pos": [0, 9.1, 0.25], "laco": { "eixo": 2, "gira": 1.6 }, "filhos": [
+        { "forma": "caixa", "tam": [3.2, 0.12, 0.04], "cor": "#d8d8dc" },
+        { "forma": "caixa", "tam": [3.2, 0.12, 0.04], "rot": [0, 0, 45], "cor": "#d8d8dc" },
+        { "forma": "caixa", "tam": [3.2, 0.12, 0.04], "rot": [0, 0, 90], "cor": "#d8d8dc" },
+        { "forma": "caixa", "tam": [3.2, 0.12, 0.04], "rot": [0, 0, 135], "cor": "#d8d8dc" }
+      ] }
+    ],
+    "cerca": [
+      { "forma": "caixa", "tam": [16, 0.1, 0.06], "pos": [0, 0.75, 0], "cor": "#8a5a34" },
+      { "forma": "caixa", "tam": [16, 0.1, 0.06], "pos": [0, 0.4, 0], "cor": "#8a5a34" }
+    ],
+    "poste": [ { "forma": "caixa", "tam": [0.12, 1.0, 0.12], "pos": [0, 0.5, 0], "cor": "#6b4428" } ],
+    "caminhao": [
+      { "forma": "caixa", "tam": [3.2, 0.6, 1.5], "pos": [0, 0.75, 0], "cor": "#6b7a3e" },
+      { "forma": "caixa", "tam": [1.1, 0.9, 1.45], "pos": [1.05, 1.5, 0], "cor": "#6b7a3e" },
+      { "forma": "caixa", "tam": [0.05, 0.5, 1.2], "pos": [1.61, 1.6, 0], "cor": "#bfe0ff", "basica": true },
+      { "forma": "caixa", "tam": [2.0, 0.5, 0.08], "pos": [-0.55, 1.3, 0.72], "cor": "#5a6a32" },
+      { "forma": "caixa", "tam": [2.0, 0.5, 0.08], "pos": [-0.55, 1.3, -0.72], "cor": "#5a6a32" },
+      { "forma": "cilindro", "tam": [0.34, 0.34, 0.25], "pos": [1.0, 0.36, 0.72], "rot": [90, 0, 0], "cor": "#241726", "laco": { "eixo": 2, "gira": -6, "canal": "roda" } },
+      { "forma": "cilindro", "tam": [0.34, 0.34, 0.25], "pos": [-1.0, 0.36, 0.72], "rot": [90, 0, 0], "cor": "#241726" },
+      { "forma": "cilindro", "tam": [0.34, 0.34, 0.25], "pos": [1.0, 0.36, -0.72], "rot": [90, 0, 0], "cor": "#241726" },
+      { "forma": "cilindro", "tam": [0.34, 0.34, 0.25], "pos": [-1.0, 0.36, -0.72], "rot": [90, 0, 0], "cor": "#241726" },
+      { "pos": [-1.1, 1.35, 0], "laco": { "eixo": 1, "amp": 0.35, "hz": 0.8, "canal": "arma" }, "filhos": [
+        { "forma": "cilindro", "tam": [0.06, 0.06, 0.5], "pos": [0, 0.25, 0], "cor": "#2a2224" },
+        { "forma": "caixa", "tam": [0.5, 0.18, 0.18], "pos": [0, 0.55, 0], "cor": "#2a2224" },
+        { "forma": "cilindro", "tam": [0.04, 0.04, 0.9], "pos": [0.6, 0.58, 0], "rot": [0, 0, 90], "cor": "#2a2224" } ] }
+    ],
+    "caixote": [ { "forma": "caixa", "tam": [1.4, 0.9, 1.0], "pos": [0, 0.45, 0], "cor": "#a8794a" }, { "forma": "caixa", "tam": [1.42, 0.1, 1.02], "pos": [0, 0.45, 0], "cor": "#7a5234" } ],
+    "faixaTerra": [ { "forma": "caixa", "tam": [80, 0.03, 4], "pos": [0, 0.015, 0], "cor": "#c98a52" } ]
+  },
+
+  "elenco": {
+    "oficial": { "roupaTipo": "terno", "roupa": "#a89a6a", "camisa": "#e8dcb8", "gravata": "#5a4a2a", "calca": "#8a7a4a", "chapeu": "oficial", "chapeuCor": "#8a7a4a", "bigode": "#3a2a22", "pele": "#f0c8a0", "faixa": "#7a3a2a", "alt": 1.05 },
+    "fazendeiro": { "roupaTipo": "camisa", "roupa": "#3f6fb5", "calca": "#6b5a44", "chapeu": "aba", "chapeuCor": "#c9a24a", "barba": "#6b3a22", "bigode": false, "pele": "#e8b88a" },
+    "soldadoA": { "roupaTipo": "camisa", "roupa": "#a89a6a", "calca": "#8a7a4a", "chapeu": "aba", "chapeuCor": "#8a7a4a", "pele": "#f0c8a0" },
+    "soldadoB": { "roupaTipo": "camisa", "roupa": "#9a8a5a", "calca": "#8a7a4a", "chapeu": "aba", "chapeuCor": "#7a6a3a", "pele": "#d9a070" }
+  },
+
+  "cenarios": {
+    "fazenda": [
+      { "tipo": "chao", "cor": "#e2b862", "cor2": "#d4a852", "tam": 400 },
+      { "tipo": "modelo", "modelo": "faixaTerra", "pos": [0, 0, 6] },
+      { "tipo": "modelo", "modelo": "casa", "pos": [-9, 0, -16], "rot": [0, 20, 0] },
+      { "tipo": "modelo", "modelo": "moinho", "pos": [7, 0, -18] },
+      { "tipo": "modelo", "modelo": "cerca", "pos": [0, 0, -8] },
+      { "tipo": "grupo", "n": 9, "arranjo": { "tipo": "linha", "de": [-8, 0, -8], "ate": [8, 0, -8] }, "molde": { "tipo": "modelo", "modelo": "poste" } },
+      { "tipo": "enxame", "n": 1300, "forma": "cone", "tam": [0.12, 0.7, 5], "cores": ["#f2cf62", "#e8c052", "#f7da7a"], "formas": [ { "tipo": "caixa", "c": [0, 0.3, -6], "tam": [44, 0, 20] } ], "escala": [0.7, 1.3], "giraY": false },
+      { "tipo": "enxame", "n": 220, "forma": "esfera", "tam": [0.3, 0.25, 0.3], "cores": ["#4a3a2e", "#5a4a3a"], "formas": [ { "tipo": "caixa", "c": [0, 0.7, -32], "tam": [70, 0, 10] } ] }
+    ]
+  },
+
+  "planos": [
+    { "id": "guerra", "de": 0, "ate": 3.3, "cenario": ["fazenda"],
+      "ceu": { "topo": "#3f86d8", "horiz": "#f0dcb4" },
+      "luz": { "sol": "#ffe8c0", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#ffe6c8", "chao": "#8a6a44", "ambiente": 1.25 },
+      "luzBoneco": "#fff4e4", "neblina": { "cor": "#f0dcb4", "perto": 30, "longe": 200 }, "desfoque": { "forca": 11 },
+      "camera": { "de": { "pos": [0.2, 1.5, 3.4], "alvo": [0, 1.5, 0], "rolo": 2 }, "ate": { "pos": [0.15, 1.5, 2.9], "alvo": [0, 1.5, 0], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "boneco", "quem": "oficial", "pos": [0, 0, 0.3], "estados": [[0, "convencido", "cintura"], [2.2, "bravo", "aponta"]] },
+        { "tipo": "grupo", "n": 6, "arranjo": { "tipo": "area", "centro": [0, 0, -5], "tam": [6, 3], "semente": 2 }, "molde": { "tipo": "modelo", "modelo": "emu", "rot": [0, 160, 0] } }
+      ] },
+
+    { "id": "trigo", "de": 3.3, "ate": 5.7, "cenario": ["fazenda"],
+      "ceu": { "topo": "#3f86d8", "horiz": "#f0dcb4" },
+      "luz": { "sol": "#ffe8c0", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#ffe6c8", "chao": "#8a6a44", "ambiente": 1.25 },
+      "luzBoneco": "#fff4e4", "neblina": { "cor": "#f0dcb4", "perto": 30, "longe": 200 },
+      "camera": { "de": { "pos": [2, 7.5, 9.5], "alvo": [0, 0.5, -5], "rolo": -2 }, "ate": { "pos": [1.6, 6.5, 8.4], "alvo": [0, 0.5, -5], "rolo": -3 } },
+      "pecas": [
+        { "tipo": "grupo", "n": 36, "arranjo": { "tipo": "area", "centro": [0, 0, -6], "tam": [9, 10], "semente": 7 }, "molde": { "tipo": "modelo", "modelo": "emu", "rot": [0, 30, 0] }, "coresLista": [{}] },
+        { "tipo": "boneco", "quem": "fazendeiro", "pos": [1.2, 0, 1.5], "estados": [[3.3, "preocupado", "lado"], [4.78, "choque", "alto"]], "pulos": [4.78] }
+      ] },
+
+    { "id": "exercito", "de": 5.7, "ate": 8.0, "cenario": ["fazenda"],
+      "ceu": { "topo": "#3f86d8", "horiz": "#f0dcb4" },
+      "luz": { "sol": "#ffe8c0", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#ffe6c8", "chao": "#8a6a44", "ambiente": 1.25 },
+      "luzBoneco": "#fff4e4", "neblina": { "cor": "#f0dcb4", "perto": 30, "longe": 200 },
+      "camera": { "de": { "pos": [0.8, 2.2, 9.5], "alvo": [-0.5, 1.2, 2], "rolo": 2 }, "ate": { "pos": [0.7, 2.1, 8.7], "alvo": [-0.5, 1.2, 2], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "junto", "pos": [-1, 0, 2], "anim": { "pos": [[5.7, -6.5, 0, 2], [7.0, -1.2, 0, 2]] }, "forcas": { "roda": [[5.7, 1], [7.0, 0]] }, "pecas": [
+          { "tipo": "modelo", "modelo": "caminhao", "forcas": { "roda": [[5.7, 1], [6.95, 1], [7.0, 0]], "arma": [[0, 0]] } },
+          { "tipo": "boneco", "quem": "soldadoA", "pos": [-0.9, 1.05, 0.2], "solto": true, "tam": 0.8, "estados": [[5.7, "feliz", "acena"]] },
+          { "tipo": "boneco", "quem": "soldadoB", "pos": [-0.2, 1.05, -0.1], "solto": true, "tam": 0.8, "estados": [[5.7, "convencido", "lado"]] } ] },
+        { "tipo": "boneco", "quem": "oficial", "pos": [0.55, 0, 3.9], "estados": [[5.7, "convencido", "cintura"], [7.0, "bravo", "aponta"]] }
+      ] },
+
+    { "id": "tiros", "de": 8.0, "ate": 9.4, "cenario": ["fazenda"],
+      "ceu": { "topo": "#3f86d8", "horiz": "#f0dcb4" },
+      "luz": { "sol": "#ffe8c0", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#ffe6c8", "chao": "#8a6a44", "ambiente": 1.25 },
+      "luzBoneco": "#fff4e4", "neblina": { "cor": "#f0dcb4", "perto": 30, "longe": 200 },
+      "camera": { "de": { "pos": [-3.2, 2.9, 4.6], "alvo": [0, 0.8, -4], "rolo": -2 }, "ate": { "pos": [-3.0, 2.8, 4.0], "alvo": [0, 0.8, -4], "rolo": -3 } },
+      "pecas": [
+        { "tipo": "modelo", "modelo": "caminhao", "pos": [-1, 0, 2], "rot": [0, 90, 0], "forcas": { "arma": [[8.0, 1], [9.4, 1]] } },
+        { "tipo": "brilho", "pos": [-1, 2.15, 0.1], "cor": "#ffd25a", "tam": 1.4, "pisca": { "de": 8.0, "ate": 9.4, "hz": 7 } },
+        { "tipo": "enxame", "n": 40, "forma": "esfera", "tam": [0.25], "cores": ["#c9a06a", "#d9b07a"], "formas": [ { "tipo": "caixa", "c": [0, 0.2, -5], "tam": [8, 0, 5] } ], "movimento": "sobe", "altura": 1.2, "vel": 1.5, "encolhe": true, "aparece": 8.05, "durPop": 0.1 },
+        { "tipo": "enxame", "n": 40, "forma": "cilindro", "tam": [0.025, 0.12], "cores": ["#e8b030"], "estoura": { "t": 8.0, "de": [-1.0, 1.6, 2.2], "vel": 1.5, "lado": 1.0, "gravidade": 6, "chao": 0.05, "espalha": 1.3 }, "gira": true },
+        { "tipo": "grupo", "n": 24, "arranjo": { "tipo": "area", "centro": [0, 0, -6], "tam": [8, 6], "semente": 9 }, "molde": { "tipo": "modelo", "modelo": "emu", "forcas": { "corre": [[0, 1]], "bica": [[0, 0.2]] } }, "zigue": [[8.0, 0.4], [9.4, 1.4]] }
+      ] },
+
+    { "id": "fugiram", "de": 9.4, "ate": 12.4, "cenario": ["fazenda"],
+      "ceu": { "topo": "#3f86d8", "horiz": "#f0dcb4" },
+      "luz": { "sol": "#ffe8c0", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#ffe6c8", "chao": "#8a6a44", "ambiente": 1.25 },
+      "luzBoneco": "#fff4e4", "neblina": { "cor": "#f0dcb4", "perto": 30, "longe": 200 },
+      "camera": { "de": { "pos": [1.5, 4.6, 10.5], "alvo": [0, 0.8, -4], "rolo": 2 }, "ate": { "pos": [1.3, 4.3, 9.6], "alvo": [0, 0.8, -4], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "grupo", "n": 30, "arranjo": { "tipo": "area", "centro": [0, 0, -5], "tam": [7, 6], "semente": 11 },
+          "molde": { "tipo": "modelo", "modelo": "emu", "forcas": { "corre": [[9.4, 0], [9.45, 1], [9.95, 1], [10.0, 0], [10.4, 0], [10.45, 1], [10.95, 1], [11.0, 0]], "bica": [[9.4, 0], [11.0, 0], [11.3, 1]] } },
+          "espalha": [[9.4, 0], [9.95, 14], [10.4, 14], [10.95, 0]], "espalhaSolto": 0.15, "olhaFuga": true },
+        { "tipo": "boneco", "quem": "soldadoA", "pos": [-0.9, 0, 3.0], "estados": [[9.4, "choque", "alto"], [11.3, "choque", "lado"]] },
+        { "tipo": "boneco", "quem": "soldadoB", "pos": [0.4, 0, 3.4], "estados": [[9.4, "choque", "lado"], [11.3, "preocupado", "cintura"]] }
+      ] },
+
+    { "id": "venceram", "de": 12.4, "ate": 16.0, "cenario": ["fazenda"],
+      "ceu": { "topo": "#3f86d8", "horiz": "#f0dcb4" },
+      "luz": { "sol": "#ffe0b0", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#ffe6c8", "chao": "#8a6a44", "ambiente": 1.25 },
+      "luzBoneco": "#fff4e4", "neblina": { "cor": "#f0dcb4", "perto": 30, "longe": 200 }, "desfoque": { "forca": 8 },
+      "camera": { "chaves": [
+        { "t": 12.4, "pos": [0.4, 1.2, 6.4], "alvo": [0, 2.3, 0], "rolo": 1 },
+        { "t": 14.45, "pos": [0.35, 1.2, 5.8], "alvo": [0, 2.3, 0], "rolo": 1 },
+        { "t": 14.9, "pos": [0.3, 1.2, 5.6], "alvo": [0, 2.3, 0], "rolo": 4 },
+        { "t": 16.0, "pos": [0.3, 1.2, 5.3], "alvo": [0, 2.3, 0], "rolo": 4 } ] },
+      "pecas": [
+        { "tipo": "brilho", "pos": [0, 2.4, -0.6], "cor": "#ffe27a", "tam": 4.5, "pulsa": [[14.4, 0], [14.55, 1], [16, 0.7]] },
+        { "tipo": "modelo", "modelo": "caixote", "pos": [0, 0, 0] },
+        { "tipo": "modelo", "modelo": "emu", "pos": [0, 0.9, 0], "solto": true, "esc": 1.35, "rot": [0, -60, 0], "forcas": { "bica": [[0, 0]], "corre": [[0, 0]] } },
+        { "tipo": "modelo", "modelo": "caminhao", "pos": [-3, 0, -9], "anim": { "pos": [[12.6, -3, 0, -9], [15.5, 9, 0, -12]] }, "forcas": { "arma": [[0, 0]] } }
+      ] }
+  ],
+
+  "rotulos": [
+    { "texto": "1932", "x": 540, "y": 380, "tam": 170, "cor": "#f2d43a", "de": 0.2, "some": 2.0, "ate": 2.4 },
+    { "texto": "20.000 EMUS", "estilo": "placa", "x": 540, "y": 300, "tam": 58, "de": 3.4, "ate": 5.7 },
+    { "texto": "10.000 TIROS", "estilo": "placa", "x": 540, "y": 300, "tam": 58, "de": 8.1, "ate": 9.4 }
+  ],
+  "claroes": [3.2],
+  "chutes": [ { "t": 2.2, "forca": 0.7 }, { "t": 7.0, "forca": 0.5 }, { "t": 8.0, "forca": 0.5 }, { "t": 8.35, "forca": 0.4 }, { "t": 8.7, "forca": 0.4 }, { "t": 9.05, "forca": 0.4 }, { "t": 14.45, "forca": 0.6 } ],
+  "escurece": [ { "de": 15.6, "ate": 16.0, "forca": 0.8 } ],
+
+  "legenda": { "y": 1590, "tam": 62, "largura": 940, "segura": 0.55, "destaque": "#E3E302" },
+  "legendas": [
+    { "de": 0.15, "ate": 1.10, "texto": "EM 1932," },
+    { "de": 1.10, "ate": 2.20, "texto": "A AUSTRÁLIA DECLAROU" },
+    { "de": 2.20, "ate": 3.30, "texto": "GUERRA AOS EMUS." },
+    { "de": 3.30, "ate": 4.60, "texto": "20 MIL DELES COMIAM" },
+    { "de": 4.60, "ate": 5.70, "texto": "O TRIGO DOS FAZENDEIROS." },
+    { "de": 5.70, "ate": 6.80, "texto": "O EXÉRCITO MANDOU" },
+    { "de": 6.80, "ate": 8.00, "texto": "2 METRALHADORAS." },
+    { "de": 8.00, "ate": 9.40, "texto": "QUASE 10 MIL TIROS." },
+    { "de": 9.40, "ate": 10.40, "texto": "OS EMUS FUGIRAM," },
+    { "de": 10.40, "ate": 11.30, "texto": "VOLTARAM" },
+    { "de": 11.30, "ate": 12.40, "texto": "E SEGUIRAM COMENDO." },
+    { "de": 12.40, "ate": 13.60, "texto": "O EXÉRCITO FOI EMBORA." },
+    { "de": 13.60, "ate": 15.00, "texto": "OS EMUS VENCERAM." }
+  ],
+
+  "musica": { "bpm": 112, "compasso": 4, "tom": "G3", "escala": [0, 2, 4, 7, 9], "acordes": [0, 0, 3, 4, 0, 2, 3, 4], "perc": ["bumbo", "caixa"], "marcha": [[5.7, 9.4]], "vol": 0.15, "densidade": 0.6,
+    "fim": 14.4 },
+  "sons": [
+    { "som": "corneta", "t": 2.2, "vol": 0.06 }, { "som": "golpe", "t": 2.25, "vol": 0.35 },
+    { "som": "bicadas", "t": 3.4, "dur": 2.2, "vol": 0.05 },
+    { "som": "motor", "t": 5.7, "dur": 1.5, "vol": 0.06 },
+    { "som": "rajada", "t": 8.0, "dur": 1.4, "vol": 0.3 },
+    { "som": "passinhos", "t": 9.4, "dur": 0.6, "vol": 0.07 }, { "som": "passinhos", "t": 10.4, "dur": 0.6, "vol": 0.07 },
+    { "som": "bicadas", "t": 11.3, "dur": 1.0, "vol": 0.05 },
+    { "som": "motor", "t": 12.6, "dur": 2.0, "vol": 0.04 },
+    { "som": "trompaTriste", "t": 14.45, "vol": 0.15 }, { "som": "boing", "t": 15.1, "vol": 0.13 }
+  ]
+}

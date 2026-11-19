@@ -1,0 +1,472 @@
+{
+  "titulo": "Luz da tarde, à beira-mar",
+  "duracao": 9,
+  "fps": 24,
+  "semente": 33,
+  "grao": 0.12,
+  "tituloNaTela": {
+    "x": 1220,
+    "y": 1010,
+    "tamanho": 38,
+    "de": 0.3,
+    "ate": 3.6,
+    "escreve": [
+      0.35,
+      1.7
+    ]
+  },
+  "planos": [
+    {
+      "de": 0,
+      "ate": 4.4,
+      "centro": [
+        960,
+        540
+      ],
+      "zoom": [
+        1,
+        1.03
+      ]
+    },
+    {
+      "de": 4.4,
+      "ate": 9,
+      "foco": [
+        -30,
+        40
+      ],
+      "zoom": [
+        3.4,
+        3.56
+      ]
+    }
+  ],
+  "cores": {
+    "ceuAlto": "#8fc3dc",
+    "ceuMeio": "#c4e0e6",
+    "ceuBaixo": "#f6ecd2",
+    "nuvem": "#fbfaf4",
+    "morroLonge": "#9fb9bd",
+    "morroPerto": "#7fa3a6",
+    "mar1": "#1f8fa6",
+    "mar2": "#5cc0c8",
+    "marRisco": "#16708a",
+    "marBrilho": "#f4fbff",
+    "muroTopo": "#f7f4ee",
+    "muroFrente": "#e7e1d6",
+    "muroSombra": "#c3bcb0",
+    "caule": "#5a4a3a",
+    "folha": "#5c9a52",
+    "flor1": "#d6247a",
+    "flor2": "#f05aa0",
+    "solQuente": "#ffe2b0",
+    "faixaTitulo": "#2d1f1c",
+    "letra": "#fbf1e0",
+    "vinheta": "#4a3a40"
+  },
+  "moca": {
+    "x": 790,
+    "y": 228,
+    "escala": 0.9,
+    "penteado": "longo",
+    "linha": "#5a2a1e",
+    "pele": [
+      "#f4c7a6",
+      "#dc9c80",
+      "#fbdcc4",
+      "#b06a55"
+    ],
+    "rubor": "#e8806c",
+    "sarda": "#b8705a",
+    "sardas": 20,
+    "cabelo": [
+      "#c4421c",
+      "#8a2410",
+      "#e8692f",
+      "#6a1a0a"
+    ],
+    "olho": [
+      "#7fa392",
+      "#2c3832",
+      "#b9d2c2"
+    ],
+    "branco": "#fbf5ee",
+    "cilio": "#2a1612",
+    "sobrancelha": "#7a3018",
+    "boca": [
+      "#d23a33",
+      "#b02a2a",
+      "#6e1a1a"
+    ],
+    "ouro": [
+      "#e6b832",
+      "#bf8a1c",
+      "#7a5410",
+      "#fbe38a"
+    ],
+    "vestido": [
+      "#c8322c",
+      "#8e1f1c",
+      "#fbf3e8"
+    ]
+  },
+  "atuacao": {
+    "piscadas": [
+      1.3,
+      3.6,
+      5.95
+    ],
+    "olhar": [
+      [
+        0,
+        0
+      ],
+      [
+        2.3,
+        0
+      ],
+      [
+        2.7,
+        0.75
+      ],
+      [
+        3.9,
+        0.75
+      ],
+      [
+        4.2,
+        0.6
+      ],
+      [
+        4.6,
+        0.6
+      ],
+      [
+        5.1,
+        0
+      ]
+    ],
+    "sobrancelha": [
+      6.6,
+      7.0
+    ],
+    "sorriso": [
+      6.7,
+      7.45
+    ],
+    "respira": 3.4,
+    "brisa": {
+      "base": 0.5,
+      "rajadas": [
+        [
+          0.4,
+          3.6,
+          0.6
+        ],
+        [
+          4.8,
+          8.6,
+          0.55
+        ]
+      ]
+    },
+    "brincos": {
+      "angulo": 0.12,
+      "hz": 0.55
+    }
+  },
+  "pecas": [
+    {
+      "tipo": "ceu",
+      "de": 0,
+      "ate": 395,
+      "cores": [
+        "ceuAlto",
+        "ceuMeio",
+        "ceuBaixo"
+      ]
+    },
+    {
+      "tipo": "sol",
+      "x": 1700,
+      "y": 330,
+      "raio": 700,
+      "deriva": [
+        -10,
+        2
+      ],
+      "cor": "solQuente",
+      "forca": 0.45,
+      "caixa": [
+        0,
+        0,
+        1920,
+        395
+      ]
+    },
+    {
+      "tipo": "nuvem",
+      "x": 300,
+      "y": 120,
+      "escala": 1.5,
+      "cor": "nuvem",
+      "deriva": 4
+    },
+    {
+      "tipo": "nuvem",
+      "x": 1180,
+      "y": 240,
+      "escala": 0.9,
+      "cor": "nuvem",
+      "deriva": 3
+    },
+    {
+      "tipo": "morro",
+      "cor": "morroLonge",
+      "pontos": [
+        [
+          1040,
+          396
+        ],
+        [
+          1180,
+          372
+        ],
+        [
+          1330,
+          352
+        ],
+        [
+          1500,
+          346
+        ],
+        [
+          1700,
+          356
+        ],
+        [
+          1940,
+          350
+        ],
+        [
+          1940,
+          396
+        ]
+      ]
+    },
+    {
+      "tipo": "morro",
+      "cor": "morroPerto",
+      "pontos": [
+        [
+          1380,
+          396
+        ],
+        [
+          1520,
+          378
+        ],
+        [
+          1700,
+          372
+        ],
+        [
+          1940,
+          380
+        ],
+        [
+          1940,
+          396
+        ]
+      ]
+    },
+    {
+      "tipo": "mar",
+      "de": 392,
+      "ate": 800,
+      "cores": [
+        "mar1",
+        "mar2",
+        "marRisco",
+        "marBrilho"
+      ],
+      "brilhos": 70
+    },
+    {
+      "tipo": "muro",
+      "y": 790,
+      "tampo": 34,
+      "cores": [
+        "muroTopo",
+        "muroFrente",
+        "muroSombra"
+      ]
+    },
+    {
+      "tipo": "buganvilia",
+      "ancora": [
+        1940,
+        0
+      ],
+      "caule": "caule",
+      "folha": "folha",
+      "flor": [
+        "flor1",
+        "flor2"
+      ],
+      "n": 70,
+      "ramos": [
+        [
+          [
+            1960,
+            -10
+          ],
+          [
+            1780,
+            40
+          ],
+          [
+            1600,
+            110
+          ],
+          [
+            1450,
+            180
+          ],
+          [
+            1340,
+            250
+          ]
+        ],
+        [
+          [
+            1960,
+            50
+          ],
+          [
+            1820,
+            110
+          ],
+          [
+            1680,
+            150
+          ],
+          [
+            1540,
+            215
+          ]
+        ]
+      ]
+    },
+    {
+      "tipo": "moca"
+    }
+  ],
+  "som": {
+    "eventos": [
+      {
+        "f": "vento",
+        "t": 0,
+        "dur": 9,
+        "vol": 0.09,
+        "corte": 480,
+        "onda": 0.13,
+        "profundidade": 0.8,
+        "entra": 1.0,
+        "sai": 1.2
+      },
+      {
+        "f": "vento",
+        "t": 0,
+        "dur": 9,
+        "vol": 0.03,
+        "corte": 1500,
+        "onda": 0.2,
+        "entra": 1.0,
+        "sai": 1.2,
+        "pan": 0.3
+      },
+      {
+        "f": "pio",
+        "t": 1.2,
+        "freq": 1900,
+        "sobe": -0.25,
+        "dur": 0.18,
+        "repete": 2,
+        "intervalo": 0.24,
+        "vol": 0.03,
+        "pan": -0.6
+      },
+      {
+        "f": "pio",
+        "t": 3.2,
+        "freq": 2100,
+        "sobe": -0.3,
+        "dur": 0.16,
+        "repete": 3,
+        "intervalo": 0.22,
+        "vol": 0.025,
+        "pan": 0.5
+      },
+      {
+        "f": "pio",
+        "t": 7.8,
+        "freq": 1800,
+        "sobe": -0.25,
+        "dur": 0.18,
+        "repete": 2,
+        "intervalo": 0.26,
+        "vol": 0.022,
+        "pan": -0.3
+      },
+      {
+        "f": "nota",
+        "nota": "F2",
+        "t": 0,
+        "dur": 8.6,
+        "vol": 0.07,
+        "forma": "tri",
+        "ataque": 1.6,
+        "solta": 0.6
+      },
+      {
+        "f": "nota",
+        "nota": "C3",
+        "t": 0.2,
+        "dur": 8.4,
+        "vol": 0.045,
+        "forma": "tri",
+        "ataque": 1.8,
+        "solta": 0.6,
+        "pan": -0.3
+      },
+      {
+        "f": "nota",
+        "nota": "A3",
+        "t": 0.4,
+        "dur": 8.2,
+        "vol": 0.03,
+        "forma": "seno",
+        "ataque": 2.0,
+        "solta": 0.6,
+        "pan": 0.3
+      },
+      {
+        "f": "piano",
+        "nota": "A4",
+        "t": "sorriso",
+        "mais": 0.05,
+        "vol": 0.14
+      },
+      {
+        "f": "piano",
+        "nota": "C5",
+        "t": "sorriso",
+        "mais": 0.45,
+        "vol": 0.12
+      }
+    ],
+    "sala": 0.3,
+    "pico": 0.82
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "titulo": "Corrida no cânion",
+  "nota": "Uma nave desce um cânion de veios brilhantes, inclina forte sob um arco de pedra e sai no deserto, embaixo de um planeta com anéis, ao nascer do sol. Só o título aparece na tela.",
+  "duracao": 8,
+  "semente": 11,
+  "acende": 0.4,
+  "apaga": 0.5,
+  "pecas": [
+    {
+      "tipo": "titulo",
+      "texto": "Corrida no cânion",
+      "t": 0.5,
+      "dur": 2.2
+    },
+    {
+      "tipo": "canion",
+      "largura": 8.5,
+      "altura": 15,
+      "curva": [
+        5.5,
+        0.021,
+        2.5,
+        0.053
+      ]
+    },
+    {
+      "tipo": "arco",
+      "t": 3.6,
+      "raio": 12,
+      "grossura": 1.7
+    },
+    {
+      "tipo": "saida",
+      "t": 5.0
+    },
+    {
+      "tipo": "sol",
+      "direcao": [
+        0.28,
+        -0.02,
+        1.0
+      ],
+      "sobe": 0.11
+    },
+    {
+      "tipo": "planeta",
+      "direcao": [
+        -0.32,
+        0.3,
+        1.0
+      ],
+      "tamanho": 0.17,
+      "anel": [
+        0.25,
+        1.0,
+        -0.35
+      ],
+      "estrelas": 1.0
+    }
+  ],
+  "voo": {
+    "velocidade": 26,
+    "arranque": 9,
+    "alturaCanion": 4.5,
+    "alturaDeserto": 9,
+    "naveAFrente": 6.5,
+    "naveSeAfasta": 6,
+    "inclinaArco": 1.25,
+    "olharPlaneta": 0.55
+  },
+  "cores": {
+    "ceuAlto": "#0a1a2e",
+    "ceuHorizonte": "#e0875a",
+    "sol": "#ffb46b",
+    "rochaA": "#7a3f2a",
+    "rochaB": "#c99a72",
+    "veio": "#3ff0ff",
+    "agua": "#06131c",
+    "areia": "#c88655",
+    "planetaA": "#d9b48e",
+    "planetaB": "#7f6a5e",
+    "anel": "#e8d7bd",
+    "motor": "#ffd9a0",
+    "sombra": "#1d5a6e"
+  },
+  "filme": {
+    "brilho": 0.9,
+    "riscos": 0.7,
+    "raios": 0.6,
+    "borrao": 0.025,
+    "aberracao": 0.004,
+    "grao": 0.05,
+    "faixa": 2.39
+  },
+  "musica": {
+    "pulso": [
+      "A2",
+      "A3",
+      "E3",
+      "A3",
+      "C3",
+      "A3",
+      "E3",
+      "G3"
+    ],
+    "passo": 0.25,
+    "acorde": [
+      "A2",
+      "E3",
+      "A3",
+      "C#4",
+      "E4"
+    ],
+    "sinos": [
+      "E5",
+      "A5",
+      "C#6",
+      "E6"
+    ]
+  }
+}

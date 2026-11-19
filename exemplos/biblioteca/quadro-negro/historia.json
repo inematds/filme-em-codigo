@@ -1,0 +1,109 @@
+{
+  "titulo": "Wombats fazem cocô em cubos",
+  "duracao": 15,
+  "fps": 30,
+  "semente": 27,
+  "traco": 9,
+  "paleta": {
+    "lousa": "#1b2520",
+    "lousaClara": "#3b4c43",
+    "giz": "#ece9df",
+    "amarelo": "#e3e302",
+    "rosa": "#f29bc0",
+    "azul": "#8ec5ee",
+    "madeira": "#6e4b2e",
+    "feltro": "#8d8b84"
+  },
+  "camera": [
+    { "t": 0, "x": 540, "y": 900 },
+    { "t": 3.1, "x": 540, "y": 900 },
+    { "t": 3.75, "x": 1720, "y": 900 },
+    { "t": 6.75, "x": 1720, "y": 900 },
+    { "t": 7.4, "x": 1720, "y": 2900 },
+    { "t": 12.6, "x": 1720, "y": 2900 },
+    { "t": 15, "x": 1720, "y": 2880, "z": 0.97 }
+  ],
+  "apagadores": [
+    { "t": 9.1, "dur": 0.55 },
+    { "t": 12.05, "dur": 0.55 }
+  ],
+  "elementos": [
+    { "tipo": "chao", "x1": -120, "x2": 1170, "y": 1150, "t": 0, "dur": 0.5, "tufos": 6 },
+    { "tipo": "bicho", "x": -300, "y": 1150, "escala": 1.3, "dir": 1, "t": 0,
+      "movimentos": [
+        { "tipo": "anda", "de": 0.15, "ate": 1.5, "para": 740 },
+        { "tipo": "agacha", "de": 1.45, "ate": 1.95 },
+        { "tipo": "vira", "em": 2.2 },
+        { "tipo": "orgulho", "de": 2.3, "ate": 2.75 },
+        { "tipo": "agacha", "de": 2.6, "ate": 3.0 }
+      ] },
+    { "tipo": "cubo", "x": 420, "y": 1150, "tam": 105, "t": 1.75, "queda": 80 },
+    { "tipo": "cubo", "x": 965, "y": 1150, "tam": 105, "t": 2.85, "queda": 70, "depois": { "dx": 120, "giros": 1, "dur": 0.55 } },
+
+    { "tipo": "bicho", "x": 1700, "y": 700, "escala": 1.35, "dir": 1, "t": 3.55, "dur": 0.6, "intestino": { "t": 4.0, "dur": 0.6 } },
+    { "tipo": "elipse", "x": 1566, "y": 568, "rx": 56, "ry": 42, "cor": "amarelo", "t": 4.5, "dur": 0.35 },
+    { "tipo": "linha", "pontos": [[1515, 600], [1360, 950]], "tracejado": true, "larg": 5, "t": 4.8, "dur": 0.25 },
+    { "tipo": "linha", "pontos": [[1618, 600], [2080, 950]], "tracejado": true, "larg": 5, "t": 4.85, "dur": 0.25 },
+    { "tipo": "tubo", "x": 1720, "y": 1060, "comp": 760, "alt": 190, "t": 4.95, "dur": 0.45, "faixasEm": 5.3,
+      "faixas": [{ "cor": "azul" }, { "cor": "rosa", "onda": true }, { "cor": "azul" }, { "cor": "rosa", "onda": true }, { "cor": "azul" }],
+      "caroco": { "tam": 120, "t": 5.3, "de": 5.4, "ate": 6.6, "x0": 1450, "x1": 1950, "quadra": [5.8, 6.6] } },
+    { "tipo": "texto", "texto": "RÍGIDA", "x": 1500, "y": 1250, "tam": 54, "cor": "azul", "t": 5.5, "dur": 0.35 },
+    { "tipo": "texto", "texto": "ELÁSTICA", "x": 1910, "y": 1250, "tam": 54, "cor": "rosa", "t": 5.85, "dur": 0.45 },
+    { "tipo": "cubo", "x": 2060, "y": 3300, "tam": 90, "t": 6.7, "queda": 2150, "tempo": 0.72, "giroNoAr": 160 },
+    { "tipo": "chao", "x1": 1900, "x2": 2250, "y": 3300, "t": 7.0, "dur": 0.25, "tufos": 1 },
+
+    { "tipo": "anel", "x": 1720, "y": 2700, "r": 210, "t": 7.3, "dur": 0.5,
+      "arcos": [{ "de": -135, "ate": -45, "cor": "azul" }, { "de": 45, "ate": 135, "cor": "azul" },
+                { "de": 135, "ate": 225, "cor": "rosa", "onda": true }, { "de": -45, "ate": 45, "cor": "rosa", "onda": true }],
+      "caroco": { "tam": 230, "t": 7.55, "quadra": [7.9, 8.7], "cantos": true } },
+    { "tipo": "seta", "x1": 1720, "y1": 2330, "x2": 1720, "y2": 2440, "cor": "azul", "pulsa": true, "t": 7.7, "dur": 0.2 },
+    { "tipo": "seta", "x1": 1720, "y1": 3070, "x2": 1720, "y2": 2960, "cor": "azul", "pulsa": true, "t": 7.8, "dur": 0.2 },
+    { "tipo": "seta", "x1": 1260, "y1": 2700, "x2": 1420, "y2": 2700, "cor": "rosa", "pulsa": true, "t": 7.9, "dur": 0.2 },
+    { "tipo": "seta", "x1": 2180, "y1": 2700, "x2": 2020, "y2": 2700, "cor": "rosa", "pulsa": true, "t": 8.0, "dur": 0.2 },
+    { "tipo": "texto", "texto": "RÁPIDO", "x": 1770, "y": 2400, "tam": 50, "cor": "azul", "alinha": "esquerda", "t": 8.05, "dur": 0.35 },
+    { "tipo": "texto", "texto": "DEVAGAR", "x": 1340, "y": 2640, "tam": 44, "cor": "rosa", "t": 8.4, "dur": 0.4 },
+
+    { "tipo": "chao", "x1": 1190, "x2": 2250, "y": 3300, "t": 9.6, "dur": 0.3, "tufos": 4 },
+    { "tipo": "linha", "pontos": [[1250, 3300], [1268, 2930], [1330, 2760], [2010, 2950], [2100, 3040], [2125, 3300]], "t": 9.7, "dur": 0.5 },
+    { "tipo": "linha", "pontos": [[1600, 2840], [1640, 2990], [1610, 3120]], "larg": 5, "t": 10.0, "dur": 0.2 },
+    { "tipo": "linha", "pontos": [[1880, 2910], [1850, 3060], [1890, 3200]], "larg": 5, "t": 10.05, "dur": 0.2 },
+    { "tipo": "cubo", "x": 1500, "y": 2808, "tam": 90, "inclina": 15.6, "t": 10.15, "queda": 600 },
+    { "tipo": "cubo", "x": 1720, "y": 2869, "tam": 90, "inclina": 15.6, "t": 10.45, "queda": 600 },
+    { "tipo": "brilho", "x": 1500, "y": 2700, "r": 40, "cor": "amarelo", "t": 10.95, "dur": 0.3 },
+    { "tipo": "brilho", "x": 1720, "y": 2760, "r": 40, "cor": "amarelo", "t": 11.15, "dur": 0.3 },
+    { "tipo": "bola", "x": 1900, "y": 2919, "r": 38, "t": 10.9, "queda": 500,
+      "caminho": { "de": 11.5, "ate": 12.0, "pontos": [[1900, 2919], [2010, 2950], [2100, 3040], [2160, 3300], [2460, 3300]] } },
+
+    { "tipo": "chao", "x1": 1190, "x2": 2250, "y": 3300, "t": 12.6, "dur": 0.3, "tufos": 3 },
+    { "tipo": "bicho", "x": 1400, "y": 3300, "escala": 1.0, "dir": 1, "t": 12.65, "dur": 0.4,
+      "movimentos": [{ "tipo": "orgulho", "de": 13.9, "ate": 14.6, "ficaRaios": true }] },
+    { "tipo": "pilha", "x": 1930, "y": 3300, "tam": 95, "linhas": [4, 3, 2, 1], "t": 12.9, "passo": 0.09, "queda": 300 },
+    { "tipo": "texto", "texto": "100", "x": 1720, "y": 2570, "tam": 300, "cor": "amarelo", "t": 13.3, "dur": 0.6, "larg": 16 },
+    { "tipo": "linha", "pontos": [[1450, 2640], [1990, 2628], [2015, 2600]], "cor": "amarelo", "t": 13.9, "dur": 0.25 },
+    { "tipo": "lua", "x": 2120, "y": 2170, "r": 55, "cor": "azul", "t": 14.0, "dur": 0.3 },
+    { "tipo": "estrelas", "area": [1250, 2020, 560, 200], "n": 6, "cor": "amarelo", "t": 14.0, "dur": 0.6 }
+  ],
+  "legenda": { "y": 1600, "tam": 100, "largura": 940 },
+  "legendas": [
+    { "de": 0.25, "ate": 1.5, "texto": "WOMBATS FAZEM COCÔ" },
+    { "de": 1.5, "ate": 2.5, "texto": "EM CUBINHOS." },
+    { "de": 2.5, "ate": 3.4, "texto": "É SÉRIO!" },
+    { "de": 3.5, "ate": 4.6, "texto": "NO FIM DO INTESTINO" },
+    { "de": 4.6, "ate": 5.6, "texto": "HÁ PARTES RÍGIDAS" },
+    { "de": 5.6, "ate": 6.7, "texto": "E OUTRAS ELÁSTICAS." },
+    { "de": 6.8, "ate": 7.7, "texto": "ELAS SE CONTRAEM" },
+    { "de": 7.7, "ate": 8.5, "texto": "EM VELOCIDADES DIFERENTES" },
+    { "de": 8.5, "ate": 9.3, "texto": "E FORMAM OS CANTINHOS." },
+    { "de": 9.6, "ate": 11.1, "texto": "OS CUBOS FICAM NAS PEDRAS." },
+    { "de": 11.1, "ate": 12.1, "texto": "UMA BOLINHA ROLARIA." },
+    { "de": 12.6, "ate": 13.6, "texto": "UM WOMBAT FAZ" },
+    { "de": 13.6, "ate": 14.9, "texto": "ATÉ CEM POR NOITE." }
+  ],
+  "musica": {
+    "passo": 0.25,
+    "vol": 0.14,
+    "notas": ["C5", "E5", "G5", null, "A4", "C5", "E5", null, "F4", "A4", "C5", null, "G4", "B4", "D5", "G5"],
+    "baixo": ["C3", "A2", "F2", "G2"],
+    "sinos": [{ "t": 14.0, "notas": ["E6", "G6", "C7"] }]
+  }
+}

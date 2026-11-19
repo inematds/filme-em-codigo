@@ -1,0 +1,82 @@
+{
+  "titulo": "A clareira dos vaga-lumes",
+  "duracao": 10,
+  "fps": 30,
+  "semente": 19,
+  "cores": {
+    "ceuTopo": "#0c1830", "ceuMeio": "#1d3a5a", "ceuBaixo": "#3b6878", "nevoa": "#5f8f92",
+    "estrela": "#f4ecc8", "lua": "#f2ead0", "luaMancha": "#c9c3a6",
+    "troncoLonge": "#3d5b6e", "copaLonge": "#2a4558", "troncoMeio": "#1a2c38", "luzLua": "#7fa3b0", "copaMeio": "#12212a",
+    "moitaFundo": "#173628", "moita1": "#1d4232", "moita2": "#255140", "moita3": "#2e5e4a", "moitaLuz": "#6f9f86",
+    "chaoLonge": "#24493f", "chaoMeio": "#336a58", "chaoPerto": "#23503f", "chaoLuz": "#9cd0a6",
+    "capimEscuro": "#163628", "capimMedio": "#2f6a50", "capimClaro": "#78a886",
+    "flor1": "#f1ead0", "flor2": "#e6b4c4", "flor3": "#efd479", "flor4": "#b9acdb", "florMiolo": "#d9a441",
+    "madeira": "#5b3b2a", "madeiraCorte": "#a37a52", "musgo": "#5a8d4b", "musgoLuz": "#9cc77a",
+    "cogumelo": "#c93d2b", "cogumeloPe": "#efe2c4", "cogumeloPinta": "#fbf4e2",
+    "lagoBorda": "#1f3b30", "aguaLonge": "#3a6580", "aguaPerto": "#142a40", "folhaLago": "#3f7a52", "junco": "#2c4a2e", "taboa": "#5a3a22",
+    "caule": "#4f7743", "semente": "#efe8d2",
+    "frente": "#08130f", "frenteLuz": "#24424a", "frenteFolha": "#10241c",
+    "vagalume": "#f5f28a", "vagalumeHalo": "#b8ef7a", "vagalumeCorpo": "#3a2a14", "luzVagalume": "#c8e88a",
+    "onda": "#e6f7c0", "poeira": "#e7e2cc", "tinta": "#2a1610", "estrelaTonta": "#f6dc6a", "sombraChao": "#04100c",
+    "copiaQuente": "#fff0d8", "copiaPreto": "#120d06", "letra": "#f4ead0"
+  },
+  "camera": [
+    { "t": 0.0, "x": 690, "y": 640, "zoom": 1.5 },
+    { "t": 2.3, "x": 760, "y": 650, "zoom": 1.5 },
+    { "t": 3.3, "x": 900, "y": 650, "zoom": 1.45 },
+    { "t": 4.6, "x": 980, "y": 650, "zoom": 1.45 },
+    { "t": 6.6, "x": 1000, "y": 640, "zoom": 1.38 },
+    { "t": 9.6, "x": 960, "y": 560, "zoom": 1.0 },
+    { "t": 10.0, "x": 960, "y": 560, "zoom": 1.0 }
+  ],
+  "pecas": [
+    { "tipo": "ceu" },
+    { "tipo": "lua", "x": 1480, "y": 250, "raio": 72 },
+    { "tipo": "estrelas", "quantas": 140 },
+    { "tipo": "arvoresLonge", "quantas": 16 },
+    { "tipo": "arvoresMeio", "quantas": 9 },
+    { "tipo": "moitas", "y": 360, "quantas": 28 },
+    { "tipo": "chao", "y": 560 },
+    { "tipo": "luzDaLua", "x": 1000, "y": 800, "rx": 800, "ry": 230 },
+    { "tipo": "lago", "x": 1500, "y": 880, "rx": 290, "ry": 78, "folhas": [[-120, 10, 26], [60, -22, 20], [150, 26, 24]], "juncos": 9 },
+    { "tipo": "capim", "quantos": 9000 },
+    { "tipo": "flores", "quantas": 700 },
+    { "tipo": "troncoCaido", "x": 140, "y": 800, "comp": 300, "raio": 34 },
+    { "tipo": "cogumelos", "lista": [[250, 733, 0.7], [300, 735, 0.9], [470, 815, 1.1], [505, 825, 0.8], [700, 965, 1.4], [1240, 1005, 1.5], [1290, 1015, 1.0], [1780, 940, 1.2]] },
+    { "tipo": "planta", "x": 955, "y": 832, "altura": 120, "inclina": 8 },
+    { "tipo": "frente", "troncos": [[-20, 260], [1950, 260]], "copas": [[-100, -60, 380, 160], [2000, -80, 420, 170], [900, -60, 500, 100]], "samambaias": [[-20, 1190, 300, 1], [1940, 1190, 320, -1]], "capim": true },
+
+    { "tipo": "raposa", "x": 540, "y": 830, "escala": 1.25,
+      "uns": [[2.55, 4.05], [5.55, 5.9]],
+      "cores": { "pelo": "#e2772e", "sombra": "#c05a20", "creme": "#f8ead2", "meia": "#3e2620", "orelhaDentro": "#f1b7a0",
+                 "tinta": "#2a1610", "olho": "#1d120c", "olhoBranco": "#fbf6ea", "nariz": "#1d120c", "boca": "#6a1c18", "lingua": "#e88a86" },
+      "acoes": [
+        { "tipo": "espreita", "de": 0.0, "ate": 2.0, "x1": 720, "passos": 3 },
+        { "tipo": "agacha", "de": 2.0, "ate": 2.6, "rebola": 6 },
+        { "tipo": "pulo", "de": 2.6, "ate": 3.05, "x1": 930, "altura": 110, "entra": 0.04 },
+        { "tipo": "aterrissa", "de": 3.05, "ate": 3.3, "entra": 0.02 },
+        { "tipo": "cambalhota", "de": 3.3, "ate": 4.0, "x1": 1030, "voltas": 1, "entra": 0.06 },
+        { "tipo": "tonto", "de": 4.0, "ate": 4.9 },
+        { "tipo": "espirro", "de": 4.9, "ate": 6.2, "em": 5.6 },
+        { "tipo": "senta", "de": 6.2, "ate": 7.0 },
+        { "tipo": "maravilha", "de": 7.0, "ate": 10.0, "entra": 0.4 }
+      ] },
+    { "tipo": "vagalumes", "quantos": 320, "soltos": 12, "area": [-150, 2070, 560, 1080], "sobe": [120, 520] },
+    { "tipo": "onda", "vel": 850, "achata": 0.28, "alcance": 1500 },
+    { "tipo": "vagalume", "voo": [
+      { "t": 2.75, "x": 965, "y": 704 }, { "t": 3.0, "x": 1060, "y": 560 }, { "t": 3.6, "x": 1250, "y": 470 },
+      { "t": 4.6, "x": 1180, "y": 420 }, { "t": 5.8, "x": 1250, "y": 500 }, { "t": 7.2, "x": 1160, "y": 560 } ],
+      "pousa": 8.2 },
+    { "tipo": "titulo", "de": 0.2, "ate": 2.4, "x": 110, "y": 960, "tamanho": 50 }
+  ],
+  "musica": {
+    "acordes": [
+      [["D3", "A3", "F#4"], 0.0, 2.6], [["B2", "F#3", "D4"], 2.6, 2.2], [["G2", "D3", "B3"], 4.8, 0.5],
+      [["A2", "E3", "C#4"], 5.1, 0.5], [["D3", "A3", "F#4", "A4"], 5.7, 2.0], [["G3", "B3", "D4", "G4"], 7.6, 1.4],
+      [["D3", "A3", "D4", "F#4"], 8.9, 1.1]
+    ],
+    "pizzicato": ["D4", "F#4", "A4", "F#4", "D4", "A3"],
+    "flauta": [["A5", 6.0, 0.5], ["F#5", 6.5, 0.4], ["G5", 6.9, 0.4], ["A5", 7.3, 0.8], ["B5", 8.2, 0.4], ["A5", 8.6, 1.0]],
+    "harpa": ["D4", "F#4", "A4", "D5", "F#5", "A5", "D6", "F#6"]
+  }
+}

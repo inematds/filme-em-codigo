@@ -1,0 +1,241 @@
+{
+  "titulo": "A receita que você nunca deve preparar",
+  "duracao": 18.5,
+  "fps": 30,
+  "semente": 52,
+  "visual": { "tinta": "#1a1220", "vinheta": 0.42, "saturacao": 1.1, "frio": 0.12, "quente": 0.08 },
+
+  "modelos": {
+    "salao": [
+      { "forma": "caixa", "tam": [9, 2.6, 2.4], "pos": [0, 1.3, 0], "cor": "#9a3b2c" },
+      { "forma": "caixa", "tam": [1.1, 0.8, 0.05], "pos": [-3, 1.5, 1.21], "cor": "#2a1e2a" },
+      { "forma": "caixa", "tam": [1.1, 0.8, 0.05], "pos": [-1, 1.5, 1.21], "cor": "#ffcf7a", "basica": true },
+      { "forma": "caixa", "tam": [1.1, 0.8, 0.05], "pos": [1, 1.5, 1.21], "cor": "#2a1e2a" },
+      { "forma": "caixa", "tam": [1.1, 0.8, 0.05], "pos": [3, 1.5, 1.21], "cor": "#ffcf7a", "basica": true },
+      { "forma": "caixa", "tam": [9.6, 0.25, 3.4], "pos": [0, 2.75, 0], "cor": "#5a2a22" },
+      { "forma": "telhado", "tam": [1.9, 1.3, 10.4], "pos": [0, 3.3, 0], "rot": [0, 90, 0], "esc": [1, 1, 1], "cor": "#3d4a52" },
+      { "forma": "caixa", "tam": [0.22, 2.6, 0.22], "pos": [-4.4, 1.3, 1.4], "cor": "#7a2a20" },
+      { "forma": "caixa", "tam": [0.22, 2.6, 0.22], "pos": [-2, 1.3, 1.4], "cor": "#7a2a20" },
+      { "forma": "caixa", "tam": [0.22, 2.6, 0.22], "pos": [2, 1.3, 1.4], "cor": "#7a2a20" },
+      { "forma": "caixa", "tam": [0.22, 2.6, 0.22], "pos": [4.4, 1.3, 1.4], "cor": "#7a2a20" }
+    ],
+    "lanterna": [
+      { "forma": "cilindro", "tam": [0.02, 0.02, 0.4], "pos": [0, 0.35, 0], "cor": "#2a1e2a" },
+      { "forma": "esfera", "tam": [0.22, 0.28, 0.22], "pos": [0, 0, 0], "cor": "#ff5a3a", "basica": true },
+      { "forma": "cilindro", "tam": [0.12, 0.12, 0.06], "pos": [0, 0.28, 0], "cor": "#2a1e2a" }
+    ],
+    "lua": [ { "forma": "esfera", "tam": [6], "cor": "#fff4d0", "basica": true } ],
+    "pinheiro": [
+      { "forma": "cilindro", "tam": [0.15, 0.2, 1], "pos": [0, 0.5, 0], "cor": "#4a3428" },
+      { "forma": "cone", "tam": [1.2, 1.8, 9], "pos": [0, 1.6, 0], "cor": "#1f4a3a" },
+      { "forma": "cone", "tam": [0.9, 1.5, 9], "pos": [0, 2.6, 0], "cor": "#2a5a44" }
+    ],
+    "montanha": [ { "forma": "cone", "tam": [26, 18, 7], "pos": [0, 9, 0], "cor": "#26305a" } ],
+    "caldeirao": [
+      { "forma": "esfera", "tam": [0.7, 0.55, 0.7], "pos": [0, 0.95, 0], "cor": "#b07a3a" },
+      { "forma": "toro", "tam": [0.62, 0.07], "pos": [0, 1.32, 0], "rot": [90, 0, 0], "cor": "#8a5a2a" },
+      { "forma": "disco", "tam": [0.6], "pos": [0, 1.31, 0], "rot": [-90, 0, 0], "cor": "#3a2a1e" },
+      { "forma": "cilindro", "tam": [0.06, 0.05, 0.7], "pos": [0.4, 0.35, 0.25], "cor": "#8a5a2a" },
+      { "forma": "cilindro", "tam": [0.06, 0.05, 0.7], "pos": [-0.4, 0.35, 0.25], "cor": "#8a5a2a" },
+      { "forma": "cilindro", "tam": [0.06, 0.05, 0.7], "pos": [0, 0.35, -0.45], "cor": "#8a5a2a" }
+    ],
+    "braseiro": [ { "forma": "cilindro", "tam": [0.45, 0.35, 0.25], "pos": [0, 0.13, 0], "cor": "#3a3436" } ],
+    "jarro": [
+      { "forma": "cilindro", "tam": [0.17, 0.2, 0.42], "pos": [0, 0.21, 0], "cor": "$cor" },
+      { "forma": "cilindro", "tam": [0.09, 0.15, 0.1], "pos": [0, 0.47, 0], "cor": "$cor" },
+      { "forma": "toro", "tam": [0.17, 0.035], "pos": [0, 0.22, 0], "rot": [90, 0, 0], "cor": "#241726" }
+    ],
+    "banco": [
+      { "forma": "caixa", "tam": [1.6, 0.08, 0.5], "pos": [0, 0.45, 0], "cor": "#6b3a2a" },
+      { "forma": "caixa", "tam": [0.08, 0.45, 0.4], "pos": [-0.7, 0.22, 0], "cor": "#4a2a20" },
+      { "forma": "caixa", "tam": [0.08, 0.45, 0.4], "pos": [0.7, 0.22, 0], "cor": "#4a2a20" }
+    ],
+    "mesa": [
+      { "forma": "caixa", "tam": [1.6, 0.08, 0.7], "pos": [0, 0.75, 0], "cor": "#6b3a2a" },
+      { "forma": "caixa", "tam": [0.1, 0.75, 0.6], "pos": [-0.7, 0.37, 0], "cor": "#4a2a20" },
+      { "forma": "caixa", "tam": [0.1, 0.75, 0.6], "pos": [0.7, 0.37, 0], "cor": "#4a2a20" },
+      { "forma": "cilindro", "tam": [0.04, 0.04, 0.5], "pos": [0.5, 0.8, 0.1], "rot": [0, 0, 90], "cor": "#f1e2b8" }
+    ],
+    "viga": [ { "forma": "caixa", "tam": [2.4, 0.2, 0.2], "pos": [0, 0.1, 0], "cor": "#2a2224" } ],
+    "piso": [ { "forma": "caixa", "tam": [6, 0.04, 4], "pos": [0, 0.02, 0], "cor": "#9a8a78" } ]
+  },
+
+  "elenco": {
+    "mestre": { "roupa": "#2f4a7a", "roupaTipo": "tunica", "chapeu": "oficial", "chapeuCor": "#1e1a22", "barba": "#eeeef2", "bigode": "#eeeef2", "pele": "#e8b88a", "faixa": "#f2c232", "alt": 1.05 },
+    "cozinheiro": { "roupa": "#8a5a8a", "roupaTipo": "tunica", "cabelo": "coque", "cabeloCor": "#1e1a22", "pele": "#d9a070" },
+    "ajudante": { "roupa": "#5a7a4a", "roupaTipo": "tunica", "cabelo": "coque", "cabeloCor": "#2a2028", "pele": "#f0c8a0", "alt": 0.92 }
+  },
+
+  "cenarios": {
+    "patio": [
+      { "tipo": "chao", "cor": "#b89a72", "cor2": "#a88a62", "tam": 300 },
+      { "tipo": "modelo", "modelo": "piso", "pos": [0, 0, -1] },
+      { "tipo": "modelo", "modelo": "salao", "pos": [0, 0, -6] },
+      { "tipo": "modelo", "modelo": "lanterna", "pos": [-3.0, 2.3, -4.5], "solto": true, "laco": { "eixo": 2, "amp": 0.06, "hz": 0.6 } },
+      { "tipo": "modelo", "modelo": "lanterna", "pos": [0, 2.3, -4.5], "solto": true },
+      { "tipo": "modelo", "modelo": "lanterna", "pos": [3.0, 2.3, -4.5], "solto": true },
+      { "tipo": "luz", "pos": [-1.5, 2.0, -3.8], "cor": "#ff7a50", "forca": 1.8, "alcance": 8, "pisca": 0.08 },
+      { "tipo": "luz", "pos": [2.0, 2.0, -3.8], "cor": "#ff7a50", "forca": 1.8, "alcance": 8, "pisca": 0.08 },
+      { "tipo": "modelo", "modelo": "pinheiro", "pos": [-7.5, 0, -8], "esc": 1.4 },
+      { "tipo": "modelo", "modelo": "pinheiro", "pos": [7.2, 0, -9], "esc": 1.6 },
+      { "tipo": "modelo", "modelo": "montanha", "pos": [-50, -2, -150] },
+      { "tipo": "modelo", "modelo": "montanha", "pos": [40, -2, -170], "esc": [1.4, 1.2, 1] },
+      { "tipo": "modelo", "modelo": "lua", "pos": [25, 70, -200], "solto": true }
+    ],
+    "fogao": [
+      { "tipo": "modelo", "modelo": "braseiro", "pos": [0, 0, -1] },
+      { "tipo": "modelo", "modelo": "caldeirao", "pos": [0, 0, -1] },
+      { "tipo": "modelo", "modelo": "banco", "pos": [-1.4, 0, -1.8] },
+      { "tipo": "luz", "pos": [0, 0.5, -0.3], "cor": "#ff9a50", "forca": 1.0, "alcance": 4, "pisca": 0.2 }
+    ]
+  },
+
+  "planos": [
+    { "id": "gancho", "de": 0, "ate": 3.6, "cenario": ["patio"],
+      "ceu": { "topo": "#0c1638", "horiz": "#34407a" },
+      "luz": { "sol": "#9fb0e8", "forca": 1.6, "dir": [0.6, 1, 0.6], "ceu": "#7080c0", "chao": "#3a3040", "ambiente": 1.1 },
+      "luzBoneco": "#ffd9b8", "desfoque": { "forca": 13 },
+      "camera": { "de": { "pos": [0.2, 1.55, 2.9], "alvo": [0, 1.45, 0], "rolo": 2 }, "ate": { "pos": [0.15, 1.55, 2.45], "alvo": [0, 1.45, 0], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "boneco", "quem": "mestre", "pos": [0, 0, 0], "estados": [[0, "convencido", "segura", "tigela"], [2.2, "feliz", "segura", "tigela"]] },
+        { "tipo": "brilho", "pos": [0, 0.98, 0.2], "cor": "#ffd25a", "tam": 0.45, "pulsa": [[0, 0.5], [1.5, 0.8], [3.6, 0.6]] },
+        { "tipo": "enxame", "n": 14, "forma": "esfera", "tam": [0.025], "cores": ["#fff2a0", "#ffb03a"], "basica": true, "formas": [ { "tipo": "esfera", "c": [0, 1.1, 0.15], "r": 0.12 } ], "movimento": "sobe", "altura": 0.6, "vel": 0.5, "encolhe": true }
+      ] },
+
+    { "id": "china", "de": 3.6, "ate": 4.8, "cenario": ["patio", "fogao"],
+      "ceu": { "topo": "#0c1638", "horiz": "#34407a" },
+      "luz": { "sol": "#9fb0e8", "forca": 1.6, "dir": [0.6, 1, 0.6], "ceu": "#7080c0", "chao": "#3a3040", "ambiente": 1.1 },
+      "luzBoneco": "#ffd9b8",
+      "camera": { "de": { "pos": [3.0, 8.5, 10.5], "alvo": [0, 0.8, -2], "rolo": -2 }, "ate": { "pos": [2.4, 7.2, 9.4], "alvo": [0, 0.8, -2], "rolo": -2 } },
+      "pecas": [
+        { "tipo": "chamas", "pos": [0, 0.22, -1], "n": 7, "raio": 0.3, "alt": 0.45 },
+        { "tipo": "boneco", "quem": "mestre", "pos": [-1.2, 0, 0], "estados": [[3.6, "convencido", "cintura"]] },
+        { "tipo": "boneco", "quem": "cozinheiro", "pos": [0.9, 0, -0.4], "estados": [[3.6, "feliz", "abana", "leque"]] }
+      ] },
+
+    { "id": "alquimistas", "de": 4.8, "ate": 7.0, "cenario": ["patio", "fogao"],
+      "ceu": { "topo": "#0c1638", "horiz": "#34407a" },
+      "luz": { "sol": "#9fb0e8", "forca": 1.6, "dir": [0.6, 1, 0.6], "ceu": "#7080c0", "chao": "#3a3040", "ambiente": 1.1 },
+      "luzBoneco": "#ffd9b8", "desfoque": { "forca": 8 },
+      "camera": { "de": { "pos": [0.3, 1.7, 5.3], "alvo": [0, 1.15, -0.8], "rolo": 2 }, "ate": { "pos": [0.25, 1.65, 4.6], "alvo": [0, 1.15, -0.8], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "chamas", "pos": [0, 0.22, -1], "n": 7, "raio": 0.3, "alt": 0.45 },
+        { "tipo": "boneco", "quem": "mestre", "pos": [-0.95, 0, 0.1], "estados": [[4.8, "convencido", "aponta"]] },
+        { "tipo": "boneco", "quem": "cozinheiro", "pos": [0.85, 0, -0.5], "estados": [[4.8, "feliz", "abana", "leque"]] },
+        { "tipo": "boneco", "quem": "ajudante", "pos": [0.35, 0, 0.55], "estados": [[4.8, "feliz", "segura", "tigela"]] }
+      ] },
+
+    { "id": "ingredientes", "de": 7.0, "ate": 9.6, "cenario": ["patio", "fogao"],
+      "ceu": { "topo": "#0c1638", "horiz": "#34407a" },
+      "luz": { "sol": "#9fb0e8", "forca": 1.6, "dir": [0.6, 1, 0.6], "ceu": "#7080c0", "chao": "#3a3040", "ambiente": 1.1 },
+      "luzBoneco": "#ffd9b8", "desfoque": { "forca": 10 },
+      "camera": { "de": { "pos": [0, 2.1, 3.3], "alvo": [0, 1.25, -1], "rolo": -2 }, "ate": { "pos": [0, 2.0, 2.8], "alvo": [0, 1.25, -1], "rolo": -3 } },
+      "pecas": [
+        { "tipo": "chamas", "pos": [0, 0.22, -1], "n": 7, "raio": 0.3, "alt": 0.45 },
+        { "tipo": "modelo", "modelo": "jarro", "pos": [-0.55, 1.35, -0.9], "solto": true, "cores": { "cor": "#f4f1ea" }, "anim": { "rot": [[6.9, 0, 0, 0], [7.05, 0, 0, -115], [7.5, 0, 0, -115], [7.7, 0, 0, 0]] } },
+        { "tipo": "modelo", "modelo": "jarro", "pos": [0, 1.45, -1.55], "solto": true, "cores": { "cor": "#f2d43a" }, "anim": { "rot": [[7.7, 0, 0, 0], [7.85, 100, 0, 0], [8.3, 100, 0, 0], [8.5, 0, 0, 0]] } },
+        { "tipo": "modelo", "modelo": "jarro", "pos": [0.55, 1.35, -0.9], "solto": true, "cores": { "cor": "#c97a2a" }, "anim": { "rot": [[8.5, 0, 0, 0], [8.65, 0, 0, 115], [9.1, 0, 0, 115], [9.3, 0, 0, 0]] } },
+        { "tipo": "enxame", "n": 26, "forma": "esfera", "tam": [0.11], "cores": ["#ffffff", "#e8e8ec"], "estoura": { "t": 7.1, "de": [0, 1.35, -1], "vel": 2.2, "lado": 0.5, "gravidade": 1.2, "espalha": 0.25 }, "escala": [0.6, 1.4] },
+        { "tipo": "enxame", "n": 26, "forma": "esfera", "tam": [0.11], "cores": ["#f2d43a", "#ffe27a"], "estoura": { "t": 7.9, "de": [0, 1.35, -1], "vel": 2.2, "lado": 0.5, "gravidade": 1.2, "espalha": 0.25 }, "escala": [0.6, 1.4] },
+        { "tipo": "enxame", "n": 26, "forma": "esfera", "tam": [0.11], "cores": ["#c97a2a", "#e8a03a"], "estoura": { "t": 8.7, "de": [0, 1.35, -1], "vel": 2.2, "lado": 0.5, "gravidade": 1.2, "espalha": 0.25 }, "escala": [0.6, 1.4] }
+      ] },
+
+    { "id": "fogo", "de": 9.6, "ate": 11.4, "cenario": ["patio", "fogao"],
+      "ceu": { "topo": "#0c1638", "horiz": "#34407a" },
+      "luz": { "sol": "#9fb0e8", "forca": 1.6, "dir": [0.6, 1, 0.6], "ceu": "#7080c0", "chao": "#3a3040", "ambiente": 1.1 },
+      "luzBoneco": "#ffc8a0",
+      "camera": { "de": { "pos": [0.4, 1.7, 5.4], "alvo": [0, 1.2, -0.8], "rolo": 2 }, "ate": { "pos": [0.35, 1.65, 4.7], "alvo": [0, 1.2, -0.8], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "chamas", "pos": [0, 0.22, -1], "n": 9, "raio": 0.36, "alt": 0.45, "forca": [[9.6, 1], [10.85, 2.4], [10.9, 0]], "some": 10.9 },
+        { "tipo": "luz", "pos": [0, 1.2, 0], "cor": "#ff7a30", "forca": 1.0, "alcance": 6, "anima": [[9.6, 0.3], [10.85, 2.2], [10.95, 4], [11.4, 1]] },
+        { "tipo": "brilho", "pos": [0, 1.3, -0.6], "cor": "#ffb03a", "tam": 4.5, "pulsa": [[10.85, 0], [10.92, 1], [11.4, 0.2]] },
+        { "tipo": "enxame", "n": 60, "forma": "esfera", "tam": [0.22], "cores": ["#ff9a3a", "#ffd25a", "#6a6070", "#4a4450"], "estoura": { "t": 10.9, "de": [0, 1.3, -1], "vel": 4.0, "lado": 3.0, "gravidade": 2.0, "espalha": 0.06 }, "escala": [0.6, 1.6] },
+        { "tipo": "boneco", "quem": "mestre", "pos": [-1.0, 0, 0.1], "estados": [[9.6, "convencido", "cintura"], [10.95, "choque", "alto"]], "efeitos": { "fuligem": 10.95 }, "pulos": [10.95] },
+        { "tipo": "boneco", "quem": "cozinheiro", "pos": [0.9, 0, -0.3], "estados": [[9.6, "convencido", "abana", "leque"], [10.95, "choque", "alto"]], "efeitos": { "fuligem": 10.95 }, "pulos": [10.95] }
+      ] },
+
+    { "id": "queimados", "de": 11.4, "ate": 13.4, "cenario": ["patio"],
+      "ceu": { "topo": "#0c1638", "horiz": "#34407a" },
+      "luz": { "sol": "#9fb0e8", "forca": 1.6, "dir": [0.6, 1, 0.6], "ceu": "#7080c0", "chao": "#3a3040", "ambiente": 1.1 },
+      "luzBoneco": "#ffd9b8", "desfoque": { "forca": 13 },
+      "camera": { "de": { "pos": [0, 1.5, 3.4], "alvo": [0, 1.5, 0], "rolo": -2 }, "ate": { "pos": [0, 1.5, 3.0], "alvo": [0, 1.5, 0], "rolo": -3 } },
+      "pecas": [
+        { "tipo": "boneco", "quem": "mestre", "pos": [-0.45, 0, 0], "estados": [[11.4, "choque", "lado"], [12.4, "preocupado", "lado"]], "efeitos": { "fuligem": 0 } },
+        { "tipo": "boneco", "quem": "cozinheiro", "pos": [0.45, 0, 0.05], "estados": [[11.4, "choque", "alto"], [12.4, "choque", "lado"]], "efeitos": { "fuligem": 0 } },
+        { "tipo": "enxame", "n": 18, "forma": "esfera", "tam": [0.12], "cores": ["#6a6070", "#8a8090"], "formas": [ { "tipo": "caixa", "c": [0, 1.85, 0.05], "tam": [1.4, 0.01, 0.2] } ], "movimento": "sobe", "altura": 1.2, "vel": 0.45, "encolhe": true }
+      ] },
+
+    { "id": "casa", "de": 13.4, "ate": 14.6, "cenario": ["patio"],
+      "ceu": { "topo": "#1c1638", "horiz": "#7a404a" },
+      "luz": { "sol": "#ff9a60", "forca": 1.8, "dir": [0.2, 1, 0.8], "ceu": "#a06070", "chao": "#3a3040", "ambiente": 1.2 },
+      "luzBoneco": "#ffc8a0",
+      "camera": { "de": { "pos": [1.5, 3.0, 9.5], "alvo": [0, 2.8, -6], "rolo": 2 }, "ate": { "pos": [1.3, 3.0, 8.6], "alvo": [0, 3.0, -6], "rolo": 3 } },
+      "pecas": [
+        { "tipo": "luz", "pos": [0, 4, -4], "cor": "#ff6a20", "forca": 3, "alcance": 12, "pisca": 0.25 },
+        { "tipo": "chamas", "pos": [-3.5, 3.6, -5.6], "solto": true, "n": 7, "raio": 0.6, "alt": 1.4, "aparece": 13.4 },
+        { "tipo": "chamas", "pos": [-1.2, 3.9, -5.6], "solto": true, "n": 7, "raio": 0.7, "alt": 1.7, "aparece": 13.45 },
+        { "tipo": "chamas", "pos": [1.2, 3.9, -5.6], "solto": true, "n": 7, "raio": 0.7, "alt": 1.6, "aparece": 13.5 },
+        { "tipo": "chamas", "pos": [3.5, 3.6, -5.6], "solto": true, "n": 7, "raio": 0.6, "alt": 1.3, "aparece": 13.55 },
+        { "tipo": "enxame", "n": 50, "forma": "esfera", "tam": [0.7], "cores": ["#4a4450", "#6a6070", "#3a3440"], "formas": [ { "tipo": "caixa", "c": [0, 4.6, -6], "tam": [4, 0.01, 1] } ], "movimento": "sobe", "altura": 9, "vel": 2.0, "escala": [0.6, 1.4] },
+        { "tipo": "boneco", "quem": "ajudante", "pos": [1.6, 0, 1.0], "estados": [[13.4, "choque", "alto"]], "efeitos": { "fuligem": 0 } }
+      ] },
+
+    { "id": "livro", "de": 14.6, "ate": 18.5,
+      "ceu": { "topo": "#6f86c8", "horiz": "#f2b48a" },
+      "luz": { "sol": "#ffd0a0", "forca": 2.2, "dir": [-0.7, 0.6, 0.6], "ceu": "#c8b8d8", "chao": "#6a5a50", "ambiente": 1.2 },
+      "luzBoneco": "#ffe6cf", "desfoque": { "forca": 9 },
+      "camera": { "de": { "pos": [0.3, 1.7, 4.2], "alvo": [0, 1.25, 0], "rolo": 2 }, "ate": { "pos": [0.25, 1.6, 3.5], "alvo": [0, 1.3, 0], "rolo": 2 } },
+      "pecas": [
+        { "tipo": "chao", "cor": "#b89a72", "cor2": "#8a7a6a", "tam": 300 },
+        { "tipo": "modelo", "modelo": "montanha", "pos": [-50, -2, -150] },
+        { "tipo": "modelo", "modelo": "pinheiro", "pos": [-5.5, 0, -7], "esc": 1.4 },
+        { "tipo": "modelo", "modelo": "viga", "pos": [-1.8, 0, -2.2], "rot": [0, 30, 8] },
+        { "tipo": "modelo", "modelo": "viga", "pos": [1.6, 0, -2.8], "rot": [0, -40, -6] },
+        { "tipo": "modelo", "modelo": "viga", "pos": [2.6, 0.3, -1.6], "rot": [0, 70, 25] },
+        { "tipo": "modelo", "modelo": "viga", "pos": [-2.5, 0.2, -4], "rot": [0, 10, 30], "esc": 1.5 },
+        { "tipo": "enxame", "n": 12, "forma": "esfera", "tam": [0.18], "cores": ["#8a8090"], "formas": [ { "tipo": "caixa", "c": [2.2, 0.3, -2.4], "tam": [0.6, 0.01, 0.4] } ], "movimento": "sobe", "altura": 2.5, "vel": 0.5, "encolhe": true },
+        { "tipo": "boneco", "quem": "mestre", "pos": [0, 0, -0.5], "estados": [[14.6, "pensa", "segura", "pergaminho"], [17.1, "bravo", "segura", "pergaminho"]], "efeitos": { "fuligem": 0 } },
+        { "tipo": "modelo", "modelo": "mesa", "pos": [0, 0, 0.1] }
+      ] }
+  ],
+
+  "rotulos": [
+    { "texto": "SÉCULO IX", "estilo": "placa", "x": 540, "y": 300, "tam": 56, "de": 3.7, "ate": 4.8 }
+  ],
+  "claroes": [3.5, 10.9],
+  "chutes": [ { "t": 10.9, "forca": 1.4 }, { "t": 11.07, "forca": 1.0 }, { "t": 13.6, "forca": 0.8 } ],
+  "escurece": [ { "de": 18.1, "ate": 18.5, "forca": 0.8 } ],
+
+  "legenda": { "y": 1590, "tam": 62, "largura": 940, "segura": 0.55, "destaque": "#E3E302" },
+  "legendas": [
+    { "de": 0.15, "ate": 1.20, "texto": "A PÓLVORA FOI" },
+    { "de": 1.20, "ate": 2.30, "texto": "INVENTADA POR QUEM" },
+    { "de": 2.30, "ate": 3.60, "texto": "QUERIA VIVER PARA SEMPRE." },
+    { "de": 3.60, "ate": 4.80, "texto": "CHINA, SÉCULO IX." },
+    { "de": 4.80, "ate": 5.90, "texto": "ALQUIMISTAS PREPARAM" },
+    { "de": 5.90, "ate": 7.00, "texto": "O ELIXIR DA VIDA ETERNA." },
+    { "de": 7.00, "ate": 7.80, "texto": "SALITRE," },
+    { "de": 7.80, "ate": 8.60, "texto": "ENXOFRE," },
+    { "de": 8.60, "ate": 9.60, "texto": "UM POUCO DE MEL." },
+    { "de": 9.60, "ate": 11.20, "texto": "AUMENTE O FOGO." },
+    { "de": 11.40, "ate": 12.40, "texto": "MÃOS QUEIMADAS," },
+    { "de": 12.40, "ate": 13.40, "texto": "ROSTOS QUEIMADOS," },
+    { "de": 13.40, "ate": 14.60, "texto": "E A CASA PEGOU FOGO." },
+    { "de": 14.60, "ate": 15.70, "texto": "UM DOS PRIMEIROS LIVROS" },
+    { "de": 15.70, "ate": 16.80, "texto": "CHAMOU ISSO DE RECEITA" },
+    { "de": 16.80, "ate": 18.00, "texto": "PARA NUNCA FAZER." }
+  ],
+
+  "musica": { "bpm": 96, "compasso": 4, "tom": "G3", "escala": [0, 2, 4, 7, 9], "acordes": [0, 0, 3, 4, 0, 2, 3, 4], "perc": ["bloco"], "vol": 0.22, "densidade": 0.6, "dobra": true,
+    "tremolo": [[9.7, 10.9]], "pausas": [[10.9, 11.7]], "fim": 17.4, "duasNotas": 17.45, "sala": 0.35 },
+  "sons": [
+    { "som": "fogo", "t": 0, "dur": 18.4, "vol": 0.025 },
+    { "som": "rugido", "t": 9.7, "dur": 1.2, "vol": 0.1 },
+    { "som": "estouro", "t": 10.9, "vol": 0.24 },
+    { "som": "gongo", "t": 10.95, "vol": 0.06 },
+    { "som": "whoosh", "t": 10.92, "dur": 0.6, "vol": 0.14 },
+    { "som": "esguicho", "t": 7.05, "vol": 0.06 }, { "som": "esguicho", "t": 7.85, "vol": 0.06 }, { "som": "esguicho", "t": 8.65, "vol": 0.06 },
+    { "som": "fogo", "t": 13.4, "dur": 1.3, "vol": 0.09 },
+    { "som": "pincel", "t": 15.7, "dur": 0.5, "vol": 0.07 }
+  ]
+}

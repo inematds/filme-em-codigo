@@ -1,0 +1,293 @@
+{
+  "titulo": "A árvore de família mais famosa do mundo",
+  "duracao": 20,
+  "fps": 30,
+  "semente": 41,
+  "paleta": {
+    "papel": "#f4ecdc",
+    "folha": "#f6efe2",
+    "caixa": "rgba(250,244,232,0.78)",
+    "tinta": "#3a2418",
+    "sepia": "#6e5038",
+    "destaque": "#a3172b",
+    "falada": "#d8384f",
+    "escuro": "#2a1a10",
+    "fio": "#5b4632",
+    "cinza": "#8c7258",
+    "pasta": "#d4b483",
+    "pastaEscura": "#a8824e",
+    "vidroTubo": "rgba(236,240,234,0.5)",
+    "liquido": "#8e93b8",
+    "dnaFio": "#6e5038",
+    "dnaA": "#a3172b",
+    "dnaB": "#4f4a8a",
+    "cavalo": "#7a5236",
+    "deel": "#8e2230",
+    "peleKhan": "#c99a6e",
+    "feltro": "#4a3426",
+    "pelo": "#a8875e",
+    "roupas": ["#7d8698", "#a3172b", "#8a7a52", "#b08a5a", "#6e5a7a", "#5a6e7a", "#9a6a4a", "#5e4a3a", "#a39a88", "#7a3a30"],
+    "peles": ["#e2b994", "#cf9f78", "#b07e58", "#8e6244", "#d8ad86"],
+    "cabelos": ["#2e2018", "#3a2a20", "#1e1612", "#5a3e2a", "#6a5e52"]
+  },
+  "camera": { "zoom": [1.06, 1.14], "balanco": 12, "periodo": 7, "sobe": 20 },
+  "sangra": { "antes": 0.1, "dur": 0.7, "centro": [540, 900] },
+  "fervura": 1.6,
+  "grao": 0.3,
+  "tremores": [ { "t": 14.4, "quadros": 8, "forca": 18 } ],
+  "escurece": [19.65, 20.0],
+
+  "pinturas": {
+    "planicie": { "camadas": [
+      { "prof": 0, "y0": 0, "y1": 1250, "pecas": [
+        { "tipo": "ceu", "faixas": [[120, 480, "#7f8ea3", 0.75], [470, 380, "#a6a6a6", 0.5], [800, 360, "#d4b488", 0.6], [1080, 300, "#e2c39a", 0.55]],
+          "nuvens": [[250, 300, 280, 110, "#7e8090", 0.6], [850, 420, 300, 120, "#8e8288", 0.55], [600, 660, 240, 70, "#b4987e", 0.4], [120, 820, 200, 60, "#a38a76", 0.35]],
+          "papel": [[720, 760, 240, 60], [300, 560, 160, 40]] },
+        { "tipo": "mancha", "x": 980, "y": 120, "rx": 110, "ry": 70, "cor": "#a3172b", "alfa": 0.45, "flores": 2 },
+        { "tipo": "respingos", "area": [700, 30, 1100, 300], "n": 30, "cor": "#a3172b", "r": 5, "alfa": 0.5 },
+        { "tipo": "respingos", "area": [-20, 60, 260, 300], "n": 14, "cor": "#6e5038", "r": 4, "alfa": 0.35 }
+      ] },
+      { "prof": 0.25, "y0": 820, "y1": 1250, "extra": 120, "deriva": 10, "pecas": [
+        { "tipo": "serra", "y": 1010, "altura": 150, "cor": "#7d8698", "alfa": 0.6, "semente": 5 }
+      ] },
+      { "prof": 0.55, "y0": 860, "y1": 1960, "opaca": true, "pecas": [
+        { "tipo": "campo", "y": 1010, "morros": [[540, 110, 230]], "cores": ["#c4a46a", "#a58a54", "#7e6a44", "#5e4a30"],
+          "tons": ["#8a6a3a", "#6a5a32", "#a58a54", "#a3172b"], "densidade": 2200,
+          "respingos": { "area": [-20, 1500, 1100, 1900], "n": 26, "cor": "#a3172b", "r": 5, "alfa": 0.5 } }
+      ] },
+      { "prof": 1, "y0": 1560, "y1": 1960, "balanca": 4, "opaca": true, "pecas": [
+        { "tipo": "campo", "y": 1650, "morros": [[200, 30, 220], [900, 40, 240]], "cores": ["#8a7046", "#5a4630"], "tons": ["#4a3a26", "#6e5038", "#a3172b"], "densidade": 1600 }
+      ] }
+    ] },
+
+    "laboratorio": { "camadas": [
+      { "prof": 0.05, "y0": 0, "y1": 1260, "pecas": [
+        { "tipo": "ceu", "y0": 0, "y1": 1260, "faixas": [[300, 500, "#9fb0bf", 0.45], [700, 400, "#d8cdb6", 0.35]], "papel": [[540, 520, 300, 200]] },
+        { "tipo": "placa", "x": -140, "y": -40, "w": 1360, "h": 1300, "cor": "#a88e70", "alfa": 0.9, "vao": [[150, 150, 780, 660]], "flores": 4, "florR": 180 },
+        { "tipo": "traco", "pts": [[150, 150], [930, 150], [930, 810], [150, 810], [150, 150]], "cor": "#4a3426", "w": 16 },
+        { "tipo": "traco", "pts": [[540, 150], [540, 810]], "cor": "#4a3426", "w": 10 },
+        { "tipo": "traco", "pts": [[150, 480], [930, 480]], "cor": "#4a3426", "w": 9 },
+        { "tipo": "respingos", "area": [0, 0, 1080, 200], "n": 18, "cor": "#a3172b", "r": 4, "alfa": 0.45 }
+      ] },
+      { "prof": 0.35, "y0": 500, "y1": 1400, "opaca": true, "pecas": [
+        { "tipo": "gente", "itens": [[120, 1330, 640, "#ece6da", "#d8ad86", "#2e2018"], [965, 1330, 620, "#e6e0d4", "#b07e58", "#3a2a20"]] }
+      ] },
+      { "prof": 0.7, "y0": 1080, "y1": 1960, "opaca": true, "pecas": [
+        { "tipo": "placa", "x": -140, "y": 1140, "w": 1360, "h": 820, "cor": "#8a6a4a", "alfa": 0.95, "veios": "#5a4030", "nVeios": 40, "flores": 3, "florR": 120 },
+        { "tipo": "placa", "x": 165, "y": 1250, "w": 750, "h": 16, "cor": "#5a4030", "molhado": 3, "passes": 10, "flores": 0 },
+        { "tipo": "placa", "x": 150, "y": 1345, "w": 780, "h": 28, "cor": "#5a4030", "molhado": 3, "passes": 10, "flores": 0 },
+        { "tipo": "mancha", "x": 70, "y": 1190, "rx": 46, "ry": 44, "cor": "#4f4a8a", "alfa": 0.6 },
+        { "tipo": "mancha", "x": 1010, "y": 1185, "rx": 60, "ry": 30, "cor": "#a3172b", "alfa": 0.55 },
+        { "tipo": "respingos", "area": [0, 1600, 1080, 1900], "n": 20, "cor": "#3a2418", "r": 4, "alfa": 0.35 }
+      ] }
+    ] },
+
+    "estepe": { "camadas": [
+      { "prof": 0, "y0": 0, "y1": 1250, "pecas": [
+        { "tipo": "ceu", "faixas": [[150, 450, "#6f7f98", 0.75], [520, 380, "#a6a8aa", 0.5], [860, 360, "#d6b082", 0.55]],
+          "nuvens": [[300, 380, 300, 110, "#7a7c8a", 0.55], [820, 260, 260, 90, "#8a8090", 0.5]], "papel": [[640, 620, 260, 70]] },
+        { "tipo": "respingos", "area": [600, 40, 1100, 260], "n": 22, "cor": "#a3172b", "r": 4, "alfa": 0.45 }
+      ] },
+      { "prof": 0.3, "y0": 700, "y1": 1250, "pecas": [
+        { "tipo": "serra", "y": 1030, "altura": 300, "cor": "#5f6a86", "alfa": 0.8, "neve": "#f6efe2", "semente": 11 }
+      ] },
+      { "prof": 0.6, "y0": 900, "y1": 1960, "opaca": true, "pecas": [
+        { "tipo": "campo", "y": 1050, "ondula": 14, "cores": ["#c8a66c", "#a68a58", "#7a6440", "#4e3e2a"], "tons": ["#8a6a3a", "#6a5a32", "#a58a54"], "densidade": 2200 },
+        { "tipo": "cavaleiros", "linha": [-60, 1330, 1160, 1130], "n": 26, "e0": 1.5, "e1": 0.7, "cor": "#3a2a20", "carmim": "#a3172b", "poeira": "#c8a87a", "estandarte": 3 }
+      ] }
+    ] },
+
+    "escritorio": { "camadas": [
+      { "prof": 0.1, "y0": 0, "y1": 1150, "pecas": [
+        { "tipo": "placa", "x": -140, "y": -60, "w": 1360, "h": 1210, "cor": "#4a3426", "alfa": 0.95, "flores": 5, "florR": 160 },
+        { "tipo": "luz", "x": 230, "y": 430, "r": 760, "cor": "#f2c88a", "alfa": 0.55 },
+        { "tipo": "traco", "pts": [[210, -20], [210, 300]], "cor": "#1e130e", "w": 6 },
+        { "tipo": "poligono", "pts": [[130, 300], [290, 300], [340, 400], [80, 400]], "cor": "#3d4a3a", "alfa": 0.95 },
+        { "tipo": "mancha", "x": 210, "y": 405, "rx": 120, "ry": 18, "cor": "#f4d79a", "alfa": 0.7, "borda": 0 }
+      ] },
+      { "prof": 0.7, "y0": 960, "y1": 1960, "opaca": true, "pecas": [
+        { "tipo": "placa", "x": -140, "y": 1000, "w": 1360, "h": 960, "cor": "#6a4428", "alfa": 0.95, "veios": "#3a2418", "nVeios": 50, "flores": 3, "florR": 150 },
+        { "tipo": "luz", "x": 300, "y": 1090, "r": 700, "ry": 220, "cor": "#f2c88a", "alfa": 0.35 },
+        { "tipo": "poligono", "pts": [[600, 1440], [1060, 1400], [1100, 1700], [640, 1760]], "cor": "#c8b48a", "alfa": 0.8 },
+        { "tipo": "traco", "pts": [[660, 1500], [760, 1470], [860, 1520], [980, 1480]], "cor": "#6e5038", "w": 3 },
+        { "tipo": "traco", "pts": [[680, 1620], [800, 1590], [920, 1640], [1040, 1600]], "cor": "#6e5038", "w": 3 },
+        { "tipo": "mancha", "x": 900, "y": 1440, "rx": 62, "ry": 18, "cor": "#efe4d0", "alfa": 0.9 },
+        { "tipo": "mancha", "x": 900, "y": 1438, "rx": 50, "ry": 12, "cor": "#7a4a22", "alfa": 0.8 },
+        { "tipo": "mancha", "x": 200, "y": 1310, "rx": 86, "ry": 48, "cor": "#e8dcc0", "alfa": 0.25, "borda": 0.6 },
+        { "tipo": "traco", "pts": [[275, 1340], [380, 1405]], "cor": "#3a2418", "w": 16 },
+        { "tipo": "respingos", "area": [0, 1650, 1080, 1920], "n": 18, "cor": "#a3172b", "r": 4, "alfa": 0.4 }
+      ] }
+    ] },
+
+    "tarde": { "camadas": [
+      { "prof": 0, "y0": 0, "y1": 1200, "pecas": [
+        { "tipo": "ceu", "faixas": [[140, 420, "#4e4a6a", 0.75], [480, 360, "#8a4a58", 0.6], [800, 340, "#c4644a", 0.65], [1020, 260, "#e0a060", 0.6]],
+          "nuvens": [[260, 520, 300, 80, "#6a4058", 0.5], [860, 700, 260, 60, "#a3172b", 0.4]], "papel": [[760, 960, 220, 50]] }
+      ] },
+      { "prof": 0.3, "y0": 800, "y1": 1200, "pecas": [
+        { "tipo": "serra", "y": 1030, "altura": 160, "cor": "#3d3352", "alfa": 0.8, "semente": 17 }
+      ] },
+      { "prof": 0.6, "y0": 900, "y1": 1960, "opaca": true, "pecas": [
+        { "tipo": "campo", "y": 1040, "morros": [[180, 40, 220]], "cores": ["#7a5a3e", "#5a4430", "#3a2a1e", "#2a1e16"], "tons": ["#4a3a26", "#6e5038", "#a3172b"], "densidade": 2000 },
+        { "tipo": "mancha", "x": 540, "y": 1035, "rx": 150, "ry": 48, "cor": "#8a6a48", "alfa": 0.85, "flores": 1 },
+        { "tipo": "mancha", "x": 320, "y": 1095, "rx": 140, "ry": 46, "cor": "#80603e", "alfa": 0.85, "flores": 1 },
+        { "tipo": "mancha", "x": 760, "y": 1095, "rx": 140, "ry": 46, "cor": "#80603e", "alfa": 0.85, "flores": 1 },
+        { "tipo": "mancha", "x": 540, "y": 1165, "rx": 165, "ry": 54, "cor": "#8a6a48", "alfa": 0.85, "flores": 1 }
+      ] },
+      { "prof": 1, "y0": 1560, "y1": 1960, "balanca": 4, "opaca": true, "pecas": [
+        { "tipo": "campo", "y": 1640, "morros": [[150, 40, 200], [950, 30, 200]], "cores": ["#3e3024", "#1e1610"], "tons": ["#2a1e16", "#5a4430"], "densidade": 1600 }
+      ] }
+    ] },
+
+    "arvore": { "camadas": [
+      { "prof": 0, "y0": 0, "y1": 1350, "pecas": [
+        { "tipo": "ceu", "faixas": [[150, 480, "#8a9aae", 0.6], [520, 400, "#c8bea6", 0.45], [900, 400, "#e0c49a", 0.5]], "papel": [[540, 560, 300, 160]] }
+      ] },
+      { "prof": 0.3, "y0": 1000, "y1": 1400, "pecas": [
+        { "tipo": "serra", "y": 1260, "altura": 150, "cor": "#7d8698", "alfa": 0.6, "semente": 21 }
+      ] },
+      { "prof": 0.55, "y0": 0, "y1": 1960, "opaca": true, "pecas": [
+        { "tipo": "campo", "y": 1300, "cores": ["#b8a066", "#8a7a4a", "#5a4a30"], "tons": ["#8a6a3a", "#6a5a32"], "densidade": 2200 },
+        { "tipo": "arvoreGigante", "x": 540, "y": 1700, "altura": 900, "largura": 170, "casca": "#5a3e2a",
+          "tons": ["#5e6a48", "#7a7a4e", "#8a6a48", "#6e7a5a"],
+          "galhos": [[150, 560, 300, 900, 60], [930, 540, 780, 880, 60], [320, 330, 420, 700, 44], [770, 300, 660, 680, 44], [60, 860, 250, 1050, 48], [1030, 840, 840, 1030, 48]],
+          "copas": [[-80, 600, 220], [1160, 560, 220], [50, 850, 200], [1040, 820, 200], [150, 500, 240], [940, 480, 240], [300, 260, 180], [790, 230, 190]] },
+        { "tipo": "respingos", "area": [0, 100, 1080, 700], "n": 30, "cor": "#a3172b", "r": 5, "alfa": 0.45 }
+      ] },
+      { "prof": 1, "y0": 1560, "y1": 1960, "balanca": 4, "opaca": true, "pecas": [
+        { "tipo": "campo", "y": 1650, "morros": [[200, 30, 200], [880, 36, 220]], "cores": ["#7a6a44", "#4a3a26"], "tons": ["#4a3a26", "#6e5038", "#a3172b"], "densidade": 1600 }
+      ] }
+    ] }
+  },
+
+  "cenas": [
+    { "id": "gancho", "de": 0, "ate": 5.0, "fundo": { "pintura": "planicie" }, "pecas": [
+      { "tipo": "multidao", "naPintura": true, "x": 540, "larg": 1060, "semente": 7, "de": 0.4, "ate": 2.2,
+        "filas": [ { "y": 1060, "n": 12, "tam": 44 }, { "y": 1110, "n": 11, "tam": 52 }, { "y": 1170, "n": 10, "tam": 62 },
+                   { "y": 1245, "n": 10, "tam": 76 }, { "y": 1330, "n": 9, "tam": 92 }, { "y": 1430, "n": 8, "tam": 110 } ],
+        "liga": { "de": 2.3, "ate": 3.1, "para": [540, 830] }, "apaga": 2.6 },
+      { "tipo": "heroi", "naPintura": true, "x": 540, "y": 905, "tam": 250, "t": 3.25 },
+      { "tipo": "contador", "x": 540, "y": 440, "tam": 110, "de": 0.2, "ate": 2.3, "valor": 20000000, "cor": "tinta", "some": 2.9 },
+      { "tipo": "texto", "texto": "HOMENS VIVOS HOJE", "x": 540, "y": 560, "tam": 42, "cor": "destaque", "t": 0.35, "some": 2.9 },
+      { "tipo": "texto", "texto": "GÊNGIS KHAN", "x": 540, "y": 470, "tam": 80, "cor": "tinta", "t": 4.0 }
+    ]},
+
+    { "id": "evidencia", "de": 5.0, "ate": 7.0, "fundo": { "pintura": "laboratorio" }, "sangra": { "centro": [540, 760] }, "pecas": [
+      { "tipo": "janela", "x": 540, "y": 720, "l": 700, "a": 470, "titulo": "ESTUDO DO CROMOSSOMO Y", "t": 5.0 },
+      { "tipo": "texto", "texto": "2003", "x": 540, "y": 850, "tam": 190, "cor": "tinta", "t": 5.1, "tabular": true, "caixa": false },
+      { "tipo": "tubos", "naPintura": true, "prof": 0.7, "x": 540, "y": 1290, "n": 12, "dx": 62, "tam": 150, "de": 5.3, "ate": 5.9, "enche": { "i": 7, "t": 6.1 } }
+    ]},
+
+    { "id": "estatistica", "de": 7.0, "ate": 8.8, "fundo": { "pintura": "planicie", "desfoque": 9, "escurece": 0.4, "zoom": 1.35 }, "sangra": { "centro": [540, 900] }, "pecas": [
+      { "tipo": "texto", "texto": "1 EM 12", "x": 540, "y": 600, "tam": 140, "cores": ["destaque", "tinta", "tinta"], "t": 7.05 },
+      { "tipo": "janela", "x": 540, "y": 985, "l": 920, "a": 560, "t": 7.0 },
+      { "tipo": "fila", "x": 540, "y": 870, "colunas": 6, "linhas": 2, "dx": 140, "dy": 230, "tam": 160, "de": 7.05, "ate": 7.5, "acende": { "i": 7, "t": 7.6 } }
+    ]},
+
+    { "id": "mapa", "de": 8.8, "ate": 13.2, "fundo": { "pintura": "estepe", "desfoque": 10, "escurece": 0.45 }, "sangra": { "centro": [540, 780] }, "pecas": [
+      { "tipo": "mapa", "x": 540, "y": 780, "escala": 5.2, "achata": 1.25, "lonC": 86, "latC": 40, "painel": { "l": 1040, "a": 640 },
+        "contorno": { "de": 8.8, "ate": 9.4 },
+        "regiao": { "de": 9.0, "ate": 9.8 },
+        "aneis": { "t": 9.7, "passo": 3.2 },
+        "imperio": { "ponto": [103, 47], "pulsa": 10.1, "de": 10.3, "ate": 11.4 },
+        "sobe": { "t": 11.8, "dur": 0.6, "dy": -250, "z": 0.84 } },
+      { "tipo": "texto", "texto": "IMPÉRIO MONGOL", "x": 540, "y": 1190, "tam": 56, "cor": "destaque", "t": 10.6, "some": 11.75 },
+      { "tipo": "barras", "x": 290, "y": 1075, "larg": 440, "passo": 74, "alt": 40, "t": 12.05, "dur": 0.55, "maximo": 24.0,
+        "painel": { "x": 540, "y": 1185, "l": 980, "a": 460 },
+        "unidade": "MILHÕES DE KM²",
+        "itens": [
+          { "nome": "MONGOL", "valor": "24,0", "v": 24.0, "cor": "destaque" },
+          { "nome": "RUSSO", "valor": "22,8", "v": 22.8, "cor": "cinza" },
+          { "nome": "QING", "valor": "14,7", "v": 14.7, "cor": "cinza" },
+          { "nome": "ROMANO", "valor": "5,0", "v": 5.0, "cor": "cinza" }
+        ] },
+      { "tipo": "texto", "texto": "MAIOR IMPÉRIO EM TERRA", "x": 540, "y": 925, "tam": 46, "cores": ["destaque", "tinta", "tinta", "tinta"], "t": 11.95 }
+    ]},
+
+    { "id": "virada", "de": 13.2, "ate": 15.2, "fundo": { "pintura": "escritorio" }, "sangra": { "centro": [540, 860] }, "pecas": [
+      { "tipo": "pasta", "x": 540, "y": 840, "l": 900, "a": 600, "titulo": "ARQUIVO DO CASO", "t": 13.2, "linhas": 7 },
+      { "tipo": "carimbo", "texto": "CASO ENCERRADO?", "x": 540, "y": 860, "tam": 76, "giro": -8, "t": 13.35, "apaga": 14.4, "giroApagado": -3,
+        "risco": { "de": 14.45, "ate": 14.75 } },
+      { "tipo": "texto", "texto": "AINDA NÃO", "x": 540, "y": 1300, "tam": 100, "cores": ["tinta", "destaque"], "t": 14.42 }
+    ]},
+
+    { "id": "tumulos", "de": 15.2, "ate": 17.0, "corte": true, "fundo": { "pintura": "tarde" }, "pecas": [
+      { "tipo": "tumulos", "naPintura": true, "t": 15.2, "borda": 15.3,
+        "montes": [[540, 1035, 150, 48], [320, 1095, 140, 46], [760, 1095, 140, 46], [540, 1165, 165, 54]] },
+      { "tipo": "helice", "naPintura": true, "x": 540, "y0": 990, "y1": 560, "de": 15.4, "ate": 16.1, "divide": 16.2, "durDivide": 0.15,
+        "esq": { "x": 330, "y": 480, "rotulo": "ESPERADA", "cor": "cinza" },
+        "dir": { "x": 705, "y": 390, "rotulo": "OUTRA LINHAGEM", "cor": "destaque" } },
+      { "tipo": "texto", "texto": "TÚMULOS MONGÓIS", "x": 540, "y": 1270, "tam": 50, "cor": "tinta", "t": 15.35 },
+      { "tipo": "texto", "texto": "1130 A 1250", "x": 540, "y": 1350, "tam": 38, "cor": "destaque", "t": 15.5, "tabular": true }
+    ]},
+
+    { "id": "pergunta", "de": 17.0, "ate": 20.0, "fundo": { "pintura": "arvore" }, "sangra": { "antes": 0, "centro": [540, 1250] }, "pecas": [
+      { "tipo": "arvore", "naPintura": true, "x": 540, "y": 650, "raizTam": 170, "niveis": [ { "n": 2, "y": 860, "tam": 110 }, { "n": 4, "y": 1080, "tam": 92 }, { "n": 8, "y": 1290, "tam": 76 } ],
+        "larg": 920, "de": 17.05, "ate": 17.9 },
+      { "tipo": "heroi", "naPintura": true, "medalhao": true, "x": 540, "y": 650, "tam": 170, "t": 17.0, "contorno": 18.85, "interroga": 18.85 },
+      { "tipo": "texto", "texto": "GÊNGIS KHAN", "x": 540, "y": 290, "tam": 76, "cor": "tinta", "t": 17.0, "risco": { "de": 18.1, "ate": 18.4 } },
+      { "tipo": "texto", "texto": "OUTRA PESSOA?", "x": 540, "y": 405, "tam": 60, "cor": "destaque", "t": 18.85 }
+    ]}
+  ],
+
+  "terra": {
+    "eurasia": [[-9,43],[-2,43.5],[-1.5,46],[-4.5,48.5],[2,51],[5,53.5],[8.5,57],[5,58.5],[5,62],[14,68],[20,70],[28,71],[33,69],[41,67],[44,68],[53,68.5],[60,69],[68,72.5],[73,72],[80,73],[87,75],[100,77],[113,73.5],[130,71],[141,72.5],[155,71],[170,70],[180,69],[180,65],[172,61],[163,59],[160,53],[156,51],[155,57],[150,59.5],[141,59],[137,54],[141,52],[140,48],[135,43],[130,42.5],[129,35],[126,34.5],[126,38],[121,40],[117,39],[122,37],[119,35],[121,32],[122,30],[119,25],[113,22],[108,21.5],[106,18],[109,12],[105,9],[100,13],[100,7],[103.5,1.5],[98,8],[98,16],[94,19],[91,22],[87,21.5],[80,15],[77,8],[73,17],[72,21],[67,24.5],[61,25],[57,26],[56.5,24],[59.5,22.5],[55,17],[52,16],[45,13],[43,13],[39,21],[35,28],[34,31],[35,33],[36,36],[30,36.5],[27,37],[26,40],[23,40.5],[22,37],[20,40],[19,42],[16,43.5],[13,45.5],[12.5,44],[18,40],[16,38],[12,41],[10,44],[7,43.5],[3,43],[3,41.5],[0,39],[-2,36.7],[-6,36.5],[-9,37],[-9,43]],
+    "ilhas": [
+      [[-5,50],[1,51],[0,53],[-3,56],[-5,58.5],[-6,56],[-3,54],[-5,52]],
+      [[130,31],[135,34],[140,35],[142,40],[141,45],[143,44],[140,38],[136,35],[132,33]]
+    ],
+    "regiao": [[55,40],[65,46],[80,49],[95,50],[110,50],[122,47],[124,42],[112,40],[98,41],[85,39],[70,37],[58,37]],
+    "imperio": [[25,47],[32,52],[40,55],[55,57],[75,55],[95,53],[115,53],[130,51],[133,43],[124,35],[120,30],[105,25],[95,29],[80,34],[66,30],[56,28],[47,32],[40,38],[33,42]]
+  },
+  "mapa": { "papel": "#f6efe2", "terra": "rgba(120,84,52,0.22)", "linha": "#5b4632", "regiao": "rgba(163,23,43,0.45)",
+    "pontos": "#a3172b", "imperio": "rgba(80,70,140,0.35)", "bordaImperio": "#4f4a8a" },
+
+  "legenda": { "y": 1590, "tam": 64, "largura": 1000, "segura": 0.55 },
+  "legendas": [
+    { "de": 0.15, "ate": 1.25, "texto": "CERCA DE 20 MILHÕES" },
+    { "de": 1.25, "ate": 2.30, "texto": "DE HOMENS VIVOS HOJE" },
+    { "de": 2.30, "ate": 3.20, "texto": "PODEM DESCENDER" },
+    { "de": 3.20, "ate": 4.00, "texto": "DE UM SÓ HOMEM:" },
+    { "de": 4.00, "ate": 5.00, "texto": "GÊNGIS KHAN." },
+    { "de": 5.00, "ate": 5.90, "texto": "EM 2003," },
+    { "de": 5.90, "ate": 7.00, "texto": "GENETICISTAS ACHARAM" },
+    { "de": 7.00, "ate": 7.95, "texto": "1 EM CADA 12 HOMENS" },
+    { "de": 7.95, "ate": 8.80, "texto": "COM QUASE O MESMO Y" },
+    { "de": 8.80, "ate": 9.60, "texto": "NUMA VASTA REGIÃO" },
+    { "de": 9.60, "ate": 10.20, "texto": "DA ÁSIA." },
+    { "de": 10.20, "ate": 11.00, "texto": "ESPALHOU-SE COM" },
+    { "de": 11.00, "ate": 11.80, "texto": "O IMPÉRIO MONGOL," },
+    { "de": 11.80, "ate": 13.20, "texto": "O MAIOR DA HISTÓRIA." },
+    { "de": 13.20, "ate": 14.40, "texto": "CASO ENCERRADO?" },
+    { "de": 14.40, "ate": 15.20, "texto": "AINDA NÃO." },
+    { "de": 15.20, "ate": 16.10, "texto": "TÚMULOS DA ÉPOCA" },
+    { "de": 16.10, "ate": 17.00, "texto": "MOSTRAM OUTRA LINHAGEM." },
+    { "de": 17.00, "ate": 18.00, "texto": "A ÁRVORE MAIS FAMOSA" },
+    { "de": 18.00, "ate": 18.80, "texto": "DO MUNDO TALVEZ SEJA" },
+    { "de": 18.80, "ate": 19.65, "texto": "DE OUTRA PESSOA." }
+  ],
+
+  "musica": {
+    "passo": 1.2,
+    "acordes": [["A2", "E3", "A3"], ["F2", "C3", "A3"], ["G2", "D3", "B3"], ["A2", "E3", "C4"]],
+    "citara": 0.3,
+    "vol": 0.06,
+    "flauta": [
+      [0.6, "E5", 0.8], [1.5, "D5", 0.4], [2.0, "C5", 0.9], [3.4, "A5", 1.2], [4.8, "G5", 0.4], [5.3, "E5", 0.8],
+      [6.3, "D5", 0.4], [6.8, "E5", 0.9], [8.0, "G5", 0.5], [8.6, "A5", 1.0], [9.9, "E5", 0.5], [10.5, "G5", 0.5],
+      [11.1, "A5", 0.9], [12.2, "C6", 0.6], [12.9, "A5", 0.8], [13.6, "E5", 0.6],
+      [15.4, "D5", 0.6], [16.4, "C5", 0.9], [17.5, "E5", 0.6], [18.2, "D5", 0.5], [19.0, "A4", 0.7]
+    ],
+    "corta": [[14.4, 15.2]]
+  },
+  "sons": {
+    "tiques": [0.2, 2.3],
+    "tambores": [[0.05, 0.6], [3.25, 1.2], [13.35, 0.8], [14.4, 1.25], [16.2, 0.9], [18.85, 0.8]],
+    "brilhos": [6.1, 7.6],
+    "subidas": [[7.0, 0.6], [10.2, 0.8]],
+    "galope": [9.0, 13.1],
+    "virada": 14.4,
+    "grave": 16.2,
+    "brilhoLongo": 18.85
+  }
+}

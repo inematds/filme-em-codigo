@@ -1,0 +1,91 @@
+{
+  "titulo": "A alameda",
+  "duracao": 9,
+  "fps": 30,
+  "semente": 12,
+  "segurar": { "hachura": 3, "figuras": 2 },
+  "fundo": "fundo",
+  "grao": 0.22,
+  "cores": {
+    "luz": "#d8e55a",
+    "clara": "#93c23a",
+    "folha": "#4c9431",
+    "sombra": "#1f5c34",
+    "funda": "#0c3328",
+    "longe": "#2a6a60",
+    "fundo": "#123f38",
+    "gramaLuz": "#a8d040",
+    "grama": "#7db534",
+    "gramaMeia": "#64a232",
+    "gramaSombra": "#437f2c",
+    "gramaFunda": "#2b5f2a",
+    "escuro": "#15190f",
+    "creme": "#f2e8c8",
+    "pele": "#e8c4a0",
+    "vermelho": "#c8372d",
+    "laranja": "#e9822f",
+    "azulClaro": "#a9cbe4"
+  },
+  "vento": { "forca": 1, "onda": 650, "velocidade": 0.4, "balanco": 0.2 },
+  "camera": [
+    { "t": 0, "x": 960, "y": 540, "zoom": 1 },
+    { "t": 9, "x": 1560 },
+    { "t": 5.6, "y": 540 },
+    { "t": 8.8, "y": 390 }
+  ],
+  "pecas": [
+    { "tipo": "arvores", "camada": 0.55, "base": 705, "perto": 0.2, "longe": "longe", "semente": 1,
+      "tronco": 0.04, "ponta": 0.55, "densidade": 0.022, "contraste": 0.7,
+      "chao": { "cor": "gramaFunda", "ate": 1200 },
+      "gera": { "de": -180, "ate": 2550, "passo": 165, "altura": [1000, 1080], "largura": [230, 270], "desnivel": 10 } },
+
+    { "tipo": "arvores", "camada": 0.7, "base": 720, "perto": 0.33, "longe": "longe", "semente": 2,
+      "tronco": 0.06, "ponta": 0.52, "densidade": 0.028, "contraste": 0.85,
+      "chao": { "cor": "gramaSombra", "ate": 1200 },
+      "gera": { "de": -150, "ate": 2600, "passo": 300, "altura": [930, 1000], "largura": [250, 290], "desnivel": 12 } },
+
+    { "tipo": "arvores", "camada": 0.85, "base": 736, "perto": 0.75, "longe": "longe", "semente": 3,
+      "tronco": 0.08, "ponta": 0.5, "densidade": 0.034,
+      "chao": { "cor": "gramaMeia", "ate": 1200 },
+      "sombra": { "cor": "gramaFunda", "alfa": 0.6, "dx": 0.4, "rx": 1.2, "ry": 10 },
+      "lista": [[-60, 900, 290], [390, 880, 300], [830, 930, 290], [1290, 890, 310], [1720, 920, 300], [2170, 880, 300], [2600, 910, 290]] },
+
+    { "tipo": "faixas", "camada": 1, "x": [-200, 2900], "semente": 4,
+      "tracos": { "densidade": 0.006, "comp": [14, 32], "angulo": 0, "abre": 0.18, "largura": 2.4, "claro": "luz", "escuro": "funda" },
+      "faixas": [[740, 752, "gramaSombra"], [752, 790, "gramaLuz"], [790, 800, "grama"], [800, 846, "gramaLuz"],
+                 [846, 870, "gramaMeia"], [870, 935, "grama"], [935, 960, "gramaMeia"], [960, 1010, "gramaLuz"],
+                 [1010, 1040, "grama"], [1040, 1200, "gramaMeia"]],
+      "tufos": { "quantos": 26, "y": [790, 1060], "cor": "gramaSombra" } },
+
+    { "tipo": "arvores", "camada": 1, "base": 752, "perto": 1, "semente": 5,
+      "tronco": 0.11, "ponta": 0.5, "densidade": 0.04, "largura": 0.14,
+      "sombra": { "cor": "gramaSombra", "alfa": 0.75, "dx": 0.5, "rx": 1.25, "ry": 13 },
+      "lista": [[170, 870, 330], [650, 900, 320], [1140, 860, 340], [1610, 890, 330], [2090, 875, 335], [2560, 900, 330]] },
+
+    { "tipo": "ciclista", "camada": 1, "y": 812, "escala": 1.15,
+      "x": [[0, 60], [2, 480], [5, 1330], [9, 2290]],
+      "chapeu": "bone", "cores": { "camisa": "laranja", "saia": "laranja", "chapeu": "vermelho", "cachecol": "vermelho", "cabelo": "#a0522d", "pernaTras": "pele", "pele": "pele" } },
+    { "tipo": "ciclista", "camada": 1, "y": 812, "escala": 1.15,
+      "x": [[0, 260], [9, 2390]],
+      "chapeu": "palheta", "cesta": "#b8874a", "cores": { "camisa": "azulClaro", "calca": "#3d4a5c", "chapeu": "creme", "cabelo": "escuro", "pele": "pele" } },
+
+    { "tipo": "sino", "t": 3.4, "nota": "E6", "nota2": "G#6", "pan": -0.1 },
+
+    { "tipo": "passaros", "camada": 1, "tempo": [3.6, 8.6], "quantos": 9, "escalona": 0.09, "arranca": true,
+      "saida": [1140, 260], "chegada": [1950, -40], "espalha": 260, "cor": "creme", "tamanho": 13, "asas": true, "canto": 3 },
+
+    { "tipo": "folhas", "camada": 1, "tempo": [3.8, 8.8], "quantas": 16, "x": [980, 1700], "y": [120, 420], "cai": 420, "queda": 2.8, "cor": "clara" },
+
+    { "tipo": "sombra-nuvem", "camada": 1, "tempo": [0, 9], "x": [-700, 2900], "y": [760, 420], "rx": 820, "ry": 560, "cor": "sombra", "forca": 0.45 },
+
+    { "tipo": "luz", "camada": 1, "tempo": [6.2, 8.6], "x": [2100, 2320], "y": 800, "rx": 720, "ry": 360, "cor": "luz", "forca": 0.55 },
+
+    { "tipo": "titulo", "x": 96, "y": 1010, "tamanho": 46, "de": 0.1, "ate": 2.6, "cor": "creme", "faixa": 0.45, "corFaixa": "funda" }
+  ],
+  "som": {
+    "folhas": 0.08,
+    "ar": 0.05,
+    "instrumento": "piano",
+    "notas": [["G4", 0.6, 0.6], ["B4", 1.2, 0.6], ["D5", 1.8, 1.0], ["C5", 4.2, 0.6], ["B4", 4.8, 0.6], ["G4", 5.4, 1.2], ["D5", 7.2, 0.5], ["G5", 7.7, 1.4]]
+  }
+}

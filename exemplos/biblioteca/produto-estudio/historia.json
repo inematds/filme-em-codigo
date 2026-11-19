@@ -1,0 +1,131 @@
+{
+  "titulo": "Orla, uma luz que flutua",
+  "duracao": 14.5,
+  "fps": 30,
+  "semente": 41,
+  "_medidas": "Mundo 3D: 1 unidade = raio da base (uns 9 cm); y para cima; o chão é y = 0; a base fica em x = 0, z = 0; a câmera do começo olha de +z. Tela (títulos, legenda, rótulos, marca): pixels de um quadro de 1080x1920, y de cima. Tempos em segundos do filme.",
+
+  "cores": {
+    "fundoAlto": "#04070f",
+    "fundoHorizonte": "#26407a",
+    "chao": "#18233d",
+    "aluminio": "#c9ced8",
+    "aluminioClaro": "#e4e8ef",
+    "placa": "#24272d",
+    "cobre": "#c8723a",
+    "vidro": "#eef3ff",
+    "luz": "#f4f7ff",
+    "acento": "#e3e302",
+    "maos": "#e6e4df",
+    "papel": "#eceef2",
+    "lapis": "#1d1f24",
+    "traco": "#101114",
+    "texto": "#f4f6fb",
+    "pilula": "rgba(92,104,130,0.42)"
+  },
+
+  "luz": {
+    "_": "o refletor fica DENTRO do aro e aponta para baixo (faz a poça de luz e as sombras); o ambiente é um estúdio com softboxes",
+    "refletor": 16, "abertura": 0.95, "penumbra": 0.75,
+    "ambiente": 0.55, "preenche": 0.35, "reflexo": 1.0
+  },
+
+  "filme": {
+    "exposicao": 1.05, "brilho": 0.55, "limiarBrilho": 1.1, "vinheta": 0.55, "grao": 0.022,
+    "chicote": 0.06, "mergulho": 0.22, "clarao": 1.0
+  },
+
+  "pecas": [
+    { "tipo": "base", "x": 0, "z": 0, "raio": 1.0, "altura": 0.3, "ponto": { "angulo": 0, "y": 0.15 } },
+    { "tipo": "aro", "raio": 1.14, "repouso": 0.31, "flutua": 1.45, "sobe": [0.6, 2.0], "balanca": 0.025, "leds": 48, "acendem": [0.15, 1.0] },
+    { "tipo": "explosao", "abre": 4.8, "passo": 0.12, "fecha": 6.35, "fechaPasso": 0.04,
+      "partes": [
+        { "nome": "carcaca", "rotulo": "CARCAÇA", "y": 0.0,  "lado": -1 },
+        { "nome": "bobinas", "rotulo": "BOBINAS", "y": 0.75, "lado": 1 },
+        { "nome": "tampa",   "rotulo": "TAMPA",   "y": 1.45, "lado": -1 },
+        { "nome": "lente",   "rotulo": "LENTE",   "y": 2.05, "lado": 1 },
+        { "nome": "difusor", "rotulo": "DIFUSOR", "y": 2.75, "lado": -1 },
+        { "nome": "leds",    "rotulo": "LEDS",    "y": 3.3,  "lado": 1 },
+        { "nome": "aro",     "rotulo": "ARO",     "y": 3.85, "lado": -1 },
+        { "nome": "moldura", "rotulo": "MOLDURA", "y": 4.4,  "lado": 1 }
+      ] },
+    { "tipo": "papel", "x": 0.05, "z": 2.75, "largura": 2.3, "comprimento": 3.2, "giro": 0.08, "aparece": "maos" },
+    { "tipo": "desenho", "centro": [0.05, 2.55], "rx": 0.55, "rz": 0.3, "de": 9.2, "ate": 11.7, "voltas": 1.04 },
+    { "tipo": "maoLapis", "lado": "direita", "aparece": "maos" },
+    { "tipo": "maoApoio", "lado": "esquerda", "x": -0.72, "z": 3.35, "giro": -0.35, "aparece": "maos" },
+    { "tipo": "segue", "_": "o aro sobe e vai para cima do lápis", "sobe": [8.85, 9.4], "altura": 1.95, "vai": [9.0, 10.2], "atraso": 0.3 }
+  ],
+
+  "planos": [
+    { "nome": "acende", "de": 0.0, "ate": 2.4, "entrada": "corte",
+      "camera": [
+        { "t": 0.0, "pos": [0, 0.45, 11.0], "olha": [0, 0.5, 0], "fov": 26, "foco": [0, 0.4, 0], "desfoque": 4 },
+        { "t": 2.4, "pos": [0, 2.1, 11.4], "olha": [0, 0.95, 0], "fov": 26, "foco": [0, 0.9, 0], "desfoque": 4 }
+      ] },
+    { "nome": "materiais", "de": 2.4, "ate": 4.5, "entrada": "corte",
+      "camera": [
+        { "t": 2.4, "pos": [1.5, 0.32, 2.0], "olha": [0.35, 0.18, 0.75], "fov": 32, "foco": [0.45, 0.18, 0.85], "desfoque": 7 },
+        { "t": 3.6, "pos": [-0.4, 0.38, 2.45], "olha": [-0.1, 0.22, 0.9], "fov": 32, "foco": [-0.1, 0.2, 0.95], "desfoque": 7 },
+        { "t": 4.5, "pos": [-0.6, 0.5, 2.6], "olha": [0, 1.35, 0.2], "fov": 32, "foco": [0, 1.4, 0.9], "desfoque": 8 }
+      ] },
+    { "nome": "explosao", "de": 4.5, "ate": 7.1, "entrada": "chicote",
+      "camera": [
+        { "t": 4.5, "pos": [0.6, 4.0, 12.6], "olha": [0, 2.2, 0], "fov": 34, "foco": [0, 2.2, 0], "desfoque": 2 },
+        { "t": 6.8, "pos": [-0.4, 3.9, 12.3], "olha": [0, 2.2, 0], "fov": 34, "foco": [0, 2.2, 0], "desfoque": 2, "para": true },
+        { "t": 7.1, "pos": [-0.2, 1.6, 4.0], "olha": [0, 0.3, 0], "fov": 30, "foco": [0, 0.3, 0], "desfoque": 4 }
+      ] },
+    { "nome": "macro", "de": 7.1, "ate": 8.7, "entrada": "mergulho",
+      "camera": [
+        { "t": 7.1, "pos": [-0.75, 0.42, 0.62], "olha": [-0.25, 0.3, -0.15], "fov": 42, "foco": [-0.5, 0.3, 0.25], "desfoque": 10 },
+        { "t": 8.7, "pos": [0.5, 0.4, 0.78], "olha": [0.3, 0.3, -0.1], "fov": 42, "foco": [0.35, 0.3, 0.35], "desfoque": 10 }
+      ] },
+    { "nome": "maos", "de": 8.7, "ate": 12.3, "entrada": "chicote",
+      "camera": [
+        { "t": 8.7, "pos": [2.2, 3.0, 7.4], "olha": [0, 0.9, 2.0], "fov": 40, "foco": [0, 0.5, 2.6], "desfoque": 4 },
+        { "t": 10.4, "pos": [1.2, 4.8, 6.4], "olha": [0, 0.5, 2.4], "fov": 40, "foco": [0, 0.3, 2.6], "desfoque": 4 },
+        { "t": 12.3, "pos": [0.05, 9.0, 2.9], "olha": [0, 0, 2.55], "fov": 38, "foco": [0, 0.2, 2.6], "desfoque": 3 }
+      ] },
+    { "nome": "heroi", "de": 12.3, "ate": 14.5, "entrada": "clarao",
+      "camera": [
+        { "t": 12.3, "pos": [0, 1.25, 11.8], "olha": [0, 0.3, 0], "fov": 26, "foco": [0, 0.8, 0], "desfoque": 3 },
+        { "t": 14.5, "pos": [0, 1.3, 10.6], "olha": [0, 0.3, 0], "fov": 26, "foco": [0, 0.8, 0], "desfoque": 3 }
+      ] }
+  ],
+
+  "titulos": {
+    "_": "título fino e espaçado no alto, nomeando a qualidade do plano",
+    "y": 150, "tam": 30, "espaco": 0.75,
+    "lista": [
+      { "texto": "OITO PEÇAS", "de": 4.7, "ate": 7.0 },
+      { "texto": "ACABAMENTO ESCOVADO", "de": 7.25, "ate": 8.65 },
+      { "texto": "SEGUE AS MÃOS", "de": 8.9, "ate": 10.6 },
+      { "texto": "LUZ QUE ACOMPANHA", "de": 10.75, "ate": 12.25 }
+    ]
+  },
+
+  "legenda": {
+    "_": "a fala da fonte, traduzida e encurtada; cada linha aparece inteira numa pílula translúcida",
+    "y": 1660, "tam": 30, "largura": 960, "aparece": 0.15,
+    "lista": [
+      { "texto": "UMA LUZ QUE FLUTUA.", "de": 0.4, "ate": 2.3 },
+      { "texto": "ALUMÍNIO USINADO. VIDRO FOSCO.", "de": 2.6, "ate": 4.4 },
+      { "texto": "CADA PEÇA, FEITA PARA SUMIR.", "de": 4.8, "ate": 7.0 },
+      { "texto": "ESCOVADO À MÃO.", "de": 7.3, "ate": 8.6 },
+      { "texto": "ELA SOBE E SEGUE SUAS MÃOS.", "de": 8.9, "ate": 10.6 },
+      { "texto": "LUZ ONDE VOCÊ PRECISA.", "de": 10.75, "ate": 12.2 }
+    ]
+  },
+
+  "rotulos": { "tam": 21, "espaco": 0.45, "de": 5.0, "ate": 6.3 },
+
+  "marca": { "texto": "ORLA", "y": 1450, "tam": 120, "espaco": 1.1, "de": 12.6, "sublinha": [13.0, 13.6] },
+
+  "musica": {
+    "_": "pad de vidro lento, chiados macios nas passagens e um sino no fim",
+    "acordes": [["D3", "A3", "E4", "F#4"], ["B2", "F#3", "D4", "A4"], ["G2", "D3", "B3", "F#4"], ["A2", "E3", "C#4", "E4"]],
+    "passo": 3.6,
+    "leds": ["A5", "B5", "C#6", "E6", "F#6", "A6"],
+    "pecas": ["E6", "F#6", "A6", "B6", "C#7", "E7", "F#7", "A7"],
+    "sino": ["D5", "A5", "D6", "F#6"]
+  }
+}

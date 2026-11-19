@@ -1,0 +1,151 @@
+{
+  "titulo": "A árvore de família mais famosa do mundo",
+  "duracao": 20,
+  "fps": 30,
+  "semente": 32,
+  "paleta": {
+    "papel": "#efe4cc",
+    "cartao": "#f6eedc",
+    "mancha": "#8a6a44",
+    "tinta": "#161310",
+    "tinta2": "#3b342c",
+    "selo": "#b3261e",
+    "apagado": "#8d8270",
+    "montanha": "#6f6656",
+    "vinheta": "#5a3a1c",
+    "destaque": "#facc15",
+    "branco": "#ffffff"
+  },
+  "sol": { "x": 875, "y": 205, "r": 86, "some": [12.8, 13.2] },
+  "montanhas": { "y": 300, "altura": 440,
+    "camadas": [ { "base": 170, "amp": 110, "a": 0.2, "largura": 300 }, { "base": 245, "amp": 85, "a": 0.24, "largura": 230 }, { "base": 315, "amp": 55, "a": 0.28, "largura": 170 } ] },
+  "tremores": [ { "t": 14.4, "quadros": 8, "forca": 22 } ],
+  "escurece": [19.65, 20.0],
+
+  "cenas": [
+    { "id": "gancho", "de": 0, "ate": 5.0, "pecas": [
+      { "tipo": "contador", "x": 540, "y": 720, "tam": 118, "de": 0.2, "ate": 2.3, "valor": 20000000, "cor": "tinta", "some": 2.9 },
+      { "tipo": "texto", "texto": "HOMENS VIVOS HOJE", "x": 540, "y": 800, "tam": 42, "cor": "tinta2", "italico": true, "peso": 0.12, "t": 0.35, "dur": 0.6, "some": 2.9 },
+      { "tipo": "multidao", "x": 540, "y": 1010, "colunas": 10, "linhas": 6, "dx": 92, "dy": 70, "tam": 54, "de": 0.4, "ate": 2.2,
+        "liga": { "de": 2.3, "ate": 3.1, "para": [540, 735] }, "apaga": 2.6 },
+      { "tipo": "heroi", "x": 540, "y": 640, "tam": 190, "t": 3.25, "chapeu": true },
+      { "tipo": "selo", "x": 540, "y": 425, "tam": 120, "giro": -3, "t": 4.0, "sem": 9 },
+      { "tipo": "texto", "texto": "GÊNGIS KHAN", "x": 540, "y": 890, "tam": 84, "cor": "tinta", "t": 4.0, "sobe": true }
+    ]},
+
+    { "id": "evidencia", "de": 5.0, "ate": 7.0, "pecas": [
+      { "tipo": "cartao", "x": 540, "y": 900, "l": 860, "a": 800, "titulo": "ESTUDO DO CROMOSSOMO Y", "t": 5.0 },
+      { "tipo": "texto", "texto": "2003", "x": 540, "y": 900, "tam": 230, "cor": "tinta", "t": 5.1, "dur": 0.3, "tabular": true, "peso": 0.16 },
+      { "tipo": "tubos", "x": 540, "y": 1120, "n": 12, "dx": 60, "tam": 160, "de": 5.3, "ate": 5.9, "enche": { "i": 7, "t": 6.1 } }
+    ]},
+
+    { "id": "estatistica", "de": 7.0, "ate": 8.8, "pecas": [
+      { "tipo": "texto", "texto": "1 EM 12", "x": 540, "y": 720, "tam": 150, "cor": "tinta", "italicos": [1], "t": 7.05, "dur": 0.3 },
+      { "tipo": "fila", "x": 540, "y": 960, "colunas": 6, "linhas": 2, "dx": 150, "dy": 250, "tam": 170, "de": 7.1, "ate": 7.5, "acende": { "i": 7, "t": 7.6 } }
+    ]},
+
+    { "id": "mapa", "de": 8.8, "ate": 13.2, "pecas": [
+      { "tipo": "mapa", "x": 540, "y": 790, "escala": 5.3, "achata": 1.25, "lonC": 86, "latC": 40,
+        "contorno": { "de": 8.8, "ate": 9.4 },
+        "regiao": { "de": 9.0, "ate": 9.8 },
+        "aneis": { "t": 9.7, "passo": 3.2 },
+        "imperio": { "ponto": [103, 47], "pulsa": 10.1, "de": 10.3, "ate": 11.4 },
+        "sobe": { "t": 11.8, "dur": 0.5, "dy": -250, "z": 0.84 } },
+      { "tipo": "texto", "texto": "IMPÉRIO MONGOL", "x": 540, "y": 1160, "tam": 58, "cor": "selo", "t": 10.6, "sobe": true, "some": 11.75 },
+      { "tipo": "texto", "texto": "MAIOR IMPÉRIO EM TERRA", "x": 540, "y": 880, "tam": 48, "cor": "tinta", "t": 11.85, "sobe": true },
+      { "tipo": "texto", "texto": "MILHÕES DE KM²", "x": 540, "y": 935, "tam": 30, "cor": "tinta2", "italico": true, "peso": 0.12, "t": 11.95, "sobe": true },
+      { "tipo": "bandeiras", "x": 240, "y": 1000, "passo": 200, "larg": 118, "altMax": 270, "t": 11.85, "passoT": 0.1, "dur": 0.45, "maximo": 24.0,
+        "itens": [
+          { "nome": "MONGOL", "valor": "24,0", "v": 24.0, "cor": "selo" },
+          { "nome": "RUSSO", "valor": "22,8", "v": 22.8, "cor": "tinta2" },
+          { "nome": "QING", "valor": "14,7", "v": 14.7, "cor": "tinta2" },
+          { "nome": "ROMANO", "valor": "5,0", "v": 5.0, "cor": "tinta2" }
+        ] }
+    ]},
+
+    { "id": "virada", "de": 13.2, "ate": 15.2, "pecas": [
+      { "tipo": "cartao", "x": 540, "y": 860, "l": 820, "a": 620, "titulo": "ARQUIVO DO CASO", "t": 13.2, "linhas": 6 },
+      { "tipo": "carimbo", "texto": "CASO|ENCERRADO?", "x": 540, "y": 880, "tam": 68, "giro": -8, "t": 13.35, "apaga": 14.4, "giroApagado": -3,
+        "risco": { "de": 14.42, "ate": 14.62, "larg": 74 } },
+      { "tipo": "texto", "texto": "AINDA NÃO.", "x": 540, "y": 1330, "tam": 100, "cores": ["tinta", "selo"], "t": 14.42, "dur": 0.3 }
+    ]},
+
+    { "id": "tumulos", "de": 15.2, "ate": 17.0, "desliza": { "de": 14.8, "dur": 0.5 }, "pecas": [
+      { "tipo": "tumulos", "x": 540, "y": 1150, "tam": 120, "t": 15.2, "borda": 15.3 },
+      { "tipo": "helice", "x": 540, "y0": 1060, "y1": 610, "de": 15.4, "ate": 16.1, "divide": 16.2, "durDivide": 0.3,
+        "esq": { "x": 300, "y": 480, "rotulo": "ESPERADA", "cor": "tinta2", "fraco": true },
+        "dir": { "x": 780, "y": 480, "rotulo": "OUTRA LINHAGEM", "cor": "selo" } },
+      { "tipo": "texto", "texto": "TÚMULOS MONGÓIS", "x": 540, "y": 1290, "tam": 52, "cor": "tinta", "t": 15.35, "sobe": true },
+      { "tipo": "texto", "texto": "1130 A 1250", "x": 540, "y": 1360, "tam": 38, "cor": "tinta2", "italico": true, "t": 15.5, "sobe": true, "tabular": true }
+    ]},
+
+    { "id": "pergunta", "de": 17.0, "ate": 20.0, "desliza": { "de": 16.65, "dur": 0.45 }, "pecas": [
+      { "tipo": "arvore", "x": 540, "y": 650, "raizTam": 170, "niveis": [ { "n": 2, "y": 870, "tam": 100 }, { "n": 4, "y": 1065, "tam": 80 }, { "n": 8, "y": 1245, "tam": 62 } ],
+        "larg": 900, "de": 17.05, "ate": 17.9 },
+      { "tipo": "heroi", "x": 540, "y": 650, "tam": 170, "t": 17.0, "chapeu": true, "halo": true, "contorno": 18.85, "interroga": 18.85 },
+      { "tipo": "selo", "x": 540, "y": 445, "tam": 104, "giro": 3, "t": 17.0, "sem": 9, "apaga": 18.1 },
+      { "tipo": "selo", "x": 548, "y": 440, "tam": 112, "giro": -6, "t": 18.85, "interroga": true, "sem": 15 },
+      { "tipo": "texto", "texto": "GÊNGIS KHAN", "x": 540, "y": 320, "tam": 76, "cor": "tinta", "t": 17.0, "dur": 0.4, "risco": { "de": 18.1, "ate": 18.35 } },
+      { "tipo": "texto", "texto": "OUTRA PESSOA?", "x": 540, "y": 1385, "tam": 64, "cor": "selo", "italico": true, "t": 18.85, "sobe": true }
+    ]}
+  ],
+
+  "terra": {
+    "eurasia": [[-9,43],[-2,43.5],[-1.5,46],[-4.5,48.5],[2,51],[5,53.5],[8.5,57],[5,58.5],[5,62],[14,68],[20,70],[28,71],[33,69],[41,67],[44,68],[53,68.5],[60,69],[68,72.5],[73,72],[80,73],[87,75],[100,77],[113,73.5],[130,71],[141,72.5],[155,71],[170,70],[180,69],[180,65],[172,61],[163,59],[160,53],[156,51],[155,57],[150,59.5],[141,59],[137,54],[141,52],[140,48],[135,43],[130,42.5],[129,35],[126,34.5],[126,38],[121,40],[117,39],[122,37],[119,35],[121,32],[122,30],[119,25],[113,22],[108,21.5],[106,18],[109,12],[105,9],[100,13],[100,7],[103.5,1.5],[98,8],[98,16],[94,19],[91,22],[87,21.5],[80,15],[77,8],[73,17],[72,21],[67,24.5],[61,25],[57,26],[56.5,24],[59.5,22.5],[55,17],[52,16],[45,13],[43,13],[39,21],[35,28],[34,31],[35,33],[36,36],[30,36.5],[27,37],[26,40],[23,40.5],[22,37],[20,40],[19,42],[16,43.5],[13,45.5],[12.5,44],[18,40],[16,38],[12,41],[10,44],[7,43.5],[3,43],[3,41.5],[0,39],[-2,36.7],[-6,36.5],[-9,37],[-9,43]],
+    "ilhas": [
+      [[-5,50],[1,51],[0,53],[-3,56],[-5,58.5],[-6,56],[-3,54],[-5,52]],
+      [[130,31],[135,34],[140,35],[142,40],[141,45],[143,44],[140,38],[136,35],[132,33]]
+    ],
+    "regiao": [[55,40],[65,46],[80,49],[95,50],[110,50],[122,47],[124,42],[112,40],[98,41],[85,39],[70,37],[58,37]],
+    "imperio": [[25,47],[32,52],[40,55],[55,57],[75,55],[95,53],[115,53],[130,51],[133,43],[124,35],[120,30],[105,25],[95,29],[80,34],[66,30],[56,28],[47,32],[40,38],[33,42]]
+  },
+
+  "legenda": { "y": 1590, "tam": 64, "largura": 1000, "segura": 0.55 },
+  "legendas": [
+    { "de": 0.15, "ate": 1.25, "texto": "CERCA DE 20 MILHÕES" },
+    { "de": 1.25, "ate": 2.30, "texto": "DE HOMENS VIVOS HOJE" },
+    { "de": 2.30, "ate": 3.20, "texto": "PODEM DESCENDER" },
+    { "de": 3.20, "ate": 4.00, "texto": "DE UM SÓ HOMEM:" },
+    { "de": 4.00, "ate": 5.00, "texto": "GÊNGIS KHAN." },
+    { "de": 5.00, "ate": 5.90, "texto": "EM 2003," },
+    { "de": 5.90, "ate": 7.00, "texto": "GENETICISTAS ACHARAM" },
+    { "de": 7.00, "ate": 7.95, "texto": "1 EM CADA 12 HOMENS" },
+    { "de": 7.95, "ate": 8.80, "texto": "COM QUASE O MESMO Y" },
+    { "de": 8.80, "ate": 9.60, "texto": "NUMA VASTA REGIÃO" },
+    { "de": 9.60, "ate": 10.20, "texto": "DA ÁSIA." },
+    { "de": 10.20, "ate": 11.00, "texto": "ESPALHOU-SE COM" },
+    { "de": 11.00, "ate": 11.80, "texto": "O IMPÉRIO MONGOL," },
+    { "de": 11.80, "ate": 13.20, "texto": "O MAIOR DA HISTÓRIA." },
+    { "de": 13.20, "ate": 14.40, "texto": "CASO ENCERRADO?" },
+    { "de": 14.40, "ate": 15.20, "texto": "AINDA NÃO." },
+    { "de": 15.20, "ate": 16.10, "texto": "TÚMULOS DA ÉPOCA" },
+    { "de": 16.10, "ate": 17.00, "texto": "MOSTRAM OUTRA LINHAGEM." },
+    { "de": 17.00, "ate": 18.00, "texto": "A ÁRVORE MAIS FAMOSA" },
+    { "de": 18.00, "ate": 18.80, "texto": "DO MUNDO TALVEZ SEJA" },
+    { "de": 18.80, "ate": 19.65, "texto": "DE OUTRA PESSOA." }
+  ],
+
+  "musica": {
+    "volFlauta": 0.09,
+    "flauta": [
+      [0.3, "E5", 0.9], [1.3, "D5", 0.4], [1.75, "C5", 0.4], [2.2, "A4", 1.2],
+      [3.6, "C5", 0.5], [4.15, "D5", 0.4], [4.6, "E5", 1.3],
+      [6.2, "G5", 0.5], [6.75, "E5", 0.4], [7.2, "D5", 0.9],
+      [8.4, "C5", 0.4], [8.85, "D5", 0.4], [9.3, "E5", 1.0],
+      [10.5, "A5", 0.6], [11.15, "G5", 0.4], [11.6, "E5", 0.5], [12.15, "D5", 0.4], [12.6, "E5", 1.2],
+      [15.6, "A4", 0.8], [16.6, "C5", 0.5], [17.2, "E5", 0.5], [17.75, "D5", 0.4], [18.2, "C5", 0.5], [18.85, "A4", 0.9]
+    ],
+    "citara": { "notas": ["A2", "E3", "A2", "G2", "C3", "E3", "D3", "E2"], "passo": 0.75, "comeco": 0.1, "vol": 0.32 },
+    "bordao": ["A1", 0.05, "E2"],
+    "corta": [[14.4, 15.2]]
+  },
+  "sons": {
+    "tiques": [0.2, 2.3],
+    "taiko": [[0.05, 0.8], 3.25, [4.0, 0.7], 13.35, 14.4, 16.2, 18.85],
+    "carimbos": [4.0, 13.35, 18.85],
+    "brilhos": [7.6],
+    "subidas": [[7.1, 0.5], [10.2, 0.8]],
+    "virada": 14.4,
+    "brilhoLongo": 18.85
+  }
+}

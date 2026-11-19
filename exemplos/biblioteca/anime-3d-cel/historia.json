@@ -1,0 +1,223 @@
+{
+  "titulo": "A noite em que a cachoeira parou",
+  "duracao": 15,
+  "fps": 30,
+  "semente": 1848,
+  "posesBoneco": 15,
+  "posesAgua": 10,
+
+  "cores": {
+    "tinta": "#1c2150",
+    "pele": "#f6d6c2",
+    "bochecha": "#f2998c",
+    "casaco": "#d8392c",
+    "cachecol": "#f4c430",
+    "cabelo": "#5a3426",
+    "bota": "#6b4330",
+    "pelo": "#e0a95e",
+    "peloClaro": "#f7e6cc",
+    "ferro": "#3d3a52",
+    "metal": "#c9d2e6",
+    "madeira": "#7a4a2c",
+    "lanterna": "#ffc25a",
+    "lama": "#8c705c",
+    "lamaEscura": "#6f5a4f",
+    "pedra": "#8487b4",
+    "pedraClara": "#a7abd2",
+    "penhasco": "#6f73a6",
+    "pinheiro": "#34507a",
+    "pinheiroEscuro": "#283f66",
+    "neve": "#e2e7fb",
+    "agua": "#9cc9f2",
+    "aguaClara": "#eef6ff",
+    "gelo": "#f2f7ff",
+    "mapaLago": "#6d9fdc",
+    "mapaTerra": "#cdbb92",
+    "mapaMato": "#8ea86c",
+    "mapaRio": "#5f95d6"
+  },
+
+  "ceus": {
+    "noite":  { "topo": "#1a1d4e", "meio": "#323a7e", "horiz": "#6c78b8", "nuvem": "#aab4e6", "nuvemSombra": "#4c5596", "astro": "#fff4d6", "astroTam": 0.05, "estrelas": 0.9, "nuvens": 0.44, "serra": "#2a3068",
+                "luz": "#c9d2ff", "sombra": "#5c5aa6", "neblina": "#5c67a8", "tinta": "#1c2150" },
+    "aurora": { "topo": "#5d6bb8", "meio": "#b49ac8", "horiz": "#f6c4a8", "nuvem": "#fff0e4", "nuvemSombra": "#c08cae", "astro": "#fff1c8", "astroTam": 0.06, "estrelas": 0.0, "nuvens": 0.42, "serra": "#7a74b0",
+                "luz": "#fff0e0", "sombra": "#7a72b8", "neblina": "#c6b2cf", "tinta": "#262457" },
+    "dia":    { "topo": "#4a8fe0", "meio": "#86bdf0", "horiz": "#d6ecff", "nuvem": "#ffffff", "nuvemSombra": "#a9bde8", "astro": "#fffbe8", "astroTam": 0.055, "estrelas": 0.0, "nuvens": 0.42, "serra": "#7f9cd0",
+                "luz": "#ffffff", "sombra": "#8183c6", "neblina": "#b8d2f0", "tinta": "#1f2a5c" },
+    "tarde":  { "topo": "#3b3f8e", "meio": "#c46a8e", "horiz": "#ffb47a", "nuvem": "#ffd6b0", "nuvemSombra": "#8e5a8e", "astro": "#ffd08a", "astroTam": 0.07, "estrelas": 0.0, "nuvens": 0.42, "serra": "#6a4f86",
+                "luz": "#ffd9b8", "sombra": "#6f5aa0", "neblina": "#c08aa0", "tinta": "#24204f" }
+  },
+
+  "planos": [
+    { "nome": "a cachoeira para", "de": 0, "ate": 3.6, "cenario": "garganta",
+      "ceu": [[0, "noite"]], "astro": [-0.2, 0.55, -1], "raios": 0.9, "neblina": [0.012, 0.55],
+      "camera": [
+        { "t": 0,    "pos": [0, 2.6, 9],  "olha": [0, 6.2, -50], "fov": 60 },
+        { "t": 3.15, "pos": [0, 3.0, 2],  "olha": [0, 6.6, -50], "fov": 58 },
+        { "t": 3.6,  "pos": [0, 3.4, 1],  "olha": [0, 70, -30], "fov": 58 }
+      ] },
+    { "nome": "o gelo tranca o rio (mapa)", "de": 3.6, "ate": 5.85, "cenario": "mapa",
+      "ceu": [[3.6, "noite"]], "astro": [-0.3, 0.7, -1], "raios": 0.0, "neblina": [0.004, 0.3],
+      "camera": [
+        { "t": 3.6,  "pos": [500, 30, 34], "olha": [500, 22, -60], "fov": 52 },
+        { "t": 3.95, "pos": [500, 32, 30], "olha": [500, 0, -6], "fov": 52 },
+        { "t": 5.85, "pos": [500, 22, 16], "olha": [500, 0, -12], "fov": 52 }
+      ] },
+    { "nome": "de manhã, o leito seco", "de": 5.85, "ate": 8.3, "cenario": "garganta",
+      "ceu": [[5.85, "aurora"]], "astro": [0.55, 0.22, -1], "raios": 0.7, "neblina": [0.016, 0.6],
+      "camera": [
+        { "t": 5.6,  "pos": [4.5, 1.45, 12.4], "olha": { "peca": "lanterna", "d": [-0.9, 0.0, -0.6] }, "fov": 46 },
+        { "t": 7.2,  "pos": [3.5, 1.2, 10.4], "olha": { "peca": "lanterna", "d": [-0.9, 0.0, -0.6] }, "fov": 44 },
+        { "t": 8.3,  "pos": { "peca": "lanterna", "d": [0.75, 0.22, 0.95] }, "olha": { "peca": "lanterna", "d": [0, 0, 0] }, "fov": 40 }
+      ] },
+    { "nome": "o cachorro acha o mosquete", "de": 8.3, "ate": 10.2, "cenario": "garganta",
+      "ceu": [[8.3, "aurora"]], "astro": [0.55, 0.22, -1], "raios": 0.5, "neblina": [0.016, 0.6],
+      "camera": [
+        { "t": 8.3,  "pos": { "peca": "lanterna", "d": [0.2, 0.3, 1.1] }, "olha": { "peca": "lanterna", "d": [0, 0, 0] }, "fov": 40 },
+        { "t": 8.85, "pos": [3.4, 1.6, 8.8], "olha": [0.5, 0.35, 5.5], "fov": 44 },
+        { "t": 10.2, "pos": [3.25, 1.5, 8.6], "olha": [0.6, 0.35, 5.75], "fov": 43 }
+      ] },
+    { "nome": "um dia inteiro pingando", "de": 10.2, "ate": 12.2, "cenario": "garganta",
+      "ceu": [[10.2, "aurora"], [10.75, "dia"], [11.35, "tarde"], [11.95, "noite"]], "astro": [0.5, 0.5, -1], "raios": 0.6, "neblina": [0.01, 0.45],
+      "camera": [
+        { "t": 10.2, "pos": [-2.3, 0.85, -42.2], "olha": [-2.95, 2.2, -46.5], "fov": 58 },
+        { "t": 12.2, "pos": [-2.4, 0.9, -42.7], "olha": [-2.95, 2.5, -46.5], "fov": 58 }
+      ] },
+    { "nome": "o gelo estoura", "de": 12.2, "ate": 13.35, "cenario": "garganta",
+      "ceu": [[12.2, "noite"]], "astro": [0.0, 0.75, -1], "raios": 0.8, "neblina": [0.01, 0.45],
+      "camera": [
+        { "t": 12.2,  "pos": [0, 6.5, -33], "olha": [0, 11.6, -56], "fov": 58 },
+        { "t": 13.6,  "pos": [0, 6.0, -31.5], "olha": [0, 11.0, -56], "fov": 60 }
+      ] },
+    { "nome": "o estrondo volta", "de": 13.35, "ate": 15, "cenario": "garganta",
+      "ceu": [[13.35, "noite"]], "astro": [0.05, 0.62, -1], "raios": 1.0, "neblina": [0.01, 0.45],
+      "camera": [
+        { "t": 13.1, "pos": [0.7, 1.0, -21.0], "olha": [0.55, 4.0, -46], "fov": 58 },
+        { "t": 15,   "pos": [0.75, 1.15, -20.2], "olha": [0.55, 4.4, -46], "fov": 60 }
+      ] }
+  ],
+
+  "transicoes": [
+    { "t": 3.6,   "tipo": "chicote",    "dur": 0.7, "borrao": [0, 260] },
+    { "t": 5.85,  "tipo": "estilhaco",  "dur": 0.5 },
+    { "t": 8.3,   "tipo": "casamento",  "dur": 0.3 },
+    { "t": 12.2,  "tipo": "clarao",     "dur": 0.35 },
+    { "t": 13.35, "tipo": "agua",       "dur": 0.45 }
+  ],
+  "claroes": [ { "t": 12.95, "dur": 0.45, "forca": 0.85 } ],
+
+  "agua": {
+    "fluxo": [[0, 1], [1.3, 1], [3.0, 0.0], [12.6, 0.0], [13.15, 1]],
+    "nivel": [[0, 0.55], [3.6, 0.55], [3.61, -0.4], [13.5, -0.4], [15, 0.35]],
+    "pingos": { "de": 10.2, "ate": 12.2, "x": [-4.5, -2.4, -0.8], "z": -54.6, "altura": 11.5, "periodo": 0.7 }
+  },
+
+  "pecas": [
+    { "tipo": "garganta", "centro": [0, 0, -40], "raio": 16, "altura": 12, "abertura": 200, "comprimento": 70 },
+    { "tipo": "pinheiros", "quantos": 70, "area": [-60, 60, -110, 40], "fora": 19, "altura": [3, 6.5] },
+    { "tipo": "nevoa", "x": [-10, 10], "z": -40, "quantas": 8, "raio": [3.2, 4.6] },
+    { "tipo": "pedra", "x": 2.0,  "z": 10.0,  "raio": 0.75, "achata": 0.85 },
+    { "tipo": "pedra", "x": -2.6, "z": 7.5,   "raio": 0.9,  "achata": 0.6 },
+    { "tipo": "pedra", "x": 3.4,  "z": 3.0,   "raio": 0.6,  "achata": 0.7 },
+    { "tipo": "pedra", "x": -1.8, "z": 1.0,   "raio": 1.1,  "achata": 0.55 },
+    { "tipo": "pedra", "x": 4.0,  "z": -8.0,  "raio": 1.4,  "achata": 0.6 },
+    { "tipo": "pedra", "x": -5.0, "z": -14.0, "raio": 1.6,  "achata": 0.55 },
+    { "tipo": "pedra", "x": -3.0, "z": -46.0, "raio": 1.8,  "achata": 0.8 },
+    { "tipo": "pedra", "x": 0.6,  "z": -24.0, "raio": 1.0,  "achata": 0.8 },
+    { "tipo": "pedra", "x": 5.5,  "z": -22.0, "raio": 2.0,  "achata": 0.6 },
+    { "tipo": "poca", "x": -0.4, "z": 8.2, "raio": 0.7 },
+    { "tipo": "poca", "x": 1.6, "z": 3.4, "raio": 0.9 },
+    { "tipo": "poca", "x": -1.2, "z": -4.0, "raio": 1.4 },
+    { "tipo": "poca", "x": 2.4, "z": -16.0, "raio": 1.8 },
+
+    { "tipo": "mapa", "centro": [500, 0, 0], "largura": 40, "comprimento": 70, "seca": [4.7, 5.75], "vento": 3.0 },
+    { "tipo": "gelo-mapa", "quantos": 26, "de": 3.8, "ate": 5.05, "lago": [-13, 13, -33, -18], "foz": [0, -12.3], "semente": 7 },
+    { "tipo": "gelo-estouro", "quantos": 34, "x": [-7, 7], "y": [11.2, 13.8], "z": -55.5, "aparece": 12.2, "estoura": 12.55, "semente": 11 },
+
+    { "tipo": "menina",
+      "caminho": [
+        { "t": 0,     "x": 2.0,  "y": 0.62, "z": 10.0, "giro": 200 },
+        { "t": 6.25,  "x": 2.0,  "y": 0.62, "z": 10.0, "giro": 200 },
+        { "t": 6.7,   "x": 1.55, "y": 0,    "z": 8.95, "giro": 195 },
+        { "t": 8.25,  "x": 0.75, "y": 0,    "z": 6.6,  "giro": 200 },
+        { "t": 9.45,  "x": 0.75, "y": 0,    "z": 6.6,  "giro": 200 },
+        { "t": 9.75,  "x": 0.8,  "y": 0,    "z": 6.75, "giro": 200 },
+        { "t": 10.19, "x": 0.8,  "y": 0,    "z": 6.75, "giro": 200 },
+        { "t": 10.2,  "x": -3.25, "y": 1.38, "z": -45.25, "giro": 25 },
+        { "t": 13.3,  "x": -3.25, "y": 1.38, "z": -45.25, "giro": 25 },
+        { "t": 13.31, "x": 0.35, "y": 0.78, "z": -23.7, "giro": 180 },
+        { "t": 15,    "x": 0.35, "y": 0.78, "z": -23.7, "giro": 180 }
+      ],
+      "acoes": [
+        { "tipo": "pula", "de": 6.15, "ate": 6.75 },
+        { "tipo": "anda", "de": 6.75, "ate": 8.25, "passos": 6 },
+        { "tipo": "recua", "de": 9.4, "ate": 9.95 },
+        { "tipo": "senta", "de": 10.2, "ate": 13.3 },
+        { "tipo": "ergue", "de": 13.85, "ate": 14.4 }
+      ] },
+    { "tipo": "cachorro",
+      "caminho": [
+        { "t": 0,     "x": 1.0,  "y": 0, "z": 8.7,  "giro": 205 },
+        { "t": 6.4,   "x": 1.0,  "y": 0, "z": 8.7,  "giro": 205 },
+        { "t": 8.1,   "x": 0.15, "y": 0, "z": 5.1,  "giro": 190 },
+        { "t": 9.0,   "x": 0.15, "y": 0, "z": 5.1,  "giro": 190 },
+        { "t": 9.45,  "x": 0.25, "y": 0, "z": 5.55, "giro": 190 },
+        { "t": 10.19, "x": 0.25, "y": 0, "z": 5.55, "giro": 190 },
+        { "t": 10.2,  "x": -2.6, "y": 1.42, "z": -45.0, "giro": 345 },
+        { "t": 13.3,  "x": -2.6, "y": 1.42, "z": -45.0, "giro": 345 },
+        { "t": 13.31, "x": 1.0, "y": 0.8, "z": -23.55, "giro": 175 },
+        { "t": 15,    "x": 1.0, "y": 0.8, "z": -23.55, "giro": 175 }
+      ],
+      "acoes": [
+        { "tipo": "anda", "de": 6.4, "ate": 8.1, "passos": 9 },
+        { "tipo": "cava", "de": 8.35, "ate": 9.0 },
+        { "tipo": "puxa", "de": 9.0, "ate": 9.45 },
+        { "tipo": "abana", "de": 9.5, "ate": 10.2 },
+        { "tipo": "senta", "de": 10.2, "ate": 13.3 },
+        { "tipo": "abana", "de": 13.9, "ate": 15 }
+      ] },
+    { "tipo": "mosquete",
+      "pontos": [
+        { "t": 0,    "pos": [0.15, 0.07, 4.7],  "giro": [0.5, 190] },
+        { "t": 9.05, "pos": [0.15, 0.07, 4.7],  "giro": [0.5, 190] },
+        { "t": 9.45, "pos": [0.2, 0.06, 5.12],  "giro": [-0.04, 190] },
+        { "t": 9.6,  "pos": [0.2, 0.04, 5.12],  "giro": [0.0, 190] }
+      ],
+      "nota": "pos = ponta da coronha (onde o cachorro morde); giro = [inclinação para baixo, giro em graus]; a baioneta aponta para longe do cachorro",
+      "brilho": { "de": 9.6, "ate": 10.05 },
+      "lama": { "de": 8.35, "ate": 9.0, "x": 0.15, "z": 4.75 } }
+  ],
+
+  "legenda": { "y": 0.75, "tam": 62, "largura": 940 },
+  "legendas": [
+    { "de": 0.3,   "ate": 1.9,   "texto": "MARÇO DE 1848." },
+    { "de": 1.9,   "ate": 3.5,   "texto": "UMA NOITE, O NIÁGARA SE CALOU." },
+    { "de": 3.7,   "ate": 5.75,  "texto": "O VENTO TRANCOU O RIO COM O GELO DO LAGO." },
+    { "de": 5.95,  "ate": 8.2,   "texto": "DE MANHÃ, O POVO ANDOU NO LEITO SECO." },
+    { "de": 8.35,  "ate": 10.1,  "texto": "ACHARAM MOSQUETES E BAIONETAS NA LAMA." },
+    { "de": 10.25, "ate": 12.1,  "texto": "POR UM DIA, A CATARATA SÓ PINGOU." },
+    { "de": 12.3,  "ate": 13.3,  "texto": "ENTÃO O GELO ROMPEU," },
+    { "de": 13.45, "ate": 14.9,  "texto": "E O ESTRONDO VOLTOU." }
+  ],
+
+  "filme": { "grao": 0.035, "vinheta": 0.32, "bloom": 0.9, "borda": 0.06, "contorno": 3.2 },
+
+  "musica": {
+    "acordes": [
+      { "t": 0,     "notas": ["A2", "E3", "C4"] },
+      { "t": 3.6,   "notas": ["F2", "C3", "A3"] },
+      { "t": 5.85,  "notas": ["C3", "G3", "E4"] },
+      { "t": 8.3,   "notas": ["G2", "D3", "B3"] },
+      { "t": 10.2,  "notas": ["A2", "E3", "C4"] },
+      { "t": 12.2,  "notas": ["D3", "A3", "F4"] },
+      { "t": 13.35, "notas": ["C3", "G3", "E4"] }
+    ],
+    "passo": 0.375,
+    "caixinha": ["E5", null, "A5", "C6", "B5", null, "A5", null, "E5", null, "G5", "A5", "E5", null, null, null,
+                 "C5", null, "E5", "G5", "F5", null, "E5", null, "D5", null, "E5", "C5", "A4", null, null, null,
+                 "E5", null, "A5", "C6", "B5", null, "G5", null],
+    "volPad": 0.06,
+    "volCaixa": 0.07,
+    "final": ["A4", "C5", "E5", "A5"]
+  }
+}

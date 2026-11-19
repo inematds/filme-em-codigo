@@ -1,0 +1,407 @@
+{
+  "titulo": "Chuva de néon",
+  "nota": "Começa na rua, num carrinho de comida soltando vapor debaixo da chuva. A câmera sobe rápido pela fachada de uma torre, passando por dezenas de salas acesas, cruza o telhado e mostra a cidade inteira até o horizonte, com carros voadores e letreiros. Só o título aparece na tela.",
+  "duracao": 9,
+  "fps": 30,
+  "semente": 23,
+  "acende": 0.6,
+  "apaga": 0.6,
+  "nevoa": 0.0032,
+  "luzSala": 0.85,
+  "tremor": 0.035,
+  "tempos": {
+    "sobe": 2.7,
+    "revela": 5.7
+  },
+  "cores": {
+    "ceuAlto": "#070a1c",
+    "ceuBaixo": "#2a2350",
+    "nuvem": "#4a4680",
+    "nevoa": "#141a36",
+    "brilhoCidade": "#5a2a6e",
+    "torre": "#0b0e17",
+    "fundoPlaca": "#07060c",
+    "asfalto": "#0a0b10",
+    "calcada": "#1a1c26",
+    "faixa": "#e8b23a",
+    "chuva": "#a9c8ff",
+    "vapor": "#b9a8d8",
+    "neons": [
+      "#ff3fb0",
+      "#28e8ff",
+      "#ffb03a",
+      "#a565ff",
+      "#3dffb0"
+    ],
+    "salas": [
+      "#ffc070",
+      "#ff7ab8",
+      "#5fe3ff",
+      "#a98cff",
+      "#ffd9a0",
+      "#ff9a6a"
+    ],
+    "carrinho": "#1a3a46",
+    "toldo": [
+      "#ff3f9a",
+      "#efe4ff"
+    ],
+    "lanterna": "#ffa640",
+    "cozinheiro": "#2b3350",
+    "farol": "#fff2dc",
+    "lanternaCarro": "#ff3050",
+    "casco": "#11131c"
+  },
+  "camera": [
+    {
+      "t": 0.0,
+      "pos": [
+        0.5,
+        1.5,
+        8.5
+      ],
+      "olha": [
+        -4.0,
+        1.4,
+        -2.0
+      ],
+      "fov": 48
+    },
+    {
+      "t": 2.6,
+      "pos": [
+        -0.5,
+        1.7,
+        5.5
+      ],
+      "olha": [
+        -7.5,
+        1.9,
+        0.8
+      ],
+      "fov": 48
+    },
+    {
+      "t": 3.4,
+      "pos": [
+        4.5,
+        6.0,
+        2.0
+      ],
+      "olha": [
+        -9.0,
+        10.0,
+        0.5
+      ],
+      "fov": 60
+    },
+    {
+      "t": 4.7,
+      "pos": [
+        6.0,
+        36.0,
+        1.0
+      ],
+      "olha": [
+        -9.0,
+        41.0,
+        0.0
+      ],
+      "fov": 60
+    },
+    {
+      "t": 5.6,
+      "pos": [
+        1.0,
+        67.0,
+        0.5
+      ],
+      "olha": [
+        -20.0,
+        71.0,
+        -1.0
+      ],
+      "fov": 57
+    },
+    {
+      "t": 6.8,
+      "pos": [
+        -9.0,
+        88.0,
+        2.0
+      ],
+      "olha": [
+        -75.0,
+        74.0,
+        -25.0
+      ],
+      "fov": 56
+    },
+    {
+      "t": 9.0,
+      "pos": [
+        -18.0,
+        96.0,
+        3.0
+      ],
+      "olha": [
+        -95.0,
+        76.0,
+        -42.0
+      ],
+      "fov": 57
+    }
+  ],
+  "pecas": [
+    {
+      "tipo": "titulo",
+      "texto": "Chuva de néon",
+      "t": 0.5,
+      "dur": 2.3
+    },
+    {
+      "tipo": "cidade",
+      "raio": 720,
+      "quadra": 34,
+      "alturas": [
+        14,
+        110
+      ],
+      "alturaRua": [
+        36,
+        95
+      ],
+      "arranhaCeus": 0.07,
+      "alturaMax": 240,
+      "acesas": [
+        0.3,
+        0.75
+      ],
+      "faixasNeon": 0.3,
+      "clareira": {
+        "x": -70,
+        "z": -20,
+        "raio": 100,
+        "alturaMax": 58
+      }
+    },
+    {
+      "tipo": "rua",
+      "largura": 12,
+      "calcada": 3,
+      "molhado": 0.6,
+      "reflexoAte": 16
+    },
+    {
+      "tipo": "torre",
+      "x": -17.0,
+      "z": 0,
+      "largura": 16.0,
+      "fundo": 20,
+      "altura": 64,
+      "janela": 0,
+      "acesas": 0.86,
+      "faixa": 1,
+      "letreiros": [
+        {
+          "y": 9,
+          "z": -6.5,
+          "altura": 7,
+          "simbolos": 2,
+          "cor": 0
+        },
+        {
+          "y": 20,
+          "z": 6.0,
+          "altura": 3.2,
+          "deitado": true,
+          "simbolos": 9,
+          "cor": 1
+        },
+        {
+          "y": 31,
+          "z": -5.0,
+          "altura": 10,
+          "simbolos": 5,
+          "cor": 3,
+          "pisca": true
+        },
+        {
+          "y": 44,
+          "z": 5.5,
+          "altura": 3.0,
+          "deitado": true,
+          "simbolos": 12,
+          "cor": 0
+        },
+        {
+          "y": 54,
+          "z": -6.0,
+          "altura": 8,
+          "simbolos": 14,
+          "cor": 1
+        }
+      ]
+    },
+    {
+      "tipo": "carrinho",
+      "x": -7.3,
+      "z": 1.0,
+      "gira": 0,
+      "corPainel": 2,
+      "corPlaca": 0
+    },
+    {
+      "tipo": "vapor",
+      "x": 2.5,
+      "z": -16,
+      "forca": 1
+    },
+    {
+      "tipo": "vapor",
+      "x": -1.2,
+      "z": -48,
+      "forca": 1.3
+    },
+    {
+      "tipo": "letreiros",
+      "rua": 70,
+      "cidade": 420
+    },
+    {
+      "tipo": "holograma",
+      "x": -170,
+      "y": 150,
+      "z": -95,
+      "raio": 26,
+      "cor": 1,
+      "t": 5.4,
+      "gira": 0.4,
+      "vira": 1.0
+    },
+    {
+      "tipo": "holograma",
+      "x": -230,
+      "y": 120,
+      "z": 40,
+      "raio": 18,
+      "cor": 0,
+      "t": 5.8,
+      "gira": -0.6,
+      "vira": 1.4
+    },
+    {
+      "tipo": "holograma",
+      "x": -120,
+      "y": 105,
+      "z": -150,
+      "raio": 16,
+      "cor": 2,
+      "anel": false,
+      "simbolos": 7,
+      "t": 6.0,
+      "vira": 0.6
+    },
+    {
+      "tipo": "holograma",
+      "x": -300,
+      "y": 160,
+      "z": -60,
+      "raio": 22,
+      "cor": 3,
+      "anel": false,
+      "simbolos": 11,
+      "t": 6.2,
+      "vira": 1.2
+    },
+    {
+      "tipo": "trafego",
+      "pistas": 20,
+      "carros": 10,
+      "alturas": [
+        40,
+        130
+      ],
+      "velocidade": [
+        25,
+        45
+      ]
+    },
+    {
+      "tipo": "chuva",
+      "gotas": 5000,
+      "caixa": 30,
+      "velocidade": 16,
+      "comprimento": 0.55,
+      "vento": [
+        -0.08,
+        0,
+        0.04
+      ],
+      "brilho": 0.55
+    }
+  ],
+  "filme": {
+    "limiar": 1.0,
+    "brilho": 0.45,
+    "riscos": 0.5,
+    "corRisco": "#7fd8ff",
+    "borrao": 0.35,
+    "distBorrao": 12,
+    "aberracao": 0.006,
+    "gotasLente": 0.8,
+    "grao": 0.05,
+    "exposicao": 1.05,
+    "vinheta": 0.6,
+    "sombra": "#2fb8c8",
+    "luz": "#ff7ad0"
+  },
+  "musica": {
+    "passo": 2.3,
+    "acordes": [
+      [
+        "D3",
+        "A3",
+        "C4",
+        "F4"
+      ],
+      [
+        "Bb2",
+        "F3",
+        "A3",
+        "D4"
+      ],
+      [
+        "G2",
+        "D3",
+        "F3",
+        "Bb3"
+      ],
+      [
+        "A2",
+        "E3",
+        "G3",
+        "C#4"
+      ]
+    ],
+    "grave": "D2",
+    "arpejo": [
+      "D5",
+      "A5",
+      "F5",
+      "C6",
+      "A5",
+      "E6"
+    ],
+    "passagens": [
+      [
+        6.3,
+        0.5
+      ],
+      [
+        7.6,
+        -0.4
+      ]
+    ]
+  }
+}
