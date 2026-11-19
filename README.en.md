@@ -2,6 +2,24 @@
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
+[![Film in code: new scene, same face](guia/assets/banner-en.jpg)](https://inematds.github.io/filme-em-codigo/guia/en/)
+
+**Change your character’s clothes and setting without the AI changing their face.** The method is called
+**one engine per style**: approve the character once, then reuse them in as many films as you like.
+
+## 📖 Guide
+
+To understand what the kit does and how it can change your day (without the technical details):
+**https://inematds.github.io/filme-em-codigo/guia/en/**
+
+## What it is
+
+Tired of asking for a new outfit and getting a different character? In this free kit, Claude writes
+an **artist** in code who knows how to draw a style, and a short scene **sheet**: who appears,
+where, when, and what they do. For a new film, you change the sheet and keep the artist, so the
+face stays the same. It’s for anyone who wants to make animated films without knowing how to
+program. You need Claude Code (or Codex) and an ordinary computer, no graphics card.
+
 <sub>The example engines in this kit were written by Claude Fable 5.2.</sub>
 
 > The other documents and ready-to-use prompts in this kit are in Portuguese. This README is a translation.
@@ -48,7 +66,25 @@ Same engine, same code files. Only `historia.json` changed.
 Lia has the same face in both because the same code draws her. In `fundo-pintado`, the engine has
 about 46 KB of code; each story is under 1 KB.
 
-## What you need
+## How to get started (without being technical)
+
+Open Claude Code or Codex in a folder on your computer and paste this (replace the part in brackets):
+
+```text
+Read the "filme-em-codigo" kit at https://github.com/inematds/filme-em-codigo (the README explains everything, including installation).
+I want an animated film with this character: [describe who they are, where they are, what time it is, and what they are doing].
+Before doing anything, answer me in plain English:
+1. Which of the 4 ways to animate fits my idea, and why?
+2. What does my computer need to make the film?
+3. What won't the method be able to do for my idea?
+Don't install or create anything yet. Show me the plan and wait for me to say yes.
+```
+
+---
+
+## Technical installation
+
+### What you need
 
 | What | What it’s for | How to check |
 |---|---|---|
@@ -59,7 +95,7 @@ about 46 KB of code; each story is under 1 KB.
 
 There’s no `npm install`. three.js (for the 3D example) is already in `vendor/three`.
 
-## Get started
+### Get started
 
 ```bash
 git clone https://github.com/inematds/filme-em-codigo.git
@@ -200,9 +236,9 @@ Photorealism, realistic human faces, fights, dancing, or speech with synchronize
 
 ## Related kits
 
-- **video-codigo**: video in HTML/Canvas with local voice synchronized to each word — https://inematds.github.io/video-codigo/guia/
-- **sincronia-em-codigo**: a single clock for image, counter, and sound; series from a spreadsheet — https://inematds.github.io/sincronia-em-codigo/guia/
-- **estilo-em-skill**: a video’s style becomes a reusable skill — https://inematds.github.io/estilo-em-skill/guia/
+- **video-codigo**: video in HTML/Canvas with local voice synchronized to each word — https://inematds.github.io/video-codigo/guia/en/
+- **sincronia-em-codigo**: a single clock for image, counter, and sound; series from a spreadsheet — https://inematds.github.io/sincronia-em-codigo/guia/en/
+- **estilo-em-skill**: a video’s style becomes a reusable skill — https://inematds.github.io/estilo-em-skill/guia/en/
 
 Open-source code repositories that support this method, checked one by one: [REFERENCIAS.md](REFERENCIAS.md).
 

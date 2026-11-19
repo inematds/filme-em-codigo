@@ -11,3 +11,4 @@ frames/
 !guia/assets/*.png
 .DS_Store
 *.log
+!capa/capa.png

@@ -2,6 +2,24 @@
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
+[![Película en código: otra escena, mismo rostro](guia/assets/banner-es.jpg)](https://inematds.github.io/filme-em-codigo/guia/es/)
+
+**Cambia la ropa y el lugar de tu personaje sin que la IA le cambie el rostro.** El método se llama
+**un motor por estilo**: apruebas al personaje una vez y lo reutilizas en tantas películas como quieras.
+
+## 📖 Guía
+
+Para entender qué hace el kit y cómo cambia tu día (sin parte técnica):
+**https://inematds.github.io/filme-em-codigo/guia/es/**
+
+## Qué es
+
+¿Cansado de pedir solo ropa nueva y recibir otro personaje? En este kit gratis, Claude escribe
+un **dibujante** en código, que sabe dibujar un estilo, y una **ficha** breve de la escena: quién
+aparece, dónde, a qué hora y qué hace. Para una película nueva, cambias la ficha y el dibujante se
+queda, por eso el rostro no cambia. Sirve para quien quiere hacer una película animada sin saber
+programar. Necesitas Claude Code (o Codex) y una computadora común, sin tarjeta gráfica.
+
 <sub>Los motores de ejemplo de este kit fueron escritos por Claude Fable 5.2.</sub>
 
 > Los demás documentos y las solicitudes listas de este kit están en portugués. Este README es una traducción.
@@ -48,7 +66,25 @@ El mismo motor, los mismos archivos de código. Solo cambió `historia.json`.
 Lia tiene el mismo rostro en las dos porque el mismo código la dibuja. En `fundo-pintado`, el
 motor tiene cerca de 46 KB de código; cada historia tiene menos de 1 KB.
 
-## Lo que necesitas
+## Cómo empezar (sin ser técnico)
+
+Abre Claude Code o Codex en una carpeta de tu computadora y pega esto (cambia la parte entre corchetes):
+
+```text
+Lee el kit "filme-em-codigo" en https://github.com/inematds/filme-em-codigo (el README lo explica todo, incluida la instalación).
+Quiero una película animada con este personaje: [describe quién es, dónde está, qué hora es y qué hace].
+Antes de hacer cualquier cosa, respóndeme en español sencillo:
+1. ¿Cuál de las 4 formas de animar combina con mi idea y por qué?
+2. ¿Qué necesita tener mi computadora para hacer la película?
+3. ¿Qué no podrá hacer el método con mi idea?
+Todavía no instales ni crees nada. Muéstrame el plan y espera a que te diga que sí.
+```
+
+---
+
+## Instalación técnica
+
+### Lo que necesitas
 
 | Qué | Para qué | Cómo comprobarlo |
 |---|---|---|
@@ -59,7 +95,7 @@ motor tiene cerca de 46 KB de código; cada historia tiene menos de 1 KB.
 
 No hay `npm install`. three.js (para el ejemplo 3D) ya está en `vendor/three`.
 
-## Empezar
+### Empezar
 
 ```bash
 git clone https://github.com/inematds/filme-em-codigo.git
@@ -200,9 +236,9 @@ Fotorrealismo, rostros humanos realistas, peleas, baile, habla con la boca sincr
 
 ## Kits relacionados
 
-- **video-codigo**: video en HTML/Canvas con voz local sincronizada con la palabra — https://inematds.github.io/video-codigo/guia/
-- **sincronia-em-codigo**: reloj único para imagen, contador y sonido; series a partir de una hoja de cálculo — https://inematds.github.io/sincronia-em-codigo/guia/
-- **estilo-em-skill**: el estilo de un video se convierte en una skill reutilizable — https://inematds.github.io/estilo-em-skill/guia/
+- **video-codigo**: video en HTML/Canvas con voz local sincronizada con la palabra — https://inematds.github.io/video-codigo/guia/es/
+- **sincronia-em-codigo**: reloj único para imagen, contador y sonido; series a partir de una hoja de cálculo — https://inematds.github.io/sincronia-em-codigo/guia/es/
+- **estilo-em-skill**: el estilo de un video se convierte en una skill reutilizable — https://inematds.github.io/estilo-em-skill/guia/es/
 
 Repositorios de código abierto que sirven para este método, revisados uno por uno: [REFERENCIAS.md](REFERENCIAS.md).
 

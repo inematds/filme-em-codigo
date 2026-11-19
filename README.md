@@ -2,6 +2,24 @@
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
+[![Filme em código: outra cena, mesmo rosto](guia/assets/banner.jpg)](https://inematds.github.io/filme-em-codigo/guia/)
+
+**Troque a roupa e o lugar da sua personagem sem a IA mudar o rosto dela.** O método se chama
+**um motor por estilo**: você aprova a personagem uma vez e reaproveita em quantos filmes quiser.
+
+## 📖 Guia
+
+Para entender o que o kit faz e como ele muda o seu dia (sem parte técnica):
+**https://inematds.github.io/filme-em-codigo/guia/**
+
+## O que é
+
+Cansou de pedir só uma roupa nova e receber outra personagem? Neste kit grátis, o Claude escreve
+um **desenhista** em código, que sabe desenhar um estilo, e uma **ficha** curta da cena: quem
+aparece, onde, que hora e o que faz. Para um filme novo, você troca a ficha e o desenhista fica,
+por isso o rosto não muda. Serve para quem quer fazer filme animado sem saber programar. Precisa
+do Claude Code (ou do Codex) e de um computador comum, sem placa de vídeo.
+
 <sub>Os motores de exemplo deste kit foram escritos pelo Claude Fable 5.2.</sub>
 
 Você pede um vídeo para a IA e a personagem muda de rosto a cada tomada, o filme acaba em poucos
@@ -46,7 +64,25 @@ Mesmo motor, mesmos arquivos de código. Só o `historia.json` mudou.
 A Lia tem o mesmo rosto nas duas porque é o mesmo código que a desenha. No `fundo-pintado`, o
 motor tem cerca de 46 KB de código; cada história tem menos de 1 KB.
 
-## O que você precisa
+## Como começar (sem ser técnico)
+
+Abra o Claude Code, ou o Codex, numa pasta do seu computador e cole (troque a parte entre colchetes):
+
+```text
+Leia o kit "filme-em-codigo" em https://github.com/inematds/filme-em-codigo (o README explica tudo, inclusive a instalação).
+Quero um filme animado com esta personagem: [descreva quem é, onde está, que hora é e o que faz].
+Antes de fazer qualquer coisa, me responda em português simples:
+1. Qual dos 4 jeitos de animar combina com a minha ideia, e por quê?
+2. O que o meu computador precisa ter para fazer o filme?
+3. O que o método não vai conseguir fazer na minha ideia?
+Não instale nem crie nada ainda. Mostre o plano e espere eu dizer sim.
+```
+
+---
+
+## Instalação técnica
+
+### O que você precisa
 
 | O quê | Para quê | Como conferir |
 |---|---|---|
@@ -57,7 +93,7 @@ motor tem cerca de 46 KB de código; cada história tem menos de 1 KB.
 
 Não tem `npm install`. A three.js (para o exemplo 3D) já está em `vendor/three`.
 
-## Começar
+### Começar
 
 ```bash
 git clone https://github.com/inematds/filme-em-codigo.git
