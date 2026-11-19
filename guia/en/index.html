@@ -120,6 +120,11 @@
   .tl li::after{content:"";position:absolute;left:15px;top:36px;bottom:4px;width:2px;background:var(--line)}
   .tl li:last-child::after{display:none}
   .tl b{font-family:Sora}
+  /* demo em vídeo */
+  .demo video,.demo .demo-poster{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#000}
+  .demo .demo-poster{display:none}
+  @media (prefers-reduced-motion: reduce){.demo video{display:none}.demo .demo-poster{display:block}}
+  .tag{display:inline-block;font-size:.72rem;font-family:Sora;font-weight:600;border-radius:999px;padding:.1em .6em;margin-bottom:.5em;background:var(--tint);color:var(--txt);border:1px solid var(--line)}
 </style>
 </head>
 <body>
@@ -138,6 +143,7 @@
     <a class="sec opt" href="#como">How it works</a>
     <a class="sec" href="#comecar">How to get started</a>
     <a class="sec" href="#prova">The proof</a>
+    <a class="sec opt" href="#referencias">Tools</a>
     <span class="lang"><a href="../">PT</a><a class="on" href="./">EN</a><a href="../es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Switch theme" title="Switch theme">🌙</button>
     <a class="btn" href="https://github.com/inematds/filme-em-codigo" target="_blank" rel="noopener">GitHub</a>
@@ -164,7 +170,7 @@
 
 <section id="resumo" class="resumo"><div class="wrap">
   <span class="chip">In one sentence</span>
-  <p>Tired of asking for just a new outfit and getting a different character? In this free kit, Claude writes an <strong>artist</strong> in code that knows how to draw one style, and a short <strong>sheet</strong> for the scene: who appears, where, what time, and what they do. For a new film, you change the sheet and the artist stays the same, so the face doesn’t change. It’s for anyone who wants to make an animated film without knowing how to program. You need Claude Code (or Codex) and a regular computer, without a graphics card.</p>
+  <p>Tired of asking for just a new outfit and getting a different character? In this free kit, Claude writes an <strong>artist</strong> in code (what the kit calls the <strong>engine</strong>) that knows how to draw one style, and a short <strong>sheet</strong> for the scene: who appears, where, what time, and what they do. For a new film, you change the sheet and the artist stays the same, so the face doesn’t change. It’s for anyone who wants to make an animated film without knowing how to program. You can get started on Claude's website, without installing anything, or with Claude Code (or Codex) on a regular computer, without a graphics card.</p>
   <figure style="margin:22px 0 0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="../assets/banner-grade-en.jpg" alt="Film in code: AI changes the face, one artist per style, the sheet says who and where, the same prompt gives the same video, ask AI to analyze, free on inema.club" loading="lazy" style="width:100%;display:block"></figure>
 </div></section>
 
@@ -218,6 +224,11 @@
   <span class="chip">Video</span>
   <h2>Understand it in just a few minutes</h2>
 <!-- VIDEO: entra o explicavideo do projeto quando publicado -->
+  <figure class="quadro demo" style="margin-top:22px">
+    <video src="../assets/lia-demo.mp4" poster="../assets/lia-demo.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Lia on the hill in uniform, then at the beach in a dress and hat, with the same face"></video>
+    <img class="demo-poster" src="../assets/lia-demo.jpg" alt="Lia on the hill in uniform" loading="lazy">
+    <figcaption>The same Lia in two films: only the sheet changed. The full explainer video will be here soon.</figcaption>
+  </figure>
 </div></section>
 
 <section id="como"><div class="wrap">
@@ -239,7 +250,7 @@
     <figure class="quadro"><img src="../assets/cabana-3d.jpg" alt="3D model of a cabin in the snow with a campfire and aurora" loading="lazy"><figcaption><b>🏠 Model with a camera</b><br>A small 3D world with light and shadow, with the camera moving through it. Good for places and journeys.</figcaption></figure>
     <figure class="quadro"><img src="../assets/marionete.jpg" alt="Illustration of a young woman hanging clothes on a clothesline, with pieces that move" loading="lazy"><figcaption><b>🧵 Rag doll (puppet)</b><br>A finished drawing comes to life by moving just a few parts: clothes on the line, hair, a cat’s tail.</figcaption></figure>
   </div>
-  <div class="card" style="margin-top:16px"><h3>📚 Style recipes in Portuguese</h3><p>The kit includes a recipe library in the format “same style, your idea”: you choose the style, write your idea in one or two sentences (who, where, what happens), and send it. Only the 4 styles above have an artist ready and tested; the others are recipes for you to ask for your own.</p></div>
+  <div class="card" style="margin-top:16px"><h3>📚 Style recipes in Portuguese</h3><p>The kit includes 31 "same style, your idea" recipes, divided among the 4 ways to animate: 12 paper cut-outs, 6 stages with a painted backdrop, 10 models with a camera, and 3 puppets. Choose a style, write your idea in one or two sentences (who, where, what happens), and send it. Only the 4 styles above have a ready-to-use, tested artist; the others are recipes you can use to ask for your own.</p><p><a href="https://github.com/inematds/filme-em-codigo/tree/main/prompts/estilos" target="_blank" rel="noopener">See the 31 recipes</a></p></div>
 
   <h3 style="margin-top:42px;font-size:1.3rem">What the method doesn’t promise</h3>
   <div class="grid g2" style="margin-top:14px">
@@ -263,13 +274,24 @@
   <span class="chip">How to get started</span>
   <h2>Ask your AI to <span class="amb">analyze the kit</span></h2>
   <p class="sub">You don’t need to install anything by hand or understand the files. The AI reads the kit, listens to your idea, and tells you what can be done.</p>
+  <div class="card" style="margin-bottom:16px"><h3>0. Choose where to start</h3>
+    <div class="grid g2" style="margin-top:12px">
+      <div><p><b>🌐 Without a terminal, on Claude's website</b></p><ul>
+        <li>On Claude's website or in the app, open Settings and turn on file creation and code execution.</li>
+        <li>Start a new conversation.</li>
+        <li>On the kit's recipes page, copy a style recipe and the rules block on the same page. Replace [SUA IDEIA AQUI] with your idea.</li>
+        <li>Paste everything into the conversation and download the MP4 Claude gives you.</li>
+      </ul><p style="margin-top:10px"><a href="https://github.com/inematds/filme-em-codigo/tree/main/prompts/estilos" target="_blank" rel="noopener">Open the recipes</a></p></div>
+      <div><p><b>💻 With Claude Code or Codex</b></p><p>Claude Code is Claude working in a folder on your computer: it reads, creates, and runs the kit's files right there. It requires a paid Claude plan and can be downloaded from <a href="https://claude.com/claude-code" target="_blank" rel="noopener">claude.com/claude-code</a>. Codex is OpenAI's equivalent. For this option, follow steps 1 to 3 below.</p></div>
+    </div>
+  </div>
   <div class="grid g3">
     <div class="card"><h3>1. Open your AI</h3><p>Claude Code or Codex, open in a folder on your computer.</p></div>
     <div class="card"><h3>2. Paste the prompt below</h3><p>Replace the part in brackets with your character. The AI reads the kit and explains in plain English, without changing anything yet.</p></div>
     <div class="card"><h3>3. Say yes to what makes sense</h3><p>It shows you the plan. You approve it, it prepares the kit, and shows you the first frames.</p></div>
   </div>
   <div class="pedido" style="margin-top:20px;position:relative">
-<pre id="pedidoTxt" style="white-space:pre-wrap">Read the "filme-em-codigo" kit at https://github.com/inematds/filme-em-codigo (the README explains everything, including installation).
+<pre id="pedidoTxt" style="white-space:pre-wrap">Read the "filme-em-codigo" kit at https://github.com/inematds/filme-em-codigo (the technical instructions page, the README, explains everything, including installation).
 I want an animated film with this character: [describe who they are, where they are, what time it is, and what they do].
 Before doing anything, answer me in plain English:
 1. Which of the 4 ways to animate best fits my idea, and why?
@@ -278,15 +300,15 @@ Before doing anything, answer me in plain English:
 Don’t install or create anything yet. Show me the plan and wait for me to say yes.</pre>
     <button class="btn" id="copiarPedido" style="margin-top:10px">Copy the prompt</button>
   </div>
-  <div class="card" style="margin-top:16px"><h3>🛠️ Are you technical and prefer to install it by hand?</h3><p>The steps with the commands, what needs to be installed, and the tests are in the GitHub README.</p><p><a class="btn ghost" href="https://github.com/inematds/filme-em-codigo/blob/main/README.en.md#technical-installation" target="_blank" rel="noopener">View the technical installation instructions</a></p></div>
+  <div class="card" style="margin-top:16px"><h3>🛠️ Are you technical and prefer to install it by hand?</h3><p>The steps with the commands, what needs to be installed, and the tests are on the kit's technical instructions page on GitHub (the site where the kit is stored).</p><p><a class="btn ghost" href="https://github.com/inematds/filme-em-codigo/blob/main/README.en.md#technical-installation" target="_blank" rel="noopener">View the technical installation instructions</a></p></div>
 </div></section>
 
 <section id="prova"><div class="wrap">
   <span class="chip">The proof</span>
   <h2>We measured it for real, <span class="amb">without a graphics card</span></h2>
-  <p class="sub">The kit’s four sample films were made on this computer and measured one by one: 10 seconds of film each, in Full HD.</p>
+  <p class="sub">The kit’s four sample films were made on this computer and measured one by one: 10 seconds of film each, at YouTube quality (1080p).</p>
   <div class="stats">
-    <div class="stat"><b>~25 s</b><span>for 10-second Lia to be ready, in Full HD, using only the processor</span></div>
+    <div class="stat"><b>~25 s</b><span>for 10-second Lia to be ready, at YouTube quality (1080p), using only the processor</span></div>
     <div class="stat"><b>2 sheets</b><span>Lia on the hill and Lia on the beach: the same artist, the same face</span></div>
     <div class="stat"><b>same frames</b><span>generating the same film again produced the same frames, verified by the kit’s test</span></div>
   </div>
@@ -300,7 +322,22 @@ Don’t install or create anything yet. Show me the plan and wait for me to say 
     <figure class="quadro"><img src="../assets/raposa-lua.jpg" alt="Paper fox at night, with moon" loading="lazy"><figcaption><b>Sheet 1</b> · night, moon, pine trees, fireflies</figcaption></figure>
     <figure class="quadro"><img src="../assets/raposa-sol.jpg" alt="The same paper fox in the morning, with sun" loading="lazy"><figcaption><b>Sheet 2</b> · morning, sun, round trees</figcaption></figure>
   </div>
-  <p class="fonte">Measured on 11/19/2026 on a computer with a 20-core processor and no graphics card. The four films were ready in 25 to 45 seconds each. Times vary on other computers, and “same film, same frames” was verified on the same computer and in the same browser.</p>
+  <p class="fonte">Measured on 11/19/2026 on a computer without a graphics card: each film used an average of about 3 processor cores (the 3D scene needs more, almost 11). The four films were ready in 25 to 45 seconds each. It takes longer on a simpler computer, and "same film, same frames" was checked on the same computer and in the same browser.</p>
+</div></section>
+
+<section id="referencias"><div class="wrap">
+  <span class="chip">Where the parts come from</span>
+  <h2>The <span class="amb">open tools behind it</span></h2>
+  <p class="sub">The kit relies on free, open tools made by communities. Two of them work inside the kit; the others follow the same idea and help you go further.</p>
+  <div class="grid g3">
+    <div class="card"><span class="tag">Used in the kit</span><h3>🧊 three.js</h3><p>Draws 3D worlds in your browser. It builds the model of the cabin in the snow.</p><p style="margin-top:10px"><a href="https://github.com/mrdoob/three.js" target="_blank" rel="noopener">mrdoob/three.js on GitHub</a></p></div>
+    <div class="card"><span class="tag">Used in the kit</span><h3>🎞️ FFmpeg</h3><p>Combines the frames and sound into a video file. It's the last step in every film made with the kit.</p><p style="margin-top:10px"><a href="https://github.com/FFmpeg/FFmpeg" target="_blank" rel="noopener">FFmpeg/FFmpeg on GitHub</a></p></div>
+    <div class="card"><span class="tag">Same idea</span><h3>⚛️ Remotion</h3><p>Makes videos by writing web pages: each frame is calculated from its number, just like in the kit.</p><p style="margin-top:10px"><a href="https://github.com/remotion-dev/remotion" target="_blank" rel="noopener">remotion-dev/remotion on GitHub</a></p></div>
+    <div class="card"><span class="tag">Same idea</span><h3>📐 Manim</h3><p>Animates shapes and equations with precision; it started out for math videos. This is the version maintained by the community.</p><p style="margin-top:10px"><a href="https://github.com/ManimCommunity/manim" target="_blank" rel="noopener">ManimCommunity/manim on GitHub</a></p></div>
+    <div class="card"><span class="tag">Same idea</span><h3>✏️ rough.js</h3><p>Gives drawings a hand-drawn look, with scribbles and hatching. It works well with paper cut-outs.</p><p style="margin-top:10px"><a href="https://github.com/rough-stuff/rough" target="_blank" rel="noopener">rough-stuff/rough on GitHub</a></p></div>
+    <div class="card"><span class="tag">Same idea</span><h3>🎬 HyperFrames</h3><p>Turns a web page into a video, with a timeline and editing ready to go. It can be used instead of the kit's editing tools.</p><p style="margin-top:10px"><a href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener">heygen-com/hyperframes on GitHub</a></p></div>
+  </div>
+  <p class="fonte"><a href="https://github.com/inematds/filme-em-codigo/blob/main/REFERENCIAS.md" target="_blank" rel="noopener">See all 26 references</a>, with what each one does and its license.</p>
 </div></section>
 
 <section id="irmaos"><div class="wrap">
@@ -325,7 +362,7 @@ Don’t install or create anything yet. Show me the plan and wait for me to say 
     <div class="card"><h3>Can I use my own drawing?</h3><p>Yes. The "rag doll" method takes a finished illustration and moves only the parts you choose, without redrawing it.</p></div>
     <div class="card"><h3>Does it work for real people?</h3><p>No. The method is strongest with styles: paper, anime, miniature, puppet. For a filmed look, use the hybrid approach, with the film made from code as a blueprint.</p></div>
     <div class="card"><h3>Does it work with Codex?</h3><p>The kit was designed for Claude Code, but Codex can also read the kit and tell you whether it works for your idea.</p></div>
-    <div class="card"><h3>Will it work on my computer?</h3><p>It was tested on a Linux computer. Windows and Mac weren't tested; the AI checks what yours needs during the analysis.</p></div>
+    <div class="card"><h3>Will it work on my computer?</h3><p>This was measured on one computer without a graphics card. The film takes longer on a simpler computer. Windows and Mac were not tested; the AI checks what yours needs during the analysis.</p></div>
   </div>
   <p class="fonte" style="margin-top:22px;font-size:1rem">What about you: <strong>which character would you put in an entire series with the same look?</strong> The kit is free on inema.club, right on the internet.</p>
 </div></section>
@@ -333,7 +370,7 @@ Don’t install or create anything yet. Show me the plan and wait for me to say 
 
 <footer>
   <div class="wrap">
-    <div class="pill">Claude Code</div><div class="pill">Codex</div><div class="pill">no graphics card</div><div class="pill">MIT</div>
+    <div class="pill">Claude Code</div><div class="pill">Codex</div><div class="pill">no graphics card</div><div class="pill">open source: free to use and modify</div>
     <p style="margin-top:18px">Film in code · free on inema.club, right on the internet ·
       <a href="https://github.com/inematds/filme-em-codigo">inematds/filme-em-codigo</a> ·
       <a href="https://inema.club">INEMA.CLUB</a></p>
@@ -350,6 +387,10 @@ Don’t install or create anything yet. Show me the plan and wait for me to say 
       t.textContent=light?'☀️':'🌙';
       try{ localStorage.setItem(KEY, light?'light':'dark'); }catch(e){}
     });
+  })();
+  (function(){
+    if(!window.matchMedia||!matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    document.querySelectorAll('.demo video').forEach(function(v){ v.removeAttribute('autoplay'); v.preload='none'; try{v.pause();}catch(e){} });
   })();
   (function(){
     var bt=document.getElementById('copiarPedido'), tx=document.getElementById('pedidoTxt');

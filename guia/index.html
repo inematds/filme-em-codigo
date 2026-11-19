@@ -120,6 +120,11 @@
   .tl li::after{content:"";position:absolute;left:15px;top:36px;bottom:4px;width:2px;background:var(--line)}
   .tl li:last-child::after{display:none}
   .tl b{font-family:Sora}
+  /* demo em vídeo */
+  .demo video,.demo .demo-poster{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#000}
+  .demo .demo-poster{display:none}
+  @media (prefers-reduced-motion: reduce){.demo video{display:none}.demo .demo-poster{display:block}}
+  .tag{display:inline-block;font-size:.72rem;font-family:Sora;font-weight:600;border-radius:999px;padding:.1em .6em;margin-bottom:.5em;background:var(--tint);color:var(--txt);border:1px solid var(--line)}
 </style>
 </head>
 <body>
@@ -138,6 +143,7 @@
     <a class="sec opt" href="#como">Como funciona</a>
     <a class="sec" href="#comecar">Como começar</a>
     <a class="sec" href="#prova">A prova</a>
+    <a class="sec opt" href="#referencias">Ferramentas</a>
     <span class="lang"><a class="on" href="./">PT</a><a href="en/">EN</a><a href="es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
     <a class="btn" href="https://github.com/inematds/filme-em-codigo" target="_blank" rel="noopener">GitHub</a>
@@ -163,7 +169,7 @@
 <main>
 <section id="resumo" class="resumo"><div class="wrap">
   <span class="chip">Em uma frase</span>
-  <p>Cansou de pedir só uma roupa nova e receber outra personagem? Neste kit grátis, o Claude escreve um <strong>desenhista</strong> em código, que sabe desenhar um estilo, e uma <strong>ficha</strong> curta da cena: quem aparece, onde, que hora e o que faz. Para um filme novo, você troca a ficha e o desenhista fica, por isso o rosto não muda. Serve para quem quer fazer filme animado sem saber programar. Precisa do Claude Code (ou do Codex) e de um computador comum, sem placa de vídeo.</p>
+  <p>Cansou de pedir só uma roupa nova e receber outra personagem? Neste kit grátis, o Claude escreve um <strong>desenhista</strong> em código (é o que o kit chama de <strong>motor</strong>), que sabe desenhar um estilo, e uma <strong>ficha</strong> curta da cena: quem aparece, onde, que hora e o que faz. Para um filme novo, você troca a ficha e o desenhista fica, por isso o rosto não muda. Serve para quem quer fazer filme animado sem saber programar. Dá para começar no próprio site do Claude, sem instalar nada, ou no Claude Code (ou no Codex), num computador comum, sem placa de vídeo.</p>
   <figure style="margin:22px 0 0;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="assets/banner-grade.jpg" alt="Filme em código: a IA troca o rosto, um desenhista por estilo, a ficha com quem e onde, o mesmo pedido dá o mesmo vídeo, peça para a IA analisar, grátis no inema.club" loading="lazy" style="width:100%;display:block"></figure>
 </div></section>
 
@@ -217,6 +223,11 @@
   <span class="chip">Vídeo</span>
   <h2>Entenda em poucos minutos</h2>
 <!-- VIDEO: entra o explicavideo do projeto quando publicado -->
+  <figure class="quadro demo" style="margin-top:22px">
+    <video src="assets/lia-demo.mp4" poster="assets/lia-demo.jpg" autoplay muted loop playsinline preload="metadata" aria-label="A Lia na colina, de uniforme, e depois na praia, de vestido e chapéu, com o mesmo rosto"></video>
+    <img class="demo-poster" src="assets/lia-demo.jpg" alt="A Lia na colina, de uniforme" loading="lazy">
+    <figcaption>A mesma Lia, dois filmes: só a ficha mudou. O vídeo explicativo completo entra aqui em breve.</figcaption>
+  </figure>
 </div></section>
 
 <section id="como"><div class="wrap">
@@ -238,7 +249,7 @@
     <figure class="quadro"><img src="assets/cabana-3d.jpg" alt="Maquete 3D de uma cabana na neve com fogueira e aurora" loading="lazy"><figcaption><b>🏠 Maquete com câmera</b><br>Um pequeno mundo 3D com luz e sombra, e a câmera passeando dentro. Bom para lugares e passeios.</figcaption></figure>
     <figure class="quadro"><img src="assets/marionete.jpg" alt="Ilustração de uma moça pendurando roupa no varal, com peças que mexem" loading="lazy"><figcaption><b>🧵 Boneco de pano (marionete)</b><br>Um desenho pronto ganha vida mexendo só algumas partes: roupa no varal, cabelo, rabo do gato.</figcaption></figure>
   </div>
-  <div class="card" style="margin-top:16px"><h3>📚 Receitas de estilo em português</h3><p>O kit traz uma biblioteca de receitas no formato "mesmo estilo, sua ideia": você escolhe o estilo, escreve a sua ideia em uma ou duas frases (quem, onde, o que acontece) e manda. Só os 4 estilos acima já têm desenhista pronto e testado; os outros são receitas para você pedir o seu.</p></div>
+  <div class="card" style="margin-top:16px"><h3>📚 Receitas de estilo em português</h3><p>O kit traz 31 receitas no formato "mesmo estilo, sua ideia", divididas pelos 4 jeitos: 12 de recorte de papel, 6 de palco com cenário pintado, 10 de maquete com câmera e 3 de boneco de pano. Você escolhe o estilo, escreve a sua ideia em uma ou duas frases (quem, onde, o que acontece) e manda. Só os 4 estilos acima já têm desenhista pronto e testado; os outros são receitas para você pedir o seu.</p><p><a href="https://github.com/inematds/filme-em-codigo/tree/main/prompts/estilos" target="_blank" rel="noopener">Ver as 31 receitas</a></p></div>
 
   <h3 style="margin-top:42px;font-size:1.3rem">O que o método não promete</h3>
   <div class="grid g2" style="margin-top:14px">
@@ -262,13 +273,24 @@
   <span class="chip">Como começar</span>
   <h2>Peça para a sua IA <span class="amb">analisar o kit</span></h2>
   <p class="sub">Você não precisa instalar nada à mão nem entender os arquivos. A própria IA lê o kit, ouve a sua ideia e diz o que dá para fazer.</p>
+  <div class="card" style="margin-bottom:16px"><h3>0. Escolha por onde começar</h3>
+    <div class="grid g2" style="margin-top:12px">
+      <div><p><b>🌐 Sem terminal, no site do Claude</b></p><ul>
+        <li>No site ou no aplicativo do Claude, abra as Configurações e ligue a criação de arquivos e a execução de código.</li>
+        <li>Abra uma conversa nova.</li>
+        <li>Na página de receitas do kit, copie uma receita de estilo e o bloco de regras que está na mesma página. Troque [SUA IDEIA AQUI] pela sua ideia.</li>
+        <li>Cole tudo na conversa e baixe o MP4 que o Claude entregar.</li>
+      </ul><p style="margin-top:10px"><a href="https://github.com/inematds/filme-em-codigo/tree/main/prompts/estilos" target="_blank" rel="noopener">Abrir as receitas</a></p></div>
+      <div><p><b>💻 Com o Claude Code ou o Codex</b></p><p>O Claude Code é o Claude que trabalha numa pasta do seu computador: ele lê, cria e roda os arquivos do kit ali mesmo. Precisa de um plano pago do Claude e se baixa em <a href="https://claude.com/claude-code" target="_blank" rel="noopener">claude.com/claude-code</a>. O Codex é o equivalente da OpenAI. Por esse caminho, siga os passos 1 a 3 abaixo.</p></div>
+    </div>
+  </div>
   <div class="grid g3">
     <div class="card"><h3>1. Abra a sua IA</h3><p>O Claude Code, ou o Codex, aberto numa pasta do seu computador.</p></div>
     <div class="card"><h3>2. Cole o pedido abaixo</h3><p>Troque a parte entre colchetes pela sua personagem. A IA lê o kit e explica em português simples, sem mudar nada ainda.</p></div>
     <div class="card"><h3>3. Diga sim ao que fizer sentido</h3><p>Ela mostra o plano. Você aprova, ela prepara o kit e mostra os primeiros quadros.</p></div>
   </div>
   <div class="pedido" style="margin-top:20px;position:relative">
-<pre id="pedidoTxt" style="white-space:pre-wrap">Leia o kit "filme-em-codigo" em https://github.com/inematds/filme-em-codigo (o README explica tudo, inclusive a instalação).
+<pre id="pedidoTxt" style="white-space:pre-wrap">Leia o kit "filme-em-codigo" em https://github.com/inematds/filme-em-codigo (a página de instruções técnicas, o README, explica tudo, inclusive a instalação).
 Quero um filme animado com esta personagem: [descreva quem é, onde está, que hora é e o que faz].
 Antes de fazer qualquer coisa, me responda em português simples:
 1. Qual dos 4 jeitos de animar combina com a minha ideia, e por quê?
@@ -277,15 +299,15 @@ Antes de fazer qualquer coisa, me responda em português simples:
 Não instale nem crie nada ainda. Mostre o plano e espere eu dizer sim.</pre>
     <button class="btn" id="copiarPedido" style="margin-top:10px">Copiar o pedido</button>
   </div>
-  <div class="card" style="margin-top:16px"><h3>🛠️ É técnico e prefere instalar à mão?</h3><p>Os passos com os comandos, o que precisa estar instalado e os testes estão no README do GitHub.</p><p><a class="btn ghost" href="https://github.com/inematds/filme-em-codigo#instalação-técnica" target="_blank" rel="noopener">Ver a instalação técnica</a></p></div>
+  <div class="card" style="margin-top:16px"><h3>🛠️ É técnico e prefere instalar à mão?</h3><p>Os passos com os comandos, o que precisa estar instalado e os testes estão na página de instruções técnicas do kit, no GitHub (o site onde o kit fica guardado).</p><p><a class="btn ghost" href="https://github.com/inematds/filme-em-codigo#instalação-técnica" target="_blank" rel="noopener">Ver a instalação técnica</a></p></div>
 </div></section>
 
 <section id="prova"><div class="wrap">
   <span class="chip">A prova</span>
   <h2>Medimos de verdade, <span class="amb">sem placa de vídeo</span></h2>
-  <p class="sub">Os quatro filmes de exemplo do kit foram feitos neste computador e medidos um por um: 10 segundos de filme cada, em Full HD.</p>
+  <p class="sub">Os quatro filmes de exemplo do kit foram feitos neste computador e medidos um por um: 10 segundos de filme cada, na qualidade do YouTube (1080p).</p>
   <div class="stats">
-    <div class="stat"><b>~25 s</b><span>para a Lia de 10 segundos ficar pronta, em Full HD, só com o processador</span></div>
+    <div class="stat"><b>~25 s</b><span>para a Lia de 10 segundos ficar pronta, na qualidade do YouTube (1080p), só com o processador</span></div>
     <div class="stat"><b>2 fichas</b><span>a Lia na colina e a Lia na praia: o mesmo desenhista, o mesmo rosto</span></div>
     <div class="stat"><b>mesmos quadros</b><span>gerar o mesmo filme de novo deu os mesmos quadros, conferido pelo teste do kit</span></div>
   </div>
@@ -299,7 +321,22 @@ Não instale nem crie nada ainda. Mostre o plano e espere eu dizer sim.</pre>
     <figure class="quadro"><img src="assets/raposa-lua.jpg" alt="Raposa de papel à noite, com lua" loading="lazy"><figcaption><b>Ficha 1</b> · noite, lua, pinheiros, vaga-lumes</figcaption></figure>
     <figure class="quadro"><img src="assets/raposa-sol.jpg" alt="A mesma raposa de papel de manhã, com sol" loading="lazy"><figcaption><b>Ficha 2</b> · manhã, sol, árvores redondas</figcaption></figure>
   </div>
-  <p class="fonte">Medido em 19/11/2026 num computador com processador de 20 núcleos e sem placa de vídeo. Os quatro filmes ficaram prontos entre 25 e 45 segundos cada. Em outro computador os tempos mudam, e "mesmo filme, mesmos quadros" foi conferido no mesmo computador e no mesmo navegador.</p>
+  <p class="fonte">Medido em 19/11/2026 num computador sem placa de vídeo: cada filme usou em média uns 3 núcleos do processador (a cena 3D pede mais, quase 11). Os quatro filmes ficaram prontos entre 25 e 45 segundos cada. Num computador mais simples leva mais tempo, e "mesmo filme, mesmos quadros" foi conferido no mesmo computador e no mesmo navegador.</p>
+</div></section>
+
+<section id="referencias"><div class="wrap">
+  <span class="chip">De onde vêm as peças</span>
+  <h2>As ferramentas <span class="amb">abertas por trás</span></h2>
+  <p class="sub">O kit se apoia em ferramentas gratuitas e abertas, feitas por comunidades. Duas delas trabalham dentro do kit; as outras seguem a mesma ideia e servem para ir além.</p>
+  <div class="grid g3">
+    <div class="card"><span class="tag">Usada no kit</span><h3>🧊 three.js</h3><p>Desenha mundos 3D dentro do navegador. É ela que monta a maquete da cabana na neve.</p><p style="margin-top:10px"><a href="https://github.com/mrdoob/three.js" target="_blank" rel="noopener">mrdoob/three.js no GitHub</a></p></div>
+    <div class="card"><span class="tag">Usada no kit</span><h3>🎞️ FFmpeg</h3><p>Junta os quadros e o som num arquivo de vídeo. É o último passo de todo filme do kit.</p><p style="margin-top:10px"><a href="https://github.com/FFmpeg/FFmpeg" target="_blank" rel="noopener">FFmpeg/FFmpeg no GitHub</a></p></div>
+    <div class="card"><span class="tag">Mesma ideia</span><h3>⚛️ Remotion</h3><p>Faz vídeo escrevendo páginas da internet: cada quadro é calculado pelo número dele, como no kit.</p><p style="margin-top:10px"><a href="https://github.com/remotion-dev/remotion" target="_blank" rel="noopener">remotion-dev/remotion no GitHub</a></p></div>
+    <div class="card"><span class="tag">Mesma ideia</span><h3>📐 Manim</h3><p>Anima formas e contas com precisão; nasceu para vídeos de matemática. Esta é a versão cuidada pela comunidade.</p><p style="margin-top:10px"><a href="https://github.com/ManimCommunity/manim" target="_blank" rel="noopener">ManimCommunity/manim no GitHub</a></p></div>
+    <div class="card"><span class="tag">Mesma ideia</span><h3>✏️ rough.js</h3><p>Dá ao desenho um traço com cara de feito à mão, com rabisco e hachura. Combina com o recorte de papel.</p><p style="margin-top:10px"><a href="https://github.com/rough-stuff/rough" target="_blank" rel="noopener">rough-stuff/rough no GitHub</a></p></div>
+    <div class="card"><span class="tag">Mesma ideia</span><h3>🎬 HyperFrames</h3><p>Transforma uma página da internet em vídeo, com linha do tempo e montagem prontas. Serve como alternativa à montagem do kit.</p><p style="margin-top:10px"><a href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener">heygen-com/hyperframes no GitHub</a></p></div>
+  </div>
+  <p class="fonte"><a href="https://github.com/inematds/filme-em-codigo/blob/main/REFERENCIAS.md" target="_blank" rel="noopener">Ver as 26 referências</a>, com o que cada uma faz e a licença de uso.</p>
 </div></section>
 
 <section id="irmaos"><div class="wrap">
@@ -324,7 +361,7 @@ Não instale nem crie nada ainda. Mostre o plano e espere eu dizer sim.</pre>
     <div class="card"><h3>Dá para usar um desenho meu?</h3><p>Dá. O jeito "boneco de pano" pega uma ilustração pronta e mexe só as partes que você escolher, sem redesenhar.</p></div>
     <div class="card"><h3>Serve para gente de verdade?</h3><p>Não. O método é forte em estilo: papel, anime, maquete, marionete. Para cara de filmagem, use o caminho híbrido, com o filme do código como planta.</p></div>
     <div class="card"><h3>Funciona com o Codex?</h3><p>O kit foi pensado para o Claude Code, mas o Codex também consegue ler o kit e dizer se ele serve para a sua ideia.</p></div>
-    <div class="card"><h3>Funciona no meu computador?</h3><p>Foi medido num computador com Linux. Windows e Mac não foram testados; a IA confere o que o seu precisa na análise.</p></div>
+    <div class="card"><h3>Funciona no meu computador?</h3><p>Foi medido num computador só, sem placa de vídeo. Num computador mais simples o filme leva mais tempo. Windows e Mac não foram testados; a IA confere o que o seu precisa na análise.</p></div>
   </div>
   <p class="fonte" style="margin-top:22px;font-size:1rem">E você: <strong>qual personagem você colocaria numa série inteira com a mesma cara?</strong> O kit está grátis no inema.club, direto na internet.</p>
 </div></section>
@@ -332,7 +369,7 @@ Não instale nem crie nada ainda. Mostre o plano e espere eu dizer sim.</pre>
 
 <footer>
   <div class="wrap">
-    <div class="pill">Claude Code</div><div class="pill">Codex</div><div class="pill">sem placa de vídeo</div><div class="pill">MIT</div>
+    <div class="pill">Claude Code</div><div class="pill">Codex</div><div class="pill">sem placa de vídeo</div><div class="pill">código aberto: pode usar e modificar</div>
     <p style="margin-top:18px">Filme em código · grátis no inema.club, direto na internet ·
       <a href="https://github.com/inematds/filme-em-codigo">inematds/filme-em-codigo</a> ·
       <a href="https://inema.club">INEMA.CLUB</a></p>
@@ -349,6 +386,10 @@ Não instale nem crie nada ainda. Mostre o plano e espere eu dizer sim.</pre>
       t.textContent=light?'☀️':'🌙';
       try{ localStorage.setItem(KEY, light?'light':'dark'); }catch(e){}
     });
+  })();
+  (function(){
+    if(!window.matchMedia||!matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    document.querySelectorAll('.demo video').forEach(function(v){ v.removeAttribute('autoplay'); v.preload='none'; try{v.pause();}catch(e){} });
   })();
   (function(){
     var bt=document.getElementById('copiarPedido'), tx=document.getElementById('pedidoTxt');
