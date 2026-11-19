@@ -97,8 +97,9 @@ Quem faz: 🧠 você com o Claude · ⚙️ script · 🤖 `claude -p` (o Claude
 Passo 8 sem conversa:
 
 ```bash
-claude -p "Use o motor de exemplos/camadas-planas. Não altere o motor. Crie historia-3.json: \
-a raposa numa floresta de outono, de dia. Renderize com ferramentas/render.mjs e diga o caminho do MP4."
+# --allowedTools deixa o Claude ler, criar arquivo e rodar só o render (testado em 19/11/2026)
+claude -p "Use o motor de exemplos/camadas-planas. Não altere o motor. Crie exemplos/camadas-planas/historia-3.json: a raposa numa floresta de outono, de dia. Renderize com node ferramentas/render.mjs exemplos/camadas-planas --historia historia-3.json e diga o caminho do MP4." \
+  --allowedTools "Read" "Write" "Glob" "Grep" "Bash(node ferramentas/render.mjs:*)"
 ```
 
 ## Os 4 jeitos de animar

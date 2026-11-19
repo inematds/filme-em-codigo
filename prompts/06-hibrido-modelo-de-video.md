@@ -28,8 +28,8 @@ detalhe.
 2. No gerador, escolha o modo que aceita **vídeo de referência** (às vezes chamado
    "video to video" ou "restyle").
 3. Duração igual à do seu filme. Resolução: a que você vai publicar.
-4. Cole um dos pedidos abaixo. Geradores entendem melhor em inglês; os dois modelos estão
-   nas duas línguas.
+4. Cole um dos pedidos abaixo. Se o gerador responder melhor em inglês, peça ao Claude:
+   "traduza este pedido para inglês, sem mudar o sentido".
 5. Compare com o original, lado a lado. Se a personagem mudou de rosto ou a câmera mudou,
    descarte e gere de novo com o pedido curto.
 
@@ -42,12 +42,6 @@ no lugar das cores chapadas. Mantenha a mesma personagem, a mesma pose, o mesmo 
 mesmo enquadramento. Estilo: [guache / acetato / recorte de papel]. Não deixe fotorrealista.
 ```
 
-```text
-Re-render this shot using my video as the reference. Smoother, more fluid motion, visible
-film grain, painterly shading and a rim light on the face, depth and texture instead of
-flat fills. Keep the same character, pose, timing and framing. Style: [gouache / cel
-animation / cut paper]. Do not make it photorealistic.
-```
 
 ## Pedido longo (quando o curto mudou coisa demais)
 
