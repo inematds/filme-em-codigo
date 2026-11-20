@@ -320,7 +320,7 @@ Filme.criar({
               const t0 = p.t + i * 0.12; if (t < t0) return;
               const m = bs[i], destaque = it.cor !== 'ardosia';
               const [nx, ny] = naFolha(m.position.x, 0, m.position.z + p.larg / 2);
-              c.globalAlpha = trecho(t, t0, t0 + 0.15); escreve(it.nome, nx, ny + 52, 32, { cor: destaque ? it.cor : 'cinzaClaro' });
+              c.globalAlpha = trecho(t, t0, t0 + 0.15); escreve(it.nome, nx, ny + 28, 39, { cor: 'branco' });
               const [vx, vy] = naFolha(m.position.x, alt(i, t) + 0.5, m.position.z);
               c.globalAlpha = trecho(t, t0 + p.dur * 0.6, t0 + p.dur); escreve(it.valor, vx, vy - 14, 46, { cor: destaque ? it.cor : 'branco', tabular: true, brilho: destaque ? 16 : 0, peso: 0.2 });
               c.globalAlpha = 1;

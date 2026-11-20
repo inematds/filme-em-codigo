@@ -1,8 +1,9 @@
-| 2026-11-20 | revisão das folhas rodou sem imagem (glob *.png, folhas são .jpg) e o Codex respondeu o modelo | conferir `wc -l` dos lotes antes de chamar o revisor | prompt |
 # Falhas — filme-em-codigo
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 20/11/2026 | legenda dos 20 milhões antecipava o contador em 14 histórias e a multidão de fundo confundia a proporção no recorte-jornal | sincronizar o início da legenda e deixar só o grupo de doze no plano estatístico | prompt |
+| 2026-11-20 | revisão das folhas rodou sem imagem (glob *.png, folhas são .jpg) e o Codex respondeu o modelo | conferir `wc -l` dos lotes antes de chamar o revisor | prompt |
 | 19/11/2026 | vetor-ciencia: aba de pele do gorro do Khan e contorno final do corpo sumiram (várias formas com `beginPath` próprio pintadas por um só `fill`/`stroke`) | lista de formas, pintar uma por uma | prompt |
 | 19/11/2026 | marca-autoral: render completo parou com `IndexSizeError` (raio de `arc` -2e-15 vindo do salto back-ease em x=0) | `Math.max(0, …)` na função `pop` | prompt |
 | 19/11/2026 | anime-3d-cel: blocos de gelo do estouro surgiam do nada no fundo do plano anterior (visíveis 0,9 s antes do estouro, mesmo mundo 3D) | campo `aparece` na história = começo do plano do estouro | prompt |

@@ -71,8 +71,8 @@
   "telas": [
     { "tipo": "contador", "valor": 2530, "rotulo": "ANOS", "x": 540, "y": 250, "tam": 150, "de": 6.35, "ate": 7.4, "some": 8.7 },
     { "tipo": "contador", "valor": 1998, "rotulo": "ANOS", "x": 540, "y": 250, "tam": 150, "de": 8.75, "ate": 9.8, "some": 11.0 },
-    { "tipo": "numerao", "texto": "2.530", "mx": 1750, "my": 560, "dx": -190, "dy": 0, "tam": 120, "de": 11.65, "dur": 0.4, "some": 12.65 },
-    { "tipo": "numerao", "texto": "1.998", "mx": 4029, "my": 560, "dx": -190, "dy": 0, "tam": 120, "de": 11.85, "dur": 0.4, "some": 12.65 }
+    { "tipo": "numerao", "texto": "PIRÂMIDE: 2.530", "mx": 1750, "my": 560, "dx": -95, "dy": 0, "tam": 64, "de": 11.65, "dur": 0.4, "some": 12.65 },
+    { "tipo": "numerao", "texto": "LUA: 1.998", "mx": 4029, "my": 560, "dx": -95, "dy": 0, "tam": 64, "de": 11.85, "dur": 0.4, "some": 12.65 }
   ],
   "legenda": { "y": 1560, "tam": 78, "largura": 900, "segura": 0.55 },
   "legendas": [
