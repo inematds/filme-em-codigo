@@ -2,6 +2,10 @@
 
 | data | o que quebrou | menor correção | prompt \| infra |
 |---|---|---|---|
+| 20/11/2026 | Khan parecia um recorte mesmo com sombra lateral | aplicar luz radial por peça e afinar a borda nos dois planos do líder | prompt |
+| 20/11/2026 | a costa da Eurásia se perdia na grade e o valor romano ainda estava transparente em Q8 | clarear a costa e antecipar a entrada dos valores | prompt |
+| 20/11/2026 | “TRÊS CORAÇÕES” atravessava os olhos durante a aproximação da câmera | reservar uma faixa escura abaixo dos olhos até o fim da fala | prompt |
+| 20/11/2026 | as mãos tinham a mesma aparência após a queimadura | aplicar rubor e curativos nos dois personagens durante o plano | prompt |
 | 20/11/2026 | legenda dos 20 milhões antecipava o contador em 14 histórias e a multidão de fundo confundia a proporção no recorte-jornal | sincronizar o início da legenda e deixar só o grupo de doze no plano estatístico | prompt |
 | 2026-11-20 | revisão das folhas rodou sem imagem (glob *.png, folhas são .jpg) e o Codex respondeu o modelo | conferir `wc -l` dos lotes antes de chamar o revisor | prompt |
 | 19/11/2026 | vetor-ciencia: aba de pele do gorro do Khan e contorno final do corpo sumiram (várias formas com `beginPath` próprio pintadas por um só `fill`/`stroke`) | lista de formas, pintar uma por uma | prompt |

@@ -81,7 +81,13 @@
         const lg = LEGENDAS.find((l) => t >= l.de && t < l.ate); if (!lg) return;
         const sai = limita((Math.min(lg.ate, FIM) - t) / SOME);
         c.setTransform(k, 0, 0, k, 0, 0); c.globalAlpha = 1;
-        const tam = LG.tam, alt = tam * 1.4, y0 = LG.y - (lg.linhas.length - 1) * alt / 2;
+        const tam = LG.tam, alt = tam * 1.4, y0 = (lg.y ?? LG.y) - (lg.linhas.length - 1) * alt / 2;
+        if (lg.fundo) {
+          const largura = Math.max(...lg.linhas.map(ln => largTexto(ln.join(' '), tam))) + 80;
+          c.save(); c.globalAlpha = sai; c.fillStyle = COR(lg.fundo); c.beginPath();
+          c.roundRect((L - largura) / 2, y0 - tam - 20, largura, tam + (lg.linhas.length - 1) * alt + 40, 20);
+          c.fill(); c.restore();
+        }
         let n = 0;
         lg.linhas.forEach((ln, li) => {
           let x = (L - largTexto(ln.join(' '), tam)) / 2;

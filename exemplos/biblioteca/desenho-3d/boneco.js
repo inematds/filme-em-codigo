@@ -93,16 +93,22 @@ export function desenhaBoneco(c, j, e) {
   c.lineTo(lo - 18, ombro - 4); c.quadraticCurveTo(lo, ombro, lo, ombro + 14);
   c.lineTo(lb, barra); c.quadraticCurveTo(0, barra + 8, -lb, barra); c.closePath();
   const corCorpo = tipo === 'jaleco' && !ouro ? '#f7f5ef' : roupa;
-  const luzLateral = (tinta, raio) => {
-    if (!j.sombraLateral) return tinta;
-    const luz = c.createLinearGradient(-raio, 0, raio, 0);
-    luz.addColorStop(0, cor(tinta, 0.18));
-    luz.addColorStop(0.56, tinta);
-    luz.addColorStop(0.7, cor(tinta, -j.sombraLateral));
-    luz.addColorStop(1, cor(tinta, -j.sombraLateral));
-    return luz;
-  };
-  c.fillStyle = luzLateral(corCorpo, lb); c.fill();
+  // Luz alta à esquerda, meia-luz e sombra de forma em cada peça arredondada.
+  function pintarVolume(tinta, x, y, rx, ry) {
+    if (!j.sombraLateral) { c.fillStyle = tinta; c.fill(); return; }
+    c.save(); c.translate(x, y); c.scale(rx, ry);
+    const luz = c.createRadialGradient(-0.42, -0.46, 0.04, -0.15, -0.12, 1.24);
+    luz.addColorStop(0, cor(tinta, 0.46));
+    luz.addColorStop(0.42, cor(tinta, 0.12));
+    luz.addColorStop(0.82, cor(tinta, -j.sombraLateral));
+    luz.addColorStop(1, cor(tinta, -0.22));
+    c.fillStyle = luz; c.fill(); c.restore();
+  }
+  function borda(largura, tinta) {
+    if (!j.sombraLateral) return contornar(c, largura);
+    c.lineWidth = 1.4; c.strokeStyle = cor(tinta, -0.35); c.stroke();
+  }
+  pintarVolume(corCorpo, 0, 326, lb, 120);
   if (tipo === 'listras' && !ouro) { c.save(); c.clip(); c.fillStyle = j.listraCor || '#f4f1ea'; for (let y = ombro + 6; y < barra; y += 26) c.fillRect(-80, y, 160, 12); c.restore(); }
   if ((tipo === 'camisa' || tipo === 'jaleco' || tipo === 'terno' || tipo === 'colete') && !ouro) {
     // camisa / gola por baixo, gravata
@@ -116,7 +122,7 @@ export function desenhaBoneco(c, j, e) {
   c.moveTo(-lo, ombro + 14); c.quadraticCurveTo(-lo, ombro, -lo + 18, ombro - 4);
   c.lineTo(lo - 18, ombro - 4); c.quadraticCurveTo(lo, ombro, lo, ombro + 14);
   c.lineTo(lb, barra); c.quadraticCurveTo(0, barra + 8, -lb, barra); c.closePath();
-  contornar(c, 7);
+  borda(7, corCorpo);
   if (e.fuligem) { c.fillStyle = 'rgba(40,30,30,0.55)'; for (const [x, y, r] of [[-20, 300, 16], [24, 340, 12], [-30, 380, 10]]) { c.beginPath(); c.arc(x, y, r, 0, 7); c.fill(); } }
 
   // ---- braços (manga grossa com contorno) e mãos ----
@@ -125,7 +131,7 @@ export function desenhaBoneco(c, j, e) {
   const bracos = [[ombros[0], ce, me], [ombros[1], cd, md]];
   for (const [o, co, mo] of bracos) {
     c.beginPath(); c.moveTo(o[0], o[1]); c.lineTo(co[0], co[1]); c.lineTo(mo[0], mo[1]);
-    c.strokeStyle = TINTA; c.lineWidth = 26; c.stroke();
+    c.strokeStyle = j.sombraLateral ? cor(manga, -0.42) : TINTA; c.lineWidth = j.sombraLateral ? 19 : 26; c.stroke();
     c.strokeStyle = manga; c.lineWidth = 14; c.stroke();
   }
   // objeto na mão
@@ -135,7 +141,15 @@ export function desenhaBoneco(c, j, e) {
     desenhaObjeto(c, obj, ox, oy - (e.bracos === 'segura' ? 0 : 6), j);
   }
   for (const [, , mo] of bracos) {
-    c.beginPath(); c.arc(mo[0], mo[1], 12, 0, 7); c.fillStyle = pele; c.fill(); contornar(c, 5);
+    c.beginPath(); c.arc(mo[0], mo[1], e.curativo ? 17 : 12, 0, 7);
+    if (e.curativo) { c.fillStyle = '#da614a'; c.fill(); }
+    else pintarVolume(pele, ...mo, 12, 12);
+    borda(5, pele);
+    if (e.curativo) {
+      c.save(); c.clip(); c.translate(...mo); c.rotate(-0.4);
+      c.fillStyle = '#fff1ca'; c.fillRect(-18, -8, 36, 15);
+      c.fillStyle = '#ccab80'; c.fillRect(-4, -8, 3, 15); c.restore();
+    }
   }
   if (e.bracos === 'joinha') { c.beginPath(); c.moveTo(md[0] + 2, md[1] - 8); c.lineTo(md[0] + 2, md[1] - 26); c.lineWidth = 14; c.strokeStyle = TINTA; c.stroke(); c.lineWidth = 7; c.strokeStyle = pele; c.stroke(); }
 
@@ -144,7 +158,7 @@ export function desenhaBoneco(c, j, e) {
   // cabelo comprido / coque atrás da cabeça
   const cabCor = ouro ? '#e0a820' : (j.cabeloCor || '#2a2028');
   if (j.cabelo === 'comprido') { c.beginPath(); c.ellipse(0, hy + 30, R + 10, R + 30, 0, 0, 7); c.fillStyle = cabCor; c.fill(); contornar(c, 6); }
-  c.beginPath(); c.arc(0, hy, R, 0, Math.PI * 2); c.fillStyle = luzLateral(pele, R); c.fill(); contornar(c, 7);
+  c.beginPath(); c.arc(0, hy, R, 0, Math.PI * 2); pintarVolume(pele, 0, hy, R, R); borda(7, pele);
   if (e.fuligem) { c.fillStyle = 'rgba(40,30,30,0.6)'; for (const [x, y, r] of [[-40, 120, 18], [34, 176, 20], [10, 104, 13], [-30, 190, 12]]) { c.beginPath(); c.arc(x, y, r, 0, 7); c.fill(); } }
   // cabelo de cima
   if (j.cabelo && j.cabelo !== 'careca' && j.cabelo !== 'comprido') {
@@ -155,7 +169,7 @@ export function desenhaBoneco(c, j, e) {
   }
   // barba (embaixo da boca) e bigode
   const barbaCor = ouro ? '#c99a18' : (j.barba || null);
-  if (barbaCor) { c.beginPath(); c.moveTo(-R + 14, hy + 22); c.quadraticCurveTo(-46, hy + 110, 0, hy + 128); c.quadraticCurveTo(46, hy + 110, R - 14, hy + 22); c.quadraticCurveTo(0, hy + 66, -R + 14, hy + 22); c.fillStyle = barbaCor; c.fill(); contornar(c, 5); }
+  if (barbaCor) { c.beginPath(); c.moveTo(-R + 14, hy + 22); c.quadraticCurveTo(-46, hy + 110, 0, hy + 128); c.quadraticCurveTo(46, hy + 110, R - 14, hy + 22); c.quadraticCurveTo(0, hy + 66, -R + 14, hy + 22); pintarVolume(barbaCor, 0, hy + 65, 65, 68); borda(5, barbaCor); }
 
   // ---- olhos ----
   const ex = 27, ey = hy - 4;
@@ -198,8 +212,9 @@ export function desenhaBoneco(c, j, e) {
   c.beginPath();
   if (ch === 'pele') { // gorro de pele: copa colorida + barra peluda
     c.moveTo(-56, hy - 46); c.quadraticCurveTo(-50, hy - 118, 0, hy - 120); c.quadraticCurveTo(50, hy - 118, 56, hy - 46); c.closePath();
-    c.fillStyle = j.chapeuTopo ? (ouro ? '#e8b51e' : j.chapeuTopo) : cor(chc, -0.25); c.fill(); contornar(c, 6);
-    c.beginPath(); c.roundRect(-74, hy - 64, 148, 34, 16); c.fillStyle = chc; c.fill(); contornar(c, 6);
+    const topo = j.chapeuTopo ? (ouro ? '#e8b51e' : j.chapeuTopo) : cor(chc, -0.25);
+    pintarVolume(topo, 0, hy - 81, 56, 48); borda(6, topo);
+    c.beginPath(); c.roundRect(-74, hy - 64, 148, 34, 16); pintarVolume(chc, 0, hy - 47, 75, 22); borda(6, chc);
   } else if (ch === 'quepe' || ch === 'oficial') {
     c.moveTo(-60, hy - 52); c.quadraticCurveTo(-64, hy - 108, 0, hy - 112); c.quadraticCurveTo(64, hy - 108, 60, hy - 52); c.closePath(); c.fillStyle = chc; c.fill(); contornar(c, 6);
     c.beginPath(); c.ellipse(10, hy - 50, 70, 12, 0, 0, 7); c.fillStyle = ch === 'oficial' ? '#1e1a22' : cor(chc, -0.3); c.fill(); contornar(c, 5);
@@ -229,7 +244,7 @@ export function desenhaBoneco(c, j, e) {
 export function criarAtelie(THREE) {
   const guardadas = new Map();
   function textura(jeito, idJeito, e) {
-    const chave = idJeito + '|' + [e.cara, e.bracos, e.objeto, e.olho, e.quadro, e.dourado ? 1 : 0, e.fuligem ? 1 : 0, e.gema ? 1 : 0, e.montado ? 1 : 0].join(',');
+    const chave = idJeito + '|' + [e.cara, e.bracos, e.objeto, e.olho, e.quadro, e.dourado ? 1 : 0, e.fuligem ? 1 : 0, e.curativo ? 1 : 0, e.gema ? 1 : 0, e.montado ? 1 : 0].join(',');
     let tx = guardadas.get(chave);
     if (!tx) {
       const cv = document.createElement('canvas'); cv.width = W; cv.height = H;

@@ -107,7 +107,7 @@
   "legenda": { "y": 1720, "tam": 76, "largura": 940, "passo": 0.1, "cor": "creme", "fala": "amarelo" },
   "legendas": [
     { "de": 0.25, "ate": 1.45, "texto": "UM POLVO TEM" },
-    { "de": 1.45, "ate": 2.75, "texto": "TRÊS CORAÇÕES" },
+    { "de": 1.45, "ate": 2.95, "y": 1860, "fundo": "marinhoEsc", "texto": "TRÊS CORAÇÕES" },
     { "de": 3.0, "ate": 4.3, "texto": "DOIS NAS BRÂNQUIAS" },
     { "de": 4.3, "ate": 5.7, "texto": "UM PARA O CORPO" },
     { "de": 5.88, "ate": 6.85, "texto": "SANGUE AZUL" },

@@ -51,8 +51,8 @@ node ferramentas/render.mjs exemplos/biblioteca/dados-3d --historia minha-histor
 (o roteiro de Gêngis Khan). A narração foi traduzida uma vez pelo tradutor central e encurtada à mão para 20 s;
 linha do tempo, legendas e sons-chave são os mesmos dos outros 13 estilos.
 
-**Tempo de render medido** (`medida.json`): 51,3 s para 20 s de filme (600 quadros, cerca de 70,5 ms por
-quadro, 3 navegadores, sem GPU; numa rodada anterior, com a máquina mais ocupada, deu 82 s). O MP4 sai com cerca de 13,17 MB. Os quadros dão o mesmo resultado com 1 e
+**Tempo de render medido** (`medida.json`): 50,6 s para 20 s de filme (600 quadros, cerca de 69,5 ms por
+quadro, 3 navegadores, sem GPU; numa rodada anterior, com a máquina mais ocupada, deu 82 s). O MP4 sai com cerca de 13,42 MB. Os quadros dão o mesmo resultado com 1 e
 com 3 navegadores (conferido no filme inteiro em 360x640). Som: média -19,9 dB, pico -2,1 dB; os segundos
 mais altos são o arranhão (14 s), o herói (3 s) e o golpe grave (16 s).
 

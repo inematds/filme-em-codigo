@@ -68,7 +68,7 @@
   },
 
   "elenco": {
-    "lider": { "sombraLateral": 0.38, "roupa": "#c0352a", "roupaTipo": "tunica", "chapeu": "pele", "chapeuCor": "#e2b84a", "chapeuTopo": "#c0352a", "faixa": "#2f5a9a", "barba": "#1e1a1e", "bigode": "#1e1a1e", "pele": "#e8b88a", "alt": 1.15 },
+    "lider": { "sombraLateral": 0.53, "roupa": "#c0352a", "roupaTipo": "tunica", "chapeu": "pele", "chapeuCor": "#e2b84a", "chapeuTopo": "#c0352a", "faixa": "#2f5a9a", "barba": "#1e1a1e", "bigode": "#1e1a1e", "pele": "#e8b88a", "alt": 1.15 },
     "nomadeA": { "roupa": "#3f6fb5", "chapeu": "pele", "chapeuCor": "#a87a4a", "chapeuTopo": "#3f6fb5", "pele": "#e8b88a" },
     "nomadeB": { "roupa": "#7a4fa0", "chapeu": "pele", "chapeuCor": "#c9a24a", "chapeuTopo": "#5a3a7a", "pele": "#d9a070" },
     "nomadeC": { "roupa": "#7d8a3a", "chapeu": "pele", "chapeuCor": "#8a6a44", "chapeuTopo": "#5a6a2a", "pele": "#f0c8a0", "barba": "#3a2a22", "bigode": false },
@@ -97,7 +97,7 @@
   },
 
   "planos": [
-    { "id": "gancho", "de": 0, "ate": 5.0, "cenario": ["estepe", "fundo"],
+    { "id": "gancho", "larguraContorno": 0.65, "de": 0, "ate": 5.0, "cenario": ["estepe", "fundo"],
       "ceu": { "topo": "#ffb46a", "horiz": "#f2c69a" },
       "luz": { "sol": "#ffd9a0", "forca": 2.3, "dir": [-0.6, 0.8, 0.7], "ceu": "#ffd6a8", "chao": "#7a6a4a", "ambiente": 1.25 },
       "luzBoneco": "#ffe9cf", "neblina": { "cor": "#f2c69a", "perto": 30, "longe": 230 },
@@ -226,7 +226,7 @@
         { "tipo": "boneco", "quem": "escavador", "pos": [1.25, 0, 1.9], "estados": [[15.2, "neutro", "aponta"], [16.2, "choque", "alto"]], "pulos": [16.2] }
       ] },
 
-    { "id": "pergunta", "de": 17.0, "ate": 20.0, "cenario": ["estepe", "fundo"],
+    { "id": "pergunta", "larguraContorno": 0.65, "de": 17.0, "ate": 20.0, "cenario": ["estepe", "fundo"],
       "ceu": { "topo": "#ffb46a", "horiz": "#f2c69a" },
       "luz": { "sol": "#ffd9a0", "forca": 2.3, "dir": [-0.6, 0.8, 0.7], "ceu": "#ffd6a8", "chao": "#7a6a4a", "ambiente": 1.25 },
       "luzBoneco": "#ffe9cf", "neblina": { "cor": "#f2c69a", "perto": 30, "longe": 230 },

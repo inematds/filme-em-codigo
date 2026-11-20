@@ -234,7 +234,7 @@ export function criarCatalogo(H, atelie) {
         st.quadro = MEXEM.has(st.bracos) ? Math.floor(te * 5 + h(semente, 2) * 2) % 2 : 0;
         const ciclo = 2.6 + h(semente, 3) * 2, fase = ((te + h(semente, 4) * ciclo) % ciclo);
         st.olho = fase < 0.1 ? 0 : 1;
-        for (const nome of ['dourado', 'fuligem', 'gema']) st[nome] = efeitos[nome] != null && te >= efeitos[nome];
+        for (const nome of ['dourado', 'fuligem', 'curativo', 'gema']) st[nome] = efeitos[nome] != null && te >= efeitos[nome];
         st.montado = !!efeitos.montado;
         mat.map = atelie.textura(jeito, id, st);
         mat.color.set(ctx.plano.luzBoneco || '#ffffff');

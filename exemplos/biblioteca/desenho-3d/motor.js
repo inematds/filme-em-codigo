@@ -124,6 +124,7 @@ Filme.criar({
       const d = Lz.dir || [0.5, 1, 0.7]; sol.position.set(camera.position.x + d[0] * 50, d[1] * 50, camera.position.z + d[2] * 50); sol.target.position.set(camera.position.x, 0, camera.position.z);
       hemi.color.set(Lz.ceu || '#dfe9ff'); hemi.groundColor.set(Lz.chao || '#6f6a5a'); hemi.intensity = Lz.ambiente ?? 1.2;
       cena.fog = P.neblina ? new THREE.Fog(P.neblina.cor || horiz, P.neblina.perto, P.neblina.longe) : null;
+      acab.u.uLarg.value = (P.larguraContorno ?? 3) * (L / 1080);
       // desfoque de fundo nos planos fechados
       acab.u.uDesf.value = P.desfoque ? (P.desfoque.forca ?? 10) : 0;
       acab.u.uFoco.value = P.desfoque && P.desfoque.foco ? P.desfoque.foco : dist;

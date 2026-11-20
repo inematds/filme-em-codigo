@@ -2,6 +2,7 @@
 
 Lição nova vai no TOPO, em uma linha. (Mais recente primeiro.)
 
+- Canvas 2D: para sombrear uma peça com degradê radial elíptico, mantenha a transformação do degradê até o fill do caminho. Restaurar a escala antes de pintar deixa a peça chapada. (20/11/2026)
 - Contadores e pictogramas: confira o instante em que a legenda anuncia o resultado e um quadro após a animação assentar. Uma multidão decorativa atrás das doze figuras também entra na contagem visual. (20/11/2026)
 - Canvas 2D: `retRedondo`, `circulo` e cada forma que começa com `beginPath()` apagam o caminho anterior; uma função que junta várias delas (corpo + cabeça + copa, aba + abas das orelhas) e depois faz um só `fill()`/`stroke()` pinta só a ÚLTIMA (o gorro do Khan saiu sem a aba de pele, o contorno final só com o gorro). Guarde as formas numa lista e pinte uma por uma. (19/11/2026)
 - Troca de cena por máscara (mancha d'água que abre): pinte a cena nova INTEIRA (fundo + peças) numa tela à parte e corte com `destination-in` por uma mancha pintada uma vez ao montar (sem `blur` por quadro); assim as peças da cena que sai somem junto com o fundo dela. E carmim escuro (`#a3172b`) dentro de borda preta de legenda quase não se lê a 360x640: clareie só o destaque da legenda. (19/11/2026)

@@ -160,8 +160,8 @@
       "luzBoneco": "#ffd9b8", "desfoque": { "forca": 13 },
       "camera": { "de": { "pos": [0, 1.7, 4.4], "alvo": [0, 1.5, 0], "rolo": -2 }, "ate": { "pos": [0, 1.7, 4.2], "alvo": [0, 1.5, 0], "rolo": -3 } },
       "pecas": [
-        { "tipo": "boneco", "quem": "mestre", "pos": [-0.45, 0, 0], "estados": [[11.4, "choque", "lado"], [12.4, "preocupado", "lado"]], "efeitos": { "fuligem": 0 } },
-        { "tipo": "boneco", "quem": "cozinheiro", "pos": [0.45, 0, 0.05], "estados": [[11.4, "choque", "alto"], [12.4, "choque", "lado"]], "efeitos": { "fuligem": 0 } },
+        { "tipo": "boneco", "quem": "mestre", "pos": [-0.45, 0, 0], "estados": [[11.4, "choque", "lado"], [12.4, "preocupado", "lado"]], "efeitos": { "fuligem": 0, "curativo": 0 } },
+        { "tipo": "boneco", "quem": "cozinheiro", "pos": [0.45, 0, 0.05], "estados": [[11.4, "choque", "alto"], [12.4, "choque", "lado"]], "efeitos": { "fuligem": 0, "curativo": 0 } },
         { "tipo": "enxame", "n": 18, "forma": "esfera", "tam": [0.12], "cores": ["#6a6070", "#8a8090"], "formas": [ { "tipo": "caixa", "c": [0, 1.85, 0.05], "tam": [1.4, 0.01, 0.2] } ], "movimento": "sobe", "altura": 1.2, "vel": 0.45, "encolhe": true }
       ] },
 

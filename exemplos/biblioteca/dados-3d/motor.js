@@ -322,7 +322,7 @@ Filme.criar({
               const [nx, ny] = naFolha(m.position.x, 0, m.position.z + p.larg / 2);
               c.globalAlpha = trecho(t, t0, t0 + 0.15); escreve(it.nome, nx, ny + 28, 39, { cor: 'branco' });
               const [vx, vy] = naFolha(m.position.x, alt(i, t) + 0.5, m.position.z);
-              c.globalAlpha = trecho(t, t0 + p.dur * 0.6, t0 + p.dur); escreve(it.valor, vx, vy - 14, 46, { cor: destaque ? it.cor : 'branco', tabular: true, brilho: destaque ? 16 : 0, peso: 0.2 });
+              c.globalAlpha = trecho(t, t0, t0 + 0.14); escreve(it.valor, vx, vy - 14, 46, { cor: destaque ? it.cor : 'branco', tabular: true, brilho: destaque ? 16 : 0, peso: 0.2 });
               c.globalAlpha = 1;
             });
           },
@@ -412,7 +412,7 @@ Filme.criar({
       };
       const cx = new THREE.InstancedMesh(geo, mat, cel.length); cx.frustumCulled = false; G.add(cx);
       cel.forEach((_, i) => cx.setColorAt(i, corA.set('#ffffff')));
-      const cTerra = pega('terra'), cCosta = new THREE.Color('#3352b8'), cOuro = pega('ouro'), cVerm = pega('vermelho'), cArd = pega('ardosia');
+      const cTerra = pega('terra'), cCosta = new THREE.Color('#779eea'), cOuro = pega('ouro'), cVerm = pega('vermelho'), cArd = pega('ardosia');
       // ponto que pulsa e anéis
       const [mx, mz] = noMundo(MP.pulso.ponto);
       const ponto = new THREE.Mesh(new THREE.SphereGeometry(0.42, 24, 16), aceso(cor('vermelho'), 0.8)); ponto.position.set(mx, 1.4, mz); G.add(ponto);
