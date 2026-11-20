@@ -29,6 +29,7 @@ um camadas-planas historia.json   8.0
 um camadas-planas historia-2.json 8.0
 um fundo-pintado  historia.json   8.2
 um fundo-pintado  historia-2.json 8.2
+um fundo-pintado  historia-3.json 5.6
 um cena-3d        historia.json   8.6
 um marionete      historia.json   8.0
 echo "Terminei: medidas em exemplos/*/medida*.json e vídeos em $SAIDA/"

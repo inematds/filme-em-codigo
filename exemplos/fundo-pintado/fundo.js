@@ -93,7 +93,7 @@
       : [[640, 610, 900, 470, 120], [1660, 520, 520, 210, 60], [1180, 640, 360, 110, 34], [150, 650, 300, 90, 28], [1890, 660, 280, 70, 22]];
     for (const [cx, base, larg, alt, n] of NUVENS) nuvem(g, k, r, pal, cx, base, larg, alt, n);
 
-    let chaoY, brilhos = [], marY = null;
+    let chaoY, brilhos = [], marY = null, banco = null;
 
     if (local === 'praia') {
       // ----- mar -----
@@ -143,6 +143,97 @@
         const x = X0 + r() * (X1 - X0), y = 930 + r() * 190; g.fillStyle = cor(pal.areia[0], '#ffffff', 0.6, 0.85);
         g.beginPath(); g.ellipse(x, y, 4 + r() * 4, 2.5 + r() * 2, r() * 3, 0, 6.2832); g.fill();
         g.fillStyle = cor(pal.areia[1], '#402040', 0.5, 0.3); g.beginPath(); g.ellipse(x + 3, y + 3, 5, 2, 0, 0, 6.2832); g.fill();
+      }
+    } else if (local === 'parque') {
+      // ----- parque: árvores ao longe, gramado, caminho, poste, sebe e o banco onde ela senta -----
+      const rp = sorteio(semente + 300); // sorteio só do parque
+      chaoY = (x) => 978 + 5 * Math.sin(x * 0.003);
+      for (let i = 0; i < 110; i++) { // fileira de copas ao longe, azuladas pelo ar
+        const x = X0 + i * (X1 - X0) / 110 + rp() * 20, raio = 20 + rp() * 30;
+        g.fillStyle = cor(pal.longe[2], pal.ceu[3], 0.3 + 0.2 * rp()); g.beginPath(); g.arc(x, horizonte - raio * 0.5, raio, 0, 6.2832); g.fill();
+      }
+      const gh = g.createLinearGradient(0, horizonte, 0, Y1); gh.addColorStop(0, cor(pal.capim[1], pal.longe[2], 0.4)); gh.addColorStop(0.35, pal.capim[0]); gh.addColorStop(1, pal.capim[1]);
+      g.fillStyle = gh; g.fillRect(X0, horizonte, X1 - X0, Y1 - horizonte);
+      // caminho de terra batida: vem do canto de baixo à esquerda e some lá no fundo
+      const bordaE = (y) => { const u = (y - horizonte) / (Y1 - horizonte); return 880 - u * u * 900 - u * 120; };
+      const bordaD = (y) => { const u = (y - horizonte) / (Y1 - horizonte); return 905 - u * u * 380 - u * 40; };
+      g.fillStyle = cor('#e8d6ad', pal.longe[2], 0.1); g.beginPath(); g.moveTo(bordaE(horizonte), horizonte);
+      for (let y = horizonte; y <= Y1; y += 8) g.lineTo(bordaE(y), y);
+      for (let y = Y1; y >= horizonte; y -= 8) g.lineTo(bordaD(y), y);
+      g.closePath(); g.fill();
+      for (let i = 0; i < 2600; i++) { // pedrisco do caminho
+        const y = horizonte + Math.pow(rp(), 0.7) * (Y1 - horizonte), a = bordaE(y), b = bordaD(y), x = a + rp() * (b - a), prof = (y - horizonte) / (Y1 - horizonte);
+        g.fillStyle = rp() < 0.5 ? 'rgba(255,255,240,0.35)' : 'rgba(120,90,60,0.25)'; g.fillRect(x, y, 1 + prof * 4 * rp(), 1 + prof * 2 * rp());
+      }
+      const arvore = (x, base, alt, larg, escura) => { // tronco + copa de bolas com luz em cima à esquerda
+        g.fillStyle = 'rgba(20,50,30,0.25)'; g.beginPath(); g.ellipse(x + larg * 0.15, base + 4, larg * 0.55, larg * 0.09, 0, 0, 6.2832); g.fill();
+        g.fillStyle = cor('#6b4a3a', pal.longe[2], escura ? 0.1 : 0.35); g.beginPath(); g.moveTo(x - larg * 0.07, base); g.lineTo(x - larg * 0.04, base - alt * 0.55); g.lineTo(x + larg * 0.04, base - alt * 0.55); g.lineTo(x + larg * 0.07, base); g.closePath(); g.fill();
+        const cy = base - alt * 0.68;
+        for (let i = 0; i < 16; i++) {
+          const a = rp() * 6.28, d = rp() * larg * 0.3, bx = x + Math.cos(a) * d, by = cy + Math.sin(a) * d * 0.7, rr = larg * (0.16 + 0.12 * rp());
+          g.fillStyle = cor(pal.capim[2], escura ? '#0e2a1c' : pal.longe[2], escura ? 0.35 : 0.45); g.beginPath(); g.arc(bx, by, rr, 0, 6.2832); g.fill();
+          g.fillStyle = cor(pal.capim[1], escura ? '#244a2a' : pal.longe[2], 0.35, 0.85); g.beginPath(); g.arc(bx - rr * 0.25, by - rr * 0.3, rr * 0.62, 0, 6.2832); g.fill();
+        }
+      };
+      for (const [x, base, alt, larg] of [[130, 742, 250, 210], [470, 732, 200, 170], [1060, 726, 170, 140], [1240, 736, 230, 190], [1530, 744, 270, 220]]) arvore(x, base, alt, larg, false);
+      // sebe baixa atrás do banco: dá fundo escuro para a madeira e para a Lia
+      for (let i = 0; i < 120; i++) {
+        const x = 900 + rp() * 860, y = 800 + rp() * 26, rr = 22 + rp() * 20;
+        g.fillStyle = cor(pal.capim[2], '#123a2a', 0.3 + 0.3 * rp()); g.beginPath(); g.arc(x, y, rr, 0, 6.2832); g.fill();
+        if (rp() < 0.4) { g.fillStyle = cor(pal.capim[1], pal.capim[2], 0.3, 0.8); g.beginPath(); g.arc(x - rr * 0.3, y - rr * 0.35, rr * 0.5, 0, 6.2832); g.fill(); }
+      }
+      g.fillStyle = cor(pal.capim[1], pal.capim[2], 0.5); g.fillRect(880, 822, 900, 22);
+      // capim do gramado (fora do caminho)
+      g.lineCap = 'round';
+      for (let i = 0; i < 16000; i++) {
+        const y = horizonte + 4 + Math.pow(rp(), 0.8) * (Y1 - horizonte), x = X0 + rp() * (X1 - X0);
+        if (x > bordaE(y) - 4 && x < bordaD(y) + 4) continue;
+        const prof = (y - horizonte) / (Y1 - horizonte), len = 5 + prof * 22 * (0.5 + rp()), tom = rp();
+        g.strokeStyle = cor(tom < 0.5 ? pal.capim[0] : pal.capim[1], tom < 0.2 ? '#f6ffb0' : pal.capim[2], rp() * 0.8, 0.45 + 0.4 * rp());
+        g.lineWidth = 1.2 + prof * 2.2; g.beginPath(); g.moveTo(x, y); g.quadraticCurveTo(x - len * 0.1, y - len * 0.6, x - len * (0.2 + 0.3 * rp()), y - len); g.stroke();
+      }
+      for (let i = 0; i < 220; i++) { // flores no gramado
+        const y = 850 + Math.pow(rp(), 0.7) * 280, x = X0 + rp() * (X1 - X0); if (x > bordaE(y) - 10 && x < bordaD(y) + 10) continue;
+        const raio = 2 + (y - 840) / 300 * 5;
+        g.fillStyle = pal.flor[Math.floor(rp() * pal.flor.length)]; g.beginPath(); g.arc(x, y, raio, 0, 6.2832); g.fill();
+        g.fillStyle = 'rgba(255,190,60,0.9)'; g.beginPath(); g.arc(x, y, raio * 0.4, 0, 6.2832); g.fill();
+      }
+      // poste de praça ao lado do caminho
+      { const x = 930, base = 905, h = 300;
+        g.fillStyle = '#2f3a3a'; g.fillRect(x - 5, base - h, 10, h); g.fillRect(x - 14, base - 16, 28, 16);
+        g.beginPath(); g.moveTo(x - 20, base - h); g.lineTo(x + 20, base - h); g.lineTo(x + 13, base - h - 44); g.lineTo(x - 13, base - h - 44); g.closePath(); g.fill();
+        g.fillStyle = 'rgba(255,248,215,0.95)'; g.fillRect(x - 11, base - h - 38, 22, 32);
+        g.fillStyle = '#2f3a3a'; g.beginPath(); g.moveTo(x - 18, base - h - 44); g.lineTo(x, base - h - 58); g.lineTo(x + 18, base - h - 44); g.closePath(); g.fill(); }
+      // árvore grande na frente, à direita: tronco escuro e copa que sai do quadro
+      { const x = 1835;
+        g.fillStyle = 'rgba(20,50,30,0.30)'; g.beginPath(); g.ellipse(x - 60, 1050, 260, 40, 0, 0, 6.2832); g.fill();
+        g.fillStyle = '#4e3528'; g.beginPath(); g.moveTo(x - 62, Y1); g.quadraticCurveTo(x - 30, 700, x - 40, 260); g.lineTo(x + 40, 240); g.quadraticCurveTo(x + 40, 700, x + 78, Y1); g.closePath(); g.fill();
+        g.fillStyle = 'rgba(255,230,190,0.18)'; g.beginPath(); g.moveTo(x - 50, Y1); g.quadraticCurveTo(x - 22, 700, x - 34, 260); g.lineTo(x - 14, 256); g.quadraticCurveTo(x - 4, 700, x - 22, Y1); g.closePath(); g.fill();
+        for (let i = 0; i < 26; i++) {
+          const bx = 1560 + rp() * 460, by = Y0 + rp() * 330, rr = 90 + rp() * 90;
+          g.fillStyle = cor(pal.capim[2], '#0e2a1c', 0.3 + 0.2 * rp()); g.beginPath(); g.arc(bx, by, rr, 0, 6.2832); g.fill();
+          g.fillStyle = cor(pal.capim[1], pal.capim[2], 0.45, 0.75); g.beginPath(); g.arc(bx - rr * 0.3, by - rr * 0.3, rr * 0.55, 0, 6.2832); g.fill();
+        }
+        for (let i = 0; i < 9; i++) { // luz passando pelas folhas, no chão
+          const lx = 1350 + rp() * 560, ly = 1000 + rp() * 120, rr = 30 + rp() * 50;
+          const gm = g.createRadialGradient(lx, ly, 0, lx, ly, rr); gm.addColorStop(0, 'rgba(255,255,170,0.22)'); gm.addColorStop(1, 'rgba(0,0,0,0)');
+          g.save(); g.scale(1, 0.4); g.fillStyle = gm; g.fillRect(lx - rr, ly / 0.4 - rr, rr * 2, rr * 2); g.restore();
+        } }
+      // o banco: encosto e assento de ripas de madeira, pés de ferro. A personagem senta no meio (x = 1300).
+      { const x0 = 970, x1 = 1630, chao = chaoY(1300), assento = chao + 12 - 173, ferro = '#2f3a3a';
+        const mad = '#c07d43', madLuz = '#dfa261', madSombra = '#8a5230';
+        g.fillStyle = 'rgba(20,50,30,0.32)'; g.beginPath(); g.ellipse(1300, chao + 14, 380, 26, 0, 0, 6.2832); g.fill();
+        for (const px of [x0 + 40, x1 - 40]) { g.fillStyle = ferro; g.fillRect(px - 7, assento - 168, 14, 168); g.fillRect(px - 8, assento, 16, chao - assento + 8); g.fillRect(px + 20, assento + 10, 12, chao - assento - 8); } // pés e postes do encosto
+        for (const [ya, yb] of [[-160, -130], [-118, -88], [-76, -48]]) { // ripas do encosto
+          g.fillStyle = mad; g.fillRect(x0, assento + ya, x1 - x0, yb - ya);
+          g.fillStyle = madLuz; g.fillRect(x0, assento + ya, x1 - x0, 5); g.fillStyle = madSombra; g.fillRect(x0, assento + yb - 4, x1 - x0, 4);
+        }
+        g.fillStyle = madLuz; g.beginPath(); g.moveTo(x0 + 6, assento - 14); g.lineTo(x1 - 6, assento - 14); g.lineTo(x1 + 10, assento + 6); g.lineTo(x0 - 10, assento + 6); g.closePath(); g.fill(); // assento visto de cima
+        g.strokeStyle = madSombra; g.lineWidth = 2; for (const f of [0.33, 0.66]) { g.beginPath(); g.moveTo(x0 + 6 - f * 16, assento - 14 + f * 20); g.lineTo(x1 - 6 + f * 16, assento - 14 + f * 20); g.stroke(); }
+        g.fillStyle = mad; g.fillRect(x0 - 10, assento + 6, x1 - x0 + 20, 18); g.fillStyle = madSombra; g.fillRect(x0 - 10, assento + 20, x1 - x0 + 20, 4); // frente do assento
+        g.strokeStyle = 'rgba(90,50,20,0.25)'; g.lineWidth = 1.4; // veio da madeira
+        for (let i = 0; i < 60; i++) { const y = assento - 160 + rp() * 112, x = x0 + rp() * (x1 - x0 - 80); g.beginPath(); g.moveTo(x, y); g.lineTo(x + 40 + rp() * 60, y + (rp() - 0.5) * 2); g.stroke(); }
+        banco = { x: 1300, y: assento };
       }
     } else {
       // ----- colina: serras ao longe, depois o morro de capim -----
@@ -219,6 +310,6 @@
       g.save(); g.setTransform(1, 0, 0, 1, 0, 0); g.globalCompositeOperation = 'overlay'; g.globalAlpha = 0.2; g.drawImage(gr, 0, 0); g.restore();
     }
 
-    return { tela, margemX: mx, margemY: my, chaoY, horizonte, pal, brilhos, marY };
+    return { tela, margemX: mx, margemY: my, chaoY, horizonte, pal, brilhos, marY, banco };
   };
 })();

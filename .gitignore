@@ -5,6 +5,7 @@ quadros/
 frames/
 *.mp4
 !guia/assets/lia-demo.mp4
+!guia/assets/lia-parque.mp4
 *.mov
 *.webm
 *.wav

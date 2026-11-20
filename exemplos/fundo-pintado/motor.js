@@ -24,20 +24,26 @@
         olhosFelizes: [5.4, 6.3],       // fecha os olhos sorrindo
         titulo: [6.4, 7.4],
       };
-      const vento = (t) => limita(0.28 + 0.72 * suave(trecho(t, T.rajada[0], T.rajada[1])) * (1 - 0.7 * suave(trecho(t, T.rajada[2], T.rajada[3]))) + 0.07 * ruido(t * 1.7, 5), 0, 1);
+      const parque = H.local === 'parque', sentada = H.pose === 'sentada';
+      const ventoDoLugar = (t) => limita(0.28 + 0.72 * suave(trecho(t, T.rajada[0], T.rajada[1])) * (1 - 0.7 * suave(trecho(t, T.rajada[2], T.rajada[3]))) + 0.07 * ruido(t * 1.7, 5), 0, 1);
+      const vento = parque ? (t) => 0.1 + 0.25 * ventoDoLugar(t) : ventoDoLugar; // no parque é só uma brisa
+      const LAMBIDAS = [[1.8, 3.0], [4.9, 6.2], [8.0, 9.1]]; // quando o sorvete vai até a boca
+      const lambida = (t) => LAMBIDAS.reduce((m, [a, b]) => Math.max(m, suave(trecho(t, a, a + 0.45)) * (1 - suave(trecho(t, b - 0.45, b)))), 0);
+      const lambidas = (t) => LAMBIDAS.reduce((n, [a, b]) => n + suave(trecho(t, a + 0.45, b - 0.45)), 0);
       const olho = (t) => {
         let o = 1;
         for (const p of T.piscadas) o = Math.min(o, Math.abs(t - p) < 0.09 ? 0 : 1);
         if (t > T.olhosFelizes[0] && t < T.olhosFelizes[1]) o = 0;
         return o;
       };
-      const PX = 1300, PY = () => F.chaoY(PX) + 12, ESC = 1.08; // onde a personagem pisa e o tamanho dela
+      const PX = 1300, PY = () => (sentada && F.banco ? F.banco.y : F.chaoY(PX) + 12), ESC = 1.08; // sentada: o ponto é o assento do banco // onde a personagem pisa e o tamanho dela
 
-      const PETALAS = Array.from({ length: H.local === 'praia' ? 9 : 70 }, () => ({
+      const PETALAS = Array.from({ length: H.local === 'praia' ? 9 : parque ? 16 : 70 }, () => ({
         x: acaso() * 2600, y: 200 + acaso() * 800, v: 190 + acaso() * 260, ay: 20 + acaso() * 50, fy: 0.8 + acaso() * 1.6, fase: acaso() * 6.28, tam: (H.local === 'praia' ? 2 : 4) + acaso() * (H.local === 'praia' ? 2.5 : 6), gira: 2 + acaso() * 5, tom: acaso(),
       }));
       const AVES = Array.from({ length: 5 }, (_, i) => ({ x: 300 + acaso() * 1500, y: 150 + acaso() * 260, v: 26 + acaso() * 30, tam: 7 + acaso() * 8, fase: acaso() * 6.28 }));
       const LAMINAS = Array.from({ length: 150 }, (_, i) => ({ x: -60 + i * 13.6 + acaso() * 10, h: 70 + acaso() * 120, fase: acaso() * 6.28, tom: acaso(), larg: 7 + acaso() * 8 }));
+      const BORBOLETAS = parque ? [[620, 860, '#ffd23f'], [1660, 800, '#ffffff'], [420, 940, '#ff9db5']].map(([x, y, tinta]) => ({ x, y, tinta, fase: acaso() * 6.28, v: 0.5 + acaso() * 0.4 })) : [];
 
       function camera(ctx, t) { // aproxima devagar do rosto: z = zoom
         const z = 1 + 0.07 * suave(trecho(t, 0, duracao)), fx = 1150, fy = 520;
@@ -70,6 +76,12 @@
             c.stroke();
           }
         }
+        for (const b of BORBOLETAS) { // borboletas sobre as flores do parque
+          const x = b.x + 110 * Math.sin(t * b.v + b.fase), y = b.y + 45 * Math.sin(t * b.v * 1.9 + b.fase) - 20 * Math.abs(Math.sin(t * 2.3 + b.fase)), asa = 0.25 + 0.75 * Math.abs(Math.sin(t * 13 + b.fase));
+          c.fillStyle = b.tinta; c.strokeStyle = 'rgba(60,40,40,0.6)'; c.lineWidth = 1.2;
+          for (const lado of [-1, 1]) { c.beginPath(); c.ellipse(x + lado * 7 * asa, y - 3, 8 * asa, 6, lado * 0.5, 0, 6.2832); c.fill(); c.stroke(); c.beginPath(); c.ellipse(x + lado * 5 * asa, y + 4, 5 * asa, 4, -lado * 0.4, 0, 6.2832); c.fill(); }
+          c.fillStyle = '#3a2a2a'; c.fillRect(x - 1, y - 6, 2, 12);
+        }
         c.strokeStyle = H.hora === 'dia' ? 'rgba(40,50,80,0.7)' : 'rgba(60,30,60,0.75)'; c.lineWidth = 2.4; c.lineCap = 'round'; // aves ao longe
         for (const a of AVES) {
           const x = ((a.x - t * a.v) % 2200 + 2200) % 2200 - 140, y = a.y + 10 * Math.sin(t * 0.7 + a.fase), asa = a.tam * (0.25 + 0.75 * Math.sin(t * 6 + a.fase));
@@ -81,11 +93,14 @@
         const V = vento(t);
         // sombra no chão
         c.fillStyle = H.hora === 'dia' ? 'rgba(20,60,40,0.30)' : 'rgba(50,20,60,0.32)';
-        c.beginPath(); c.ellipse(PX + (pal.sol ? 70 : 34), PY() + 2, 140, 18, 0, 0, 6.2832); c.fill();
+        if (sentada) { c.beginPath(); c.ellipse(PX + 30, F.chaoY(PX) + 12, 70, 12, 0, 0, 6.2832); c.fill(); } // só os pés tocam o chão
+        else { c.beginPath(); c.ellipse(PX + (pal.sol ? 70 : 34), PY() + 2, 140, 18, 0, 0, 6.2832); c.fill(); }
         // desenha numa folha separada, pinta a luz da hora só em cima dela, e cola
         pc.setTransform(1, 0, 0, 1, 0, 0); pc.clearRect(0, 0, camada.width, camada.height); pc.globalCompositeOperation = 'source-over';
         camera(pc, t); pc.translate(PX, PY()); pc.rotate(0.012 * Math.sin(t * 0.8) - 0.015 * V); pc.scale(ESC, ESC * (1 + 0.004 * Math.sin(t * 2.1)));
-        desenharPersonagem(pc, P, { t, vento: V, braco: trecho(t, T.braco[0], T.braco[1]), acao: H.acao, olho: olho(t), sorriso: suave(trecho(t, T.braco[0], T.braco[1] + 0.4)) });
+        const sorvete = H.acao === 'sorvete';
+        desenharPersonagem(pc, P, { t, vento: V, braco: trecho(t, T.braco[0], T.braco[1]), acao: H.acao, olho: olho(t), sentada, lambida: lambida(t), lambidas: lambidas(t),
+          sorriso: sorvete ? Math.max(0.45, lambida(t)) : suave(trecho(t, T.braco[0], T.braco[1] + 0.4)) });
         pc.setTransform(1, 0, 0, 1, 0, 0); pc.globalCompositeOperation = 'source-atop';
         pc.fillStyle = cor(pal.ambiente[0], pal.ambiente[0], 0, pal.ambiente[1]); pc.fillRect(0, 0, camada.width, camada.height);
         const gl = pc.createLinearGradient(camada.width * 0.5, 0, camada.width * 0.8, 0); // luz vem da esquerda, sombra fica à direita
@@ -96,7 +111,7 @@
 
       function frente(t) {
         const V = vento(t);
-        if (H.local !== 'praia') { // capim perto da câmera, balançando
+        if (H.local !== 'praia' && !parque) { // capim perto da câmera, balançando
           for (const b of LAMINAS) {
             const dobra = -(30 + 70 * V) - (10 + 26 * V) * Math.sin(t * 3.2 + b.fase + b.x * 0.004);
             c.fillStyle = cor(pal.capim[2], b.tom < 0.5 ? pal.capim[1] : '#123a2a', 0.45);
@@ -106,9 +121,11 @@
           for (let i = 0; i < 22; i++) { const x = PX - 90 + i * 8.5, h = 16 + 12 * Math.abs(Math.sin(i * 2.3)); c.beginPath(); c.moveTo(x, PY() + 8); c.quadraticCurveTo(x - 4, PY() - h * 0.5, x - 8 - 8 * V - 4 * Math.sin(t * 4 + i), PY() + 6 - h); c.stroke(); }
         }
         for (const p of PETALAS) { // pétalas (ou areia fina) levadas pelo vento, da direita para a esquerda
-          const x = L + 200 - ((p.x + t * p.v * (0.5 + 0.9 * V)) % 2600), y = p.y + p.ay * Math.sin(t * p.fy + p.fase) - 30 * V;
+          const anda = parque ? 0.28 : 1; // no parque são folhas caindo devagar
+          const x = L + 200 - ((p.x + t * p.v * anda * (0.5 + 0.9 * V)) % 2600), y = p.y + p.ay * Math.sin(t * p.fy + p.fase) - 30 * V + (parque ? ((t * 40 + p.fase * 90) % 300) : 0);
           c.save(); c.translate(x, y); c.rotate(t * p.gira + p.fase); c.globalAlpha = 0.35 + 0.6 * V;
-          c.fillStyle = H.local === 'praia' ? cor(pal.areia[0], '#ffffff', 0.6) : (p.tom < 0.6 ? '#ffffff' : pal.flor[2]);
+          if (parque) c.globalAlpha = 0.85;
+          c.fillStyle = H.local === 'praia' ? cor(pal.areia[0], '#ffffff', 0.6) : parque ? (p.tom < 0.5 ? '#9fcf5a' : '#f2c14e') : (p.tom < 0.6 ? '#ffffff' : pal.flor[2]);
           c.beginPath(); c.ellipse(0, 0, p.tam, p.tam * 0.45, 0, 0, 6.2832); c.fill(); c.restore();
         }
         c.globalAlpha = 1;
@@ -154,7 +171,7 @@
           for (let t = 0.5; t < duracao - 1; t += 0.7 + r() * 1.5) s.pio(t, { freq: 2600 + r() * 1200, sobe: 0.3, dur: 0.07, intervalo: 0.11, repete: 2 + Math.floor(r() * 3), vol: 0.022, pan: r() * 1.6 - 0.8 }); // passarinhos
         }
         s.vento(0, duracao, { vol: 0.035, corte: 700, onda: 0.3 });
-        s.vento(T.rajada[0] - 0.4, T.rajada[3] - T.rajada[0] + 0.6, { vol: 0.10, corte: 1100, onda: 0.5, entra: 1.4, sai: 2.2 }); // a rajada
+        if (!parque) s.vento(T.rajada[0] - 0.4, T.rajada[3] - T.rajada[0] + 0.6, { vol: 0.10, corte: 1100, onda: 0.5, entra: 1.4, sai: 2.2 }); // a rajada (no parque não tem)
         const p = M.passo;
         M.notas.forEach((n, i) => { const t = 0.8 + i * p; if (t < duracao - 1.2) s.corda(n, t, 1.6, { vol: 0.2, pan: i % 2 ? 0.25 : -0.25, maciez: 0.7 }); });
         M.acordes.forEach((ac, i) => ac.forEach((n, j) => s.nota(n, 0.8 + i * p * 4, p * 4 - 0.05, { forma: j === 0 ? 'tri' : 'seno', vol: j === 0 ? 0.09 : 0.05, ataque: 0.35, solta: 0.7, pan: (j - 1) * 0.4 })));

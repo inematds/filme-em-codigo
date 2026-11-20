@@ -1,0 +1,26 @@
+{
+  "titulo": "Lia no parque",
+  "assinatura": "mesmo rosto · um banco, um sorvete",
+  "duracao": 10,
+  "semente": 34,
+  "local": "parque",
+  "hora": "dia",
+  "pose": "sentada",
+  "acao": "sorvete",
+  "personagem": {
+    "nome": "Lia",
+    "cabelo": "#4b2e2a",
+    "olhos": "#3f7f8f",
+    "pele": "#ffdcc6",
+    "roupa": "vestido",
+    "corRoupa": "#f6d86b",
+    "corDetalhe": "#2f8f9d",
+    "chapeu": false,
+    "sorvete": { "bola": "#fff1d6", "bola2": "#f49ac1", "casquinha": "#d9a05b" }
+  },
+  "musica": {
+    "notas": ["G4", "C5", "E5", "G5", "A5", "G5", "E5", "C5", "D5", "F5", "A5", "G5", "E5", "D5", "C5", "G5"],
+    "acordes": [["C3", "G3", "E4"], ["F2", "C3", "A3"], ["G2", "D3", "B3"], ["C3", "G3", "E4"]],
+    "passo": 0.5
+  }
+}

@@ -8,21 +8,38 @@
   const PERNA = 0.84;  // pernas um pouco mais curtas que o natural
   const CABECA = 1.24; // cabeça maior que o natural: jeito de desenho animado
 
-  // pose = { t, vento (0 a 1), braco (0 a 1: quanto o braço já subiu), acao, olho (1 aberto, 0 fechado), sorriso (0 a 1) }
+  // pose = { t, vento (0 a 1), braco (0 a 1: quanto o braço já subiu), acao, olho (1 aberto, 0 fechado), sorriso (0 a 1),
+  //          sentada (true = sentada num banco: o ponto (0,0) é o assento), lambida (0 a 1: o sorvete na boca), lambidas (quantas já foram) }
   window.desenharPersonagem = function (c, P, pose) {
     const { t, vento: V, braco, acao, olho, sorriso } = pose;
+    const sentada = !!pose.sentada, lambida = pose.lambida || 0;
+    if (sentada) { c.save(); c.translate(0, 262); } // sentada: o quadril (262 acima do pé) vai para o assento
     const pele = P.pele, peleSombra = cor(P.pele, '#c96a55', 0.3);
     const cab = P.cabelo, cabLuz = cor(P.cabelo, '#ffd9b0', 0.3), cabSombra = cor(P.cabelo, '#000000', 0.3);
     const roupa = P.corRoupa, roupaSombra = cor(P.corRoupa, '#1a1a40', 0.22), detalhe = P.corDetalhe;
     const branco = '#fbfaf6', brancoSombra = '#d5dcec';
     const vestido = P.roupa === 'vestido';
-    c.lineJoin = 'round'; c.lineCap = 'round';
+    c.lineJoin = 'round'; c.lineCap = 'round'; casquinha.c = c;
     const pinta = (preench, traco = true, esp = 2.6) => { c.fillStyle = preench; c.fill(); if (traco) { c.strokeStyle = TRACO; c.lineWidth = esp; c.stroke(); } };
     const onda = (vel, fase) => Math.sin(t * vel + fase);
 
     // ---------- pernas, meias e sapatos ----------
+    if (sentada) { // de frente, sentada: a coxa vem para a câmera (quase não aparece) e a canela desce até o chão
+      for (const lado of [-1, 1]) {
+        const x = lado * 30, joelho = -246, tornozelo = -126;
+        c.save(); c.translate(x, joelho); c.rotate(0.13 * Math.sin(t * 2.4 + (lado > 0 ? 0 : Math.PI))); c.translate(-x, -joelho); // os pés balançam, um de cada vez
+        c.beginPath(); c.moveTo(x - 19, joelho); c.quadraticCurveTo(x - 24, joelho + 50, x - 13, tornozelo); c.lineTo(x + 13, tornozelo); c.quadraticCurveTo(x + 24, joelho + 50, x + 19, joelho); c.closePath(); pinta(pele);
+        c.beginPath(); c.moveTo(x + lado * 4, joelho + 10); c.quadraticCurveTo(x + lado * 22, joelho + 50, x + lado * 12, tornozelo); c.lineTo(x + lado * 4, tornozelo); c.closePath(); c.fillStyle = cor(peleSombra, pele, 0.3, 0.55); c.fill(); // sombra na canela
+        if (!vestido) { c.beginPath(); c.moveTo(x - 16, tornozelo - 70); c.lineTo(x + 16, tornozelo - 70); c.lineTo(x + 13, tornozelo + 4); c.lineTo(x - 13, tornozelo + 4); c.closePath(); pinta(branco); }
+        c.save(); c.translate(0, tornozelo + 24); c.beginPath(); // sapato (o de baixo do pé fica em -88)
+        if (vestido) { c.moveTo(x - 15, -24); c.quadraticCurveTo(x - 19, 2, x + lado * 4, 2); c.lineTo(x + lado * 27, 2); c.quadraticCurveTo(x + lado * 30, -13, x + 14, -24); c.closePath(); pinta(cor(detalhe, '#ffffff', 0.15)); }
+        else { c.moveTo(x - 15, -34); c.quadraticCurveTo(x - 20, 2, x, 2); c.lineTo(x + lado * 28, 2); c.quadraticCurveTo(x + lado * 33, -16, x + 15, -34); c.closePath(); pinta('#4a3432'); }
+        c.restore(); c.restore();
+        c.beginPath(); c.ellipse(x, joelho, 25, 17, 0, 0, 6.2832); pinta(pele); // joelho, por cima da canela
+      }
+    }
     c.save(); c.scale(1, PERNA);
-    for (const lado of [-1, 1]) {
+    for (const lado of (sentada ? [] : [-1, 1])) {
       const x = lado * 27, p = lado * 5; // p = o pé fica um pouco para fora
       c.beginPath(); c.moveTo(x - 27, -312); c.lineTo(x + 27, -312); c.quadraticCurveTo(x + 27, -230, x + 19 + p * 0.5, -168); c.quadraticCurveTo(x + 23 + p, -110, x + 13 + p, -34);
       c.lineTo(x - 13 + p, -34); c.quadraticCurveTo(x - 23 + p, -110, x - 19 + p * 0.5, -168); c.quadraticCurveTo(x - 27, -230, x - 27, -312); c.closePath(); pinta(pele);
@@ -63,8 +80,9 @@
       }
       return { hx, hy };
     }
-    // braço da esquerda da tela: solto, balança um pouco
-    bracoDe(-58, -490, 99 + 2 * onda(1.3, 0) + 5 * V, 93 + 4 * onda(1.3, -0.8) + 8 * V, -1);
+    // braço da esquerda da tela: solto, balança um pouco (sentada, a mão descansa no colo)
+    if (sentada) bracoDe(-58, -490, 104 + 1.5 * onda(1.1, 0), 62 + 2 * onda(1.1, -0.8), -1);
+    else bracoDe(-58, -490, 99 + 2 * onda(1.3, 0) + 5 * V, 93 + 4 * onda(1.3, -0.8) + 8 * V, -1);
 
     // ---------- roupa ----------
     const empurra = 26 * V, bate = (i) => (5 + 12 * V) * onda(6.5, i * 1.1);
@@ -72,7 +90,8 @@
       c.beginPath(); c.moveTo(-58, -505); c.quadraticCurveTo(0, -516, 58, -505); c.lineTo(52, -440); c.lineTo(-52, -440); c.closePath(); pinta(pele); // ombros
       c.beginPath(); c.moveTo(-38, -508); c.lineTo(-26, -508); c.lineTo(-22, -470); c.lineTo(22, -470); c.lineTo(26, -508); c.lineTo(38, -508); c.lineTo(48, -455);
       c.lineTo(42, -398);
-      const N = 8; const bx = (i) => 126 - i * (252 / N) - empurra * (0.5 + 0.5 * i / N), by = (i) => -206 + bate(i) - 10 * V * (i / N);
+      const N = 8, barra = sentada ? -297 : -206, meiaLarg = sentada ? 112 : 126; // sentada: a saia acaba no joelho
+      const bx = (i) => meiaLarg - i * (2 * meiaLarg / N) - empurra * (0.5 + 0.5 * i / N), by = (i) => barra + bate(i) - 10 * V * (i / N);
       c.lineTo(bx(0), by(0)); for (let i = 1; i <= N; i++) c.quadraticCurveTo((bx(i - 1) + bx(i)) / 2, Math.max(by(i - 1), by(i)) + 12, bx(i), by(i));
       c.lineTo(-42, -398); c.lineTo(-48, -455); c.closePath(); pinta(roupa);
       c.save(); c.clip(); c.strokeStyle = cor(roupa, '#6a6a90', 0.3, 0.7); c.lineWidth = 2.4;
@@ -83,7 +102,7 @@
       for (const k2 of [0, 1]) { c.beginPath(); c.moveTo(-40, -400); c.quadraticCurveTo(-70 - 40 * V, -392 + 14 * k2 + 8 * onda(7, k2), -84 - 76 * V + 8 * onda(7, k2 + 1), -372 + 34 * k2 + 12 * V * onda(8, k2)); c.quadraticCurveTo(-64 - 30 * V, -384 + 18 * k2, -40, -392); c.closePath(); pinta(detalhe, true, 2); } // pontas da faixa ao vento
     } else {
       // saia
-      const N = 8; const bx = (i) => 96 - i * (192 / N) - empurra * (0.4 + 0.6 * i / N), by = (i) => -236 + bate(i) * 0.8;
+      const N = 8; const bx = (i) => 96 - i * (192 / N) - empurra * (0.4 + 0.6 * i / N), by = (i) => (sentada ? -300 : -236) + bate(i) * 0.8;
       c.beginPath(); c.moveTo(42, -392); c.lineTo(bx(0), by(0)); for (let i = 1; i <= N; i++) c.quadraticCurveTo((bx(i - 1) + bx(i)) / 2, Math.max(by(i - 1), by(i)) + 10, bx(i), by(i));
       c.lineTo(-42, -392); c.closePath(); pinta(roupa);
       c.save(); c.clip(); c.strokeStyle = roupaSombra; c.lineWidth = 3;
@@ -106,7 +125,7 @@
     // ---------- pescoço e cabeça ----------
     c.beginPath(); c.moveTo(-14, -540); c.lineTo(14, -540); c.lineTo(16, -502); c.quadraticCurveTo(0, -494, -16, -502); c.closePath(); pinta(pele);
     c.fillStyle = peleSombra; c.beginPath(); c.moveTo(-14, -536); c.lineTo(14, -536); c.lineTo(15, -520); c.quadraticCurveTo(0, -512, -15, -524); c.closePath(); c.fill();
-    const inclina = 0.02 * onda(0.9, 0) - 0.03 * V;
+    const inclina = 0.02 * onda(0.9, 0) - 0.03 * V + 0.06 * lambida; // no sorvete, a cabeça vai um pouco para ele
     c.save(); c.translate(0, -530); c.rotate(inclina); c.scale(CABECA, CABECA); c.translate(0, 530);
     const rosto = () => { c.beginPath(); c.moveTo(-60, -598); c.bezierCurveTo(-60, -672, 60, -672, 60, -598); c.bezierCurveTo(60, -560, 26, -525, 0, -522); c.bezierCurveTo(-26, -525, -60, -560, -60, -598); c.closePath(); };
     rosto(); pinta(pele);
@@ -136,7 +155,8 @@
       c.lineWidth = 2.2; c.strokeStyle = cor(cab, '#000000', 0.1); c.beginPath(); c.moveTo(cx - 12, -611 - 2 * sorriso); c.quadraticCurveTo(cx, -616 - 2 * sorriso, cx + 12, -611 - 2 * sorriso); c.stroke(); // sobrancelha
     }
     c.strokeStyle = 'rgba(190,100,90,0.8)'; c.lineWidth = 2.2; c.beginPath(); c.moveTo(1, -565); c.lineTo(3, -560); c.stroke(); // nariz
-    if (sorriso > 0.55) { c.beginPath(); c.moveTo(-10, -549); c.quadraticCurveTo(0, -546, 10, -549); c.quadraticCurveTo(0, -549 + 16 * sorriso, -10, -549); c.closePath(); pinta('#b6504c', true, 2); }
+    if (sorriso > 0.55) { c.beginPath(); c.moveTo(-10, -549); c.quadraticCurveTo(0, -546, 10, -549); c.quadraticCurveTo(0, -549 + 16 * sorriso, -10, -549); c.closePath(); pinta('#b6504c', true, 2);
+      if (lambida > 0.6) { c.beginPath(); c.ellipse(4, -541 + 2 * Math.sin(t * 9), 5.5, 4, 0.2, 0, 6.2832); c.fillStyle = '#f08a9a'; c.fill(); } } // a língua no sorvete
     else { c.strokeStyle = 'rgba(150,60,60,0.95)'; c.lineWidth = 2.6; c.beginPath(); c.moveTo(-9, -549); c.quadraticCurveTo(0, -543 + 4 * sorriso, 9, -549); c.stroke(); }
 
     // ---------- cabelo da frente: casquete, franja e mechas do lado ----------
@@ -172,7 +192,41 @@
     let a1 = 82 - 2 * onda(1.3, 1) - 4 * V, a2 = 88 - 4 * onda(1.3, 0.3) - 6 * V;
     if (acao === 'acenar') { a1 = mistura(a1, -30, sobe); a2 = mistura(a2, -80 + 22 * Math.sin(t * 7.5) * sobe, sobe); }
     else if (acao === 'segurar-chapeu') { a1 = mistura(a1, -76, sobe); a2 = mistura(a2, -103 + 3 * onda(5, 0), sobe); }
+    else if (acao === 'sorvete') { // a mão vai até um ponto e o cotovelo se ajeita sozinho (dois ossos de 86 e 80)
+      const lb = lambida, lambe = 3 * Math.sin(t * 9) * lb;
+      const mx = mistura(66, 26, lb) + 1.5 * onda(1.2, 0), my = mistura(-360, -438 + lambe, lb) + 2 * onda(1.2, 1);
+      const dx = mx - 58, dy = my + 490, d = limitaD(Math.hypot(dx, dy)), th = Math.atan2(dy, dx);
+      const al = Math.acos(Math.max(-1, Math.min(1, (86 * 86 + d * d - 80 * 80) / (2 * 86 * d))));
+      const ang = th - al; // cotovelo para baixo e para fora
+      const ex = 58 + 86 * Math.cos(ang), ey = -490 + 86 * Math.sin(ang);
+      a1 = ang * 180 / Math.PI; a2 = Math.atan2(my - ey, mx - ex) * 180 / Math.PI;
+      casquinha(mx, my, -0.22 * lb, P.sorvete || {}, pose.lambidas || 0); // a casquinha vem antes, a mão fica por cima
+    }
     bracoDe(58, -490, a1, a2, 1);
     c.restore();
+    if (sentada) c.restore();
   };
+
+  function limitaD(d) { return Math.max(8, Math.min(164, d)); }
+
+  // casquinha com duas bolas. (x, y) = onde a mão segura; a bola de cima diminui a cada lambida.
+  function casquinha(x, y, gira, S, feitas) {
+    const c = casquinha.c;
+    const bola1 = S.bola || '#fff1d6', bola2 = S.bola2 || '#f49ac1', massa = S.casquinha || '#d9a05b';
+    c.save(); c.translate(x, y); c.rotate(gira);
+    c.beginPath(); c.moveTo(-23, -64); c.lineTo(23, -64); c.lineTo(0, 16); c.closePath(); c.fillStyle = massa; c.fill(); // casquinha
+    c.save(); c.clip(); c.strokeStyle = cor(massa, '#6a3a18', 0.4, 0.8); c.lineWidth = 2;
+    for (let i = -6; i <= 6; i++) { c.beginPath(); c.moveTo(i * 9 - 30, -70); c.lineTo(i * 9 + 30, 20); c.moveTo(i * 9 + 30, -70); c.lineTo(i * 9 - 30, 20); c.stroke(); } c.restore();
+    c.beginPath(); c.moveTo(-23, -64); c.lineTo(23, -64); c.lineTo(0, 16); c.closePath(); c.strokeStyle = TRACO; c.lineWidth = 2.4; c.stroke();
+    const bola = (cy, r, tinta) => {
+      c.beginPath(); c.arc(0, cy, r, Math.PI * 0.95, Math.PI * 2.05);
+      for (let i = 0; i <= 6; i++) { const u = i / 6, bx = r * Math.cos(Math.PI * 0.05 - u * Math.PI * 1.1), by = cy + r * 0.35 + (i % 2 ? 7 : 0); c.lineTo(bx, by); } // borda de baixo derretendo
+      c.closePath(); c.fillStyle = tinta; c.fill(); c.strokeStyle = TRACO; c.lineWidth = 2.4; c.stroke();
+      c.fillStyle = 'rgba(255,255,255,0.55)'; c.beginPath(); c.ellipse(-r * 0.35, cy - r * 0.45, r * 0.28, r * 0.17, -0.5, 0, 6.2832); c.fill();
+    };
+    bola(-74, 27, bola1);
+    bola(-104, 24 - 1.6 * feitas, bola2);
+    c.fillStyle = bola1; c.beginPath(); c.ellipse(15, -44, 4, 9, 0, 0, 6.2832); c.fill(); // um pingo escorrendo
+    c.restore();
+  }
 })();
