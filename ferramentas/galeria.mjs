@@ -37,7 +37,8 @@ function secao(lang, pre) {
     const tit = T.titulos[`${f.m}/${f.h}`] || I18N.pt.titulos[`${f.m}/${f.h}`];
     const est = T.estilos[f.m];
     const play = `${pre}exemplos/biblioteca/${f.m}/` + (f.h === 'historia.json' ? '' : `?historia=${f.h}`);
-    return `    <figure class="quadro"><img src="${pre}exemplos/biblioteca/${f.m}/${f.quadro}" alt="${esc(tit)}" loading="lazy"><figcaption><b>${esc(tit)}</b><br>${esc(est)}<span class="bibl"><a href="${play}" target="_blank" rel="noopener">▶ ${esc(T.ui.assistir)}</a> · <a href="${REPO}/tree/main/exemplos/biblioteca/${f.m}" target="_blank" rel="noopener">${esc(T.ui.receita)}</a></span></figcaption></figure>`;
+    const video = `${REPO}/releases/download/exemplos-v1/${f.m}-${path.basename(f.h, '.json')}.mp4`;
+    return `    <figure class="quadro"><img src="${pre}exemplos/biblioteca/${f.m}/${f.quadro}" alt="${esc(tit)}" loading="lazy"><figcaption><b>${esc(tit)}</b><br>${esc(est)}<span class="bibl"><a href="${play}" target="_blank" rel="noopener">▶ ${esc(T.ui.assistir)}</a> · <a href="${REPO}/tree/main/exemplos/biblioteca/${f.m}" target="_blank" rel="noopener">${esc(T.ui.receita)}</a> · <a href="${video}">${esc(T.ui.video)}</a></span></figcaption></figure>`;
   };
   const deitados = filmes.filter(f => !f.vertical), empe = filmes.filter(f => f.vertical);
   return `${INI}
