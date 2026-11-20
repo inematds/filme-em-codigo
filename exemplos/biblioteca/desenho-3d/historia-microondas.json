@@ -83,7 +83,7 @@
       "camera": { "de": { "pos": [0.15, 1.5, 2.6], "alvo": [0, 1.45, 0], "rolo": 2 }, "ate": { "pos": [0.1, 1.5, 2.25], "alvo": [0, 1.45, 0], "rolo": 3 } },
       "pecas": [
         { "tipo": "boneco", "quem": "inventor", "pos": [0, 0, 0.4], "estados": [[0, "preocupado", "segura", "barra"], [2.75, "choque", "segura", "barra"]], "pulos": [2.75] },
-        { "tipo": "enxame", "n": 6, "forma": "esfera", "tam": [0.035, 0.05, 0.035], "cores": ["#6b3a22"], "formas": [ { "tipo": "caixa", "c": [0.02, 0.62, 0.45], "tam": [0.06, 0.01, 0.01] } ], "movimento": "cai", "altura": 0.6, "vel": 0.7 }
+        { "tipo": "enxame", "n": 6, "forma": "esfera", "tam": [0.035, 0.05, 0.035], "cores": ["#6b3a22"], "formas": [ { "tipo": "caixa", "c": [0.15, 0.43, 0.45], "tam": [0.06, 0.01, 0.01] } ], "movimento": "cai", "altura": 0.6, "vel": 0.7 }
       ] },
 
     { "id": "radar", "de": 3.3, "ate": 6.3, "cenario": ["lab"],
@@ -132,7 +132,7 @@
         { "tipo": "modelo", "modelo": "ovo", "pos": [1.15, 1.0, -2.45], "solto": true, "some": 10.2 },
         { "tipo": "boneco", "quem": "colega", "pos": [1.2, 0, -1.85], "estados": [[9.2, "neutro", "apoia"], [10.2, "choque", "alto"]], "efeitos": { "gema": 10.2 }, "pulos": [10.2] },
         { "tipo": "boneco", "quem": "inventor", "pos": [2.1, 0, -1.6], "estados": [[9.2, "pensa", "pensa"], [10.5, "convencido", "cintura"]] },
-        { "tipo": "enxame", "n": 40, "forma": "esfera", "tam": [0.06], "cores": ["#ffc21a", "#ffffff", "#ffd84a"], "estoura": { "t": 10.2, "de": [1.15, 1.1, -2.4], "vel": 3.0, "lado": 1.4, "gravidade": 5, "chao": 1.0, "espalha": 0.05 }, "escala": [0.6, 1.5] }
+        { "tipo": "enxame", "n": 22, "forma": "caixa", "tam": [0.12, 0.035, 0.08], "cores": ["#d8ba94", "#f2e4ce", "#da911f"], "estoura": { "t": 10.2, "de": [1.15, 1.1, -2.4], "vel": 3.0, "lado": 1.4, "gravidade": 5, "chao": 1.0, "espalha": 0.05 }, "escala": [0.6, 1.5] }
       ] },
 
     { "id": "dolares", "de": 12.3, "ate": 15.3, "cenario": ["lab"],

@@ -135,7 +135,7 @@
       "ceu": { "topo": "#3a4152", "horiz": "#7d8696" },
       "luz": { "sol": "#dfe4f0", "forca": 1.2, "dir": [0.6, 1, 0.8], "ceu": "#9aa4b8", "chao": "#4a4a50", "ambiente": 1.25 },
       "luzBoneco": "#c8ccd8", "neblina": { "cor": "#7d8696", "perto": 15, "longe": 120 },
-      "camera": { "de": { "pos": [1.5, 2.4, 18.6], "alvo": [0, 0.9, 12], "rolo": 2 }, "ate": { "pos": [1.4, 2.3, 17.8], "alvo": [0, 0.9, 12], "rolo": 3 } },
+      "camera": { "de": { "pos": [1.5, 3.9, 22.5], "alvo": [0, 0.9, 12], "rolo": 2 }, "ate": { "pos": [1.4, 3.7, 21.7], "alvo": [0, 0.9, 12], "rolo": 3 } },
       "pecas": [
         { "tipo": "modelo", "modelo": "faixa", "pos": [0, 0, 12] },
         { "tipo": "modelo", "modelo": "carro", "pos": [-3.2, 0, 11.2], "cores": { "cor": "#e8423a" } },

@@ -166,7 +166,7 @@
       "pecas": [
         { "tipo": "modelo", "modelo": "argila", "pos": [0, 0, 0], "solto": true, "tinge": [[13.85, "#6b4f36", 0.75, 0.4]] },
         { "tipo": "modelo", "modelo": "rede", "pos": [0, 0, 0], "solto": true },
-        { "tipo": "enxame", "n": 60, "forma": "esfera", "tam": [0.08], "cores": ["#5aa0e0", "#8ac8ff"], "basica": true, "formas": [ { "tipo": "caixa", "c": [0, -2.0, 1.22], "tam": [3.9, 0.01, 0.01] } ], "movimento": "sobe", "altura": 2.0, "vel": 1.1, "encolhe": true },
+        { "tipo": "enxame", "some": 13.65, "n": 60, "forma": "esfera", "tam": [0.08], "cores": ["#5aa0e0", "#8ac8ff"], "basica": true, "formas": [ { "tipo": "caixa", "c": [0, -2.0, 1.22], "tam": [3.9, 0.01, 0.01] } ], "movimento": "sobe", "altura": 2.0, "vel": 1.1, "encolhe": true },
         { "tipo": "junto", "pos": [0, 0.08, -0.2], "solto": true, "esc": 0.3, "rot": [0, 0, -5], "pecas": [ { "tipo": "modelo", "modelo": "base" }, { "tipo": "modelo", "modelo": "andar", "pos": [0, 1.45, 0] }, { "tipo": "modelo", "modelo": "andar", "pos": [0, 2.43, 0] }, { "tipo": "modelo", "modelo": "andar", "pos": [0, 3.41, 0] } ] },
         { "tipo": "brilho", "pos": [0, -1.0, 1.3], "cor": "#fff2b0", "tam": 4.5, "pulsa": [[13.8, 0], [13.9, 0.6], [14.4, 0.2]] }
       ] },

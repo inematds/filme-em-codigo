@@ -13,7 +13,7 @@
       { "pos": [0.32, 1.25, 0], "rot": [0, 0, -10], "laco": { "eixo": 2, "amp": -1.1, "hz": 0.9, "abs": true, "canal": "bica", "solto": true }, "filhos": [
         { "forma": "cilindro", "tam": [0.06, 0.085, 0.85], "pos": [0, 0.42, 0], "cor": "#7f93a8" },
         { "forma": "esfera", "tam": [0.15, 0.13, 0.13], "pos": [0.04, 0.88, 0], "cor": "#7f93a8" },
-        { "forma": "cone", "tam": [0.05, 0.18, 8], "pos": [0.22, 0.86, 0], "rot": [0, 0, -90], "cor": "#2a2224" },
+        { "forma": "cone", "tam": [0.075, 0.26, 8], "pos": [0.22, 0.86, 0], "rot": [0, 0, -90], "cor": "#2a2224" },
         { "forma": "esfera", "tam": [0.06], "pos": [0.09, 0.93, 0.09], "cor": "#ffffff" },
         { "forma": "esfera", "tam": [0.06], "pos": [0.09, 0.93, -0.09], "cor": "#ffffff" },
         { "forma": "esfera", "tam": [0.028], "pos": [0.13, 0.93, 0.13], "cor": "#16101a" },
@@ -151,7 +151,7 @@
       "pecas": [
         { "tipo": "brilho", "pos": [0, 2.4, -0.6], "cor": "#ffe27a", "tam": 4.5, "pulsa": [[14.4, 0], [14.55, 1], [16, 0.7]] },
         { "tipo": "modelo", "modelo": "caixote", "pos": [0, 0, 0] },
-        { "tipo": "modelo", "modelo": "emu", "pos": [0, 0.9, 0], "solto": true, "esc": 1.35, "rot": [0, -60, 0], "forcas": { "bica": [[0, 0]], "corre": [[0, 0]] } },
+        { "tipo": "modelo", "modelo": "emu", "pos": [0, 0.9, 0], "solto": true, "esc": 1.35, "rot": [0, -17, 0], "forcas": { "bica": [[0, 0]], "corre": [[0, 0]] } },
         { "tipo": "modelo", "modelo": "caminhao", "pos": [-3, 0, -9], "anim": { "pos": [[12.6, -3, 0, -9], [15.5, 9, 0, -12]] }, "forcas": { "arma": [[0, 0]] } }
       ] }
   ],
@@ -159,7 +159,7 @@
   "rotulos": [
     { "texto": "1932", "x": 540, "y": 380, "tam": 170, "cor": "#f2d43a", "de": 0.2, "some": 2.0, "ate": 2.4 },
     { "texto": "20.000 EMUS", "estilo": "placa", "x": 540, "y": 300, "tam": 58, "de": 3.4, "ate": 5.7 },
-    { "texto": "10.000 TIROS", "estilo": "placa", "x": 540, "y": 300, "tam": 58, "de": 8.1, "ate": 9.4 }
+    { "texto": "QUASE 10 MIL TIROS", "estilo": "placa", "x": 540, "y": 300, "tam": 58, "de": 8.1, "ate": 9.4 }
   ],
   "claroes": [3.2],
   "chutes": [ { "t": 2.2, "forca": 0.7 }, { "t": 7.0, "forca": 0.5 }, { "t": 8.0, "forca": 0.5 }, { "t": 8.35, "forca": 0.4 }, { "t": 8.7, "forca": 0.4 }, { "t": 9.05, "forca": 0.4 }, { "t": 14.45, "forca": 0.6 } ],

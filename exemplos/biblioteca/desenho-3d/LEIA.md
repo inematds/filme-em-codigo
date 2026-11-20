@@ -13,12 +13,12 @@ delas.
 
 | arquivo | filme | duração | render (3 navegadores, sem GPU) |
 |---|---|---|---|
-| `historia.json` | a árvore de família mais famosa (o roteiro único dos 14 estilos) | 20 s | 39,9 s |
-| `historia-torre.json` | a torre salva por ninguém fazer nada | 19,5 s | 30,7 s |
-| `historia-receita.json` | a receita que você nunca deve preparar | 18,5 s | 45,3 s |
-| `historia-microondas.json` | dois dólares pelo micro-ondas | 15,3 s | 32,4 s |
-| `historia-baloes.json` | a soltura de balões que deu errado | 16,5 s | 62,9 s |
-| `historia-emus.json` | a guerra perdida para os emus | 16 s | 38,9 s |
+| `historia.json` | a árvore de família mais famosa (o roteiro único dos 14 estilos) | 44,8 s | 39,9 s |
+| `historia-torre.json` | a torre salva por ninguém fazer nada | 35,87 s | 30,7 s |
+| `historia-receita.json` | a receita que você nunca deve preparar | 52,26 s | 45,3 s |
+| `historia-microondas.json` | dois dólares pelo micro-ondas | 38,47 s | 32,4 s |
+| `historia-baloes.json` | a soltura de balões que deu errado | 48,16 s | 62,9 s |
+| `historia-emus.json` | a guerra perdida para os emus | 45,43 s | 38,9 s |
 
 Tempos medidos, de `medida*.json`. Narração da fonte vira legenda (sem voz): o texto foi traduzido
 pelo tradutor central e encurtado à mão para caber em 15 a 20 s.
