@@ -1,3 +1,4 @@
+| 2026-11-20 | revisão das folhas rodou sem imagem (glob *.png, folhas são .jpg) e o Codex respondeu o modelo | conferir `wc -l` dos lotes antes de chamar o revisor | prompt |
 # Falhas — filme-em-codigo
 
 | data | o que quebrou | menor correção | prompt \| infra |
