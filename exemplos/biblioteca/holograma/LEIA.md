@@ -65,7 +65,7 @@ node ferramentas/render.mjs exemplos/biblioteca/holograma --trabalhadores 3
 
 ## Medida
 
-600 quadros em **37,6 s** de render (51,2 ms por quadro; 1,88 s de render por segundo de vídeo),
+600 quadros em **41,63 s** de render (54,1 ms por quadro; 2,08 s de render por segundo de vídeo),
 3 navegadores, sem placa de vídeo. Detalhes em `medida.json`. Mesmo filme com 1 e 3 navegadores
 (360x640, 600 quadros): mesmos quadros. Som: média -19,0 dB, pico -1,6 dB, todo segundo entre -21,3 e -16,8 dB; no corte da música
 (14,85 a 15,05 s) só sobra o fim do arranhão, a -46 dB.

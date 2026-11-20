@@ -49,9 +49,9 @@
       ],
       "chips": [ { "texto": "• 1 GIRO = 1 DIA", "x": 540, "y": 250, "de": 2.75, "ate": 5.0, "estilo": "contorno", "cor": "azul" } ],
       "contadores": [
-        { "rotulo": "DIA · 1 GIRO", "cor": "azul", "x": 540, "y": 1410, "tam": 140, "de": 2.75, "ate": 5.0, "chaves": [[2.9, 0], [4.6, 243]], "maximo": 243, "rodape": "DIAS DA TERRA" }
+        { "rotulo": "DIA · 1 GIRO", "cor": "azul", "x": 540, "y": 1410, "tam": 140, "de": 2.75, "ate": 5.0, "chaves": [[2.9, 0], [3.65, 243]], "maximo": 243, "rodape": "DIAS DA TERRA" }
       ],
-      "legendas": [ { "de": 2.65, "ate": 5.0, "passo": 0.25, "texto": "UM GIRO: 243 DIAS DA TERRA." } ]
+      "legendas": [ { "de": 3.65, "ate": 5.0, "passo": 0.09, "texto": "UM GIRO: 243 DIAS DA TERRA." } ]
     },
     {
       "nome": "corrida", "de": 5.0, "ate": 8.4, "entrada": "continua",

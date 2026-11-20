@@ -62,8 +62,8 @@ node ferramentas/render.mjs exemplos/biblioteca/retro-futuro --trabalhadores 3
 ## Medida
 
 Medido em **360x640** (o tamanho pedido para esta rodada; os outros motores da série mediram em
-1080x1920, então os números não se comparam direto): 600 quadros em **12,7 s** de render (15,4 ms por
-quadro; 0,63 s de render por segundo de vídeo), 3 navegadores, sem placa de vídeo. Detalhes em
+1080x1920, então os números não se comparam direto): 600 quadros em **13,92 s** de render (16,7 ms por
+quadro; 0,7 s de render por segundo de vídeo), 3 navegadores, sem placa de vídeo. Detalhes em
 `medida.json`. Mesmo filme inteiro com 1 e 3 navegadores (360x640, 600 quadros): mesmos quadros. Som do
 MP4: média -18,1 dB, pico -2,1 dB; no corte da música (14,9 a 15,2 s) -47 dB. Capa `quadro.jpg` em 540x960.
 

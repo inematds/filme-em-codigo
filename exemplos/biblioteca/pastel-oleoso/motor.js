@@ -111,7 +111,7 @@
             for (let i = 1; i < n; i++) {
               const [lx, ly] = naCurva(x0, x1, p.y, p.flecha, i / n), grande = (i + j) % 2 === 0;
               const l = { x: lx, y: ly + (grande ? 34 : 26), r: grande ? 26 : 19, cor: (p.cores || ['amarelo'])[(i + j) % (p.cores || ['amarelo']).length], fio: ly };
-              if (solta && !soltaDe && Math.abs(lx - solta.x) < (x1 - x0) / n / 2 + 1) { soltaDe = l; continue; }
+              if (solta && !soltaDe && Math.abs(lx - solta.x) < (x1 - x0) / n / 2 + 1) { soltaDe = { ...l, r: l.r * 1.6 }; continue; }
               LANTERNAS.push(l);
             }
           });

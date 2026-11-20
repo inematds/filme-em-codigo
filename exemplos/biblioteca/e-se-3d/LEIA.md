@@ -43,8 +43,8 @@ node ferramentas/render.mjs exemplos/biblioteca/e-se-3d --historia minha-histori
 **De onde saiu.** Do filme "What If You Fell Into Jupiter?" (estilo "what-if" com personagem 3D)
 da biblioteca de estilos da fonte. O robô é desenho novo, não o da fonte.
 
-**Tempo de render medido** (`medida.json`): 65 s para 15 s de filme (450 quadros, 117 ms por
-quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 44 MB. Mesmo filme com 1 e com 3
+**Tempo de render medido** (`medida.json`): 81,27 s para 15 s de filme (450 quadros, 147,9 ms por
+quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 44,5 MB. Mesmo filme com 1 e com 3
 navegadores (360x640) dá o mesmo `quadros.sha256`.
 
 **Falta polir**

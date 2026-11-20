@@ -561,7 +561,7 @@
             if (t < t0) return;
             alfa(trecho(t, t0, t0 + 0.15));
             const D = it.cor === 'ciano';
-            escreve(it.nome, p.x - 24, y + 15, 30, { fino: true, cor: D ? 'ciano' : 'cinzaClaro', alinha: 'direita', halo: D ? cor('ciano') : null });
+            escreve(it.nome, p.x - 24, y + 15, 39, { cor: 'gelo', alinha: 'direita', halo: D ? cor('ciano') : null });
             const w = Math.max(8, p.larg * it.v / p.maximo * u);
             retRedondo(p.x, y - p.alt / 2, w, p.alt, 6);
             const lg = c.createLinearGradient(0, y - p.alt / 2, 0, y + p.alt / 2);
@@ -569,7 +569,7 @@
             c.fillStyle = lg; c.fill();
             neon(() => retRedondo(p.x, y - p.alt / 2, w, p.alt, 6), cor(it.cor), 2.5, D ? 1.2 : 0.4);
             alfa(trecho(t, t0 + p.dur * 0.6, t0 + p.dur));
-            escreve(it.valor, p.x + w + 22, y + 15, 30, { fino: true, cor: D ? 'ciano' : 'cinzaClaro', alinha: 'esquerda', tabular: true });
+            escreve(it.valor, p.x + w + 22, y + 15, 43, { cor: 'gelo', alinha: 'esquerda', tabular: true });
           });
           if (p.unidade) { const t1 = p.t + p.itens.length * 0.12; alfa(trecho(t, t1, t1 + 0.3)); escreve(p.unidade, p.x + p.larg / 2, p.y + p.itens.length * p.passo + 10, 28, { fino: true, cor: 'gelo' }); }
         },

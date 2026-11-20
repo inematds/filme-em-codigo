@@ -23,8 +23,8 @@
     { "t": 0.2, "x": 1000, "y": 1640, "zoom": 1 },
     { "t": 6.2, "x": 2000, "y": 1640, "zoom": 1, "curva": "passeio" },
     { "t": 6.7, "x": 2000, "y": 1640, "zoom": 1 },
-    { "t": 9.3, "x": 2000, "y": 1405, "zoom": 0.618 },
-    { "t": 10, "x": 2000, "y": 1400, "zoom": 0.616 }
+    { "t": 9.3, "x": 2000, "y": 1405, "zoom": 0.83 },
+    { "t": 10, "x": 2000, "y": 1400, "zoom": 0.82 }
   ],
   "pecas": [
     { "tipo": "ceu", "f": 0.55,
@@ -73,8 +73,8 @@
     { "tipo": "acougueiro", "x": 1960, "bravo": 3.3, "calma": 5.2 },
     { "tipo": "salsichas", "x0": 1780, "x1": 1900, "y": 1578, "quantas": 6 },
     { "tipo": "cao", "x": 2060, "chao": 1975, "escala": 1.2, "pula": 3.0, "pega": 3.25, "pousa": 3.5, "pousoX": 1830, "altura": 300, "x1": 200, "ate": 5.6 },
-    { "tipo": "menina", "chao": 1990, "escala": 1.35, "anda": { "de": 0.2, "ate": 6.2, "x0": 650, "x1": 2050 }, "passo": 95, "passoSom": 0.41, "olha": 6.15, "lanterna": 22 },
-    { "tipo": "solta", "x": 2075, "t": 5.6, "chega": 9.6, "x1": 2200, "y1": 900 },
+    { "tipo": "menina", "chao": 1990, "escala": 1.7, "anda": { "de": 0.2, "ate": 6.2, "x0": 650, "x1": 2050 }, "passo": 95, "passoSom": 0.41, "olha": 6.15, "lanterna": 30 },
+    { "tipo": "solta", "x": 2075, "t": 5.6, "chega": 9.6, "x1": 2200, "y1": 1060 },
 
     { "tipo": "cesto", "x": 260, "y": 2140, "cores": ["amarelo", "rosa", "vermelhao", "agua"] },
     { "tipo": "cesto", "x": 1180, "y": 2140, "cores": ["rosa", "amarelo", "agua", "creme"] },

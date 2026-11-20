@@ -42,8 +42,8 @@ node ferramentas/render.mjs exemplos/biblioteca/pastel-oleoso --historia minha-h
 biblioteca de estilos da fonte. A feira, a menina, o cão e os outros personagens daqui são desenhos
 novos e genéricos.
 
-**Tempo de render medido** (`medida.json`): 46,9 s para 10 s de filme (300 quadros, 128 ms por
-quadro, 3 navegadores, sem placa de vídeo). O MP4 tem 55,3 MB (a fervura dos riscos e o grão pesam
+**Tempo de render medido** (`medida.json`): 50,71 s para 10 s de filme (300 quadros, 134,7 ms por
+quadro, 3 navegadores, sem placa de vídeo). O MP4 tem 57,03 MB (a fervura dos riscos e o grão pesam
 na compressão). Som: média -20,4 dB, pico -1,7 dB.
 
 **Falta polir.**

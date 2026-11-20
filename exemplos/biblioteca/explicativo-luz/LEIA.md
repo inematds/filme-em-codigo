@@ -47,8 +47,8 @@ node ferramentas/render.mjs exemplos/biblioteca/explicativo-luz --historia minha
 **De onde saiu.** Do filme "On Venus, a Day Is Longer Than a Year" (estilo "Glowing 3D explainer")
 da biblioteca de estilos da fonte. Só um filme da fonte usa este estilo, então há uma história só.
 
-**Tempo de render medido** (`medida.json`): 19 s para 15 s de filme (450 quadros, 29,4 ms por
-quadro, 3 navegadores, sem GPU). O MP4 sai com 6,9 MB. Som: média -21,6 dB, pico -2,2 dB; os
+**Tempo de render medido** (`medida.json`): 19,35 s para 15 s de filme (450 quadros, 30,5 ms por
+quadro, 3 navegadores, sem GPU). O MP4 sai com 6,82 MB. Som: média -21,6 dB, pico -2,2 dB; os
 segundos mais altos são o clarão do planeta quente e o chumbo derretendo. Filme inteiro em 360x640
 com 1 e com 3 navegadores dá o mesmo `quadros.sha256`.
 

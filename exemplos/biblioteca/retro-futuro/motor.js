@@ -419,14 +419,14 @@
             if (t < t0) return;
             c.globalAlpha = trecho(t, t0, t0 + 0.15);
             const D = it.cor === 'laranja';
-            rotulo(it.nome, p.x - 24, y + 16, 34, { cor: D ? 'laranja' : 'creme', alinha: 'direita', contorno: 5 });
+            rotulo(it.nome, p.x - 24, y + 16, 39, { cor: D ? 'laranja' : 'creme', alinha: 'direita', contorno: 5 });
             const w = Math.max(8, p.larg * it.v / p.maximo * u);
             if (D) brilho(18);
             retRedondo(p.x, y - p.alt / 2, w, p.alt, p.alt / 2); c.fillStyle = cor(it.cor); c.fill(); semBrilho();
             c.strokeStyle = cor('tealEscuro'); c.lineWidth = 4; c.stroke();
             c.fillStyle = 'rgba(255,255,255,0.35)'; retRedondo(p.x + 8, y - p.alt / 2 + 6, Math.max(0, w - 16), p.alt * 0.22, p.alt * 0.11); c.fill();
             c.globalAlpha = trecho(t, t0 + p.dur * 0.6, t0 + p.dur);
-            rotulo(it.valor, p.x + w + 22, y + 15, 32, { cor: D ? 'laranja' : 'creme', alinha: 'esquerda', tabular: true, contorno: 5 });
+            rotulo(it.valor, p.x + w + 22, y + 15, 43, { cor: D ? 'laranja' : 'creme', alinha: 'esquerda', tabular: true, contorno: 5 });
           });
           if (p.unidade) { const t1 = p.t + p.itens.length * 0.12; c.globalAlpha = trecho(t, t1, t1 + 0.3); rotulo(p.unidade, p.x + p.larg / 2, p.y + p.itens.length * p.passo + 10, 30, { cor: 'creme', contorno: 5 }); }
         },

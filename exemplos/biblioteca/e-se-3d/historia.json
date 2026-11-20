@@ -6,7 +6,7 @@
   "_medidas": "Mundo 3D: o robô fica perto da origem, 1 unidade = meio robô. Na tela (fundo, fogo, riscos): x e y vão de -0,5 a 0,5 na ALTURA do quadro (y para cima); a largura vertical vai de -0,28 a 0,28.",
 
   "robo": {
-    "corpo": "#e8edf2",
+    "corpo": "#a4c4dc",
     "visor": "#141a26",
     "olho": "#c8f7ff",
     "luva": "#23a99a",
@@ -62,8 +62,8 @@
       "robo": { "acao": "aperta", "pos": [[0.0, -0.22], [0.0, -0.22]] },
       "riscos": { "quanto": 0.9, "cor": "#ffc04a", "angulo": 90, "velocidade": -2.6, "largura": 2.6 },
       "contador": { "valor": [50, 150], "menor": [3.9, 23.0] },
-      "legendas": [ { "de": 7.05, "ate": 8.55, "texto": "150 KM: 23 VEZES A PRESSÃO DA TERRA" },
-                    { "de": 8.55, "ate": 9.55, "texto": "E CALOR DE FORNO." } ]
+      "legendas": [ { "de": 7.05, "ate": 8.40, "texto": "CALOR DE FORNO." },
+                    { "de": 8.40, "ate": 9.55, "texto": "23 VEZES A PRESSÃO DA TERRA." } ]
     },
     {
       "nome": "neblina", "de": 9.6, "ate": 11.8, "entrada": "escurece",
@@ -96,7 +96,7 @@
       "camera": { "dist": [7.0, 7.0], "y": 0.0, "tremor": 0.0 },
       "faiscas": { "n": 420, "cor": "#ffd84a", "caem": true },
       "contador": { "texto": "SEM SUPERFÍCIE", "textoMenor": "PRESSÃO FORA DE ESCALA" },
-      "legendas": [ { "de": 13.45, "ate": 15.0, "texto": "VOCÊ VIRA JÚPITER." } ]
+      "legendas": [ { "de": 13.45, "ate": 15.0, "texto": "SEU CORPO SE MISTURA AO PLANETA." } ]
     }
   ],
 
