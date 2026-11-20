@@ -16,7 +16,7 @@
     "vidro": "#eef3ff",
     "luz": "#f4f7ff",
     "acento": "#e3e302",
-    "maos": "#e6e4df",
+    "maos": "#b98d74",
     "papel": "#eceef2",
     "lapis": "#1d1f24",
     "traco": "#101114",
@@ -26,13 +26,13 @@
 
   "luz": {
     "_": "o refletor fica DENTRO do aro e aponta para baixo (faz a poça de luz e as sombras); o ambiente é um estúdio com softboxes",
-    "refletor": 16, "abertura": 0.95, "penumbra": 0.75,
-    "ambiente": 0.55, "preenche": 0.35, "reflexo": 1.0
+    "refletor": 7, "abertura": 0.95, "penumbra": 0.75,
+    "ambiente": 0.55, "preenche": 0.35, "reflexo": 0.68
   },
 
   "filme": {
-    "exposicao": 1.05, "brilho": 0.55, "limiarBrilho": 1.1, "vinheta": 0.55, "grao": 0.022,
-    "chicote": 0.06, "mergulho": 0.22, "clarao": 1.0
+    "exposicao": 1.05, "brilho": 0.18, "limiarBrilho": 1.1, "vinheta": 0.55, "grao": 0.022,
+    "chicote": 0.06, "mergulho": 0.22, "clarao": 0.48
   },
 
   "pecas": [
@@ -64,9 +64,9 @@
       ] },
     { "nome": "materiais", "de": 2.4, "ate": 4.5, "entrada": "corte",
       "camera": [
-        { "t": 2.4, "pos": [1.5, 0.32, 2.0], "olha": [0.35, 0.18, 0.75], "fov": 32, "foco": [0.45, 0.18, 0.85], "desfoque": 7 },
-        { "t": 3.6, "pos": [-0.4, 0.38, 2.45], "olha": [-0.1, 0.22, 0.9], "fov": 32, "foco": [-0.1, 0.2, 0.95], "desfoque": 7 },
-        { "t": 4.5, "pos": [-0.6, 0.5, 2.6], "olha": [0, 1.35, 0.2], "fov": 32, "foco": [0, 1.4, 0.9], "desfoque": 8 }
+        { "t": 2.4, "pos": [2.3, 0.95, 3.7], "olha": [0.35, 0.18, 0.75], "fov": 32, "foco": [0.45, 0.18, 0.85], "desfoque": 7 },
+        { "t": 3.6, "pos": [-0.7, 0.94, 3.65], "olha": [-0.1, 0.22, 0.9], "fov": 32, "foco": [-0.1, 0.2, 0.95], "desfoque": 7 },
+        { "t": 4.5, "pos": [-0.8, 0.95, 3.8], "olha": [0, 1.35, 0.2], "fov": 32, "foco": [0, 1.4, 0.9], "desfoque": 8 }
       ] },
     { "nome": "explosao", "de": 4.5, "ate": 7.1, "entrada": "chicote",
       "camera": [
@@ -76,8 +76,8 @@
       ] },
     { "nome": "macro", "de": 7.1, "ate": 8.7, "entrada": "mergulho",
       "camera": [
-        { "t": 7.1, "pos": [-0.75, 0.42, 0.62], "olha": [-0.25, 0.3, -0.15], "fov": 42, "foco": [-0.5, 0.3, 0.25], "desfoque": 10 },
-        { "t": 8.7, "pos": [0.5, 0.4, 0.78], "olha": [0.3, 0.3, -0.1], "fov": 42, "foco": [0.35, 0.3, 0.35], "desfoque": 10 }
+        { "t": 7.1, "pos": [-1.7, 0.81, 1.8], "olha": [-0.25, 0.3, -0.15], "fov": 42, "foco": [-0.5, 0.3, 0.25], "desfoque": 1.8 },
+        { "t": 8.7, "pos": [1.4, 0.8, 1.8], "olha": [0.3, 0.3, -0.1], "fov": 42, "foco": [0.35, 0.3, 0.35], "desfoque": 1.8 }
       ] },
     { "nome": "maos", "de": 8.7, "ate": 12.3, "entrada": "chicote",
       "camera": [

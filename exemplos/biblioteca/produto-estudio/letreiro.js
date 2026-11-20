@@ -89,7 +89,7 @@ export function criarLetreiro(H, L, A) {
     // a marca no fim: entra devagar fechando o espaço entre as letras; depois o sublinhado amarelo cresce
     if (t >= MA.de) {
       const a = saiDevagar(trecho(t, MA.de, MA.de + 0.8)), tam = MA.tam * u, entre = MA.espaco + (1 - a) * 0.5;
-      const w = escreve(MAI(MA.texto), L / 2, MA.y * u, tam, { cor: COR('texto'), grossura: 0.035, entre, alfa: a });
+      const w = escreve(MAI(MA.texto), L / 2, MA.y * u, tam, { cor: COR('texto'), grossura: 0.075, entre, alfa: a });
       const s = saiDevagar(trecho(t, MA.sublinha[0], MA.sublinha[1]));
       if (s > 0) {
         const sw = w * 0.62 * s;

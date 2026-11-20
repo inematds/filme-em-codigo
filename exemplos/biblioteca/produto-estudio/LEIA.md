@@ -45,8 +45,8 @@ node ferramentas/render.mjs exemplos/biblioteca/produto-estudio --historia minha
 **De onde saiu.** Do filme "Halo: a product film" (estilo "Studio product film") da biblioteca de
 estilos da fonte. O produto, o nome ORLA e as mãos daqui são desenho novo e genérico.
 
-**Tempo de render medido** (`medida.json`): 242 s para 14,5 s de filme (435 quadros, 486 ms por
-quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 18 MB.
+**Tempo de render medido** (`medida.json`): 188,8 s para 14,5 s de filme (435 quadros, 381,7 ms por
+quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 18,77 MB.
 
 **Falta polir**
 - A lente do meio estoura em branco nos planos de perto (macro e herói); a fonte mostra mais o vidro fosco.

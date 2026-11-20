@@ -53,7 +53,7 @@ Filme.criar({
     const escL = esc.clone(); escL.repeat.set(1, 3); escL.needsUpdate = true;       // riscos mais finos no topo
     const metal = (cor, rug, tx, rep = 1) => new THREE.MeshPhysicalMaterial({
       color: cor, metalness: 1, roughness: rug, anisotropy: 0.75, anisotropyRotation: 0,
-      bumpMap: tx, bumpScale: 0.35 * rep, roughnessMap: tx,
+      map: tx, bumpMap: tx, bumpScale: 0.35 * rep, roughnessMap: tx,
     });
     const matAlu = metal(C.aluminio, 0.34, esc);
     const matTampa = metal(C.aluminioClaro, 0.28, escL, 1.2);
