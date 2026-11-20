@@ -68,7 +68,7 @@
   },
 
   "elenco": {
-    "lider": { "roupa": "#c0352a", "roupaTipo": "tunica", "chapeu": "pele", "chapeuCor": "#e2b84a", "chapeuTopo": "#c0352a", "faixa": "#2f5a9a", "barba": "#1e1a1e", "bigode": "#1e1a1e", "pele": "#e8b88a", "alt": 1.15 },
+    "lider": { "sombraLateral": 0.38, "roupa": "#c0352a", "roupaTipo": "tunica", "chapeu": "pele", "chapeuCor": "#e2b84a", "chapeuTopo": "#c0352a", "faixa": "#2f5a9a", "barba": "#1e1a1e", "bigode": "#1e1a1e", "pele": "#e8b88a", "alt": 1.15 },
     "nomadeA": { "roupa": "#3f6fb5", "chapeu": "pele", "chapeuCor": "#a87a4a", "chapeuTopo": "#3f6fb5", "pele": "#e8b88a" },
     "nomadeB": { "roupa": "#7a4fa0", "chapeu": "pele", "chapeuCor": "#c9a24a", "chapeuTopo": "#5a3a7a", "pele": "#d9a070" },
     "nomadeC": { "roupa": "#7d8a3a", "chapeu": "pele", "chapeuCor": "#8a6a44", "chapeuTopo": "#5a6a2a", "pele": "#f0c8a0", "barba": "#3a2a22", "bigode": false },
@@ -132,14 +132,14 @@
       "ceu": { "topo": "#4f8fdc", "horiz": "#d8e6f2" },
       "luz": { "sol": "#fff4dc", "forca": 2.4, "dir": [0.6, 1, 0.8], "ceu": "#dfe9ff", "chao": "#6f6a5a", "ambiente": 1.2 },
       "neblina": { "cor": "#d8e6f2", "perto": 30, "longe": 230 },
-      "camera": { "de": { "pos": [0, 1.35, 6.4], "alvo": [0, 1.15, -0.5], "rolo": 1.5 }, "ate": { "pos": [0, 1.3, 5.7], "alvo": [0, 1.1, -0.5], "rolo": 2.5 } },
+      "camera": { "de": { "pos": [0, 6.3, 9.8], "alvo": [0, 1.1, -1.4], "rolo": 0 }, "ate": { "pos": [0, 6.3, 9.6], "alvo": [0, 1.1, -1.4], "rolo": 0 } },
       "pecas": [
-        { "tipo": "grupo", "n": 12, "arranjo": { "tipo": "fileiras", "centro": [0, 0, -0.95], "colunas": 6, "dx": 0.5, "dz": -0.95, "desloca": false },
+        { "tipo": "grupo", "n": 12, "arranjo": { "tipo": "fileiras", "centro": [0, 0, 0.5], "colunas": 4, "dx": 1.08, "dz": 2.9, "desloca": false },
           "molde": { "tipo": "boneco", "estados": [[7.0, "neutro", "lado"], [7.6, "choque", "lado"]] },
           "jeitos": ["nomadeA", "nomadeB", "nomadeC", "nomadeD", "nomadeB", "nomadeA"],
-          "aparece": { "de": 7.05, "ate": 7.5 },
-          "trocas": { "7": { "efeitos": { "dourado": 7.6 }, "estados": [[7.0, "neutro", "lado"], [7.6, "feliz", "alto"]] } } },
-        { "tipo": "brilho", "pos": [-0.75, 1.1, -0.2], "cor": "#ffe27a", "tam": 2.4, "pulsa": [[7.55, 0], [7.65, 1], [8.8, 0.6]] }
+          "aparece": { "de": 6.45, "ate": 6.55 },
+          "trocas": { "7": { "efeitos": { "dourado": 7 }, "estados": [[7.0, "neutro", "lado"], [7.6, "feliz", "alto"]] } } },
+        { "tipo": "brilho", "pos": [1.62, 1.1, -2.4], "cor": "#ffe27a", "tam": 2.4, "pulsa": [[7.55, 0], [7.65, 1], [8.8, 0.6]] }
       ] },
 
     { "id": "mapa", "de": 8.8, "ate": 13.2, "cenario": ["fundo"],
@@ -176,7 +176,7 @@
         { "tipo": "modelo", "modelo": "barra", "pos": [-0.6, -0.3, -5], "solto": true, "cores": { "cor": "#9aa3ad" }, "anim": { "esc": [[12.15, 1, 0.01, 1], [12.7, 1, 3.8, 1]] }, "aparece": 12.1, "durPop": 0.05 },
         { "tipo": "modelo", "modelo": "barra", "pos": [0.6, -0.3, -5], "solto": true, "cores": { "cor": "#9aa3ad" }, "anim": { "esc": [[12.25, 1, 0.01, 1], [12.8, 1, 2.45, 1]] }, "aparece": 12.2, "durPop": 0.05 },
         { "tipo": "modelo", "modelo": "barra", "pos": [1.8, -0.3, -5], "solto": true, "cores": { "cor": "#9aa3ad" }, "anim": { "esc": [[12.35, 1, 0.01, 1], [12.9, 1, 0.83, 1]] }, "aparece": 12.3, "durPop": 0.05 },
-        { "tipo": "simbolo", "texto": "24,0", "pos": [-1.8, 4.15, -4.6], "tam": 0.42, "cor": "#f2c232", "aparece": 12.6, "balanca": 0 },
+        { "tipo": "simbolo", "texto": "24", "pos": [-1.8, 4.15, -4.6], "tam": 0.42, "cor": "#f2c232", "aparece": 12.6, "balanca": 0 },
         { "tipo": "simbolo", "texto": "22,8", "pos": [-0.6, 3.95, -4.6], "tam": 0.36, "cor": "#ffffff", "aparece": 12.7, "balanca": 0 },
         { "tipo": "simbolo", "texto": "14,7", "pos": [0.6, 2.6, -4.6], "tam": 0.36, "cor": "#ffffff", "aparece": 12.8, "balanca": 0 },
         { "tipo": "simbolo", "texto": "5,0", "pos": [1.8, 1.0, -4.6], "tam": 0.36, "cor": "#ffffff", "aparece": 12.9, "balanca": 0 },
@@ -243,7 +243,7 @@
   ],
 
   "rotulos": [
-    { "texto": "20.000.000", "conta": { "de": 0.2, "ate": 2.3, "valor": 20000000 }, "x": 540, "y": 330, "tam": 112, "cor": "#f2d43a", "de": 0.2, "some": 2.9 },
+    { "texto": "20.000.000", "conta": { "de": 0.2, "ate": 0.9, "valor": 20000000 }, "x": 540, "y": 330, "tam": 112, "cor": "#f2d43a", "de": 0.2, "some": 2.9 },
     { "texto": "HOMENS VIVOS HOJE", "x": 540, "y": 430, "tam": 48, "de": 0.35, "some": 2.9 },
     { "texto": "GÊNGIS KHAN", "x": 540, "y": 380, "tam": 92, "cor": "#f2d43a", "de": 4.0, "sobe": true, "ate": 5.0 },
     { "texto": "ESTUDO DO CROMOSSOMO Y", "estilo": "placa", "x": 540, "y": 250, "tam": 44, "de": 5.0, "ate": 7.0 },
@@ -274,8 +274,7 @@
 
   "legenda": { "y": 1590, "tam": 62, "largura": 940, "segura": 0.55, "destaque": "#E3E302" },
   "legendas": [
-    { "de": 0.15, "ate": 1.25, "texto": "CERCA DE 20 MILHÕES" },
-    { "de": 1.25, "ate": 2.30, "texto": "DE HOMENS VIVOS HOJE" },
+    { "de": 0.90, "ate": 2.30, "texto": "CERCA DE 20 MILHÕES DE HOMENS" },
     { "de": 2.30, "ate": 3.20, "texto": "PODEM DESCENDER" },
     { "de": 3.20, "ate": 4.00, "texto": "DE UM SÓ HOMEM:" },
     { "de": 4.00, "ate": 5.00, "texto": "GÊNGIS KHAN." },
@@ -289,7 +288,6 @@
     { "de": 11.00, "ate": 11.80, "texto": "O IMPÉRIO MONGOL," },
     { "de": 11.80, "ate": 13.20, "texto": "O MAIOR DA HISTÓRIA." },
     { "de": 13.20, "ate": 14.40, "texto": "CASO ENCERRADO?" },
-    { "de": 14.40, "ate": 15.20, "texto": "AINDA NÃO." },
     { "de": 15.20, "ate": 16.10, "texto": "TÚMULOS DA ÉPOCA" },
     { "de": 16.10, "ate": 17.00, "texto": "MOSTRAM OUTRA LINHAGEM." },
     { "de": 17.00, "ate": 18.00, "texto": "A ÁRVORE MAIS FAMOSA" },

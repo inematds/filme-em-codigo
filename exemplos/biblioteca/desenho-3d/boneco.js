@@ -93,7 +93,16 @@ export function desenhaBoneco(c, j, e) {
   c.lineTo(lo - 18, ombro - 4); c.quadraticCurveTo(lo, ombro, lo, ombro + 14);
   c.lineTo(lb, barra); c.quadraticCurveTo(0, barra + 8, -lb, barra); c.closePath();
   const corCorpo = tipo === 'jaleco' && !ouro ? '#f7f5ef' : roupa;
-  c.fillStyle = corCorpo; c.fill();
+  const luzLateral = (tinta, raio) => {
+    if (!j.sombraLateral) return tinta;
+    const luz = c.createLinearGradient(-raio, 0, raio, 0);
+    luz.addColorStop(0, cor(tinta, 0.18));
+    luz.addColorStop(0.56, tinta);
+    luz.addColorStop(0.7, cor(tinta, -j.sombraLateral));
+    luz.addColorStop(1, cor(tinta, -j.sombraLateral));
+    return luz;
+  };
+  c.fillStyle = luzLateral(corCorpo, lb); c.fill();
   if (tipo === 'listras' && !ouro) { c.save(); c.clip(); c.fillStyle = j.listraCor || '#f4f1ea'; for (let y = ombro + 6; y < barra; y += 26) c.fillRect(-80, y, 160, 12); c.restore(); }
   if ((tipo === 'camisa' || tipo === 'jaleco' || tipo === 'terno' || tipo === 'colete') && !ouro) {
     // camisa / gola por baixo, gravata
@@ -135,7 +144,7 @@ export function desenhaBoneco(c, j, e) {
   // cabelo comprido / coque atrás da cabeça
   const cabCor = ouro ? '#e0a820' : (j.cabeloCor || '#2a2028');
   if (j.cabelo === 'comprido') { c.beginPath(); c.ellipse(0, hy + 30, R + 10, R + 30, 0, 0, 7); c.fillStyle = cabCor; c.fill(); contornar(c, 6); }
-  c.beginPath(); c.arc(0, hy, R, 0, Math.PI * 2); c.fillStyle = pele; c.fill(); contornar(c, 7);
+  c.beginPath(); c.arc(0, hy, R, 0, Math.PI * 2); c.fillStyle = luzLateral(pele, R); c.fill(); contornar(c, 7);
   if (e.fuligem) { c.fillStyle = 'rgba(40,30,30,0.6)'; for (const [x, y, r] of [[-40, 120, 18], [34, 176, 20], [10, 104, 13], [-30, 190, 12]]) { c.beginPath(); c.arc(x, y, r, 0, 7); c.fill(); } }
   // cabelo de cima
   if (j.cabelo && j.cabelo !== 'careca' && j.cabelo !== 'comprido') {
