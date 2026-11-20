@@ -1,10 +1,19 @@
-# Estado — 2026-11-19 (fim da fase de motores)
+# Estado · 20/11/2026
+
+A biblioteca aprovada pelo Nei contém 43 motores e 51 filmes. A rodada final corrigiu os quatro filmes pedidos e conferiu as seis histórias de desenho-3d. Os oito pares de renders 1×3 foram idênticos. A suíte offline terminou com 227 passaram, 0 falharam.
+
+Os Releases [fonte-v1](https://github.com/inematds/filme-em-codigo/releases/tag/fonte-v1) e [exemplos-v1](https://github.com/inematds/filme-em-codigo/releases/tag/exemplos-v1) contêm 55 e 51 MP4, respectivamente. Os três guias incluem o vídeo em cada cartão.
+
+[Relatório, contagens por filme e testes de reprodução](final-2026-11-20.md)
+
+## Histórico · plano de 19/11/2026
+
 - FEITO: 43 motores em exemplos/biblioteca/ (51 filmes), todos com motor.js, historia*.json, quadro*.jpg, medida*.json, LEIA.md.
 - FEITO: anexo-fonte/ (original EN + PT em 6 partes, 55 miniaturas, LEIA.md com crédito a AI Samson).
 - FEITO: tests/testes.mjs bloco 6 (biblioteca) — AINDA NÃO RODOU.
 - Decisões do Nei: crédito ao autor no anexo/página da fonte; vídeos (fonte + nossos) em GitHub Release.
 
-## Próximos passos (ordem do advisor)
+### Plano registrado naquela data
 1. Passada baixa: cada uma das 51 histórias, filme inteiro em 360x640 com 1 e 3 navegadores, comparar quadros.sha256 + folha de contato. Rodar `bash tests/rodar.sh`.
 2. Revisor independente (runbook revisor-independente) sobre as folhas de contato → lista de polimento.
    Correções obrigatórias: tinta-na-agua (conta `ui`, grou), acetato-classico raposa.js:135 (scale(1/e,e) se estica<0),
