@@ -54,7 +54,7 @@ personagem e os cenários são desenhos novos, feitos em código.
 3 navegadores, sem placa de vídeo, 216 quadros cada):
 - cabelo ruivo: 24,0 s para 9 s de filme (94 ms por quadro). MP4 de 4,2 MB. Som: média -18,1 dB,
   pico -1,6 dB.
-- à beira-mar: 23,4 s (92 ms por quadro). MP4 de 4,0 MB. Som: média -16,9 dB, pico -1,7 dB.
+- à beira-mar: 25,26 s (98,2 ms por quadro). MP4 de 3,96 MB. Som: média -16,9 dB, pico -1,7 dB.
 - vestido claro: 23,4 s (92 ms por quadro). MP4 de 3,7 MB. Som: média -17,3 dB, pico -1,7 dB.
 
 **Falta polir.**

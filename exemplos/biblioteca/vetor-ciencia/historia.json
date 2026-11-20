@@ -17,7 +17,7 @@
     "destaque": "#ffd23f", "rosa": "#ff4f8b", "ciano": "#2ee6c5", "lilas": "#9d8cff",
     "branco": "#ffffff", "apagado": "#7d77b5", "cinzaClaro": "#c3bdf0",
     "painel": "#17123f", "borda": "#8f7dff", "linhaPainel": "#2c2468", "liquido": "#7a6cff",
-    "mapaFundo": "#120e36", "terra": "#3a2f8f", "pontoMapa": "#fff6cf",
+    "mapaFundo": "#120e36", "terra": "#776dcc", "pontoMapa": "#fff6cf",
     "vivas": ["#2ee6c5", "#ff4f8b", "#ff8a3d", "#4d7cff", "#9b5cff", "#3ccf7a", "#ffd23f"],
     "pele": ["#f2c39b", "#d99a6c", "#a8683f", "#6e4426", "#f5d7b5", "#c58457"],
     "cabelo": ["#1a1030", "#3a2214", "#5a3a1c", "#0d0d1a"]
@@ -33,7 +33,7 @@
     { "id": "gancho", "de": 0, "ate": 5.0, "fundo": { "tipo": "planicie" }, "pecas": [
       { "tipo": "multidao", "x": 540, "y": 900, "colunas": 10, "linhas": 6, "dx": 86, "dy": 100, "tam": 96, "perspectiva": 0.08, "de": 0.4, "ate": 2.2,
         "liga": { "de": 2.3, "ate": 3.1, "para": [540, 700], "some": 3.3 }, "apaga": 2.6 },
-      { "tipo": "contador", "x": 540, "y": 410, "tam": 120, "de": 0.2, "ate": 2.3, "valor": 20000000, "cor": "branco", "corFim": "destaque", "brilho": 26, "some": 2.9 },
+      { "tipo": "contador", "x": 540, "y": 410, "tam": 120, "de": 0.2, "ate": 0.9, "valor": 20000000, "cor": "branco", "corFim": "destaque", "brilho": 26, "some": 2.9 },
       { "tipo": "texto", "texto": "HOMENS VIVOS HOJE", "x": 540, "y": 500, "tam": 46, "cor": "branco", "t": 0.35, "some": 2.9 },
       { "tipo": "heroi", "x": 540, "y": 700, "tam": 320, "t": 3.25, "brilho": 40, "chao": true },
       { "tipo": "texto", "texto": "GÊNGIS KHAN", "x": 540, "y": 440, "tam": 84, "cor": "destaque", "t": 4.0, "sobe": true, "brilho": 22 }
@@ -47,12 +47,12 @@
 
     { "id": "estatistica", "de": 7.0, "ate": 8.8, "fundo": { "tipo": "planicie", "zoom": [1.3, 1.4], "escurece": 0.4 }, "pecas": [
       { "tipo": "texto", "texto": "1 EM 12", "x": 540, "y": 620, "tam": 150, "cores": ["destaque", "branco", "branco"], "t": 7.05, "brilho": 24 },
-      { "tipo": "fila", "x": 540, "y": 900, "colunas": 6, "linhas": 2, "dx": 150, "dy": 250, "tam": 150, "de": 7.1, "ate": 7.5, "acende": { "i": 7, "t": 7.6 } }
+      { "tipo": "fila", "x": 540, "y": 900, "colunas": 6, "linhas": 2, "dx": 150, "dy": 250, "tam": 150, "de": 6.5, "ate": 6.7, "acende": { "i": 7, "t": 6.8 } }
     ]},
 
     { "id": "mapa", "de": 8.8, "ate": 13.2, "fundo": { "tipo": "estepe", "borra": true, "escurece": 0.45 }, "pecas": [
       { "tipo": "mapa", "x": 540, "y": 780, "escala": 5.3, "achata": 1.25, "lonC": 86, "latC": 40, "painel": [24, 470, 1032, 640],
-        "contorno": { "de": 8.8, "ate": 9.4 },
+        "contorno": { "de": 8.45, "ate": 8.84 },
         "regiao": { "de": 9.0, "ate": 9.8 },
         "aneis": { "t": 9.7, "passo": 3.2 },
         "imperio": { "ponto": [103, 47], "pulsa": 10.1, "de": 10.3, "ate": 11.4 },
@@ -106,8 +106,7 @@
 
   "legenda": { "y": 1590, "tam": 64, "largura": 1000, "segura": 0.55 },
   "legendas": [
-    { "de": 0.15, "ate": 1.25, "texto": "CERCA DE 20 MILHÕES" },
-    { "de": 1.25, "ate": 2.30, "texto": "DE HOMENS VIVOS HOJE" },
+    { "de": 0.90, "ate": 2.30, "texto": "CERCA DE 20 MILHÕES DE HOMENS" },
     { "de": 2.30, "ate": 3.20, "texto": "PODEM DESCENDER" },
     { "de": 3.20, "ate": 4.00, "texto": "DE UM SÓ HOMEM:" },
     { "de": 4.00, "ate": 5.00, "texto": "GÊNGIS KHAN." },
@@ -121,7 +120,6 @@
     { "de": 11.00, "ate": 11.80, "texto": "O IMPÉRIO MONGOL," },
     { "de": 11.80, "ate": 13.20, "texto": "O MAIOR DA HISTÓRIA." },
     { "de": 13.20, "ate": 14.40, "texto": "CASO ENCERRADO?" },
-    { "de": 14.40, "ate": 15.20, "texto": "AINDA NÃO." },
     { "de": 15.20, "ate": 16.10, "texto": "TÚMULOS DA ÉPOCA" },
     { "de": 16.10, "ate": 17.00, "texto": "MOSTRAM OUTRA LINHAGEM." },
     { "de": 17.00, "ate": 18.00, "texto": "A ÁRVORE MAIS FAMOSA" },

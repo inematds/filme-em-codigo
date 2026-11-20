@@ -62,7 +62,7 @@ node ferramentas/render.mjs exemplos/biblioteca/cartoon-tv --trabalhadores 3
 
 ## Medida
 
-600 quadros em **17,1 s** de render (18 ms por quadro; 0,85 s de render por segundo de vídeo),
+600 quadros em **17,71 s** de render (19,1 ms por quadro; 0,89 s de render por segundo de vídeo),
 3 navegadores, sem placa de vídeo. Detalhes em `medida.json`. Mesmo filme com 1 e 3 navegadores
 (360x640, 600 quadros): mesmos quadros. Som: média -21,3 dB, pico -2,4 dB; a música some de 14,4 a 15,2 s.
 

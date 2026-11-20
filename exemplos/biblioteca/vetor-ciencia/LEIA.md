@@ -69,7 +69,7 @@ node ferramentas/render.mjs exemplos/biblioteca/vetor-ciencia --trabalhadores 3
 
 ## Medida
 
-600 quadros em **36,5 s** de render: 51 ms por quadro, ou 1,83 s de render por segundo de vídeo. Usou 3
+600 quadros em **41,04 s** de render: 54 ms por quadro, ou 2,05 s de render por segundo de vídeo. Usou 3
 navegadores, sem placa de vídeo. Os detalhes estão em `medida.json`. O filme inteiro em 360x640 dá os
 mesmos quadros com 1 e com 3 navegadores. Som: média de -20,9 dB e pico de -2,3 dB. De 14,4 a 15,2 s a
 música para de verdade (-48,6 dB em 14,9 s).
