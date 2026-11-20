@@ -61,7 +61,7 @@ node ferramentas/render.mjs exemplos/biblioteca/marca-autoral --trabalhadores 3
 
 ## Medida
 
-600 quadros em **46,2 s** de render (50,8 ms por quadro; 2,31 s de render por segundo de vídeo),
+600 quadros em **26,11 s** de render (33 ms por quadro; 1,31 s de render por segundo de vídeo),
 3 navegadores, sem placa de vídeo. Detalhes em `medida.json`. Mesmo filme com 1 e 3 navegadores
 (360x640, 600 quadros): mesmos quadros.
 

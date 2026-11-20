@@ -9,18 +9,18 @@
     "brilhoCentro": "#3a3a08",
     "destaque": "#facc15",
     "branco": "#ffffff",
-    "cinza": "#5a5a5a",
-    "cinzaClaro": "#9a9a9a",
+    "cinza": "#989898",
+    "cinzaClaro": "#d4d4d4",
     "painel": "#141414",
     "borda": "#2a2a2a",
-    "terra": "#1b1b1b"
+    "terra": "#454545"
   },
   "camera": { "deriva": 12, "respira": 0.012, "periodo": 6 },
   "tremores": [ { "t": 14.4, "quadros": 8, "forca": 22 } ],
 
   "cenas": [
     { "id": "gancho", "de": 0, "ate": 5.0, "pecas": [
-      { "tipo": "contador", "x": 540, "y": 440, "tam": 120, "de": 0.2, "ate": 2.3, "valor": 20000000, "cor": "destaque", "brilho": 28, "some": 2.9 },
+      { "tipo": "contador", "x": 540, "y": 440, "tam": 120, "de": 0.2, "ate": 0.9, "valor": 20000000, "cor": "destaque", "brilho": 28, "some": 2.9 },
       { "tipo": "texto", "texto": "HOMENS VIVOS HOJE", "x": 540, "y": 530, "tam": 46, "cor": "branco", "t": 0.35, "some": 2.9 },
       { "tipo": "multidao", "x": 540, "y": 920, "colunas": 10, "linhas": 6, "dx": 92, "dy": 100, "tam": 70, "de": 0.4, "ate": 2.2,
         "liga": { "de": 2.3, "ate": 3.1, "para": [540, 690] }, "apaga": 2.6 },
@@ -36,12 +36,12 @@
 
     { "id": "estatistica", "de": 7.0, "ate": 8.8, "pecas": [
       { "tipo": "texto", "texto": "1 EM 12", "x": 540, "y": 620, "tam": 150, "cores": ["destaque", "branco", "branco"], "t": 7.05, "brilho": 24 },
-      { "tipo": "fila", "x": 540, "y": 880, "colunas": 6, "linhas": 2, "dx": 145, "dy": 230, "tam": 160, "de": 7.1, "ate": 7.5, "acende": { "i": 7, "t": 7.6 } }
+      { "tipo": "fila", "x": 540, "y": 880, "colunas": 6, "linhas": 2, "dx": 145, "dy": 230, "tam": 160, "de": 6.5, "ate": 6.7, "acende": { "i": 7, "t": 6.8 } }
     ]},
 
     { "id": "mapa", "de": 8.8, "ate": 13.2, "pecas": [
       { "tipo": "mapa", "x": 540, "y": 780, "escala": 5.3, "achata": 1.25, "lonC": 86, "latC": 40,
-        "contorno": { "de": 8.8, "ate": 9.4 },
+        "contorno": { "de": 8.45, "ate": 8.84 },
         "regiao": { "de": 9.0, "ate": 9.8 },
         "aneis": { "t": 9.7, "passo": 3.2 },
         "imperio": { "ponto": [103, 47], "pulsa": 10.1, "de": 10.3, "ate": 11.4 },
@@ -95,8 +95,7 @@
 
   "legenda": { "y": 1590, "tam": 64, "largura": 1000, "segura": 0.55 },
   "legendas": [
-    { "de": 0.15, "ate": 1.25, "texto": "CERCA DE 20 MILHÕES" },
-    { "de": 1.25, "ate": 2.30, "texto": "DE HOMENS VIVOS HOJE" },
+    { "de": 0.90, "ate": 2.30, "texto": "CERCA DE 20 MILHÕES DE HOMENS" },
     { "de": 2.30, "ate": 3.20, "texto": "PODEM DESCENDER" },
     { "de": 3.20, "ate": 4.00, "texto": "DE UM SÓ HOMEM:" },
     { "de": 4.00, "ate": 5.00, "texto": "GÊNGIS KHAN." },

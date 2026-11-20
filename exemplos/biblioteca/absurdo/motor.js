@@ -665,9 +665,9 @@
         carimbo(p, t) {
           if (t < p.t) return;
           const u = tr(t, p.t, p.t + 0.2), s = mistura(1.9, 1, sai(u)), ap = p.apaga ? tr(t, p.apaga, p.apaga + 0.2) : 0;
-          const giro = mistura(p.giro, p.giroApagado ?? p.giro, ap) * RAD, cr = Filme.hex(cor('destaque'), cor('cinza'), ap);
+          const giro = mistura(p.giro, p.giroApagado ?? p.giro, ap) * RAD, cr = Filme.hex(cor('destaque'), cor('cinza'), ap * 0.5);
           const w = largTexto(p.texto, p.tam) + p.tam * 0.9, h = p.tam * 1.8;
-          alfa(limita(u * 2) * (1 - 0.35 * ap));
+          alfa(limita(u * 2) * (1 - 0.18 * ap));
           c.save(); c.translate(p.x, p.y); c.rotate(giro); c.scale(s, s);
           cel(rr(-w / 2, -h / 2, w, h, 20), cor('branco'), { lw: 10, bordaCor: cr });
           rr(-w / 2 + 16, -h / 2 + 16, w - 32, h - 32, 10)(); c.strokeStyle = cr; c.lineWidth = 4; c.stroke();
@@ -675,7 +675,7 @@
           c.restore();
           if (p.risco && t >= p.risco.de) { // a barra violeta atravessa o carimbo
             alfa(1); c.save(); c.translate(p.x, p.y); c.rotate(giro);
-            membro([[-w / 2 - 30, 14], [w / 2 + 30, -14]], p.tam * 0.4, cor('acento'), sai(tr(t, p.risco.de, p.risco.ate)), { ponta: 'butt' });
+            membro([[-w / 2 - 30, 14], [w / 2 + 30, -14]], p.tam * 0.15, cor('acento'), sai(tr(t, p.risco.de, p.risco.ate)), { ponta: 'butt' });
             c.restore();
           }
         },

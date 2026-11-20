@@ -341,12 +341,12 @@
             if (t < t0) return;
             alfa(trecho(t, t0, t0 + 0.15));
             const D = it.cor === 'destaque';
-            escreve(it.nome, p.x - 24, y + 16, 34, { cor: D ? 'destaque' : 'branco', alinha: 'direita' });
+            escreve(it.nome, p.x - 24, y + 16, 39, { cor: D ? 'destaque' : 'branco', alinha: 'direita' });
             const w = Math.max(8, p.larg * it.v / p.maximo * u);
             if (D) brilho(22);
             retRedondo(p.x, y - p.alt / 2, w, p.alt, 8); c.fillStyle = cor(it.cor); c.fill(); semBrilho();
             alfa(trecho(t, t0 + p.dur * 0.6, t0 + p.dur));
-            escreve(it.valor, p.x + w + 22, y + 15, 32, { cor: D ? 'destaque' : 'cinzaClaro', alinha: 'esquerda', tabular: true });
+            escreve(it.valor, p.x + w + 22, y + 15, 43, { cor: D ? 'destaque' : 'cinzaClaro', alinha: 'esquerda', tabular: true });
           });
           if (p.unidade) { const t1 = p.t + p.itens.length * 0.12; alfa(trecho(t, t1, t1 + 0.3)); escreve(p.unidade, p.x + p.larg / 2, p.y + p.itens.length * p.passo + 10, 30, { cor: 'cinzaClaro' }); }
         },

@@ -68,7 +68,7 @@ node ferramentas/render.mjs exemplos/biblioteca/absurdo --trabalhadores 3
 
 ## Medida
 
-600 quadros em **20,9 s** de render (24,8 ms por quadro; 1,04 s de render por segundo de vídeo),
+600 quadros em **22,42 s** de render (26 ms por quadro; 1,12 s de render por segundo de vídeo),
 3 navegadores, sem placa de vídeo, a 1080x1920. Detalhes em `medida.json`. Mesmo filme com 1 e 3
 navegadores (360x640, 600 quadros): mesmos quadros. Som: média -21,0 dB, pico -2,4 dB; logo depois do
 arranhão a música fica em silêncio (-46,7 dB).

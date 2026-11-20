@@ -65,7 +65,7 @@ node ferramentas/render.mjs exemplos/biblioteca/papel-cartolina --trabalhadores 
 
 ## Medida
 
-600 quadros em **35,8 s** de render (50 ms por quadro; 1,79 s de render por segundo de vídeo),
+600 quadros em **38,06 s** de render (52,5 ms por quadro; 1,9 s de render por segundo de vídeo),
 3 navegadores, sem placa de vídeo. Detalhes em `medida.json`. Mesmo filme com 1 e 3 navegadores
 (360x640, 600 quadros): mesmos quadros. Som: média -21,4 dB, pico -1,8 dB.
 

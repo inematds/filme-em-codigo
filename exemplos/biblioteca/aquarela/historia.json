@@ -167,7 +167,7 @@
                    { "y": 1245, "n": 10, "tam": 76 }, { "y": 1330, "n": 9, "tam": 92 }, { "y": 1430, "n": 8, "tam": 110 } ],
         "liga": { "de": 2.3, "ate": 3.1, "para": [540, 830] }, "apaga": 2.6 },
       { "tipo": "heroi", "naPintura": true, "x": 540, "y": 905, "tam": 250, "t": 3.25 },
-      { "tipo": "contador", "x": 540, "y": 440, "tam": 110, "de": 0.2, "ate": 2.3, "valor": 20000000, "cor": "tinta", "some": 2.9 },
+      { "tipo": "contador", "x": 540, "y": 440, "tam": 110, "de": 0.2, "ate": 0.9, "valor": 20000000, "cor": "tinta", "some": 2.9 },
       { "tipo": "texto", "texto": "HOMENS VIVOS HOJE", "x": 540, "y": 560, "tam": 42, "cor": "destaque", "t": 0.35, "some": 2.9 },
       { "tipo": "texto", "texto": "GÊNGIS KHAN", "x": 540, "y": 470, "tam": 80, "cor": "tinta", "t": 4.0 }
     ]},
@@ -181,7 +181,7 @@
     { "id": "estatistica", "de": 7.0, "ate": 8.8, "fundo": { "pintura": "planicie", "desfoque": 9, "escurece": 0.4, "zoom": 1.35 }, "sangra": { "centro": [540, 900] }, "pecas": [
       { "tipo": "texto", "texto": "1 EM 12", "x": 540, "y": 600, "tam": 140, "cores": ["destaque", "tinta", "tinta"], "t": 7.05 },
       { "tipo": "janela", "x": 540, "y": 985, "l": 920, "a": 560, "t": 7.0 },
-      { "tipo": "fila", "x": 540, "y": 870, "colunas": 6, "linhas": 2, "dx": 140, "dy": 230, "tam": 160, "de": 7.05, "ate": 7.5, "acende": { "i": 7, "t": 7.6 } }
+      { "tipo": "fila", "x": 540, "y": 870, "colunas": 6, "linhas": 2, "dx": 140, "dy": 230, "tam": 160, "de": 6.5, "ate": 6.7, "acende": { "i": 7, "t": 6.8 } }
     ]},
 
     { "id": "mapa", "de": 8.8, "ate": 13.2, "fundo": { "pintura": "estepe", "desfoque": 10, "escurece": 0.45 }, "sangra": { "centro": [540, 780] }, "pecas": [
@@ -224,7 +224,7 @@
     { "id": "pergunta", "de": 17.0, "ate": 20.0, "fundo": { "pintura": "arvore" }, "sangra": { "antes": 0, "centro": [540, 1250] }, "pecas": [
       { "tipo": "arvore", "naPintura": true, "x": 540, "y": 650, "raizTam": 170, "niveis": [ { "n": 2, "y": 860, "tam": 110 }, { "n": 4, "y": 1080, "tam": 92 }, { "n": 8, "y": 1290, "tam": 76 } ],
         "larg": 920, "de": 17.05, "ate": 17.9 },
-      { "tipo": "heroi", "naPintura": true, "medalhao": true, "x": 540, "y": 650, "tam": 170, "t": 17.0, "contorno": 18.85, "interroga": 18.85 },
+      { "tipo": "heroi", "naPintura": true, "medalhao": true, "x": 540, "y": 650, "tam": 170, "t": 17.0, "contorno": 18.1, "interroga": 18.1 },
       { "tipo": "texto", "texto": "GÊNGIS KHAN", "x": 540, "y": 290, "tam": 76, "cor": "tinta", "t": 17.0, "risco": { "de": 18.1, "ate": 18.4 } },
       { "tipo": "texto", "texto": "OUTRA PESSOA?", "x": 540, "y": 405, "tam": 60, "cor": "destaque", "t": 18.85 }
     ]}
@@ -244,8 +244,7 @@
 
   "legenda": { "y": 1590, "tam": 64, "largura": 1000, "segura": 0.55 },
   "legendas": [
-    { "de": 0.15, "ate": 1.25, "texto": "CERCA DE 20 MILHÕES" },
-    { "de": 1.25, "ate": 2.30, "texto": "DE HOMENS VIVOS HOJE" },
+    { "de": 0.90, "ate": 2.30, "texto": "CERCA DE 20 MILHÕES DE HOMENS" },
     { "de": 2.30, "ate": 3.20, "texto": "PODEM DESCENDER" },
     { "de": 3.20, "ate": 4.00, "texto": "DE UM SÓ HOMEM:" },
     { "de": 4.00, "ate": 5.00, "texto": "GÊNGIS KHAN." },

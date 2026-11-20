@@ -82,7 +82,7 @@
       { "tipo": "ger", "x": 90, "y": 860, "tam": 60 },
       { "tipo": "ger", "x": 990, "y": 870, "tam": 66 },
       { "tipo": "faixa", "y0": 1440, "cor": "#8fe08a", "onda": 16 },
-      { "tipo": "contador", "x": 540, "y": 430, "tam": 96, "de": 0.2, "ate": 2.3, "valor": 20000000, "cor": "destaque", "some": 2.9 },
+      { "tipo": "contador", "x": 540, "y": 430, "tam": 96, "de": 0.2, "ate": 0.9, "valor": 20000000, "cor": "destaque", "some": 2.9 },
       { "tipo": "texto", "texto": "HOMENS VIVOS HOJE", "x": 540, "y": 545, "tam": 50, "cor": "destaque", "t": 1.25, "some": 2.9 },
       { "tipo": "multidao", "x": 540, "colunas": 10, "de": 0.4, "ate": 2.2,
         "linhas": [ { "y": 900, "tam": 95, "dx": 100 }, { "y": 980, "tam": 108, "dx": 104 }, { "y": 1070, "tam": 122, "dx": 108 },
@@ -112,7 +112,7 @@
       { "tipo": "morro", "x": 540, "y": 800, "l": 900, "a": 260, "cor": "#a8ecc0" },
       { "tipo": "faixa", "y0": 1440, "cor": "#8fe08a", "onda": 16 },
       { "tipo": "texto", "texto": "1 EM 12", "x": 540, "y": 620, "tam": 150, "cores": ["acento", "destaque", "destaque"], "t": 7.05 },
-      { "tipo": "fila", "x": 540, "colunas": 6, "dx": 165, "linhas": [ { "y": 1080, "tam": 250 }, { "y": 1390, "tam": 250 } ], "de": 7.1, "ate": 7.5, "acende": { "i": 7, "t": 7.6 } }
+      { "tipo": "fila", "x": 540, "colunas": 6, "dx": 165, "linhas": [ { "y": 1080, "tam": 250 }, { "y": 1390, "tam": 250 } ], "de": 6.5, "ate": 6.7, "acende": { "i": 7, "t": 6.8 } }
     ]},
 
     { "id": "mapa", "de": 8.8, "ate": 13.2, "pecas": [
@@ -151,7 +151,7 @@
       { "tipo": "pasta", "x": 540, "y": 860, "l": 900, "a": 620, "titulo": "ARQUIVO DO CASO", "t": 13.2, "linhas": 5 },
       { "tipo": "xicara", "x": 930, "y": 1440, "tam": 90 },
       { "tipo": "lupa", "x": 150, "y": 1400, "tam": 85 },
-      { "tipo": "carimbo", "texto": "CASO ENCERRADO?", "x": 540, "y": 860, "tam": 72, "giro": -8, "t": 13.35, "apaga": 14.4, "giroApagado": -3,
+      { "tipo": "carimbo", "texto": "CASO ENCERRADO?", "x": 540, "y": 860, "tam": 54, "giro": -8, "t": 13.35, "apaga": 14.4, "giroApagado": -3,
         "risco": { "de": 14.45, "ate": 14.75 } },
       { "tipo": "texto", "texto": "AINDA NÃO", "x": 540, "y": 1290, "tam": 110, "cores": ["acento", "acento"], "t": 14.42 }
     ]},
@@ -197,8 +197,7 @@
 
   "legenda": { "y": 1600, "tam": 68, "largura": 980, "segura": 0.55 },
   "legendas": [
-    { "de": 0.15, "ate": 1.25, "texto": "CERCA DE 20 MILHÕES" },
-    { "de": 1.25, "ate": 2.30, "texto": "DE HOMENS VIVOS HOJE" },
+    { "de": 0.90, "ate": 2.30, "texto": "CERCA DE 20 MILHÕES DE HOMENS" },
     { "de": 2.30, "ate": 3.20, "texto": "PODEM DESCENDER" },
     { "de": 3.20, "ate": 4.00, "texto": "DE UM SÓ HOMEM:" },
     { "de": 4.00, "ate": 5.00, "texto": "GÊNGIS KHAN." },

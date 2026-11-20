@@ -69,9 +69,9 @@ node ferramentas/render.mjs exemplos/biblioteca/anime-pintado --trabalhadores 3
 
 ## Medida
 
-600 quadros em **89,9 s** de render (114,3 ms por quadro; 4,49 s de render por segundo de vídeo),
+600 quadros em **76,86 s** de render (103,7 ms por quadro; 3,84 s de render por segundo de vídeo),
 3 navegadores, sem placa de vídeo. Detalhes em `medida.json`. Mesmo filme com 1 e 3 navegadores
-(360x640, 600 quadros): mesmos quadros. O MP4 sai grande (~71 MB) por causa do grão de filme.
+(360x640, 600 quadros): mesmos quadros. O MP4 sai grande (~70,2 MB) por causa do grão de filme.
 
 ## Falta polir
 

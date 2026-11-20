@@ -84,7 +84,7 @@ node ferramentas/render.mjs exemplos/biblioteca/aquarela --trabalhadores 3
 
 ## Medida
 
-600 quadros em **81,5 s** de render: 101,7 ms por quadro, ou 4,07 s de render por segundo de vídeo, com
+600 quadros em **85,63 s** de render: 106 ms por quadro, ou 4,28 s de render por segundo de vídeo, com
 3 navegadores e sem placa de vídeo. Os detalhes estão em `medida.json`.
 
 O filme inteiro em 360x640 saiu com os mesmos quadros com 1 e com 3 navegadores.

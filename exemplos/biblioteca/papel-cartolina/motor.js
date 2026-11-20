@@ -498,9 +498,9 @@
         carimbo(p, t, sem) {
           if (t < p.t) return;
           const u = tr(t, p.t, p.t + 0.2), s = mistura(1.9, 1, sai(u)), ap = p.apaga ? tr(t, p.apaga, p.apaga + 0.2) : 0;
-          const giro = mistura(p.giro, p.giroApagado ?? p.giro, ap) * RAD, cr = Filme.hex(cor('vermelho'), cor('papelCinza'), ap);
+          const giro = mistura(p.giro, p.giroApagado ?? p.giro, ap) * RAD, cr = Filme.hex(cor('vermelho'), cor('tinta'), ap * 0.65);
           const w = largTexto(p.texto, p.tam) + p.tam * 0.9, h = p.tam * 1.8;
-          alfa(limita(u * 2) * (1 - 0.35 * ap));
+          alfa(limita(u * 2) * (1 - 0.18 * ap));
           c.save(); c.translate(p.x, p.y); c.rotate(giro); c.scale(s, s);
           c.strokeStyle = cr; c.lineJoin = 'round';
           poli(ret(-w / 2, -h / 2, w, h), sem, 2.5); c.lineWidth = 10; c.stroke();
@@ -509,7 +509,7 @@
           c.restore();
           if (p.risco && t >= p.risco.de) { // tira amarela de cartolina atravessa o carimbo
             alfa(1); c.save(); c.translate(p.x, p.y); c.rotate(giro);
-            tira(-w / 2 - 30, 14, w / 2 + 30, -14, p.tam * 0.42, cor('destaque'), sem + 5, sai(tr(t, p.risco.de, p.risco.ate)), { borda: cor('tinta'), lb: 5 });
+            tira(-w / 2 - 30, 14, w / 2 + 30, -14, p.tam * 0.15, cor('destaque'), sem + 5, sai(tr(t, p.risco.de, p.risco.ate)), { borda: cor('tinta'), lb: 5 });
             c.restore();
           }
         },
