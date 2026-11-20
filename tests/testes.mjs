@@ -77,7 +77,7 @@ try {
     for (const h of hist) { let bom = true; try { JSON.parse(fs.readFileSync(path.join(pasta, h), 'utf8')); } catch { bom = false; } ok(bom, `${h} é um JSON válido`); }
     const a = await renderizar({ ...tam, pasta, saida: path.join(TMP, 'b-' + m + '-a'), inicio: ini, fim: ini + 1, trabalhadores: 2 });
     const fl = sonda(a.mp4), v = fl.find((f) => f.codec_type === 'video'), s = fl.find((f) => f.codec_type === 'audio');
-    ok(v && v.width === tam.largura && v.height === tam.altura && Number(v.nb_read_frames) === 30 && s && s.codec_name === 'aac', `1 segundo ${tam.largura}x${tam.altura} com som`);
+    ok(v && v.width === tam.largura && v.height === tam.altura && Number(v.nb_read_frames) === (med.fps || 30) && s && s.codec_name === 'aac', `1 segundo ${tam.largura}x${tam.altura} com som`);
     const b = await renderizar({ ...tam, pasta, saida: path.join(TMP, 'b-' + m + '-b'), inicio: ini, fim: ini + 1, trabalhadores: 1 });
     ok(a.medida.hash_quadros === b.medida.hash_quadros && a.medida.hash_som === b.medida.hash_som, 'mesmo código = mesmos quadros e mesmo som (2 e 1 navegador)');
     ok(new Set(linhas(a.saida)).size > 1, 'os quadros mudam com o tempo');

@@ -45,3 +45,5 @@
 - 20:02 pronto: retro-futuro — MAS medida/capa em 360x640 (ambiguidade minha no prompt). Refazer render final em 1080x1920 no fechamento. Rodando: aquarela, absurdo, vetor-ciencia (último).
 - 20:16 pronto: absurdo (20,9 s, final 1080). Muito bom. tests/testes.mjs ganhou o bloco 6 (biblioteca: 1 s + mesmos quadros 2x1 + histórias extras). Rodando: aquarela, vetor-ciencia.
 - 20:22 pronto: aquarela (81,5 s), vetor-ciencia (36,5 s). 43/43 motores. Checkpoint commit local.
+- 20:55 PASSO 1 OK: 51/51 histórias idênticas 1x3 no filme inteiro (360 px), 51 folhas em scratchpad/conferir/folhas (1917 s). Rodando tests/rodar.sh.
+- 21:02 tests/rodar.sh: 224 ok, 2 FALHA (retrato-ilustrado e sombra-chapada são 24 qps; o teste supunha 30). Teste corrigido p/ usar med.fps — rodar de novo no fechamento.
