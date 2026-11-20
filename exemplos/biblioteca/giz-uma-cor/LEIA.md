@@ -37,8 +37,8 @@ node ferramentas/render.mjs exemplos/biblioteca/giz-uma-cor --historia minha-his
 **De onde saiu.** Do filme "Into the Wind" (estilo "One-colour crayon print") da biblioteca de
 estilos da fonte. A moça, o capim e as folhinhas daqui são desenhos novos, feitos do zero.
 
-**Tempo de render medido** (`medida.json`): 15,5 s para 6 s de filme (180 quadros, 57 ms por
-quadro, 3 navegadores, sem placa de vídeo). O MP4 tem 7,0 MB. Mesmo filme inteiro em 640x360 com
+**Tempo de render medido** (`medida.json`): 17,37 s para 6 s de filme (180 quadros, 60,9 ms por
+quadro, 3 navegadores, sem placa de vídeo). O MP4 tem 7,17 MB. Mesmo filme inteiro em 640x360 com
 1 e com 3 navegadores deu o mesmo `quadros.sha256`.
 
 **Falta polir.**

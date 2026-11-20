@@ -212,7 +212,7 @@
     peca(c, poli([[-30, 40], [30, 40], [34, 400], [-34, 400]]), B.quadro, { id: 51, sombra: poli([[6, 40], [30, 40], [34, 400], [10, 400]]), corSombra: cor(B.quadro, '#6a4a00', 0.35) });
     peca(c, (c) => c.rect(-14, 130, 28, 22), '#d8322a', { id: 52 }); // refletor
     // guidão (atrás do corpo; só as pontas aparecem)
-    membro(c, [[-350, -150], [-240, -170], [240, -170], [350, -150]], 12, '#b9b9c0', 53);
+    membro(c, [[-350, -150], [-255, -78], [255, -78], [350, -150]], 23, '#456783', 53);
     for (const x of [-350, 350]) peca(c, (c) => c.ellipse(x, -150, 22, 14, 0, 0, TAU), '#4a4040', { id: 54 });
     // pernas
     for (const lado of [-1, 1]) membro(c, [[lado * 60, 20], [lado * 92, 220], [lado * 80, 420]], 46, T.pele, 55 + lado);

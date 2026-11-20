@@ -16,7 +16,7 @@
     "bota": "#6b4330",
     "pelo": "#e0a95e",
     "peloClaro": "#f7e6cc",
-    "ferro": "#3d3a52",
+    "ferro": "#59617b",
     "metal": "#c9d2e6",
     "madeira": "#7a4a2c",
     "lanterna": "#ffc25a",
@@ -184,7 +184,7 @@
         { "t": 9.6,  "pos": [0.2, 0.04, 5.12],  "giro": [0.0, 190] }
       ],
       "nota": "pos = ponta da coronha (onde o cachorro morde); giro = [inclinação para baixo, giro em graus]; a baioneta aponta para longe do cachorro",
-      "brilho": { "de": 9.6, "ate": 10.05 },
+      "brilho": { "de": 9.32, "ate": 10.05 },
       "lama": { "de": 8.35, "ate": 9.0, "x": 0.15, "z": 4.75 } }
   ],
 

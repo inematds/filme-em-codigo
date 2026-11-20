@@ -48,8 +48,8 @@ Tudo o que muda fica em `historia.json`:
 node ferramentas/render.mjs exemplos/biblioteca/anime-3d-cel --historia minha-historia.json
 ```
 
-**Tempo de render medido** (`medida.json`): 86,6 s para 15 s de filme (450 quadros, 155 ms por
-quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 43 MB. Som: média -20,9 dB, pico -2,1 dB.
+**Tempo de render medido** (`medida.json`): 85,38 s para 15 s de filme (450 quadros, 151,2 ms por
+quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 42,43 MB. Som: média -20,9 dB, pico -2,1 dB.
 
 ## Falta polir
 

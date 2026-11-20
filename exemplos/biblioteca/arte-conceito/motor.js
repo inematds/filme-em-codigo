@@ -186,9 +186,9 @@
           case 'pombo': pombo(p, t); break;
           case 'aves': {
             if (t < p.de || t > p.ate) break;
-            const lista = AVES[i] || (AVES[i] = sorteados(p.n, sem0 + 30 + i, (r) => ({ dx: (r() - 0.5) * 220, dy: (r() - 0.5) * 70, tam: 7 + r() * 6, fase: r() * TAU })));
+            const lista = AVES[i] || (AVES[i] = sorteados(p.n, sem0 + 30 + i, (r) => ({ dx: (r() - 0.5) * 220, dy: (r() - 0.5) * 70, tam: 12 + r() * 8, fase: r() * TAU })));
             const tp = emDois(t), d = tp - p.de;
-            c.strokeStyle = pal.ave; c.lineCap = 'round'; c.lineWidth = Math.max(1 / k, 2.6);
+            c.strokeStyle = pal.ave; c.lineCap = 'round'; c.lineWidth = Math.max(1 / k, 4.6);
             for (const a of lista) {
               const x = p.x + a.dx + p.vx * d, y = p.y + a.dy + p.vy * d, asa = a.tam * (0.25 + 0.75 * Math.abs(Math.sin(tp * 8 + a.fase)));
               c.beginPath(); c.moveTo(x - a.tam, y - asa); c.quadraticCurveTo(x - a.tam * 0.3, y, x, y); c.quadraticCurveTo(x + a.tam * 0.3, y, x + a.tam, y - asa); c.stroke();

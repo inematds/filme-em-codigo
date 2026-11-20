@@ -49,8 +49,8 @@ node ferramentas/render.mjs exemplos/biblioteca/tijolinhos --historia minha-hist
 stop-motion) da biblioteca de estilos da fonte. As peças são genéricas (sem marca, sem logotipo) e os
 bonecos são desenho novo.
 
-**Tempo de render medido** (`medida.json`): 187 s para 10 s de filme (300 quadros, 561 ms por
-quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 18 MB.
+**Tempo de render medido** (`medida.json`): 207,97 s para 10 s de filme (300 quadros, 623,9 ms por
+quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 17,92 MB.
 
 **Falta polir**
 - Na abertura, as peças que voam passam muito perto da lente e ficam grandes no alto do quadro.

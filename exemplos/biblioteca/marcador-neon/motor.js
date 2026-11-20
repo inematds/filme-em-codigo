@@ -342,7 +342,7 @@
           for (const b of (pe.balancos || [])) { const u = t - b - durPe; if (u > 0) f += 0.22 * Math.sin(TAU * u / 0.3) * Math.exp(-u / 0.22); }
           return limita(f, -0.7, 0.7);
         };
-        perna([[-110, 135], [-270, 128], [-410, 118], [-530, 138], [-645, 160]], 0, 0.1);
+        perna([[-110, 135], [-270, 128], [-405, 85], [-495, 180], [-560, 270]], 0, 0.1);
         const aP = anguloPe(tq), JOELHO = [-400, 54];
         const canela = [[-400, 54], [-520, 52], [-640, 50]].map((q) => soma(JOELHO, gira([q[0] - JOELHO[0], q[1] - JOELHO[1]], aP)));
         perna([[-95, 82], [-260, 70], ...canela], aP * 1.4, flopDe(tq));

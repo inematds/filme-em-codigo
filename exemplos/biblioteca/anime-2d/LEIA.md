@@ -40,8 +40,8 @@ node ferramentas/render.mjs exemplos/biblioteca/anime-2d --historia minha-histor
 estilos da fonte. A menina, a cidade e o trem daqui são desenhos novos e genéricos, sem letra nem
 marca em placa, trem ou casa.
 
-**Tempo de render medido** (`medida.json`): 44,6 s para 10 s de filme (300 quadros, 116 ms por
-quadro, 3 navegadores, sem GPU). O MP4 tem 44 MB (o grão muda a cada 2 quadros e pesa).
+**Tempo de render medido** (`medida.json`): 44,43 s para 10 s de filme (300 quadros, 117,7 ms por
+quadro, 3 navegadores, sem GPU). O MP4 tem 44,06 MB (o grão muda a cada 2 quadros e pesa).
 
 **Falta polir** (achado depois da 3ª rodada, não corrigido):
 - a textura de pincel é fraca: telhados, rua e muros parecem mais vetor chapado do que a tinta-pôster grossa do filme da fonte;

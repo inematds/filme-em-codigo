@@ -44,8 +44,8 @@ node ferramentas/render.mjs exemplos/biblioteca/arte-conceito --historia minha-h
 biblioteca de estilos da fonte. A moça daqui é um desenho novo e genérico (outro cabelo, outra roupa,
 cachecol no lugar da bolsa); a rua, os carros e as pessoas não têm letra nem marca.
 
-**Tempo de render medido** (`medida.json`): 41,2 s para 10 s de filme (300 quadros, 120 ms por
-quadro, 3 navegadores, sem placa de vídeo). O MP4 tem 13,1 MB. Som: média -17,7 dB, pico -1,4 dB.
+**Tempo de render medido** (`medida.json`): 40,94 s para 10 s de filme (300 quadros, 118 ms por
+quadro, 3 navegadores, sem placa de vídeo). O MP4 tem 13,13 MB. Som: média -17,7 dB, pico -1,4 dB.
 Mesmo filme a 640x360 com 1 e com 3 navegadores: os mesmos quadros (`quadros.sha256` igual).
 
 **Falta polir** (achado depois da 3ª rodada, não corrigido):

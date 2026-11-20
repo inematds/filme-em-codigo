@@ -15,7 +15,7 @@
 
     { "tipo": "touceira", "x": 330, "y": 905, "largura": 360, "altura": 300, "folhas": 9, "capins": 8, "sementes": 3, "semente": 3 },
     { "tipo": "touceira", "x": 650, "y": 912, "largura": 70, "altura": 70, "folhas": 4, "capins": 3, "sementes": 0, "semente": 5 },
-    { "tipo": "touceira", "x": 1085, "y": 905, "largura": 560, "altura": 330, "folhas": 10, "capins": 10, "sementes": 3, "semente": 7 },
+    { "tipo": "touceira", "x": 875, "y": 905, "largura": 355, "altura": 330, "folhas": 10, "capins": 10, "sementes": 3, "semente": 7 },
 
     { "tipo": "mulher", "x": 1100, "y": 900, "escala": 1.05,
       "piscar": [0.85],
@@ -23,7 +23,7 @@
       "fecha": 3.15,
       "respira": [3.25, 4.0] },
 
-    { "tipo": "touceira", "x": 1060, "y": 915, "largura": 420, "altura": 150, "folhas": 8, "capins": 12, "sementes": 1, "semente": 11 },
+    { "tipo": "touceira", "x": 1320, "y": 915, "largura": 275, "altura": 150, "folhas": 8, "capins": 12, "sementes": 1, "semente": 11 },
     { "tipo": "touceira", "x": 1500, "y": 912, "largura": 110, "altura": 120, "folhas": 4, "capins": 4, "sementes": 1, "semente": 13 },
     { "tipo": "touceira", "x": 1690, "y": 914, "largura": 70, "altura": 70, "folhas": 3, "capins": 3, "sementes": 0, "semente": 17 },
 

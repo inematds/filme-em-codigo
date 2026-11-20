@@ -36,8 +36,8 @@ node ferramentas/render.mjs exemplos/biblioteca/marcador-neon --historia minha-h
 estilos da fonte. A moça, a cadeira, o cacto e o copo daqui são desenhos novos e genéricos (sem
 marca no copo nem no tênis).
 
-**Tempo de render medido** (`medida.json`): 22,8 s para 6 s de filme (180 quadros, 100 ms por
-quadro, 3 navegadores, sem placa de vídeo). O MP4 tem 10,8 MB. Mesmo filme inteiro em 640x360 com
+**Tempo de render medido** (`medida.json`): 24,42 s para 6 s de filme (180 quadros, 105,8 ms por
+quadro, 3 navegadores, sem placa de vídeo). O MP4 tem 10,69 MB. Mesmo filme inteiro em 640x360 com
 1 e com 3 navegadores deu o mesmo `quadros.sha256`.
 
 **Falta polir.**
