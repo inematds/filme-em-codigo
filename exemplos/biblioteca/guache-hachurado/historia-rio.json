@@ -68,7 +68,7 @@
       "reflexo": { "cor": "agua", "mistura": 0.3, "alfa": 0.85, "escala": 0.7, "passo": 6 },
       "gera": { "de": -100, "ate": 2050, "passo": 78, "altura": [110, 200], "largura": [48, 78], "desnivel": 4, "falha": 0.3 } },
 
-    { "tipo": "barco", "camada": 0.65, "y": 768, "escala": 1.5, "remada": 1.7,
+    { "tipo": "barco", "camada": 0.65, "y": 768, "escala": 2.1, "remada": 1.7,
       "x": [[0, 640], [8, 1240]],
       "cores": { "casco": "creme", "faixa": "vermelho", "camisa": "vermelho", "chapeu": "palha", "fita": "vermelho", "pele": "pele", "remo": "marrom", "espuma": "risco" } },
 

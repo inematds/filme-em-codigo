@@ -62,10 +62,10 @@
       "sombra": { "cor": "gramaSombra", "alfa": 0.75, "dx": 0.5, "rx": 1.25, "ry": 13 },
       "lista": [[170, 870, 330], [650, 900, 320], [1140, 860, 340], [1610, 890, 330], [2090, 875, 335], [2560, 900, 330]] },
 
-    { "tipo": "ciclista", "camada": 1, "y": 812, "escala": 1.15,
+    { "tipo": "ciclista", "camada": 1, "y": 812, "escala": 1.75,
       "x": [[0, 60], [2, 480], [5, 1330], [9, 2290]],
       "chapeu": "bone", "cores": { "camisa": "laranja", "saia": "laranja", "chapeu": "vermelho", "cachecol": "vermelho", "cabelo": "#a0522d", "pernaTras": "pele", "pele": "pele" } },
-    { "tipo": "ciclista", "camada": 1, "y": 812, "escala": 1.15,
+    { "tipo": "ciclista", "camada": 1, "y": 812, "escala": 1.75,
       "x": [[0, 260], [9, 2390]],
       "chapeu": "palheta", "cesta": "#b8874a", "cores": { "camisa": "azulClaro", "calca": "#3d4a5c", "chapeu": "creme", "cabelo": "escuro", "pele": "pele" } },
 

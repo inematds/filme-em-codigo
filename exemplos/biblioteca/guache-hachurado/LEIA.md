@@ -51,9 +51,9 @@ código.
 
 **Tempo de render medido** (`medida.json` e `medida-historia-rio.json`, 3 navegadores, sem placa de
 vídeo):
-- alameda: 85,2 s para 9 s de filme (270 quadros, 265 ms por quadro). MP4 de 43,2 MB. Som: média
+- alameda: 78,35 s para 9 s de filme (270 quadros, 256,8 ms por quadro). MP4 de 42,8 MB. Som: média
   -16,0 dB, pico -1,5 dB.
-- rio: 49,9 s para 8 s de filme (240 quadros, 163 ms por quadro). MP4 de 18,3 MB. Som: média
+- rio: 37,24 s para 8 s de filme (240 quadros, 127,9 ms por quadro). MP4 de 18,29 MB. Som: média
   -18,8 dB, pico -1,4 dB.
 
 O MP4 é grande porque a hachura muda a cada três quadros: o vídeo não consegue repetir quase nada.
