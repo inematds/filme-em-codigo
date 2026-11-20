@@ -65,7 +65,7 @@
   "subida": 0.7,
 
   "chaves": {
-    "R": "capa", "r": "capaEscura", "S": "pele", "K": "contorno", "B": "calca", "M": "bota",
+    "R": "palha", "r": "outonoClaro", "S": "pele", "K": "contorno", "B": "calca", "M": "bota",
     "Y": "palha", "y": "outonoClaro", "G": "folha", "g": "folhaEscura", "A": "aguaClara", "a": "agua",
     "W": "creme"
   },

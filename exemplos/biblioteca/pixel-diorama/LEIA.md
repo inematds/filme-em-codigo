@@ -36,5 +36,5 @@ node ferramentas/render.mjs exemplos/biblioteca/pixel-diorama --historia minha-h
 **De onde saiu.** Do filme "Lantern Village" (estilo "HD-2D pixel art diorama") da biblioteca de
 estilos da fonte. A heroína, os aldeões e a vila daqui são desenhos novos e genéricos.
 
-**Tempo de render medido** (`medida.json`): 35,5 s para 10 s de filme (300 quadros, 99,9 ms por
+**Tempo de render medido** (`medida.json`): 36,72 s para 10 s de filme (300 quadros, 102,4 ms por
 quadro, 3 navegadores, sem placa de vídeo). O MP4 tem 7,8 MB.

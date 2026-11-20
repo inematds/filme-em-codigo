@@ -36,8 +36,8 @@ node ferramentas/render.mjs exemplos/biblioteca/plano-minimalista --historia min
 **De onde saiu.** Do filme "Shallows" (estilo "Flat minimalist illustration") da biblioteca de
 estilos da fonte. A mulher, as folhas, a libélula e a carpa daqui são desenhos novos, feitos em código.
 
-**Tempo de render medido** (`medida.json`): 28,7 s para 9 s de filme (270 quadros, 89 ms por quadro,
-3 navegadores, sem placa de vídeo). O MP4 tem 5,7 MB. Som: média -16,8 dB, pico -1,3 dB.
+**Tempo de render medido** (`medida.json`): 30,32 s para 9 s de filme (270 quadros, 93,1 ms por quadro,
+3 navegadores, sem placa de vídeo). O MP4 tem 5,68 MB. Som: média -16,8 dB, pico -1,3 dB.
 
 **Falta polir.**
 - Quando ela levanta a cabeça (de 6,7 s a 7,7 s), o lenço creme encolhe para um gorrinho no alto em

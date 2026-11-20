@@ -35,5 +35,5 @@ Render: `node ferramentas/render.mjs exemplos/biblioteca/voo-raymarch`
 ## Tempo de render (medido)
 
 8 s de filme, 240 quadros 1920x1080, sem GPU (WebGL calculado pela CPU), 3 navegadores:
-**47 s no total, 156 ms por quadro** (`medida.json`). O mundo é calculado na metade da resolução,
+**42,67 s no total, 143,2 ms por quadro** (`medida.json`). O mundo é calculado na metade da resolução,
 com 80 passos por raio (`ESCALA` e `PASSOS` no topo do `motor.js`); o acabamento é em tela cheia.

@@ -352,7 +352,7 @@
           x = p.pousa[0] + 6 * (1 - Math.exp(-d)); y = p.pousa[1]; rot = 0.15; ry = 2.6;
         }
         c.save(); c.translate(x, y); c.rotate(rot);
-        c.fillStyle = C.creme; c.beginPath(); c.ellipse(0, 0, 10, ry, 0, 0, TAU); c.fill();
+        c.fillStyle = C.creme; c.beginPath(); c.ellipse(0, 0, 17, ry * 1.6, 0, 0, TAU); c.fill();
         c.restore();
       }
 

@@ -343,8 +343,8 @@
   ],
   "filme": {
     "limiar": 1.0,
-    "brilho": 0.45,
-    "riscos": 0.5,
+    "brilho": 0.31,
+    "riscos": 0.28,
     "corRisco": "#7fd8ff",
     "borrao": 0.35,
     "distBorrao": 12,

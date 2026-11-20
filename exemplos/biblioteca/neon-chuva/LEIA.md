@@ -39,5 +39,5 @@ node ferramentas/render.mjs exemplos/biblioteca/neon-chuva --historia minha-hist
 **De onde saiu.** Do filme "Neon Rain" (estilo "Rain-soaked neon megacity") da biblioteca de
 estilos da fonte. O carrinho, o cozinheiro e os símbolos daqui são desenhos novos e genéricos.
 
-**Tempo de render medido** (`medida.json`): 60,7 s para 9 s de filme (270 quadros, 171 ms por
-quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 45 MB.
+**Tempo de render medido** (`medida.json`): 69,22 s para 9 s de filme (270 quadros, 197,9 ms por
+quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 45,31 MB.

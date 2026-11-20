@@ -43,8 +43,8 @@ node ferramentas/render.mjs exemplos/biblioteca/tinta-na-agua --historia minha-h
 **De onde saiu.** Do filme "Ink Crane" da biblioteca de estilos da fonte. O grou daqui é um
 desenho novo e genérico, feito de partes simples.
 
-**Tempo de render medido** (`medida.json`): 63,4 s para 9,6 s de filme (288 quadros, 187 ms por
-quadro, 3 navegadores, sem GPU). O MP4 sai grande (55 MB), porque o grão e os milhares de
+**Tempo de render medido** (`medida.json`): 60,73 s para 9,6 s de filme (288 quadros, 179,7 ms por
+quadro, 3 navegadores, sem GPU). O MP4 sai grande (55,26 MB), porque o grão e os milhares de
 risquinhos mudam a cada quadro.
 
 **Falta polir** (achado depois da 3ª rodada de correção):
