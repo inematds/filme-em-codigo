@@ -186,7 +186,11 @@ Filme.criar({
       x.strokeStyle = C.reguaRisco; x.lineCap = 'round';
       for (let cm = 0; cm <= RG.cm; cm++) {
         const y = yPx(RG.zero + cm * RG.comprimento / RG.cm), longo = cm % 5 === 0;
-        x.lineWidth = longo ? 6 : 4; x.beginPath(); x.moveTo(0, y); x.lineTo(longo ? 92 : 54, y); x.stroke();
+        if (cm === 0) {
+          x.fillStyle = C.reguaRisco;
+          x.fillRect(0, y - 6, 145, 12);
+        }
+        x.lineWidth = longo ? 8 : 4; x.beginPath(); x.moveTo(0, y); x.lineTo(longo ? 92 : 54, y); x.stroke();
         if (longo) escreve(x, String(cm), 200, y - 26, 52, C.reguaRisco, 9);
       }
       escreve(x, 'CM', 200, yPx(topo) + 20, 40, C.reguaRisco, 7);

@@ -76,10 +76,10 @@ node ferramentas/render.mjs exemplos/biblioteca/mesa-de-mapas --trabalhadores 3
 
 ## Medida
 
-600 quadros em **81,9 s** de render (111 ms por quadro, 4,1 s de render por segundo de vídeo), com 3
+600 quadros em **90,65 s** de render (121,8 ms por quadro, 4,53 s de render por segundo de vídeo), com 3
 navegadores e sem placa de vídeo. Os detalhes estão em `medida.json`. O filme inteiro a 360x640 com 1 e
 com 3 navegadores dá os mesmos quadros. Som: média -22,6 dB, pico -2,6 dB. O corte da música (14,4 a
-15,2 s) mede -44 dB a 14,9 s. O MP4 a 1080 sai grande (227 MB) por causa do grão, que muda a cada quadro.
+15,2 s) mede -44 dB a 14,9 s. O MP4 a 1080 sai grande (226,86 MB) por causa do grão, que muda a cada quadro.
 
 ## Falta polir
 

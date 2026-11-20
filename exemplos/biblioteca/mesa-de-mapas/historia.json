@@ -57,7 +57,7 @@
         "linhas": [ { "y": 800, "tam": 44, "dx": 62 }, { "y": 880, "tam": 54, "dx": 66 }, { "y": 970, "tam": 66, "dx": 70 },
                     { "y": 1065, "tam": 80, "dx": 72 }, { "y": 1165, "tam": 96, "dx": 74 }, { "y": 1265, "tam": 112, "dx": 76 } ],
         "liga": { "de": 2.3, "ate": 3.1, "para": [540, 560] }, "apaga": 2.6 },
-      { "tipo": "contador", "x": 540, "y": 330, "tam": 100, "de": 0.2, "ate": 2.3, "valor": 20000000, "some": 3.1 },
+      { "tipo": "contador", "x": 540, "y": 330, "tam": 100, "de": 0.2, "ate": 0.9, "valor": 20000000, "some": 3.1 },
       { "tipo": "rotulo", "texto": "HOMENS VIVOS HOJE", "x": 540, "y": 455, "tam": 42, "t": 1.25, "some": 3.1 },
       { "tipo": "foto", "desenho": "khan", "x": 540, "y": 930, "l": 720, "a": 860, "giro": 2.5, "t": 3.25, "brilho": { "t": 3.25 } },
       { "tipo": "alfinete", "x": 540, "y": 560, "t": 2.3 },
@@ -72,10 +72,10 @@
       { "tipo": "tubos", "x": 540, "y": 1060, "n": 12, "dx": 62, "tam": 200, "de": 5.3, "ate": 5.9, "enche": { "i": 7, "t": 6.1 } }
     ]},
 
-    { "id": "estatistica", "de": 7.0, "ate": 8.8, "luz": [540, 850], "camera": { "z0": 1.02, "z1": 1.09, "pan": 40 }, "pecas": [
+    { "id": "estatistica", "corte": true, "de": 7.0, "ate": 8.8, "luz": [540, 850], "camera": { "z0": 1.02, "z1": 1.09, "pan": 40 }, "pecas": [
       { "tipo": "mesa", "x": 700, "y": 1650 },
       { "tipo": "rotulo", "texto": "1 EM 12", "x": 540, "y": 400, "tam": 120, "t": 7.05, "cores": ["vermelho", "tinta", "tinta"] },
-      { "tipo": "retratos", "x": 540, "colunas": 4, "dx": 215, "linhas": [650, 915, 1180], "l": 180, "a": 220, "de": 7.1, "ate": 7.5, "acende": { "i": 7, "t": 7.6 } }
+      { "tipo": "retratos", "x": 540, "colunas": 4, "dx": 215, "linhas": [650, 915, 1180], "l": 180, "a": 220, "de": 6.5, "ate": 6.7, "acende": { "i": 7, "t": 6.8 } }
     ]},
 
     { "id": "mapa", "de": 8.8, "ate": 13.2, "luz": [540, 800], "camera": { "z0": 1.02, "z1": 1.07, "pan": 30 }, "pecas": [
@@ -147,8 +147,7 @@
 
   "legenda": { "y": 1650, "tam": 64, "largura": 1000, "segura": 0.55, "contorno": 8 },
   "legendas": [
-    { "de": 0.15, "ate": 1.25, "texto": "CERCA DE 20 MILHÕES" },
-    { "de": 1.25, "ate": 2.30, "texto": "DE HOMENS VIVOS HOJE" },
+    { "de": 0.90, "ate": 2.30, "texto": "CERCA DE 20 MILHÕES DE HOMENS" },
     { "de": 2.30, "ate": 3.20, "texto": "PODEM DESCENDER" },
     { "de": 3.20, "ate": 4.00, "texto": "DE UM SÓ HOMEM:" },
     { "de": 4.00, "ate": 5.00, "texto": "GÊNGIS KHAN." },

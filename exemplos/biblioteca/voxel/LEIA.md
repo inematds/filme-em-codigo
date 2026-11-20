@@ -46,8 +46,8 @@ node ferramentas/render.mjs exemplos/biblioteca/voxel --historia minha-historia.
 da fonte. Narração traduzida pelo tradutor central e encurtada à mão para a legenda; o filme da fonte tem
 20 s e aqui foi cortado para 15 s (sem o mergulho pelo espaço). Arqueólogo, abelhas e germes são desenho novo.
 
-**Tempo de render medido** (`medida.json`): 198 s para 15 s de filme (450 quadros, cerca de 390 ms por
-quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 23 MB. Os quadros dão o mesmo resultado com 1 e com 3 navegadores (conferido no filme inteiro em 360x640).
+**Tempo de render medido** (`medida.json`): 180,26 s para 15 s de filme (450 quadros, cerca de 367,2 ms por
+quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 22,62 MB. Os quadros dão o mesmo resultado com 1 e com 3 navegadores (conferido no filme inteiro em 360x640).
 
 **Falta polir**
 - O rosto do arqueólogo fica escuro e meio escondido sob a aba do chapéu (as tochas estão atrás dele); na fonte ele aparece de frente e bem iluminado.

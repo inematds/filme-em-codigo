@@ -67,8 +67,8 @@ node ferramentas/render.mjs exemplos/biblioteca/caixa-sombra --historia minha-hi
 
 ## Medida
 
-450 quadros em **94,7 s** de render (179 ms por quadro; 6,3 s de render por segundo de vídeo),
-3 navegadores, sem placa de vídeo. MP4 de 19,4 MB (o grão do papel pesa no vídeo).
+450 quadros em **62,99 s** de render (121 ms por quadro; 4,2 s de render por segundo de vídeo),
+3 navegadores, sem placa de vídeo. MP4 de 19,34 MB (o grão do papel pesa no vídeo).
 
 Som: média -19,5 dB e pico -2,1 dB. Os segundos mais altos são os do nado (9 s e 10 s). Mesmo
 filme inteiro em 360x640 com 1 e com 3 navegadores: os 450 quadros são iguais. Detalhes em

@@ -50,7 +50,7 @@ node ferramentas/render.mjs exemplos/biblioteca/massinha --historia minha-histor
 claymation diorama) da biblioteca de estilos da fonte. Narração traduzida pelo tradutor central e
 encurtada à mão para a legenda. Bonecos, pombo e sol são desenho novo.
 
-**Tempo de render medido** (`medida.json`): 122 s para 15 s de filme (450 quadros, cerca de 240 ms por quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 27 MB.
+**Tempo de render medido** (`medida.json`): 168,01 s para 15 s de filme (450 quadros, cerca de 333,7 ms por quadro, 3 navegadores, sem GPU). O MP4 sai com cerca de 27,15 MB.
 
 **Falta polir**
 - As digitais aparecem bem de perto (pombo, régua), mas no plano aberto quase somem; na torre o relevo corre esticado ao longo dos pés. Os calombos são mais leves que na fonte.

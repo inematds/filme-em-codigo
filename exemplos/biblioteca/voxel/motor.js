@@ -396,6 +396,27 @@ Filme.criar({
       xL.globalAlpha = alfa;
       xL.setTransform(uL * pop, 0, 0, uL * pop, L / 2 * (1 - pop), (y0 + tam / 2) * uL * (1 - pop));
       xL.lineCap = 'square'; xL.lineJoin = 'miter'; xL.miterLimit = 3;
+      if (lg.escala) {
+        const { cores, indice, titulo } = lg.escala;
+        const passoCor = 66, x0 = 540 - passoCor * cores.length / 2;
+        xL.save();
+        xL.setTransform(uL, 0, 0, uL, 0, 0);
+        xL.fillStyle = LG.contorno;
+        xL.fillRect(x0 - 24, 250, passoCor * cores.length + 48, 174);
+        Letras.texto(xL, titulo, 540, 311, 40, { cor: LG.cor, larg: 6 });
+        cores.forEach((cor, i) => {
+          xL.fillStyle = cor;
+          xL.fillRect(x0 + i * passoCor, 330, passoCor - 4, 40);
+        });
+        const centro = x0 + (indice + 0.5) * passoCor;
+        xL.fillStyle = LG.cor;
+        xL.beginPath();
+        xL.moveTo(centro, 374);
+        xL.lineTo(centro - 17, 401);
+        xL.lineTo(centro + 17, 401);
+        xL.fill();
+        xL.restore();
+      }
       let idx = 0;
       lg.linhas.forEach((ln, li) => {
         const txt = ln.join(' '), y = y0 + li * passo;

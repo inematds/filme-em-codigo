@@ -396,7 +396,7 @@
         if (p.tipo === 'cientista') RC.set(p, fotoBusto(p.tam, { tipo: 'cientista', sem: p.sem || 3 }));
         if (p.tipo === 'fila') {
           const n = p.colunas * p.linhas.length, lista = [];
-          for (let i = 0; i < n; i++) { const u = p.linhas[Math.floor(i / p.colunas)].tam; lista.push({ rc: fotoBusto(u, { sem: sem * 50 + i }), aceso: p.acende && i === p.acende.i ? fotoBusto(u, { sem: sem * 50 + i, acesa: true }) : null }); }
+          for (let i = 0; i < n; i++) { const u = p.linhas[Math.floor(i / p.colunas)].tam; lista.push({ rc: fotoBusto(u, { sem: sem * 50 + i, roupa: cor('cinza') }), aceso: p.acende && i === p.acende.i ? fotoBusto(u, { sem: sem * 50 + i, acesa: true }) : null }); }
           RC.set(p, lista);
         }
         if (p.tipo === 'cavaleiros') RC.set(p, [0, 1].map((pose) => [0, 1].map((b) => recorte(1.4 * p.tam, 1.3 * p.tam, 0.7 * p.tam, 1.3 * p.tam, (g) => cavaleiro(g, p.tam, pose, b), { borda: 3 }))));
@@ -687,7 +687,7 @@
           c.restore();
           if (p.risco && t >= p.risco.de) {
             alfa(1); c.save(); c.translate(p.x, p.y); c.rotate(giro);
-            marcador(-w / 2 - 40, 18, w / 2 + 40, -18, p.tam * 0.55, p.risco.cor || 'tinta', sem + 5, sai(tr(t, p.risco.de, p.risco.ate)));
+            marcador(-w / 2 - 40, 18, w / 2 + 40, -18, p.tam * 0.17, p.risco.cor || 'tinta', sem + 5, sai(tr(t, p.risco.de, p.risco.ate)));
             c.restore();
           }
         },

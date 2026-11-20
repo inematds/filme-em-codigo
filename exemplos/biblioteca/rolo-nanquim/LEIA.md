@@ -63,7 +63,7 @@ node ferramentas/render.mjs exemplos/biblioteca/rolo-nanquim --trabalhadores 3
 
 ## Medida
 
-600 quadros em **74,5 s** de render (98,4 ms por quadro; 3,73 s de render por segundo de vídeo),
+600 quadros em **53,16 s** de render (75,1 ms por quadro; 2,66 s de render por segundo de vídeo),
 3 navegadores, sem placa de vídeo. Detalhes em `medida.json`. Mesmo filme com 1 e 3 navegadores
 (360x640, 600 quadros): mesmos quadros. Som: média -19,7 dB, pico -2,2 dB.
 

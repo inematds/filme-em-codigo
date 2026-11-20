@@ -68,7 +68,7 @@ node ferramentas/render.mjs exemplos/biblioteca/recorte-jornal --trabalhadores 3
 
 ## Medida
 
-600 quadros em **51,5 s** de render (71 ms por quadro; 2,57 s de render por segundo de vídeo),
+600 quadros em **61,58 s** de render (83,5 ms por quadro; 3,08 s de render por segundo de vídeo),
 3 navegadores, sem placa de vídeo. Detalhes em `medida.json`. Mesmo filme com 1 e 3 navegadores
 (360x640, 600 quadros): mesmos quadros. Som: média -18,6 dB, pico -2,3 dB; na pausa da virada
 (14,85 a 15,1 s) a média cai para -42 dB.

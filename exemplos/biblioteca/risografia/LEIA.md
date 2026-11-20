@@ -25,6 +25,6 @@ node ferramentas/render.mjs exemplos/biblioteca/risografia --historia minha-hist
 **De onde saiu.** Do filme "The Lighthouse" (estilo "Risograph print") da biblioteca de estilos da
 fonte. O faroleiro e a baleia daqui são desenhos novos e genéricos.
 
-**Tempo de render medido** (`medida.json`): 51,5 s para 10 s de filme (300 quadros, 143 ms por
-quadro, 3 navegadores, sem GPU). O MP4 sai grande (cerca de 90 MB), porque a retícula muda a cada
+**Tempo de render medido** (`medida.json`): 52,85 s para 10 s de filme (300 quadros, 148,5 ms por
+quadro, 3 navegadores, sem GPU). O MP4 sai grande (cerca de 89,48 MB), porque a retícula muda a cada
 folha e o vídeo não consegue comprimir bem.

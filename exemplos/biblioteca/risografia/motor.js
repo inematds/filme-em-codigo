@@ -236,7 +236,7 @@
         };
         // só aparece dentro da luz (é a sobreposição das tintas que revela a baleia)
         cada((c) => { c.save(); cunha(c, ang, 2600); c.clip(); c.beginPath(); c.rect(0, HORIZONTE + 30, L, A); c.clip(); });
-        pinta([0.95, 0.06, null, 0], (c) => { corpo(c); c.fill(); });
+        pinta([0.72, 0.68, null, 0.26], (c) => { corpo(c); c.fill(); });
         // listras do mar passando por cima (está embaixo d'água)
         for (const li of LINHAS) if (li.y > y - h && li.i % 2) pinta([0.7, null, null, null], (c) => { corpo(c); c.clip(); ondaCaminho(c, li, tq, true); c.fill(); });
         pinta([null, 0.95, null, 0.2], (c) => {
@@ -291,11 +291,11 @@
       function legenda(tq) {
         const l = (H.legendas || []).find((x) => tq >= x.de && tq < x.ate); if (!l) return;
         cada((c) => c.setTransform(k, 0, 0, k, 0, 0));
-        cc[PRETO].font = '600 42px Georgia, "DejaVu Serif", serif';
-        const w = cc[PRETO].measureText(l.texto).width + 64, x = (L - w) / 2, y = 905, h = 70;
+        cc[PRETO].font = '600 54px Georgia, "DejaVu Serif", serif';
+        const w = cc[PRETO].measureText(l.texto).width + 64, x = (L - w) / 2, y = 898, h = 84;
         pinta([0, 0, 0, 0], (c) => { c.beginPath(); c.moveTo(x, y + 3); c.lineTo(x + w, y); c.lineTo(x + w - 4, y + h); c.lineTo(x + 2, y + h - 2); c.closePath(); c.fill(); });
         pinta([0.9, null, null, null], (c) => c.fillRect(x, y + h - 9, w, 7));
-        pinta([null, null, null, 1], (c) => { c.font = '600 42px Georgia, "DejaVu Serif", serif'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(l.texto, L / 2, y + h / 2 - 3); });
+        pinta([null, null, null, 1], (c) => { c.font = '600 54px Georgia, "DejaVu Serif", serif'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(l.texto, L / 2, y + h / 2 - 3); });
       }
 
       // ---------- o "shader": imprime as 4 chapas no papel ----------

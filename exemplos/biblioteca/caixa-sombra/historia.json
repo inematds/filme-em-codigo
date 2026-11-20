@@ -104,7 +104,7 @@
     }
   },
 
-  "legenda": { "y": 1530, "tam": 82, "largura": 940, "passo": 0.16, "cor": "creme", "fala": "amarelo" },
+  "legenda": { "y": 1720, "tam": 76, "largura": 940, "passo": 0.1, "cor": "creme", "fala": "amarelo" },
   "legendas": [
     { "de": 0.25, "ate": 1.45, "texto": "UM POLVO TEM" },
     { "de": 1.45, "ate": 2.75, "texto": "TRÊS CORAÇÕES" },
