@@ -55,7 +55,7 @@ node ferramentas/render.mjs exemplos/biblioteca/papiro-ouro --trabalhadores 3
 
 ## Medida
 
-450 quadros em **40,76 s** de render (78 ms por quadro; 2,72 s de render por segundo de vídeo),
+450 quadros em **43,66 s** de render (82,7 ms por quadro; 2,91 s de render por segundo de vídeo),
 3 navegadores, sem placa de vídeo. Detalhes em `medida.json`.
 
 ## Falta polir
